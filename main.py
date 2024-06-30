@@ -1,19 +1,13 @@
-#python program
 
-print("hello world yo")
+print("\nhello world yo\n")
 
 import pandas as pd 
-  
-df_1 = pd.read_excel('/Users/justindudley/dev/cube/Alg_Slice_And_Widen_daddy/alg-slice-and-widen/one_table.xlsx') 
-print("df_1:")
-print(df_1)
 
-df_2 = pd.read_excel('/Users/justindudley/dev/cube/Alg_Slice_And_Widen_daddy/alg-slice-and-widen/one_table.xlsx', sheet_name='Sheet1') 
-print("df_2:")
-print(df_2)
 
-# /Users/justindudley/MyDocuments/Cube/POCHMANN FEVER MAC/PYTHON Repos/alg_prism_the_whole_enchilada
+df_basics = pd.read_csv('/Users/justindudley/dev/cube/Alg_Slice_And_Widen_daddy/alg-slice-and-widen/basics.csv') 
+print("df_basics:\n")
+print(df_basics, "\n")
 
-#excel_data_df = pandas.read_excel('records.xlsx', sheet_name='Employees')
-
-#/Users/justindudley/dev/cube/Alg_Slice_And_Widen_daddy/alg-slice-and-widen
+df_transformations = pd.read_csv('/Users/justindudley/dev/cube/Alg_Slice_And_Widen_daddy/alg-slice-and-widen/transformations.csv') 
+print("df_transformations:\n")
+print(df_transformations, "\n")
