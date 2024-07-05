@@ -1,0 +1,10 @@
+orig,inverse,complement,rotation_direction
+RL',R'L,T',X
+R'L,RL',T,X'
+R2L2,R2L2,T2,X2
+UD',U'D,H',Y
+U'D,UD',H,Y'
+U2D2,U2D2,H2,Y2
+FB',F'B,S',Z
+F'B,FB',S,Z'
+F2B2,F2B2,S2,Z2
