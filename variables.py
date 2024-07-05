@@ -32,6 +32,9 @@ slice_comp_dict = {
     "B2 F2": "F2B2"
     }
 
+slice_comps = list(slice_comp_dict.values())   # this is how you create a list from dictionary values
+
+
 group_dict = {
     1: "X2 Y",
     2: "X2 Y'",
@@ -40,8 +43,3 @@ group_dict = {
     5: "Z2 X",
     6: "Z2 X'"
     }
-
-
-
-
-
