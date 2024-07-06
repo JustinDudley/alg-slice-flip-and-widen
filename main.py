@@ -4,17 +4,14 @@ from variables import *
 from methods import *
 
 
-print("\n\ndf_complements_and_inverses:\n\n", df_complements_and_inverses, "\n")
+# print("\n\ndf_complements_and_inverses:\n\n", df_complements_and_inverses, "\n")
 print("df_Ripple_R:\n\n", df_Ripple_L, "\n")
-print("df_Ripple_L:\n\n", df_Ripple_R, "\n")
+# print("df_Ripple_L:\n\n", df_Ripple_R, "\n")
 
-print("df_turns:\n\n", df_turns, "\n")
-print("df_rotations:\n\n", df_rotations, "\n")
-print("df_reflections:\n\n", df_reflections, "\n")
+# print("df_turns:\n\n", df_turns, "\n")
+# print("df_rotations:\n\n", df_rotations, "\n")
+# print("df_reflections:\n\n", df_reflections, "\n")
 
-
-# to find a value in dataframe using  .at
-print("The complement of R' is: ", df_complements_and_inverses.at["R'", "complement"])
 
 
 
@@ -49,25 +46,41 @@ if intersection_has_members(slice_comps, alg_turns):
 
 
 
+
+print("\n\n\n")
+print("L, subjected to Y2, goes to: ", ripple_right("L", "Y2"))
+print("F', subjected to X then Z2, goes to: ", ripple_right_WCR_list("F'", ["X", "Z2"]))
+
+
+
+
+
+
+
 #HALF-DEPRECATED, HALF-USEFUL
 # iterating over slice_comps
 # getting access to element AND index within a loop. Use "enumerate" method, and use string interpolation:
 # THIS WILL BE THE OUTER LOOP IN MY DOUBLE-NESTED (3-LAYER) LOOP
-for index, slice_comp in enumerate(slice_comps):
-	print("At index %s we have %s"%(index, slice_comp)  )
-	if slice_comp in alg_turns:
-		target_index = alg_turns.index(slice_comp)
-		alg_turns[target_index] = slice_comp + "yoyo"
-		print(alg_turns)
-		for idx, alg_turn in enumerate(alg_turns):
-			if idx > target_index:
-				alg_turn = alg_turn + "9"
-				print(alg_turn)
-		# for index, alg_turn in enumerate(alg_turns):
-			# print("index: ", index, " alg_turn: ", alg_turn)
-		# i believe the second nested loop goes here?
-		print("yes, this slice_comp is in the alg")
-	else:
-		print("no, this slice_comp isn't in the alg")
 
-print(alg_turns)
+
+
+
+
+# for index, slice_comp in enumerate(slice_comps):
+# 	print("At index %s we have %s"%(index, slice_comp)  )
+# 	if slice_comp in alg_turns:
+# 		target_index = alg_turns.index(slice_comp)
+# 		alg_turns[target_index] = slice_comp + "yoyo"
+# 		print(alg_turns)
+# 		for idx, alg_turn in enumerate(alg_turns):
+# 			if idx > target_index:
+# 				alg_turn = alg_turn + "9"
+# 				print(alg_turn)
+# 		# for index, alg_turn in enumerate(alg_turns):
+# 			# print("index: ", index, " alg_turn: ", alg_turn)
+# 		# i believe the second nested loop goes here?
+# 		print("yes, this slice_comp is in the alg")
+# 	else:
+# 		print("no, this slice_comp isn't in the alg")
+
+# print(alg_turns)

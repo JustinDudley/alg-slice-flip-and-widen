@@ -17,3 +17,14 @@ def intersection_has_members(list1, list2):
         return True
     else: 
         return False 
+
+
+
+def ripple_right(turn, WCR):
+	column = "%sA-->B%s"%(WCR, WCR)
+	return df_Ripple_R.at[turn, column]
+
+def ripple_right_WCR_list(turn, WCR_list):
+	for WCR in WCR_list:
+		turn = ripple_right(turn, WCR)
+	return turn
