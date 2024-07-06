@@ -4,7 +4,7 @@ from variables import *
 from methods import *
 
 
-# print("\n\ndf_complements_and_inverses:\n\n", df_complements_and_inverses, "\n")
+print("\n\ndf_complements_and_inverses:\n\n", df_complements_and_inverses, "\n")
 print("df_Ripple_R:\n\n", df_Ripple_L, "\n")
 # print("df_Ripple_L:\n\n", df_Ripple_R, "\n")
 
@@ -40,10 +40,16 @@ print("slice opportunity positions: ", slice_opportunity_positions)
 if intersection_has_members(slice_comps, alg_turns):
 	for position in slice_opportunity_positions:
 		print("yo", alg_turns[position])
+		alg_turn_before = alg_turns[position]
 		alg_turns[position] = df_complements_and_inverses.at[alg_turns[position], "complement"]
 		print("yo", alg_turns[position])
+		for index, alg_turn in enumerate(alg_turns):
+			if index > position:
+				print(index)
+				alg_turns[index] = ripple_right(alg_turns[index], df_complements_and_inverses.at[alg_turn_before, "rotation_direction"])
+		#pre-pend the WCR to the "trailing_WCRs" list
 
-
+print(alg_turns)
 
 
 
