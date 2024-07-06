@@ -49,6 +49,7 @@ if intersection_has_members(slice_comps, alg_turns):
 
 
 
+#HALF-DEPRECATED, HALF-USEFUL
 # iterating over slice_comps
 # getting access to element AND index within a loop. Use "enumerate" method, and use string interpolation:
 # THIS WILL BE THE OUTER LOOP IN MY DOUBLE-NESTED (3-LAYER) LOOP

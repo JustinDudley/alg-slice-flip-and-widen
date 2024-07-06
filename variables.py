@@ -1,7 +1,6 @@
 import pandas as pd 
 
 df_complements_and_inverses = pd.read_csv('/Users/justindudley/dev/cube/Alg_Slice_And_Widen_daddy/alg-slice-and-widen/tables/complements_and_inverses.csv', index_col="orig")
-#### DF_SLICE_COMPS DATA IS NOW ROLLED INTO DF_COMPLEMENTS_AND_INVERSES
 df_Ripple_L = pd.read_csv('/Users/justindudley/dev/cube/Alg_Slice_And_Widen_daddy/alg-slice-and-widen/tables/WCR_Ripples_Left.csv', index_col="orig") 
 df_Ripple_R = pd.read_csv('/Users/justindudley/dev/cube/Alg_Slice_And_Widen_daddy/alg-slice-and-widen/tables/WCR_Ripples_Right.csv', index_col="orig") 
 
@@ -33,7 +32,7 @@ slice_comp_condenser_dict = {
 
 slice_comps = list(slice_comp_condenser_dict.values())   # this is how you create a list from dictionary values
 
-slice_comp_dict_with_slashes_deprecated = {
+slice_comp_dict_with_slashes_deprecated_delete_soon = {
     "R L\'": "RL\'", 
     "L\' R": "RL\'", 
     "R\' L": "R'L", 
