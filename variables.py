@@ -4,9 +4,9 @@ df_complements_and_inverses = pd.read_csv('/Users/justindudley/dev/cube/Alg_Slic
 df_Ripple_L = pd.read_csv('/Users/justindudley/dev/cube/Alg_Slice_And_Widen_daddy/alg-slice-and-widen/tables/WCR_Ripples_Left.csv', index_col="orig") 
 df_Ripple_R = pd.read_csv('/Users/justindudley/dev/cube/Alg_Slice_And_Widen_daddy/alg-slice-and-widen/tables/WCR_Ripples_Right.csv', index_col="orig") 
 
-df_turns = pd.read_csv('/Users/justindudley/dev/cube/Alg_Slice_And_Widen_daddy/alg-slice-and-widen/tables/turns.csv', index_col="orig") 
-df_rotations = pd.read_csv('/Users/justindudley/dev/cube/Alg_Slice_And_Widen_daddy/alg-slice-and-widen/tables/rotations_24.csv', index_col="orig") 
-df_reflections = pd.read_csv('/Users/justindudley/dev/cube/Alg_Slice_And_Widen_daddy/alg-slice-and-widen/tables/reflections_24.csv', index_col="orig")
+df_stickers_turned = pd.read_csv('/Users/justindudley/dev/cube/Alg_Slice_And_Widen_daddy/alg-slice-and-widen/tables/stickers_turned_by_alg_notation.csv', index_col="orig") 
+df_stickers_rotated = pd.read_csv('/Users/justindudley/dev/cube/Alg_Slice_And_Widen_daddy/alg-slice-and-widen/tables/stickers_rotated_24.csv', index_col="orig") 
+df_stickers_reflected = pd.read_csv('/Users/justindudley/dev/cube/Alg_Slice_And_Widen_daddy/alg-slice-and-widen/tables/stickers_reflected_24.csv', index_col="orig")
 
 
 slice_comp_condenser_dict = {

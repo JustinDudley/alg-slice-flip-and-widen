@@ -28,3 +28,11 @@ def ripple_right_WCR_list(turn, WCR_list):
 	for WCR in WCR_list:
 		turn = ripple_right(turn, WCR)
 	return turn
+
+
+
+def some_method():
+      sticker = "A" # ANY of the 48 choices of sticker would work equally well for this method
+      sticker_rotated_to = ""
+
+      

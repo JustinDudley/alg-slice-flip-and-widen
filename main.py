@@ -4,13 +4,13 @@ from variables import *
 from methods import *
 
 
-# print("\n\ndf_complements_and_inverses:\n\n", df_complements_and_inverses, "\n")
-# print("df_Ripple_R:\n\n", df_Ripple_L, "\n")
-# print("df_Ripple_L:\n\n", df_Ripple_R, "\n")
+print("\n\ndf_complements_and_inverses:\n\n", df_complements_and_inverses, "\n")
+print("df_Ripple_R:\n\n", df_Ripple_L, "\n")
+print("df_Ripple_L:\n\n", df_Ripple_R, "\n")
 
-# print("df_turns:\n\n", df_turns, "\n")
-# print("df_rotations:\n\n", df_rotations, "\n")
-# print("df_reflections:\n\n", df_reflections, "\n")
+print("df_stickers_turned:\n\n", df_stickers_turned, "\n")
+print("df_stickers_rotated:\n\n", df_stickers_rotated, "\n")
+print("df_stickers_reflected:\n\n", df_stickers_reflected, "\n")
 
 
 
