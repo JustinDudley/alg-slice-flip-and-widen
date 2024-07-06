@@ -4,7 +4,7 @@ from variables import *
 
 # R L' -->  RL',  D U' --> U'D, etc.   This block condenses slice comps into a single turn, with no space in the middle
 def condense_comp_slice_turns(alg):
-    for key, value in slice_comp_dict.items():
+    for key, value in slice_comp_condenser_dict.items():
         alg = alg.replace(key, value)
     return alg
      

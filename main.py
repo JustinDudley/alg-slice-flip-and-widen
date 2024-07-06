@@ -4,20 +4,17 @@ from variables import *
 from methods import *
 
 
-# print("\n\ndf_basics:\n\n", df_basics, "\n")
-# print("\n\ndf_slice_comps:\n\n", df_slice_comps, "\n")
-# print("df_Ripple_R:\n\n", df_Ripple_L, "\n")
-# print("df_Ripple_L:\n\n", df_Ripple_R, "\n")
+print("\n\ndf_complements_and_inverses:\n\n", df_complements_and_inverses, "\n")
+print("df_Ripple_R:\n\n", df_Ripple_L, "\n")
+print("df_Ripple_L:\n\n", df_Ripple_R, "\n")
 
-# print("df_core:\n\n", df_core, "\n")
-# print("df_turns:\n\n", df_turns, "\n")
-# print("df_rotations:\n\n", df_rotations, "\n")
-# print("df_reflections:\n\n", df_reflections, "\n")
+print("df_turns:\n\n", df_turns, "\n")
+print("df_rotations:\n\n", df_rotations, "\n")
+print("df_reflections:\n\n", df_reflections, "\n")
 
 
 # to find a value in dataframe using  .at
-print("The complement of R' is: ", df_basics.at["R'", "complement"])
-
+print("The complement of R' is: ", df_complements_and_inverses.at["R'", "complement"])
 
 
 
@@ -29,6 +26,7 @@ alg = condense_comp_slice_turns(alg)    # In this example:   U R2 UD' F B L' B2 
 alg_trailing_WCRs = group_dict[group_number]
 alg_turns = alg.split()
 trailing_WCRs = alg_trailing_WCRs.split()
+
 
 
 slice_opportunity_positions = []
@@ -45,7 +43,7 @@ print("slice opportunity positions: ", slice_opportunity_positions)
 if intersection_has_members(slice_comps, alg_turns):
 	for position in slice_opportunity_positions:
 		print("yo", alg_turns[position])
-		alg_turns[position] = df_slice_comps.at[alg_turns[position], "complement"]
+		alg_turns[position] = df_complements_and_inverses.at[alg_turns[position], "complement"]
 		print("yo", alg_turns[position])
 
 
