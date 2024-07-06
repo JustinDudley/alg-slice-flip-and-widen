@@ -32,21 +32,22 @@ for i in range(len(slice_comps)):
 		if slice_comps[i]==alg_turns[j]:
 			slice_opportunity_positions.append(j)
 
-slice_opportunity_positions = sorted(set(slice_opportunity_positions))
+slice_opportunity_positions = sorted(set(slice_opportunity_positions), reverse=True)  # Reversed so that pre-pending the WCRs works.
 print("slice opportunity positions: ", slice_opportunity_positions)
 
 
 # "while" loop not necessary. Do I even need this "if" statement??
 if intersection_has_members(slice_comps, alg_turns):
 	for position in slice_opportunity_positions:
-		alg_turn_before = alg_turns[position]
+		WCR_to_ripple = df_complements_and_inverses.at[alg_turns[position], "rotation_direction"]
 		alg_turns[position] = df_complements_and_inverses.at[alg_turns[position], "complement"]
 		for index, alg_turn in enumerate(alg_turns):
 			if index > position:
-				alg_turns[index] = ripple_right(alg_turns[index], df_complements_and_inverses.at[alg_turn_before, "rotation_direction"])
-		#pre-pend the WCR to the "trailing_WCRs" list
+				alg_turns[index] = ripple_right(alg_turns[index], WCR_to_ripple)
+		trailing_WCRs = [WCR_to_ripple] + trailing_WCRs
 
 print(alg_turns)
+print(trailing_WCRs)
 
 
 
