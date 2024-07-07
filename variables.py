@@ -9,22 +9,23 @@ df_stickers_rotated = pd.read_csv('/Users/justindudley/dev/cube/Alg_Slice_And_Wi
 df_stickers_reflected = pd.read_csv('/Users/justindudley/dev/cube/Alg_Slice_And_Widen_daddy/alg-slice-and-widen/tables/stickers_reflected_24.csv', index_col="orig")
 
 
+# note the intentional white space after the second turn of the key (AND value), when there is no prime (')
 slice_comp_condenser_dict = {
     "R L'": "RL'", 
-    "L' R": "RL'", 
-    "R' L": "R'L", 
+    "L' R ": "RL' ", 
+    "R' L ": "R'L ", 
     "L R'": "R'L",
     "R2 L2": "R2L2", 
     "L2 R2": "R2L2",
     "U D'": "UD'", 
-    "D' U": "UD'", 
-    "U' D": "U'D", 
+    "D' U ": "UD' ", 
+    "U' D ": "U'D ", 
     "D U'": "U'D",
     "U2 D2": "U2D2", 
     "D2 U2": "U2D2",
     "F B'": "FB'", 
-    "B' F": "FB'", 
-    "F' B": "F'B", 
+    "B' F ": "FB' ", 
+    "F' B ": "F'B ", 
     "B F'": "F'B",
     "F2 B2": "F2B2",
     "B2 F2": "F2B2"
@@ -52,7 +53,7 @@ what_brings_Q_here = {
     "N": [["Y", "X"]], 
     "O": [["Y", "X2"]], 
     "P": [["Y", "X'"]], 
-    "Q": [["I"]],      #  JUST USE A BLANK LIST FOR IDENTITY??
+    "Q": [["I"]],      #  JUST USE A BLANK LIST FOR IDENTITY ??
     "R": [["Z'"]], 
     "S": [["Z2"], ["Y2", "X2"]], 
     "T": [["Z"]], 
@@ -62,27 +63,6 @@ what_brings_Q_here = {
     "X": [["Z'", "X"]]
     }
 
-
-# slice_comp_dict_with_slashes_deprecated_delete_soon = {
-#     "R L\'": "RL\'", 
-#     "L\' R": "RL\'", 
-#     "R\' L": "R'L", 
-#     "L R\'": "R\'L",
-#     "R2 L2": "R2L2", 
-#     "L2 R2": "R2L2",
-#     "U D\'": "UD\'", 
-#     "D\' U": "UD\'", 
-#     "U\' D": "U'D", 
-#     "D U\'": "U\'D",
-#     "U2 D2": "U2D2", 
-#     "D2 U2": "U2D2",
-#     "F B\'": "FB\'", 
-#     "B\' F": "FB\'", 
-#     "F\' B": "F'B", 
-#     "B F\'": "F\'B",
-#     "F2 B2": "F2B2",
-#     "B2 F2": "F2B2"
-#     }
 
 
 group_dict = {
@@ -97,8 +77,7 @@ group_dict = {
 
 
 
-
-group_dict_deprecated = {
+group_dict_handy_for_seeing_standard_notation_but_deprecated = {
     1: [["Y'", "X2"]],
     2: [["Y", "X2"]],
     3: [["Z", "X2"]],

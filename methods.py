@@ -5,18 +5,9 @@ from variables import *
 # R L' -->  RL',  D U' --> U'D, etc.   This block condenses slice comps into a single turn, with no space in the middle
 def condense_comp_slice_turns(alg):
     for key, value in slice_comp_condenser_dict.items():
-        alg = alg.replace(key, value)
+        alg = alg.replace(key, value).rstrip()
     return alg
      
-
-def intersection_has_members(list1, list2):
-    temp = set(list2)
-    shared_members = [value for value in list1 if value in temp]
-	
-    if shared_members:    # the if operator returns true in Python for any data structure that is non-empty
-        return True
-    else: 
-        return False 
 
 
 
@@ -31,8 +22,26 @@ def ripple_right_WCR_list(turn, WCR_list):
 
 
 
-def some_method():
-      sticker = "A" # ANY of the 48 choices of sticker would work equally well for this method
-      sticker_rotated_to = ""
 
-      
+def move_sticker_once(sticker, WCR):
+	return df_stickers_rotated.at[sticker, WCR]
+
+def replace_Trailing_WCRs_with_up_to_TWO_equivalent_YorZ_notations(WCRs):
+	sticker = "Q"
+	for WCR in WCRs:
+		sticker = move_sticker_once(sticker, WCR)
+	trailing_WCRs_dual = what_brings_Q_here[sticker]
+	return trailing_WCRs_dual
+
+
+
+# NOT IN USE. But the coding is pretty cool. Found it on the interweb:
+# def intersection_has_members(list1, list2):
+#     temp = set(list2)
+#     shared_members = [value for value in list1 if value in temp]
+	
+#     if shared_members:    # the if operator returns true in Python for any data structure that is non-empty
+#         return True
+#     else: 
+#         return False 
+
