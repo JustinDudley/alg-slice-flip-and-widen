@@ -32,32 +32,77 @@ slice_comp_condenser_dict = {
 
 slice_comps = list(slice_comp_condenser_dict.values())   # this is how you create a list from dictionary values
 
-slice_comp_dict_with_slashes_deprecated_delete_soon = {
-    "R L\'": "RL\'", 
-    "L\' R": "RL\'", 
-    "R\' L": "R'L", 
-    "L R\'": "R\'L",
-    "R2 L2": "R2L2", 
-    "L2 R2": "R2L2",
-    "U D\'": "UD\'", 
-    "D\' U": "UD\'", 
-    "U\' D": "U'D", 
-    "D U\'": "U\'D",
-    "U2 D2": "U2D2", 
-    "D2 U2": "U2D2",
-    "F B\'": "FB\'", 
-    "B\' F": "FB\'", 
-    "F\' B": "F'B", 
-    "B F\'": "F\'B",
-    "F2 B2": "F2B2",
-    "B2 F2": "F2B2"
+
+# each key's value is the cube rotation that moves the sticker Q to the key
+# the keys are in Alg--YorZ--X format (without the Alg)
+what_brings_Q_here = {
+    "A": [["Y2", "X"], ["Z2", "X'"]], 
+    "B": [["Z", "X'"]], 
+    "C": [["X'"]], 
+    "D": [["Z'", "X'"]], 
+    "E": [["Y'"]], 
+    "F": [["Y'", "X'"]], 
+    "G": [["Y'", "X2"]], 
+    "H": [["Y'", "X"]], 
+    "I": [["Y2"], ["Z2", "X2"]], 
+    "J": [["Z", "X2"]], 
+    "K": [["X2"]], 
+    "L": [["Z'", "X2"]], 
+    "M": [["Y"]], 
+    "N": [["Y", "X"]], 
+    "O": [["Y", "X2"]], 
+    "P": [["Y", "X'"]], 
+    "Q": [["I"]],      #  JUST USE A BLANK LIST FOR IDENTITY??
+    "R": [["Z'"]], 
+    "S": [["Z2"], ["Y2", "X2"]], 
+    "T": [["Z"]], 
+    "U": [["Y2", "X'"], ["Z2", "X"]], 
+    "V": [["Z", "X"]], 
+    "W": [["X"]], 
+    "X": [["Z'", "X"]]
     }
 
+
+# slice_comp_dict_with_slashes_deprecated_delete_soon = {
+#     "R L\'": "RL\'", 
+#     "L\' R": "RL\'", 
+#     "R\' L": "R'L", 
+#     "L R\'": "R\'L",
+#     "R2 L2": "R2L2", 
+#     "L2 R2": "R2L2",
+#     "U D\'": "UD\'", 
+#     "D\' U": "UD\'", 
+#     "U\' D": "U'D", 
+#     "D U\'": "U\'D",
+#     "U2 D2": "U2D2", 
+#     "D2 U2": "U2D2",
+#     "F B\'": "FB\'", 
+#     "B\' F": "FB\'", 
+#     "F\' B": "F'B", 
+#     "B F\'": "F\'B",
+#     "F2 B2": "F2B2",
+#     "B2 F2": "F2B2"
+#     }
+
+
 group_dict = {
-    1: "X2 Y",
-    2: "X2 Y'",
-    3: "Y2 Z",
-    4: "Y2 Z'",
-    5: "Z2 X",
-    6: "Z2 X'"
+    1: ["X2", "Y"],
+    2: ["X2", "Y'"],
+    3: ["Y2", "Z"],
+    4: ["Y2", "Z'"],
+    5: ["Z2", "X"],
+    6: ["Z2", "X'"]
+    }
+
+
+
+
+
+group_dict_deprecated = {
+    1: [["Y'", "X2"]],
+    2: [["Y", "X2"]],
+    3: [["Z", "X2"]],
+    4: [["Z'", "X2"]],
+    5: [["Y2", "X'"], ["Z2", "X"]],
+    6: [["Y2", "X"], ["Z2", "X'"]]
     }
