@@ -58,3 +58,4 @@ trailing_WCRs_dual = replace_Trailing_WCRs_with_up_to_TWO_equivalent_YorZ_notati
 print(trailing_WCRs_dual)
 print("\n")
 
+# I haven't yet chanced upon an alg that yielded a dual WCR, so I should keep testing to make sure that works okay
