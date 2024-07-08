@@ -124,3 +124,15 @@ print("\nsum_of_2s  (a.k.a. Every possible useful modification of comp_code_turn
 print(sum_of_2s)
 
 print("\nNumber of new algs to generate:  ", len(sum_of_2s), "\n")
+
+
+#########
+#########
+#########
+import datetime
+x = datetime.datetime.now()
+print("ZZ_Results_" + x.strftime("%a") + "_" + x.strftime("%f"))
+
+import copy
+list1 = [8, 9]
+list2 = copy.deepcopy(list1)
