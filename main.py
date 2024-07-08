@@ -120,7 +120,7 @@ for two_mod_4_comb in two_mod_4_combs:
 	sum_of_2s.append(sum_of_2)
 
 
-print("\nsum_of_2s  (a.k.a. Every possible useful modification of comp_code_turns. Elements that sum to 2 (mod 4) remain, and the rest are replaced by zeros):  ")
+print("\nsum_of_2s  (a.k.a.  Every possible useful modification of comp_code_turns. Elements that sum to 2 (mod 4) remain, and the rest are replaced by zeros):  ")
 print(sum_of_2s)
 
 print("\nNumber of new algs to generate:  ", len(sum_of_2s), "\n")
