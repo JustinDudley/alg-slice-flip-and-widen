@@ -20,7 +20,6 @@ R2L2,R2L2,T2,X2
 l2,l2,R2,X2
 L2,L2,r2,X2
 X2,X2,0,X2
-X0,X0,0,X0
 F,F',b,Z
 f,f',B,Z
 S,S',F'B,Z
@@ -42,7 +41,6 @@ F2B2,F2B2,S2,Z2
 b2,b2,F2,Z2
 B2,B2,f2,Z2
 Z2,Z2,0,Z2
-Z0,Z0,0,Z0
 U,U',d,Y
 u,u',D,Y
 H,H',U'D,Y
@@ -64,4 +62,3 @@ U2D2,U2D2,H2,Y2
 d2,d2,U2,Y2
 D2,D2,u2,Y2
 Y2,Y2,0,Y2
-Y0,Y0,0,Y0

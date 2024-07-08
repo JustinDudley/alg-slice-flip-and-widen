@@ -1,4 +1,4 @@
-orig,Y0 X0,Y0 X,Y0 X2,Y0 X',Y X0,Y2 X0,Y' X0,Z X0,Z2 X0,Z' X0,Z X,Y' X',Y X',Z' X,Z' X',Y' X,Y X,Z X',Y' X2,Y X2,Z X2,Z' X2,Z2 X,Z2 X'
+orig,I,X,X2,X',Y,Y2,Y',Z,Z2,Z',Z X,Y' X',Y X',Z' X,Z' X',Y' X,Y X,Z X',Y' X2,Y X2,Z X2,Z' X2,Z2 X,Z2 X'
 white,white,orange,yellow,red,white,white,white,blue,yellow,green,blue,red,red,green,green,orange,orange,blue,yellow,yellow,blue,green,red,orange
 blue,blue,blue,blue,blue,red,green,orange,yellow,green,white,red,white,yellow,orange,red,yellow,white,orange,red,orange,white,yellow,green,green
 red,red,white,orange,yellow,green,orange,blue,red,red,red,white,blue,green,white,yellow,blue,green,yellow,blue,green,orange,orange,white,yellow

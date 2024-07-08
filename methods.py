@@ -24,7 +24,9 @@ def ripple_right_WCR_list(turn, WCR_list):
 
 
 def move_sticker_once(sticker, WCR):
-	return df_stickers_rotated.at[sticker, WCR]
+	## !!!  The line below used to say df_sticker_rotated. I changed it when I added Y0  and X0 as column names of df_sticker_rotated
+	## !!!  Need to check that this still works!
+	return df_stickers_turned.at[sticker, WCR]
 
 def replace_Trailing_WCRs_with_up_to_TWO_equivalent_YorZ_notations(WCRs):
 	sticker = "Q"
