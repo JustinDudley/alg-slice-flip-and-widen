@@ -19,9 +19,16 @@ alg = "U2 L F B' U' R2 L B' U2 F U' D R' U2 L B'"
 # alg = "U R2 U D' F B L' B2 R U D' B R L' U2 B2"  ,  group 1
 
 
+# 1.  1.  1.  1.  1.  
+# # I will read a .txt file to get the StickerSolve alg strings at this point and put it into a list (or possibly read an excel file, but that seems like over-doing it)
+# The first loop will begin HERE:
+# for StickerSolve_string in StickerSolve_strings:
+	# condense the alg string, then convert string to a list, name it alg_turns. 
+
 
 alg = condense_comp_slice_turns(alg)    # For instance:   U R2 UD' F B L' B2 R UD' B RL' U2 B2
 alg_turns = alg.split()
+#it's good that I'm re-setting trailing_WCRs INSIDE the first loop, since trailing_WCRs will get changed in the code that follows
 trailing_WCRs = group_dict[group_number]  # NOTE! At this point, there is no need for dual CoRo schemes or for any standardized way of writing the CoRo. They will all crunch down the same 
 
 
@@ -41,18 +48,19 @@ print("\nslice opportunity positions: ", slice_opportunity_positions)
 # Do I even need this IF statement??
 if slice_opportunity_positions:  # returns True if a Python list is non-empty
 	for position in slice_opportunity_positions:
-		WCR_to_ripple = df_complements_and_inverses.at[alg_turns[position], "rotation_direction"]
+		WCR_to_ripple_right = df_complements_and_inverses.at[alg_turns[position], "rotation_direction"]
 		alg_turns[position] = df_complements_and_inverses.at[alg_turns[position], "complement"]  # sub in the complement (a slice)
 		for index, alg_turn in enumerate(alg_turns):
 			if index > position:
-				alg_turns[index] = ripple_right(alg_turns[index], WCR_to_ripple)
-		trailing_WCRs = [WCR_to_ripple] + trailing_WCRs
+				alg_turns[index] = ripple_right(alg_turns[index], WCR_to_ripple_right)
+		trailing_WCRs = [WCR_to_ripple_right] + trailing_WCRs
 
 
 
-print(alg_turns)
+print("alg_turns after sub in slices and ripple right: ", alg_turns)
 print(trailing_WCRs)
 
+# list[list[str]]
 trailing_WCRs_dual = replace_Trailing_WCRs_with_up_to_TWO_equivalent_YorZ_notations(trailing_WCRs)
 
 print(trailing_WCRs_dual)
