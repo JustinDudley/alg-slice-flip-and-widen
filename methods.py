@@ -11,31 +11,6 @@ def condense_comp_slice_turns(alg):
 
 
 
-def ripple_right(turn, WCR):
-	column = "%sA-->B%s"%(WCR, WCR)
-	return df_Ripple_R.at[turn, column]
-
-def ripple_right_WCR_list(turn, WCR_list):
-	for WCR in WCR_list:
-		turn = ripple_right(turn, WCR)
-	return turn
-
-
-
-
-def move_sticker_once(sticker, WCR):
-	## !!!  The line below used to say df_sticker_rotated. I changed it when I added Y0  and X0 as column names of df_sticker_rotated
-	## !!!  Need to check that this still works!
-	return df_stickers_turned.at[sticker, WCR]
-
-def replace_Trailing_WCRs_with_up_to_TWO_equivalent_YorZ_notations(WCRs):
-	sticker = "Q"
-	for WCR in WCRs:
-		sticker = move_sticker_once(sticker, WCR)
-	trailing_WCRs_dual = WHAT_BRINGS_Q_HERE[sticker]
-	return trailing_WCRs_dual
-
-
 
 # NOT IN USE. But the coding is pretty cool. Found it on the interweb:
 # def intersection_has_members(list1, list2):

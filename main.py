@@ -2,6 +2,7 @@
 import pandas as pd 
 from variables import *  
 from methods import *
+from sub_in_slices_and_ripple_right import *
 
 
 # print("\n\ndf_complements_and_inverses:\n\n", df_complements_and_inverses, "\n")
@@ -32,40 +33,14 @@ alg_turns = alg.split()
 trailing_WCRs = GROUP_DICT[group_number]  # NOTe! At this point, there is no need for dual CoRo schemes or for any standardized way of writing the CoRo. They will all crunch down the same 
 
 
-# call method HERE
-# pass it:  alg_turns, trailing_WCRs
 
-slice_opportunity_positions = []
-for i in range(len(SLICE_COMPS)):
-	for j in range(len(alg_turns)):
-		if SLICE_COMPS[i] == alg_turns[j]:
-			slice_opportunity_positions.append(j)
-
-slice_opportunity_positions = sorted(set(slice_opportunity_positions), reverse=True)  # Reversed so that pre-pending the WCRs works.
-print("\nslice opportunity positions: ", slice_opportunity_positions)
-# What happens if slice_opportunity_positions is empty?  Do I need to account for this?
-
-
-
-# Do I even need this IF statement??
-if slice_opportunity_positions:  # returns True if a Python list is non-empty
-	for position in slice_opportunity_positions:
-		WCR_to_ripple_right = df_complements_and_inverses.at[alg_turns[position], "rotation_direction"]
-		alg_turns[position] = df_complements_and_inverses.at[alg_turns[position], "complement"]  # sub in the complement (a slice)
-		for index, alg_turn in enumerate(alg_turns):
-			if index > position:
-				alg_turns[index] = ripple_right(alg_turns[index], WCR_to_ripple_right)
-		trailing_WCRs = [WCR_to_ripple_right] + trailing_WCRs
-
+motley_list = sub_in_slices_and_ripple_right(alg_turns, trailing_WCRs)
+alg_turns = motley_list[0]
+trailing_WCRs_dual = motley_list[1]
 
 
 print("alg_turns after sub in slices and ripple right: ", alg_turns)
-print(trailing_WCRs)
-
-# list[list[str]]
-trailing_WCRs_dual = replace_Trailing_WCRs_with_up_to_TWO_equivalent_YorZ_notations(trailing_WCRs)
-
-print(trailing_WCRs_dual)
+print("trailing_WCRs_dual after sub in slices and ripple right: ", trailing_WCRs_dual)
 print("\n")
 
 # I haven't yet chanced upon an alg that yielded a dual WCR, so I should keep testing to make sure that works okay
