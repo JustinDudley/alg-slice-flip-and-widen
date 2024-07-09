@@ -29,14 +29,16 @@ alg = "U2 L F B' U' R2 L B' U2 F U' D R' U2 L B'"
 alg = condense_comp_slice_turns(alg)    # For instance:   U R2 UD' F B L' B2 R UD' B RL' U2 B2
 alg_turns = alg.split()
 #it's good that I'm re-setting trailing_WCRs INSIDE the first loop, since trailing_WCRs will get changed in the code that follows
-trailing_WCRs = group_dict[group_number]  # NOTE! At this point, there is no need for dual CoRo schemes or for any standardized way of writing the CoRo. They will all crunch down the same 
+trailing_WCRs = GROUP_DICT[group_number]  # NOTe! At this point, there is no need for dual CoRo schemes or for any standardized way of writing the CoRo. They will all crunch down the same 
 
 
+# call method HERE
+# pass it:  alg_turns, trailing_WCRs
 
 slice_opportunity_positions = []
-for i in range(len(slice_comps)):
+for i in range(len(SLICE_COMPS)):
 	for j in range(len(alg_turns)):
-		if slice_comps[i] == alg_turns[j]:
+		if SLICE_COMPS[i] == alg_turns[j]:
 			slice_opportunity_positions.append(j)
 
 slice_opportunity_positions = sorted(set(slice_opportunity_positions), reverse=True)  # Reversed so that pre-pending the WCRs works.

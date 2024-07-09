@@ -9,8 +9,11 @@ df_stickers_rotated = pd.read_csv('/Users/justindudley/dev/cube/Alg_Slice_And_Wi
 df_stickers_reflected = pd.read_csv('/Users/justindudley/dev/cube/Alg_Slice_And_Widen_daddy/alg-slice-and-widen/tables/stickers_reflected_24.csv', index_col="orig")
 
 
+# Python doesn't support constants, but by convention UPPERCASE vars are understood to be constants
+
+
 # note the intentional white space after the second turn of the key (AND value), when there is no prime (')
-slice_comp_condenser_dict = {
+SLICE_COMP_CONDENSER_DICT = {
     "R L'": "RL'", 
     "L' R ": "RL' ", 
     "R' L ": "R'L ", 
@@ -31,12 +34,12 @@ slice_comp_condenser_dict = {
     "B2 F2": "F2B2"
     }
 
-slice_comps = list(slice_comp_condenser_dict.values())   # this is how you create a list from dictionary values
+SLICE_COMPS = list(SLICE_COMP_CONDENSER_DICT.values())   # this is how you create a list from dictionary values
 
 
 # each key's value is the cube rotation that moves the sticker Q to the key
 # the keys are in Alg--YorZ--X format (without the Alg)
-what_brings_Q_here = {
+WHAT_BRINGS_Q_HERE = {
     "A": [["Y2", "X"], ["Z2", "X'"]], 
     "B": [["Z", "X'"]], 
     "C": [["Y0", "X'"]], 
@@ -65,7 +68,7 @@ what_brings_Q_here = {
 
 
 
-group_dict = {
+GROUP_DICT = {
     1: ["X2", "Y"],
     2: ["X2", "Y'"],
     3: ["Y2", "Z"],
@@ -77,7 +80,7 @@ group_dict = {
 
 
 
-group_dict_handy_for_seeing_standard_notation_but_deprecated = {
+GROUP_DICT_HANDY_FOR_SEEING_STANDARD_NOTATION_BUT_DEPRECATED = {
     1: [["Y'", "X2"]],
     2: [["Y", "X2"]],
     3: [["Z", "X2"]],

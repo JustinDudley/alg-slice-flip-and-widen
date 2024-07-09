@@ -4,7 +4,7 @@ from variables import *
 
 # R L' -->  RL',  D U' --> U'D, etc.   This block condenses slice comps into a single turn, with no space in the middle
 def condense_comp_slice_turns(alg):
-    for key, value in slice_comp_condenser_dict.items():
+    for key, value in SLICE_COMP_CONDENSER_DICT.items():
         alg = alg.replace(key, value).rstrip()
     return alg
      
@@ -32,7 +32,7 @@ def replace_Trailing_WCRs_with_up_to_TWO_equivalent_YorZ_notations(WCRs):
 	sticker = "Q"
 	for WCR in WCRs:
 		sticker = move_sticker_once(sticker, WCR)
-	trailing_WCRs_dual = what_brings_Q_here[sticker]
+	trailing_WCRs_dual = WHAT_BRINGS_Q_HERE[sticker]
 	return trailing_WCRs_dual
 
 
