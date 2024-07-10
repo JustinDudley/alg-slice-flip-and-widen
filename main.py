@@ -7,8 +7,10 @@ from generate_algs import generate_algs
 
 
 
-group_number = 6    # Must choose a group before running program. (1-6)
-SticSolv_alg = "U2 L F B' U' R2 L B' U2 F U' D R' U2 L B'"
+group_number = 2    # Must choose a group before running program. (1-6)
+SticSolv_alg = "U2 F' L2 F' B D2 F U F' B L' D2 R U D' F'"
+# This seems to work.  "U2 L F B' U' R2 L B' U2 F U' D R' U2 L B'"    So let's try another one.
+
 
 final_algs_ALL = []
 big_dict = {}  # keys are SS_algs, values are lists (or pipe strings) of result algs
@@ -45,6 +47,8 @@ final_algs_from_single_SticSolv = generate_algs(alg_turns, trailing_YorZ_Xs_dual
 for final_alg in final_algs_from_single_SticSolv:
     final_algs_ALL.append(final_alg)
 
+
+# print("final_algs_ALL is:  ", final_algs_ALL)
 
 
 #########

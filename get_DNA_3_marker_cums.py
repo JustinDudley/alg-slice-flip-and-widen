@@ -2,11 +2,12 @@
 import itertools
 import math
 
-from dataframes import df_comp_rotation_nums
+from dataframes import df_rotation_nums
+from constants import CODE_TO_TURN
 
 def get_DNA_3_marker_cums_using_itertools(comp_turn_codes, trailing_YorZ_Xs):
 
-    rotation_num = df_comp_rotation_nums.at[trailing_YorZ_Xs[1], "comp_rotation_num"]
+    rotation_num = df_rotation_nums.at[trailing_YorZ_Xs[1], "comp_rotation_num"]
 
     positions_of_X_axis_turns = []
     for i in range (0, len(comp_turn_codes)):
@@ -31,6 +32,7 @@ def get_DNA_3_marker_cums_using_itertools(comp_turn_codes, trailing_YorZ_Xs):
     print ("combos_of_positions_whose_comps_sum_correctly is: ", combos_of_positions_whose_comps_sum_correctly)
 
 
+
     # create DNA_1
     DNA_1_sum_successes = []
     for rotation_number_mod_4_comb in combos_of_positions_whose_comps_sum_correctly:
@@ -46,6 +48,7 @@ def get_DNA_3_marker_cums_using_itertools(comp_turn_codes, trailing_YorZ_Xs):
     print("\nNumber of new algs to generate:  ", len(DNA_1_sum_successes), "\n")
 
 
+
     # create DNA_2
     DNA_2_mod4_core_turn_cumulatives = []
     for DNA_1_sum_success in DNA_1_sum_successes:
@@ -57,8 +60,8 @@ def get_DNA_3_marker_cums_using_itertools(comp_turn_codes, trailing_YorZ_Xs):
                 DNA_2_mod4_core_turn_cumulative.append((DNA_2_mod4_core_turn_cumulative[index - 1] + comp_rotation) % 4)
         DNA_2_mod4_core_turn_cumulatives.append(DNA_2_mod4_core_turn_cumulative)
     
-    print("\nDNA_2_mod4_core_turn_cumulatives, AFTER MODULATION, is: \n", DNA_2_mod4_core_turn_cumulatives,"\n")
 
+    # create DNA_3
     DNA_3_marker_cums = []
     for ind, DNA_1_sum_success in enumerate(DNA_1_sum_successes):
         DNA_3_marker_cum = []
@@ -66,10 +69,8 @@ def get_DNA_3_marker_cums_using_itertools(comp_turn_codes, trailing_YorZ_Xs):
             if comp_rotation > 0:
                 DNA_3_marker_cum.append("*")
             else:
-                DNA_3_marker_cum.append(DNA_2_mod4_core_turn_cumulatives[ind][index])
+                DNA_3_marker_cum.append(CODE_TO_TURN[DNA_2_mod4_core_turn_cumulatives[ind][index]])
         DNA_3_marker_cums.append(DNA_3_marker_cum)
-
-    print("\nDNA_3_marker_cums is: \n", DNA_3_marker_cums,"\n")
 
     
     return DNA_3_marker_cums

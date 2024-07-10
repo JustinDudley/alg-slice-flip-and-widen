@@ -68,6 +68,13 @@ GROUP_DICT = {
     }
 
 
+CODE_TO_TURN = {
+    0: "X0",
+    1: "X",
+    2: "X2",
+    3: "X'"
+}
+
 
 
 GROUP_DICT_HANDY_FOR_SEEING_STANDARD_NOTATION_BUT_DEPRECATED = {
