@@ -1,5 +1,5 @@
 
-from calculate_XComps_with_itertools import *
+from calculate_XComps_with_itertools import Mod4_Comp_Xpansion
 
 def generate_algs(alg_turns, trailing_WCRs_dual):
 
@@ -24,7 +24,7 @@ def generate_algs(alg_turns, trailing_WCRs_dual):
         for index, alg_turn in reversed(list(enumerate(alg_turns))):
             print("index and single alg_turn, in reverse order, are: ", index, ",  ", alg_turn) 
             
-            single_round_of_final_algs_pipe_string = calculate_XComps_with_itertools(alg_turns, trailing_WCRs)
+            single_round_of_final_algs_pipe_string = Mod4_Comp_Xpansion(alg_turns, trailing_WCRs)
             final_alg_pipe_string += single_round_of_final_algs_pipe_string
             print("Here is final_alg_pipe_string so far: ", final_alg_pipe_string)
             #Call the Ripple_L method, so YorZ moves one to the left before this loop repeats

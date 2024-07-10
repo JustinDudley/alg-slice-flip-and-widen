@@ -1,5 +1,5 @@
 
-from variables import *  
+from variables import SLICE_COMP_CONDENSER_DICT
 
 
 # R L' -->  RL',  D U' --> U'D, etc.   This block condenses slice comps into a single turn, with no space in the middle

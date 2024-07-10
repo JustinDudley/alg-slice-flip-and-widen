@@ -1,18 +1,11 @@
 
 import pandas as pd 
-from variables import *  
-from methods import *
-from sub_in_slices_and_ripple_right import *
+from variables import GROUP_DICT
+from methods import condense_comp_slice_turns
+from sub_in_slices_and_ripple_right import sub_in_slices_and_ripple_right
 from generate_algs import *
 
 
-# print("\n\ndf_complements_and_inverses:\n\n", df_complements_and_inverses, "\n")
-# print("df_Ripple_R:\n\n", df_Ripple_L, "\n")
-# print("df_Ripple_L:\n\n", df_Ripple_R, "\n")
-
-# print("df_stickers_turned:\n\n", df_stickers_turned, "\n")
-# print("df_stickers_rotated:\n\n", df_stickers_rotated, "\n")
-# print("df_stickers_reflected:\n\n", df_stickers_reflected, "\n")
 
 
 

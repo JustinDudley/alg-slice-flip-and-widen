@@ -88,3 +88,15 @@ GROUP_DICT_HANDY_FOR_SEEING_STANDARD_NOTATION_BUT_DEPRECATED = {
     5: [["Y2", "X'"], ["Z2", "X"]],
     6: [["Y2", "X"], ["Z2", "X'"]]
     }
+
+
+
+
+
+# print("\n\ndf_complements_and_inverses:\n\n", df_complements_and_inverses, "\n")
+# print("df_Ripple_R:\n\n", df_Ripple_L, "\n")
+# print("df_Ripple_L:\n\n", df_Ripple_R, "\n")
+
+# print("df_stickers_turned:\n\n", df_stickers_turned, "\n")
+# print("df_stickers_rotated:\n\n", df_stickers_rotated, "\n")
+# print("df_stickers_reflected:\n\n", df_stickers_reflected, "\n")

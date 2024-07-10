@@ -1,6 +1,6 @@
 
 
-def calculate_XComps_with_itertools(alg_turns, trailing_WCRs):
+def Mod4_Comp_Xpansion(alg_turns, trailing_WCRs):
 
 
 
