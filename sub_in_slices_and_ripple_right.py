@@ -1,5 +1,6 @@
 
-from variables import df_Ripple_R, df_stickers_turned, df_complements_and_inverses, WHAT_BRINGS_Q_HERE, SLICE_COMPS  
+from constants import WHAT_BRINGS_Q_HERE, SLICE_COMPS
+from dataframes import df_Ripple_R, df_stickers_turned, df_complements_and_inverses
 
 
 
@@ -17,24 +18,18 @@ def ripple_right_WCR_list(turn, WCR_list):
 
 
 def move_sticker_once(sticker, WCR):
-	## !!!  The line below used to say df_sticker_rotated. I changed it when I added Y0  and X0 as column names of df_sticker_rotated
-	## !!!  Need to check that this still works!
 	return df_stickers_turned.at[sticker, WCR]
 
 def replace_Trailing_WCRs_with_up_to_TWO_equivalent_YorZ_notations(WCRs):
 	sticker = "Q"
 	for WCR in WCRs:
 		sticker = move_sticker_once(sticker, WCR)
-	trailing_WCRs_dual = WHAT_BRINGS_Q_HERE[sticker]
-	return trailing_WCRs_dual
+	trailing_YorZ_Xs_dual = WHAT_BRINGS_Q_HERE[sticker]
+	return trailing_YorZ_Xs_dual
 
 
 
 def sub_in_slices_and_ripple_right(alg_turns, trailing_WCRs):
-    print("hi")
-
-
-
     slice_opportunity_positions = []
     for i in range(len(SLICE_COMPS)):
         for j in range(len(alg_turns)):
