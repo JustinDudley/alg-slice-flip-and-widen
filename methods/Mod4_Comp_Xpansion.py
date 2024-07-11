@@ -1,6 +1,6 @@
 import copy
 
-from dataframes import df_complements_and_inverses, df_Ripple_R
+from variables.dataframes import df_complements_and_inverses, df_Ripple_R
 
 
 def Mod4_Comp_Xpansion(alg_turns_shifting, trailing_YorZ_Xs, DNA_3_marker_cums):

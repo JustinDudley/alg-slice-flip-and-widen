@@ -1,14 +1,14 @@
 
 import pandas as pd 
-from constants import GROUP_DICT
-from helper_methods import condense_comp_slice_turns
-from sub_in_slices_and_ripple_right import sub_in_slices_and_ripple_right
-from generate_algs import generate_algs
+from variables.constants import GROUP_DICT
+from methods.helper_methods import condense_comp_slice_turns
+from methods.sub_in_slices_and_ripple_right import sub_in_slices_and_ripple_right
+from methods.generate_algs import generate_algs
 
 
 
-group_number = 2    # Must choose a group before running program. (1-6)
-SticSolv_alg = "U2 F' L2 F' B D2 F U F' B L' D2 R U D' F'"
+group_number = 5    # Must choose a group before running program. (1-6)
+SticSolv_alg = "U' L' B L2 F' U' D R F2 L' B R2 L U' D B2"
 # This seems to work.  "U2 L F B' U' R2 L B' U2 F U' D R' U2 L B'"    So let's try another one.
 
 
@@ -48,7 +48,7 @@ for final_alg in final_algs_from_single_SticSolv:
     final_algs_ALL.append(final_alg)
 
 
-# print("final_algs_ALL is:  ", final_algs_ALL)
+print("final_algs_ALL is:  ", final_algs_ALL)
 
 
 #########

@@ -1,6 +1,6 @@
 
-from constants import SLICE_COMP_CONDENSER_DICT
-from dataframes import df_rotation_nums
+from variables.constants import SLICE_COMP_CONDENSER_DICT
+from variables.dataframes import df_rotation_nums
 
 
 # R L' -->  RL',  D U' --> U'D, etc.   This block condenses slice comps into a single turn, with no space in the middle

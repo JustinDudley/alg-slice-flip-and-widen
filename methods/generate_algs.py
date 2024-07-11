@@ -1,10 +1,10 @@
 
 import copy
 
-from Mod4_Comp_Xpansion import Mod4_Comp_Xpansion
-from dataframes import df_rotation_nums
-from get_DNA_3_marker_cums import get_DNA_3_marker_cums_using_itertools
-from helper_methods import get_turn_codes
+from methods.Mod4_Comp_Xpansion import Mod4_Comp_Xpansion
+from variables.dataframes import df_rotation_nums
+from methods.get_DNA_3_marker_cums import get_DNA_3_marker_cums_using_itertools
+from methods.helper_methods import get_turn_codes
 
 
 def generate_algs(alg_turns:list[str], trailing_YorZ_Xs_dual):

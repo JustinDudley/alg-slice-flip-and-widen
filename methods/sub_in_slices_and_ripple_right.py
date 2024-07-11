@@ -1,6 +1,6 @@
 
-from constants import WHAT_BRINGS_Q_HERE, SLICE_COMPS
-from dataframes import df_Ripple_R, df_stickers_turned, df_complements_and_inverses
+from variables.constants import WHAT_BRINGS_Q_HERE, SLICE_COMPS
+from variables.dataframes import df_Ripple_R, df_stickers_turned, df_complements_and_inverses
 
 
 
