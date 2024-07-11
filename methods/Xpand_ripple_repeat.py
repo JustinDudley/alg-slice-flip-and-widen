@@ -24,7 +24,7 @@ def Xpand_ripple_repeat(alg_turns:list[str], trailing_YorZ_Xs_dual):
             if indx == 0:           # this will be true only the very last iteration
                 one_round_of_final_algs = comp_Xpansion(alg_turns_plus_YorZ_shifting, DNA_3_marker_cums)
                 final_algs_from_single_SticSolv.extend(one_round_of_final_algs)
-                # break
+                break
             
             # alg_turns_plus_YorZ_shifting will have its turns replaced one by one from the right. indx - 1 should always be ONE step ahead of this shift, so it should give an accurate turn
             # to avoid generating duplicates.  U Y is equivalent to Y U, so we're going to pass over U Y and only examine Y U 
