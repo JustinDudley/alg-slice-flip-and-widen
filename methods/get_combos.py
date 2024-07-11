@@ -5,7 +5,7 @@ import math
 from variables.dataframes import df_rotation_nums
 from variables.constants import CODE_TO_TURN
 
-def get_DNA_3_marker_cums_using_itertools(comp_turn_codes, trailing_YorZ_Xs):
+def get_combos(comp_turn_codes, trailing_YorZ_Xs):
 
     rotation_num = df_rotation_nums.at[trailing_YorZ_Xs[1], "comp_rotation_num"]
 

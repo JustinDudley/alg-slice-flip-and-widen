@@ -22,7 +22,7 @@ SLICE_COMP_CONDENSER_DICT = {
     "B F'": "F'B",
     "F2 B2": "F2B2",
     "B2 F2": "F2B2"
-    }
+}
 
 SLICE_COMPS = list(SLICE_COMP_CONDENSER_DICT.values())   # this is how you create a list from dictionary values
 
@@ -54,7 +54,7 @@ WHAT_BRINGS_Q_HERE = {
     "V": [["Z", "X"]], 
     "W": [["Y0", "X"]], 
     "X": [["Z'", "X"]]
-    }
+}
 
 
 
@@ -65,7 +65,7 @@ GROUP_DICT = {
     4: ["Y2", "Z'"],
     5: ["Z2", "X"],
     6: ["Z2", "X'"]
-    }
+}
 
 
 CODE_TO_TURN = {
@@ -76,6 +76,66 @@ CODE_TO_TURN = {
 }
 
 
+AXIS_MEMBERSHIP = {
+    "R": "X",
+    "r": "X",
+    "T": "X",
+    "l": "X",
+    "L": "X",
+    "X": "X",
+    "R'": "X",
+    "r'": "X",
+    "T'": "X",
+    "l'": "X",
+    "L'": "X",
+    "X'": "X",
+    "R2": "X",
+    "r2": "X",
+    "T2": "X",
+    "l2": "X",
+    "L2": "X",
+    "X2": "X",
+    "X0": "X",
+    "F": "Z",
+    "f": "Z",
+    "S": "Z",
+    "b": "Z",
+    "B": "Z",
+    "Z": "Z",
+    "F'": "Z",
+    "f'": "Z",
+    "S'": "Z",
+    "b'": "Z",
+    "B'": "Z",
+    "Z'": "Z",
+    "F2": "Z",
+    "f2": "Z",
+    "S2": "Z",
+    "b2": "Z",
+    "B2": "Z",
+    "Z2": "Z",
+    "Z0": "Z",
+    "U": "Y",
+    "u": "Y",
+    "H": "Y",
+    "d": "Y",
+    "D": "Y",
+    "Y": "Y",
+    "U'": "Y",
+    "u'": "Y",
+    "H'": "Y",
+    "d'": "Y",
+    "D'": "Y",
+    "Y'": "Y",
+    "U2": "Y",
+    "u2": "Y",
+    "H2": "Y",
+    "d2": "Y",
+    "D2": "Y",
+    "Y2": "Y",
+    "Y0": "Y"
+}
+
 
 GROUP_DICT_HANDY_FOR_SEEING_STANDARD_NOTATION_BUT_DEPRECATED = {
     1: [["Y'", "X2"]],
@@ -84,6 +144,4 @@ GROUP_DICT_HANDY_FOR_SEEING_STANDARD_NOTATION_BUT_DEPRECATED = {
     4: [["Z'", "X2"]],
     5: [["Y2", "X'"], ["Z2", "X"]],
     6: [["Y2", "X"], ["Z2", "X'"]]
-    }
-
-
+}

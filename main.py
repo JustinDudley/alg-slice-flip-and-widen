@@ -3,7 +3,7 @@ import pandas as pd
 from variables.constants import GROUP_DICT
 from methods.helper_methods import condense_comp_slice_turns
 from methods.sub_in_slices_and_ripple_right import sub_in_slices_and_ripple_right
-from methods.generate_algs import generate_algs
+from methods.Xpand_ripple_repeat import Xpand_ripple_repeat
 
 
 
@@ -12,7 +12,7 @@ SticSolv_alg = "U' L' B L2 F' U' D R F2 L' B R2 L U' D B2"
 # This seems to work.  "U2 L F B' U' R2 L B' U2 F U' D R' U2 L B'"    So let's try another one.
 
 
-final_algs_ALL = []
+final_algs_ALL:list[str] = []
 big_dict = {}  # keys are SS_algs, values are lists (or pipe strings) of result algs
 # thinking to write data to excel in TWO ways:  (1) list every SticSolv alg and its own results, (2) listing of ALL algs, broken into sublists like "No B, B', B2"
 
@@ -43,7 +43,7 @@ print("trailing_WCRs_dual after sub in slices and ripple right: ", trailing_YorZ
 
 
 
-final_algs_from_single_SticSolv = generate_algs(alg_turns, trailing_YorZ_Xs_dual)
+final_algs_from_single_SticSolv = Xpand_ripple_repeat(alg_turns, trailing_YorZ_Xs_dual)
 for final_alg in final_algs_from_single_SticSolv:
     final_algs_ALL.append(final_alg)
 
