@@ -1,4 +1,4 @@
-X,rotation_num,comp_rotation_num
+X,fwd_rotation_code,comp_rotation_code
 X0,0,0
 X,1,3
 R,1,3

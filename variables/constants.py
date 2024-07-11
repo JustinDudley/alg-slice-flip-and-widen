@@ -2,6 +2,13 @@
 # Python doesn't support constants, but by convention UPPERCASE vars are understood to be constants
 
 
+
+FWD_ROTATION_CODE = "fwd_rotation_code"
+COMP_ROTATION_CODE = "comp_rotation_code"
+ROTATION_DIRECTION = "rotation_direction"
+COMPLEMENT = "complement"
+
+
 # note the intentional white space after the second turn of the key (AND value), when there is no prime (')
 SLICE_COMP_CONDENSER_DICT = {
     "R L'": "RL'", 
@@ -25,6 +32,7 @@ SLICE_COMP_CONDENSER_DICT = {
 }
 
 SLICE_COMPS = list(SLICE_COMP_CONDENSER_DICT.values())   # this is how you create a list from dictionary values
+
 
 
 # each key's value is the cube rotation that moves the sticker Q to the key
@@ -68,7 +76,7 @@ GROUP_DICT = {
 }
 
 
-CODE_TO_TURN = {
+CODE_INTO_TURN = {
     0: "X0",
     1: "X",
     2: "X2",

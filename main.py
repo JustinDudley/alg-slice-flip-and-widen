@@ -1,9 +1,9 @@
 
-import pandas as pd 
 from variables.constants import GROUP_DICT
 from methods.helper_methods import condense_comp_slice_turns
 from methods.sub_in_slices_and_ripple_right import sub_in_slices_and_ripple_right
-from methods.Xpand_ripple_repeat import Xpand_ripple_repeat
+from methods.generate_algs import generate_algs
+
 
 # NOTE:  it IS possible for an SS_alg to produce ZERO results. For instance:  group 2, "U' F' B2 D R L' U F' D' L' F' B R' B' R D2"
 
@@ -14,8 +14,6 @@ SticSolv_alg = "L D' F' R' D L B L' F' L D2 R' U' B D2 F' L"
 
 
 final_algs_ALL:list[str] = []
-big_dict = {}  # keys are SS_algs, values are lists (or pipe strings) of result algs
-# thinking to write data to excel in TWO ways:  (1) list every SticSolv alg and its own results, (2) listing of ALL algs, broken into sublists like "No B, B', B2"
 
 
 # read StickerSolve algs from .txt file, put into List 
@@ -37,20 +35,19 @@ alg_turns:list[str] = motley_list[0]
 trailing_YorZ_Xs_dual:list[list[str]] = motley_list[1]
 
 
-
-print("alg_turns after sub in slices and ripple right: ", alg_turns)
-print("trailing_WCRs_dual after sub in slices and ripple right: ", trailing_YorZ_Xs_dual, "\n")
 # I haven't yet chanced upon an alg that yielded a dual WCR, so I should keep testing to make sure that works okay
 
 
 
-final_algs_from_single_SticSolv = Xpand_ripple_repeat(alg_turns, trailing_YorZ_Xs_dual)
+final_algs_from_single_SticSolv = generate_algs(alg_turns, trailing_YorZ_Xs_dual)
 for final_alg in final_algs_from_single_SticSolv:
     final_algs_ALL.append(final_alg)
 
 
-print("final_algs_ALL is:  ", final_algs_ALL)
-
+# print("\nfinal_algs_ALL is:  ")
+# for final_alg in final_algs_ALL:
+#     print(final_alg)
+    
 
 #########
 #########
