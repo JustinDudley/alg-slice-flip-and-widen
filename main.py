@@ -5,10 +5,11 @@ from methods.helper_methods import condense_comp_slice_turns
 from methods.sub_in_slices_and_ripple_right import sub_in_slices_and_ripple_right
 from methods.Xpand_ripple_repeat import Xpand_ripple_repeat
 
+# NOTE:  it IS possible for an SS_alg to produce ZERO results. For instance:  group 2, "U' F' B2 D R L' U F' D' L' F' B R' B' R D2"
 
 
-group_number = 5    # Must choose a group before running program. (1-6)
-SticSolv_alg = "U' L' B L2 F' U' D R F2 L' B R2 L U' D B2"
+group_number = 3   # Must choose a group before running program. (1-6)
+SticSolv_alg = "L D' F' R' D L B L' F' L D2 R' U' B D2 F' L"
 # This seems to work.  "U2 L F B' U' R2 L B' U2 F U' D R' U2 L B'"    So let's try another one.
 
 
