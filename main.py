@@ -58,7 +58,3 @@ for final_alg in final_algs_from_single_SticSolv:
 import datetime
 x = datetime.datetime.now()
 print("ZZ_Results_" + x.strftime("%a") + "_" + x.strftime("%f"))
-
-import copy
-list1 = [8, 9]
-list2 = copy.deepcopy(list1)
