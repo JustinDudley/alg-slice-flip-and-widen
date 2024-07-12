@@ -1,6 +1,6 @@
 
 from variables.constants import WHAT_BRINGS_Q_HERE, SLICE_COMPS, ROTATION_DIRECTION, COMPLEMENT
-from variables.dataframes import df_Ripple_R, df_stickers_turned, df_complements_and_inverses
+from variables.dataframes import df_Ripple_R, df_stickers_turned, df_turn_attributes
 
 
 def ripple_right(turn, WCR):
@@ -42,8 +42,8 @@ def sub_in_slices_and_ripple_right(alg_turns, trailing_WCRs):
     # Do I even need this IF statement??
     if slice_opportunity_positions:  # returns True if a Python list is non-empty
         for position in slice_opportunity_positions:
-            WCR_to_ripple_right = df_complements_and_inverses.at[alg_turns[position], ROTATION_DIRECTION]
-            alg_turns[position] = df_complements_and_inverses.at[alg_turns[position], COMPLEMENT]  # sub in the complement (a slice)
+            WCR_to_ripple_right = df_turn_attributes.at[alg_turns[position], ROTATION_DIRECTION]
+            alg_turns[position] = df_turn_attributes.at[alg_turns[position], COMPLEMENT]  # sub in the complement (a slice)
             for index, alg_turn in enumerate(alg_turns):
                 if index > position:
                     alg_turns[index] = ripple_right(alg_turns[index], WCR_to_ripple_right)

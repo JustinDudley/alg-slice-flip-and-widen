@@ -1,6 +1,5 @@
 
-from variables.constants import SLICE_COMP_CONDENSER_DICT, FWD_ROTATION_CODE
-from variables.dataframes import df_rotation_codes
+from variables.constants import SLICE_COMP_CONDENSER_DICT, CODE
 
 
 # R L' -->  RL',  D U' --> U'D, etc.   This block condenses slice comps into a single turn, with no space in the middle
@@ -12,8 +11,11 @@ def condense_comp_slice_turns(alg):
 
 
 def get_single_rotation_code(turn):
-    if turn in df_rotation_codes.index:
-        return int(df_rotation_codes.at[turn, FWD_ROTATION_CODE])
+    # if turn in df_rotation_codes_ELIMINATE_SOON.index:
+    if turn in CODE:
+        # return int(df_rotation_codes_ELIMINATE_SOON.at[turn, FWD_ROTATION_CODE])
+        return CODE[turn]
+
     else:
         return 0
 

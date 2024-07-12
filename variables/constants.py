@@ -3,10 +3,35 @@
 
 
 
-FWD_ROTATION_CODE = "fwd_rotation_code"
-COMP_ROTATION_CODE = "comp_rotation_code"
 ROTATION_DIRECTION = "rotation_direction"
 COMPLEMENT = "complement"
+
+
+
+CODE = {
+    0: "X0",
+    1: "X",
+    2: "X2",
+    3: "X'",
+    "X0": 0,
+    "X": 1,
+    "R": 1,
+    "r": 1,
+    "l'": 1,
+    "L'": 1,
+    "X2": 2,
+    "R2": 2,
+    "r2": 2,
+    "l2": 2,
+    "L2": 2,
+    "X'": 3,
+    "R'": 3,
+    "r'": 3,
+    "l": 3,
+    "L": 3
+}
+
+
 
 
 # note the intentional white space after the second turn of the key (AND value), when there is no prime (')
@@ -76,15 +101,8 @@ GROUP_DICT = {
 }
 
 
-CODE_INTO_TURN = {
-    0: "X0",
-    1: "X",
-    2: "X2",
-    3: "X'"
-}
 
-
-AXIS_MEMBERSHIP = {
+AXIS_FAMILY = {
     "R": "X",
     "r": "X",
     "T": "X",

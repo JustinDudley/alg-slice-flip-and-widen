@@ -1,8 +1,9 @@
 
-from variables.constants import GROUP_DICT
+from variables.constants import GROUP_DICT, CODE
 from methods.helper_methods import condense_comp_slice_turns
 from methods.sub_in_slices_and_ripple_right import sub_in_slices_and_ripple_right
 from methods.generate_algs import generate_algs
+                    
 
 
 # NOTE:  it IS possible for an SS_alg to produce ZERO results. For instance:  group 2, "U' F' B2 D R L' U F' D' L' F' B R' B' R D2"
@@ -14,6 +15,7 @@ SticSolv_alg = "L D' F' R' D L B L' F' L D2 R' U' B D2 F' L"
 
 
 final_algs_ALL:list[str] = []
+
 
 
 # read StickerSolve algs from .txt file, put into List 
@@ -47,7 +49,8 @@ for final_alg in final_algs_from_single_SticSolv:
 # print("\nfinal_algs_ALL is:  ")
 # for final_alg in final_algs_ALL:
 #     print(final_alg)
-    
+
+
 
 #########
 #########

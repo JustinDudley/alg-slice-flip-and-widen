@@ -4,7 +4,7 @@ import copy
 from methods.comp_Xpansion import comp_Xpansion
 from methods.get_combos import get_combos
 from methods.helper_methods import get_single_rotation_code
-from variables.constants import AXIS_MEMBERSHIP
+from variables.constants import AXIS_FAMILY
 from variables.dataframes import df_Ripple_L
 
 
@@ -23,10 +23,11 @@ def generate_algs(alg_turns:list[str], trailing_YorZ_Xs_dual):
         #   +1  because alg_turns_plus_YorZ_shifting has ONE MORE TURN then alg_turns: The YorZ component (eg. Y',  Z2...).  But I don't want to iterate over a shifting list.
         for indx in reversed(range(len(alg_turns) + 1)):
 
-            rotation_codes = copy.deepcopy(list(map(get_single_rotation_code, alg_turns_plus_YorZ_shifting)))
-            DNA_3_marker_cums = get_combos(rotation_codes, trailing_YorZ_Xs)
+            alg_rotation_codes = copy.deepcopy(list(map(get_single_rotation_code, alg_turns_plus_YorZ_shifting)))
+            print("Yo, inside generate_algs, rotation_codes is: ", alg_rotation_codes)
+            DNA_3_marker_cums = get_combos(alg_rotation_codes, trailing_YorZ_Xs)
             print(indx, "\n -- ", " ".join(alg_turns_plus_YorZ_shifting), " -- ", trailing_YorZ_Xs[1])
-            print("rotation_codes: ", rotation_codes, "\n")
+            print("rotation_codes: ", alg_rotation_codes, "\n")
 
             
             if indx == 0:           # this will be true only the very last iteration
@@ -36,7 +37,7 @@ def generate_algs(alg_turns:list[str], trailing_YorZ_Xs_dual):
             
             # alg_turns_plus_YorZ_shifting will have its turns replaced one by one from the right. indx - 1 should always be ONE step ahead of this shift, so it should give an accurate turn
             # to avoid generating duplicates.  U Y is equivalent to Y U, so we're going to pass over U Y and only examine Y U 
-            elif AXIS_MEMBERSHIP[alg_turns_plus_YorZ_shifting[indx - 1]] != AXIS_MEMBERSHIP[trailing_YorZ_Xs[0]]:  
+            elif AXIS_FAMILY[alg_turns_plus_YorZ_shifting[indx - 1]] != AXIS_FAMILY[trailing_YorZ_Xs[0]]:  
                 # do I need to initialize one_round previously if I'm going to reference it twice like this?
                 one_round_of_final_algs = comp_Xpansion(alg_turns_plus_YorZ_shifting, DNA_3_marker_cums)
                 for alg in one_round_of_final_algs:

@@ -2,41 +2,41 @@
 import itertools
 import math
 
-from variables.dataframes import df_rotation_codes
-from variables.constants import CODE_INTO_TURN, FWD_ROTATION_CODE
+from variables.constants import CODE
 
 
-def get_combos(rotation_codes, trailing_YorZ_Xs):
+def get_combos(alg_rotation_codes, trailing_YorZ_Xs):
 
-    trailing_X_rotation_num = df_rotation_codes.at[trailing_YorZ_Xs[1], FWD_ROTATION_CODE]
+    # trailing_X_rotation_num = df_rotation_codes_ELIMINATE_SOON.at[trailing_YorZ_Xs[1], FWD_ROTATION_CODE]
+    trailing_X_rotation_num = CODE[trailing_YorZ_Xs[1]]
     positions_of_X_axis_turns = []
-    for i in range (0, len(rotation_codes)):
-        if rotation_codes[i] > 0:
+    for i in range (0, len(alg_rotation_codes)):
+        if alg_rotation_codes[i] > 0:
             positions_of_X_axis_turns.append(i)
 
-    combs = []
+    combos = []
     for i in range(1, len(positions_of_X_axis_turns) + 1):
         els = [list(x) for x in itertools.combinations(positions_of_X_axis_turns, i)]
-        combs.extend(els)
+        combos.extend(els)
   
 
     combos_of_positions_whose_comps_sum_correctly:list[list[int]] = []   # "good_position_combos"
-    for comb in combs:
+    for combo in combos:
         sum = 0
-        for p in comb:
-            sum = sum + rotation_codes[p]
+        for p in combo:
+            sum = sum + alg_rotation_codes[p]
         if math.fmod(sum,4) == trailing_X_rotation_num:
-            combos_of_positions_whose_comps_sum_correctly.append(comb)
+            combos_of_positions_whose_comps_sum_correctly.append(combo)
 
 
 
     # create DNA_1
     DNA_1_sum_successes = []
-    for rotation_number_mod_4_comb in combos_of_positions_whose_comps_sum_correctly:
+    for good_combo in combos_of_positions_whose_comps_sum_correctly:
         sum_of_rotation_number = []
-        for i in range (0, len(rotation_codes)):
-            if i in rotation_number_mod_4_comb:
-                sum_of_rotation_number.append(rotation_codes[i])
+        for i in range (0, len(alg_rotation_codes)):
+            if i in good_combo:
+                sum_of_rotation_number.append(alg_rotation_codes[i])
             else: sum_of_rotation_number.append(0)
         DNA_1_sum_successes.append(sum_of_rotation_number)
 
@@ -65,7 +65,7 @@ def get_combos(rotation_codes, trailing_YorZ_Xs):
             if comp_rotation > 0:
                 DNA_3_marker_cum.append("*")
             else:
-                DNA_3_marker_cum.append(CODE_INTO_TURN[DNA_2_mod4_core_turn_cumulatives[ind][index]])
+                DNA_3_marker_cum.append(CODE[DNA_2_mod4_core_turn_cumulatives[ind][index]])
         DNA_3_marker_cums.append(DNA_3_marker_cum)
 
     
