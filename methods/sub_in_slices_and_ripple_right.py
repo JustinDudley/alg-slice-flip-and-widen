@@ -26,11 +26,11 @@ def replace_Trailing_WCRs_with_up_to_TWO_equivalent_YorZ_notations(WCRs):
 
 
 
-def sub_in_slices_and_ripple_right(alg_turns, trailing_WCRs):
+def sub_in_slices_and_ripple_right(listTypeAlg, trailing_WCRs):
     slice_opportunity_positions = []
     for i in range(len(SLICE_COMPS)):
-        for j in range(len(alg_turns)):
-            if SLICE_COMPS[i] == alg_turns[j]:
+        for j in range(len(listTypeAlg)):
+            if SLICE_COMPS[i] == listTypeAlg[j]:
                 slice_opportunity_positions.append(j)
 
     slice_opportunity_positions = sorted(set(slice_opportunity_positions), reverse=True)  # Reversed so that pre-pending the WCRs works.
@@ -42,15 +42,16 @@ def sub_in_slices_and_ripple_right(alg_turns, trailing_WCRs):
     # Do I even need this IF statement??
     if slice_opportunity_positions:  # returns True if a Python list is non-empty
         for position in slice_opportunity_positions:
-            WCR_to_ripple_right = df_turn_attributes.at[alg_turns[position], ROTATION_DIRECTION]
-            alg_turns[position] = df_turn_attributes.at[alg_turns[position], COMPLEMENT]  # sub in the complement (a slice)
-            for index, alg_turn in enumerate(alg_turns):
-                if index > position:
-                    alg_turns[index] = ripple_right(alg_turns[index], WCR_to_ripple_right)
+            WCR_to_ripple_right = df_turn_attributes.at[listTypeAlg[position], ROTATION_DIRECTION]
+            listTypeAlg[position] = df_turn_attributes.at[listTypeAlg[position], COMPLEMENT]  # sub in the complement (a slice)
+            # for i, alg_turn in enumerate(listTypeAlg):  ## changed code to below, on 7/13
+            for i in range(len(listTypeAlg)):
+                if i > position:
+                    listTypeAlg[i] = ripple_right(listTypeAlg[i], WCR_to_ripple_right)
             trailing_WCRs = [WCR_to_ripple_right] + trailing_WCRs
 
 
     # list[list[str]]
     trailing_WCRs_dual = replace_Trailing_WCRs_with_up_to_TWO_equivalent_YorZ_notations(trailing_WCRs)
 
-    return[alg_turns, trailing_WCRs_dual]
+    return[listTypeAlg, trailing_WCRs_dual]

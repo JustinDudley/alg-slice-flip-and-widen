@@ -3,18 +3,25 @@ from variables.constants import GROUP_DICT, CODE
 from methods.helper_methods import condense_comp_slice_turns
 from methods.sub_in_slices_and_ripple_right import sub_in_slices_and_ripple_right
 from methods.generate_algs import generate_algs
-                    
+
+# naming convention:
+# 
+# turn        ==  a string.  one turn in an algorithm
+# listTypeAlg  ==  a list.  an algorithm whose turns are members of a list.  2 examples:  (1) LstTypeAlg, (2) static_LstTypeAlg
+# strTypeAlg  ==  a string. an algorithm whose turns are part of a single long string.
+# strTypeAlgs ==  a list of strings. A list whose members are StrTypeAlg        
+
 
 
 # NOTE:  it IS possible for an SS_alg to produce ZERO results. For instance:  group 2, "U' F' B2 D R L' U F' D' L' F' B R' B' R D2"
 
 
 group_number = 3   # Must choose a group before running program. (1-6)
-SticSolv_alg = "L D' F' R' D L B L' F' L D2 R' U' B D2 F' L"
+strTypeAlg = "L D' F' R' D L B L' F' L D2 R' U' B D2 F' L"
 # This seems to work.  "U2 L F B' U' R2 L B' U2 F U' D R' U2 L B'"    So let's try another one.
 
 
-final_algs_ALL:list[str] = []
+all_final_strTypeAlgs:list[str] = []
 
 
 
@@ -26,14 +33,14 @@ final_algs_ALL:list[str] = []
 
 
 
-SticSolv_alg = condense_comp_slice_turns(SticSolv_alg)    # For instance:   U R2 UD' F B L' B2 R UD' B RL' U2 B2
-alg_turns = SticSolv_alg.split()
+strTypeAlg = condense_comp_slice_turns(strTypeAlg)    # For instance:   U R2 UD' F B L' B2 R UD' B RL' U2 B2
+listTypeAlg = strTypeAlg.split()
 trailing_WCRs = GROUP_DICT[group_number]  # no need for dual CoRo schemes here 
 
 
 # SLICE/RIPPLE_R
-motley_list = sub_in_slices_and_ripple_right(alg_turns, trailing_WCRs)
-alg_turns:list[str] = motley_list[0]
+motley_list = sub_in_slices_and_ripple_right(listTypeAlg, trailing_WCRs)
+listTypeAlg:list[str] = motley_list[0]
 trailing_YorZ_Xs_dual:list[list[str]] = motley_list[1]
 
 
@@ -41,9 +48,9 @@ trailing_YorZ_Xs_dual:list[list[str]] = motley_list[1]
 
 
 
-final_algs_from_single_SticSolv = generate_algs(alg_turns, trailing_YorZ_Xs_dual)
-for final_alg in final_algs_from_single_SticSolv:
-    final_algs_ALL.append(final_alg)
+from_single_SS__final_strTypeAlgs = generate_algs(listTypeAlg, trailing_YorZ_Xs_dual)
+for final_alg in from_single_SS__final_strTypeAlgs:
+    all_final_strTypeAlgs.append(final_alg)
 
 
 # print("\nfinal_algs_ALL is:  ")

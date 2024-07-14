@@ -4,20 +4,20 @@ from variables.constants import COMPLEMENT
 from variables.dataframes import df_turn_attributes, df_Ripple_R
 
 
-def comp_Xpansion(alg_turns_shifting, DNA_3_marker_cums):
+def comp_Xpansion(add_YorZ__shifting_listTypeAlg, DNA_3_marker_cums):
 
-    final_alg_strings:list[str] = []
+    final_strTypeAlgs:list[str] = []
     for DNA_3_marker_cum in DNA_3_marker_cums:
-        final_alg_turns = copy.deepcopy(alg_turns_shifting)
+        final_listTypeAlg = copy.deepcopy(add_YorZ__shifting_listTypeAlg)
         for index, rotation in enumerate(DNA_3_marker_cum):
             if rotation == "*":
-              final_alg_turns[index] = df_turn_attributes.at[final_alg_turns[index], COMPLEMENT]
+              final_listTypeAlg[index] = df_turn_attributes.at[final_listTypeAlg[index], COMPLEMENT]
             else:
-                final_alg_turns[index] = df_Ripple_R.at[final_alg_turns[index], "%sA-->B%s"%(rotation, rotation)]
+                final_listTypeAlg[index] = df_Ripple_R.at[final_listTypeAlg[index], "%sA-->B%s"%(rotation, rotation)]
         
-        final_alg_string = " ".join(final_alg_turns)
-        final_alg_strings.append(final_alg_string)
+        final_strTypeAlg = " ".join(final_listTypeAlg)
+        final_strTypeAlgs.append(final_strTypeAlg)
 
 
-    return(final_alg_strings)
+    return(final_strTypeAlgs)
 
