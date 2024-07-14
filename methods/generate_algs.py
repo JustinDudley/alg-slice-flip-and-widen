@@ -30,7 +30,7 @@ def generate_algs(listTypeAlg:list[str], trailing_YorZ_Xs_dual):
             print("rotation_codes: ", alg_rotation_codes, "\n")
 
             
-            if indx == 0:           # this will be true only the very last iteration
+            if indx == 0:           # this will be true only on the very last iteration
                 one_round_of__final_strTypeAlgs = comp_Xpansion(add_YorZ__shifting_listTypeAlg, DNA_3_marker_cums)
                 from_single_SS__final_strTypeAlgs.extend(one_round_of__final_strTypeAlgs)
                 break
@@ -38,7 +38,6 @@ def generate_algs(listTypeAlg:list[str], trailing_YorZ_Xs_dual):
             # alg_turns_plus_YorZ_shifting will have its turns replaced one by one from the right. indx - 1 should always be ONE step ahead of this shift, so it should give an accurate turn
             # to avoid generating duplicates.  U Y is equivalent to Y U, so we're going to pass over U Y and only examine Y U 
             elif AXIS_FAMILY[add_YorZ__shifting_listTypeAlg[indx - 1]] != AXIS_FAMILY[trailing_YorZ_Xs[0]]:  
-                # do I need to initialize one_round previously if I'm going to reference it twice like this?
                 one_round_of__final_strTypeAlgs = comp_Xpansion(add_YorZ__shifting_listTypeAlg, DNA_3_marker_cums)
                 for alg in one_round_of__final_strTypeAlgs:
                     print(alg)

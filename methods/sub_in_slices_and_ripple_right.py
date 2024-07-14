@@ -17,7 +17,7 @@ def ripple_right_WCR_list(turn, WCR_list):
 def move_sticker_once(sticker, WCR):
 	return df_stickers_turned.at[sticker, WCR]
 
-def replace_Trailing_WCRs_with_up_to_TWO_equivalent_YorZ_notations(WCRs):
+def replace_Trailing_WCRs_with_either_ONE_or_TWO_equivalent_YorZ_notations(WCRs):
 	sticker = "Q"
 	for WCR in WCRs:
 		sticker = move_sticker_once(sticker, WCR)
@@ -52,6 +52,6 @@ def sub_in_slices_and_ripple_right(listTypeAlg, trailing_WCRs):
 
 
     # list[list[str]]
-    trailing_WCRs_dual = replace_Trailing_WCRs_with_up_to_TWO_equivalent_YorZ_notations(trailing_WCRs)
+    trailing_WCRs_dual = replace_Trailing_WCRs_with_either_ONE_or_TWO_equivalent_YorZ_notations(trailing_WCRs)
 
     return[listTypeAlg, trailing_WCRs_dual]
