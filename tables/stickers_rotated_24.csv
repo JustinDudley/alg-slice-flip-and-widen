@@ -1,10 +1,10 @@
 orig,Y0 X0,Y0 X,Y0 X2,Y0 X',Y X0,Y2 X0,Y' X0,Z X0,Z2 X0,Z' X0,Z X,Y' X',Y X',Z' X,Z' X',Y' X,Y X,Z X',Y' X2,Y X2,Z X2,Z' X2,Z2 X,Z2 X'
-white,white,orange,yellow,red,white,white,white,blue,yellow,green,blue,red,red,green,green,orange,orange,blue,yellow,yellow,blue,green,red,orange
-blue,blue,blue,blue,blue,red,green,orange,yellow,green,white,red,white,yellow,orange,red,yellow,white,orange,red,orange,white,yellow,green,green
-red,red,white,orange,yellow,green,orange,blue,red,red,red,white,blue,green,white,yellow,blue,green,yellow,blue,green,orange,orange,white,yellow
-yellow,yellow,red,white,orange,yellow,yellow,yellow,green,white,blue,green,orange,orange,blue,blue,red,red,green,white,white,green,blue,orange,red
-green,green,green,green,green,orange,blue,red,white,blue,yellow,orange,yellow,white,red,orange,white,yellow,red,orange,red,yellow,white,blue,blue
-orange,orange,yellow,red,white,blue,red,green,orange,orange,orange,yellow,green,blue,yellow,white,green,blue,white,green,blue,red,red,yellow,white
+wht,wht,ora,yel,red,wht,wht,wht,blu,yel,grn,blu,red,red,grn,grn,ora,ora,blu,yel,yel,blu,grn,red,ora
+grn,grn,grn,grn,grn,ora,blu,red,wht,blu,yel,ora,yel,wht,red,ora,wht,yel,red,ora,red,yel,wht,blu,blu
+red,red,wht,ora,yel,grn,ora,blu,red,red,red,wht,blu,grn,wht,yel,blu,grn,yel,blu,grn,ora,ora,wht,yel
+blu,blu,blu,blu,blu,red,grn,ora,yel,grn,wht,red,wht,yel,ora,red,yel,wht,ora,red,ora,wht,yel,grn,grn
+ora,ora,yel,red,wht,blu,red,grn,ora,ora,ora,yel,grn,blu,yel,wht,grn,blu,wht,grn,blu,red,red,yel,wht
+yel,yel,red,wht,ora,yel,yel,yel,grn,wht,blu,grn,ora,ora,blu,blu,red,red,grn,wht,wht,grn,blu,ora,red
 A,A,S,U,I,B,C,D,N,W,H,O,L,J,G,E,R,T,M,X,V,P,F,K,Q
 B,B,T,V,J,C,D,A,O,X,E,P,I,K,H,F,S,Q,N,U,W,M,G,L,R
 C,C,Q,W,K,D,A,B,P,U,F,M,J,L,E,G,T,R,O,V,X,N,H,I,S

@@ -1,10 +1,10 @@
 orig,I T-reflection,X T-reflection,X2 T-reflection,X' T-reflection,Y T-reflection,Y2 T-reflection,Y' T-reflection,Z T-reflection,Z2 T-reflection,Z' T-reflection,Z X T-reflection,Y' X' T-reflection,Y X' T-reflection,Z' X T-reflection,Z' X' T-reflection,Y' X T-reflection,Y X T-reflection,Z X' T-reflection,Y' X2 T-reflection,Y X2 T-reflection,Z X2 T-reflection,Z' X2 T-reflection,Z2 X T-reflection,Z2 X' T-reflection
-white,white,orange,yellow,red,white,white,white,green,yellow,blue,green,red,red,blue,blue,orange,orange,green,yellow,yellow,green,blue,red,orange
-blue,green,green,green,green,red,blue,orange,yellow,blue,white,red,white,yellow,orange,red,yellow,white,orange,red,orange,white,yellow,blue,blue
-red,red,white,orange,yellow,blue,orange,green,red,red,red,white,green,blue,white,yellow,green,blue,yellow,green,blue,orange,orange,white,yellow
-yellow,yellow,red,white,orange,yellow,yellow,yellow,blue,white,green,blue,orange,orange,green,green,red,red,blue,white,white,blue,green,orange,red
-green,blue,blue,blue,blue,orange,green,red,white,green,yellow,orange,yellow,white,red,orange,white,yellow,red,orange,red,yellow,white,green,green
-orange,orange,yellow,red,white,green,red,blue,orange,orange,orange,yellow,blue,green,yellow,white,blue,green,white,blue,green,red,red,yellow,white
+wht,wht,ora,yel,red,wht,wht,wht,grn,yel,blu,grn,red,red,blu,blu,ora,ora,grn,yel,yel,grn,blu,red,ora
+grn,blu,blu,blu,blu,ora,grn,red,wht,grn,yel,ora,yel,wht,red,ora,wht,yel,red,ora,red,yel,wht,grn,grn
+red,red,wht,ora,yel,blu,ora,grn,red,red,red,wht,grn,blu,wht,yel,grn,blu,yel,grn,blu,ora,ora,wht,yel
+blu,grn,grn,grn,grn,red,blu,ora,yel,blu,wht,red,wht,yel,ora,red,yel,wht,ora,red,ora,wht,yel,blu,blu
+ora,ora,yel,red,wht,grn,red,blu,ora,ora,ora,yel,blu,grn,yel,wht,blu,grn,wht,blu,grn,red,red,yel,wht
+yel,yel,red,wht,ora,yel,yel,yel,blu,wht,grn,blu,ora,ora,grn,grn,red,red,blu,wht,wht,blu,grn,ora,red
 A,B,T,V,J,A,D,C,E,X,O,H,K,I,P,N,Q,S,F,W,U,G,M,L,R
 B,A,S,U,I,D,C,B,H,W,N,G,J,L,O,M,T,R,E,V,X,F,P,K,Q
 C,D,R,X,L,C,B,A,G,V,M,F,I,K,N,P,S,Q,H,U,W,E,O,J,T

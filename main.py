@@ -53,9 +53,9 @@ for final_alg in from_single_SS__final_strTypeAlgs:
     all_final_strTypeAlgs.append(final_alg)
 
 
-# print("\nfinal_algs_ALL is:  ")
-# for final_alg in final_algs_ALL:
-#     print(final_alg)
+print("\nall_final_strTypeAlgs is:  ")
+for final_alg in all_final_strTypeAlgs:
+    print(final_alg)
 
 
 
