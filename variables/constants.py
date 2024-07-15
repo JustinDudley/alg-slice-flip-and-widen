@@ -163,6 +163,34 @@ AXIS_FAMILY = {
 }
 
 
+collapsify_dict = {
+	"Y D": "u",
+	"D Y": "u",
+	"Y' D'": "u'",
+	"D' Y'": "u'",
+	"Y2 D2": "u2",
+	"D2 Y2": "u2",
+	"Y' U": "d",
+	"U Y'": "d",
+	"Y U'": "d'",
+	"U' Y": "d'",
+	"Y2 U2": "d2",
+	"U2 Y2": "d2",
+	"Z B": "f",
+	"B Z": "f",
+	"Z' B'": "f'",
+	"B' Z'": "f'",
+	"Z2 B2": "f2",
+	"B2 Z2": "f2",
+	"Z' F": "b",
+	"F Z'": "b",
+	"Z F'": "b'",
+	"F' Z": "b'",
+	"Z2 F2": "b2",
+	"F2 Z2": "b2"
+}
+
+
 GROUP_DICT_HANDY_FOR_SEEING_STANDARD_NOTATION_BUT_DEPRECATED = {
     1: [["Y'", "X2"]],
     2: [["Y", "X2"]],

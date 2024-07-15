@@ -3,6 +3,7 @@ import copy
 
 from methods.comp_Xpansion import comp_Xpansion
 from methods.get_combos import get_combos
+from methods.add_collapsified_algs import add_collapsified_algs
 from methods.helper_methods import get_single_rotation_code
 from variables.constants import AXIS_FAMILY
 from variables.dataframes import df_Ripple_L
@@ -10,7 +11,7 @@ from variables.dataframes import df_Ripple_L
 
 def generate_algs(listTypeAlg:list[str], trailing_YorZ_Xs_dual):
 
-    from_single_SS__final_strTypeAlgs:list[str] = []
+    from_single_SS__rippled_and_expanded_strTypeAlgs:list[str] = []
     for trailing_YorZ_Xs in trailing_YorZ_Xs_dual:
 
         print("trailing_YorZ_Xs[0] is: ", trailing_YorZ_Xs[0])
@@ -32,7 +33,7 @@ def generate_algs(listTypeAlg:list[str], trailing_YorZ_Xs_dual):
             
             if indx == 0:           # this will be true only on the very last iteration
                 one_round_of__final_strTypeAlgs = comp_Xpansion(add_YorZ__shifting_listTypeAlg, DNA_3_marker_cums)
-                from_single_SS__final_strTypeAlgs.extend(one_round_of__final_strTypeAlgs)
+                from_single_SS__rippled_and_expanded_strTypeAlgs.extend(one_round_of__final_strTypeAlgs)
                 break
             
             # alg_turns_plus_YorZ_shifting will have its turns replaced one by one from the right. indx - 1 should always be ONE step ahead of this shift, so it should give an accurate turn
@@ -41,7 +42,7 @@ def generate_algs(listTypeAlg:list[str], trailing_YorZ_Xs_dual):
                 one_round_of__final_strTypeAlgs = comp_Xpansion(add_YorZ__shifting_listTypeAlg, DNA_3_marker_cums)
                 for alg in one_round_of__final_strTypeAlgs:
                     print(alg)
-                from_single_SS__final_strTypeAlgs.extend(one_round_of__final_strTypeAlgs)
+                from_single_SS__rippled_and_expanded_strTypeAlgs.extend(one_round_of__final_strTypeAlgs)
                 if trailing_YorZ_Xs[0] == "Y0" or trailing_YorZ_Xs[0] == "Z0":
                     break    # avoid creating duplicates. No need to ripple a zero-effect turn through and keep doing comp_Xpansion. By including the break HERE, a Y0 (or Z0) may ripple in a couple times, if the alg ends with U or U D.  I can live with that. There will still only be one Xpansion performed.  
 
@@ -52,6 +53,7 @@ def generate_algs(listTypeAlg:list[str], trailing_YorZ_Xs_dual):
             add_YorZ__shifting_listTypeAlg[indx] = df_Ripple_L.at[add_YorZ__shifting_listTypeAlg[indx - 1], "A%s-->%sB"%(trailing_YorZ_Xs[0], trailing_YorZ_Xs[0])]
             add_YorZ__shifting_listTypeAlg[indx - 1] = trailing_YorZ_Xs[0]
     
+    from_single_SS__final_strTypeAlgs = add_collapsified_algs(from_single_SS__rippled_and_expanded_strTypeAlgs)
             
     return from_single_SS__final_strTypeAlgs
         
