@@ -35,7 +35,7 @@ CODE = {
 
 
 # note the intentional white space after the second turn of the key (AND value), when there is no prime (')
-SLICE_COMP_CONDENSER_DICT = {
+SLICE_COMP_COMPOUNDIFIER_DICT = {
     "R L'": "RL'", 
     "L' R ": "RL' ", 
     "R' L ": "R'L ", 
@@ -56,7 +56,7 @@ SLICE_COMP_CONDENSER_DICT = {
     "B2 F2": "F2B2"
 }
 
-SLICE_COMPS = list(SLICE_COMP_CONDENSER_DICT.values())   # this is how you create a list from dictionary values
+SLICE_COMPS = list(SLICE_COMP_COMPOUNDIFIER_DICT.values())   # this is how you create a list from dictionary values
 
 
 

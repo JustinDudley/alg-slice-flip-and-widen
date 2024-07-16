@@ -1,6 +1,6 @@
 
 from variables.constants import GROUP_DICT, CODE
-from methods.helper_methods import condense_comp_slice_turns
+from methods.helper_methods import compoundify_comp_slice_turns
 from methods.sub_in_slices_and_ripple_right import sub_in_slices_and_ripple_right
 from methods.generate_algs import generate_algs
 from methods.find_pattern import find_pattern
@@ -34,7 +34,7 @@ print("new pattern is: ", find_pattern(strTypeAlg))  # New method returns a patt
 
 
 
-strTypeAlg = condense_comp_slice_turns(strTypeAlg)    # For instance:   U R2 UD' F B L' B2 R UD' B RL' U2 B2
+strTypeAlg = compoundify_comp_slice_turns(strTypeAlg)    # For instance:   U R2 UD' F B L' B2 R UD' B RL' U2 B2
 listTypeAlg = strTypeAlg.split()
 trailing_WCRs = GROUP_DICT[group_number]  # no need for dual CoRo schemes here 
 

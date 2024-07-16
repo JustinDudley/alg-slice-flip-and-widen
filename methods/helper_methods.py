@@ -1,10 +1,10 @@
 
-from variables.constants import SLICE_COMP_CONDENSER_DICT, CODE
+from variables.constants import SLICE_COMP_COMPOUNDIFIER_DICT, CODE
 
 
 # R L' -->  RL',  D U' --> U'D, etc.   This block condenses slice comps into a single turn, with no space in the middle
-def condense_comp_slice_turns(alg):
-    for key, value in SLICE_COMP_CONDENSER_DICT.items():
+def compoundify_comp_slice_turns(alg):
+    for key, value in SLICE_COMP_COMPOUNDIFIER_DICT.items():
         alg = alg.replace(key, value).rstrip()
     return alg
      
