@@ -163,7 +163,7 @@ AXIS_FAMILY = {
 }
 
 
-collapsify_dict = {
+MERGE_ZB_DICT = {
 	"Y D": "u",
 	"D Y": "u",
 	"Y' D'": "u'",
@@ -188,6 +188,95 @@ collapsify_dict = {
 	"F' Z": "b'",
 	"Z2 F2": "b2",
 	"F2 Z2": "b2"
+}
+
+
+REPLACEMENTS_DICT = {
+"2'": "2",
+"M ": "T' ",
+"M2": "T2",
+"M'": "T",
+"E ": "H' ",
+"E2": "H2",
+"E'": "H",
+"x": "X",
+"y": "Y",
+"z": "Z",
+"(": " ",
+")": " ",
+"[": " ",
+"]": " "
+}
+
+
+HEADER = {
+    "I": "I",
+    "X": "X",
+    "X2": "X2",
+    "X'": "X'",
+    "X0": "X0",
+    "Y": "Y",
+    "Y2": "Y2",
+    "Y'": "Y'",
+    "Y0": "Y0",
+    "Z": "Z",
+    "Z2": "Z2",
+    "Z'": "Z'",
+    "Z0": "Z0",
+    "R": "R",
+    "R2": "R2",
+    "R'": "R'",
+    "L": "L",
+    "L2": "L2",
+    "L'": "L'",
+    "T": "T",
+    "T2": "T2",
+    "T'": "T'",
+    "r": "r-lower",
+    "r'": "r'-lower",
+    "r2": "r2-lower",
+    "l": "l-lower",
+    "l'": "l'-lower",
+    "l2": "l2-lower",
+    "RL'": "RL'",
+    "R2L2": "R2L2",
+    "R'L": "R'L",
+    "U": "U",
+    "U2": "U2",
+    "U'": "U'",
+    "D": "D",
+    "D2": "D2",
+    "D'": "D'",
+    "H": "H",
+    "H2": "H2",
+    "H'": "H'",
+    "u": "u-lower",
+    "u'": "u'-lower",
+    "u2": "u2-lower",
+    "d": "d-lower",
+    "d'": "d'-lower",
+    "d2": "d2-lower",
+    "UD'": "UD'",
+    "U2D2": "U2D2",
+    "U'D": "U'D",
+    "F": "F",
+    "F2": "F2",
+    "F'": "F'",
+    "B": "B",
+    "B2": "B2",
+    "B'": "B'",
+    "S": "S",
+    "S2": "S2",
+    "S'": "S'",
+    "f": "f-lower",
+    "f'": "f'-lower",
+    "f2": "f2-lower",
+    "b": "b-lower",
+    "b'": "b'-lower",
+    "b2": "b2-lower",
+    "FB'": "FB'",
+    "F2B2": "F2B2",
+    "F'B": "F'B"
 }
 
 

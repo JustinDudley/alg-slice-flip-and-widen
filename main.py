@@ -3,6 +3,7 @@ from variables.constants import GROUP_DICT, CODE
 from methods.helper_methods import condense_comp_slice_turns
 from methods.sub_in_slices_and_ripple_right import sub_in_slices_and_ripple_right
 from methods.generate_algs import generate_algs
+from methods.find_pattern import find_pattern
 
 # naming convention:
 # 
@@ -23,7 +24,7 @@ strTypeAlg = "L D' F' R' D L B L' F' L D2 R' U' B D2 F' L"
 
 all_final_strTypeAlgs:list[str] = []
 
-
+print("new pattern is: ", find_pattern(strTypeAlg))  # New method returns a pattern for a strTypeAlg !!
 
 # read StickerSolve algs from .txt file, put into List 
 # First loop begins HERE:
@@ -53,9 +54,9 @@ for final_alg in from_single_SS__final_strTypeAlgs:
     all_final_strTypeAlgs.append(final_alg)
 
 
-print("\nall_final_strTypeAlgs is:  ")
-for final_alg in all_final_strTypeAlgs:
-    print(final_alg)
+# print("\nall_final_strTypeAlgs is:  ")
+# for final_alg in all_final_strTypeAlgs:
+#     print(final_alg)
 
 
 
