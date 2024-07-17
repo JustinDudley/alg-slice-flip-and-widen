@@ -1,5 +1,5 @@
 
-from variables.constants import GROUP_DICT, CODE
+from variables.constants import GROUP_DICT, CODE, GROUP_DIVINER
 from methods.helper_methods import compoundify_comp_slice_turns
 from methods.sub_in_slices_and_ripple_right import sub_in_slices_and_ripple_right
 from methods.generate_algs import generate_algs
@@ -17,20 +17,20 @@ from methods.find_pattern import find_pattern
 # NOTE:  it IS possible for an SS_alg to produce ZERO results. For instance:  group 2, "U' F' B2 D R L' U F' D' L' F' B R' B' R D2"
 
 
-group_number = 3   # Must choose a group before running program. (1-6)
-strTypeAlg = "L D' F' R' D L B L' F' L D2 R' U' B D2 F' L"
-# This seems to work.  "U2 L F B' U' R2 L B' U2 F U' D R' U2 L B'"    So let's try another one.
+strTypeAlg = "R L F' R' L' U R2 B2 U R' L' F' U2 R2 F' U2"
+pattern = find_pattern(strTypeAlg)
+group_number = GROUP_DIVINER[pattern[7]]  # pattern[7] gives the sticker at Corner_Location_B
 
 
-all_final_strTypeAlgs:list[str] = []
 
-print("new pattern is: ", find_pattern(strTypeAlg))  # New method returns a pattern for a strTypeAlg !!
 
 # read StickerSolve algs from .txt file, put into List 
 # First loop begins HERE:
 # for SticSolv_alg in SticSolv_algs:
 	# etc.
 
+
+all_final_strTypeAlgs:list[str] = []
 
 
 

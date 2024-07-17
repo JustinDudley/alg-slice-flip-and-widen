@@ -91,6 +91,24 @@ WHAT_BRINGS_Q_HERE = {
 
 
 
+# This dictionary is next-level janky
+# For groups 1-5, and group 6 edges, the sticker that ends up in location B gets there because the whole shell rotates
+# For group 6 corners, the stickers P,V & K arrive at location B due to swapping.
+# Remember:  StickerSolve algorithms DO NOT COME WITH WCRs.  So this calculation is NOT based on an unchanging shell.
+# It is based on a changing shell and unchanging centers!
+GROUP_DIVINER = {
+    "U": 1,
+    "W": 2,
+    "M": 3,
+    "G": 4,
+    "L": 5,
+    "R": 6,
+    "P": 6,
+    "V": 6,
+    "K": 6
+}
+
+
 GROUP_DICT = {
     1: ["X2", "Y"],
     2: ["X2", "Y'"],
