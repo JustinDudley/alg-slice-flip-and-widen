@@ -18,7 +18,9 @@ from methods.find_pattern import find_pattern
 
 
 strTypeAlg = "R L F' R' L' U R2 B2 U R' L' F' U2 R2 F' U2"
+# get the pattern JUST FOR THE FIRST alg in the list
 pattern = find_pattern(strTypeAlg)
+# get the group_number JUST FROM THE FIRST alg in the list
 group_number = GROUP_DIVINER[pattern[7]]  # pattern[7] gives the sticker at Corner_Location_B
 
 

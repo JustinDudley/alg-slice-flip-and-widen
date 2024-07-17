@@ -1,5 +1,5 @@
 
-def add_collapsified_algs(from_single_SS__rippled_and_expanded_strTypeAlgs):
+def add_YU_merged_algs(from_single_SS__rippled_and_expanded_strTypeAlgs):
 
     from_single_SS__final_strTypeAlgs = []
     for strTypeAlg in from_single_SS__rippled_and_expanded_strTypeAlgs:

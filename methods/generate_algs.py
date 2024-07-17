@@ -3,7 +3,7 @@ import copy
 
 from methods.comp_Xpansion import comp_Xpansion
 from methods.get_combos import get_combos
-from methods.add_collapsified_algs import add_collapsified_algs
+from methods.add_YU_merged_algs import add_YU_merged_algs
 from methods.helper_methods import get_single_rotation_code
 from variables.constants import AXIS_FAMILY
 from variables.dataframes import df_Ripple_L
@@ -53,7 +53,7 @@ def generate_algs(listTypeAlg:list[str], trailing_YorZ_Xs_dual):
             add_YorZ__shifting_listTypeAlg[indx] = df_Ripple_L.at[add_YorZ__shifting_listTypeAlg[indx - 1], "A%s-->%sB"%(trailing_YorZ_Xs[0], trailing_YorZ_Xs[0])]
             add_YorZ__shifting_listTypeAlg[indx - 1] = trailing_YorZ_Xs[0]
     
-    from_single_SS__final_strTypeAlgs = add_collapsified_algs(from_single_SS__rippled_and_expanded_strTypeAlgs)
+    from_single_SS__final_strTypeAlgs = add_YU_merged_algs(from_single_SS__rippled_and_expanded_strTypeAlgs)
             
     return from_single_SS__final_strTypeAlgs
         

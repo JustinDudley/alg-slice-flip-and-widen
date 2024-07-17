@@ -181,29 +181,29 @@ AXIS_FAMILY = {
 }
 
 
-MERGE_ZB_DICT = {
-	"Y D": "u",
-	"D Y": "u",
+YU_MERGE_DICT = {
+	"Y D ": "u ",
+	"D Y ": "u ",
 	"Y' D'": "u'",
 	"D' Y'": "u'",
 	"Y2 D2": "u2",
 	"D2 Y2": "u2",
-	"Y' U": "d",
+	"Y' U ": "d ",
 	"U Y'": "d",
 	"Y U'": "d'",
-	"U' Y": "d'",
+	"U' Y ": "d' ",
 	"Y2 U2": "d2",
 	"U2 Y2": "d2",
-	"Z B": "f",
-	"B Z": "f",
+	"Z B ": "f ",
+	"B Z ": "f ",
 	"Z' B'": "f'",
 	"B' Z'": "f'",
 	"Z2 B2": "f2",
 	"B2 Z2": "f2",
-	"Z' F": "b",
+	"Z' F ": "b ",
 	"F Z'": "b",
 	"Z F'": "b'",
-	"F' Z": "b'",
+	"F' Z ": "b' ",
 	"Z2 F2": "b2",
 	"F2 Z2": "b2"
 }
