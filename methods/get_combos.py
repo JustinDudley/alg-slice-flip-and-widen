@@ -40,9 +40,9 @@ def get_combos(alg_rotation_codes, trailing_YorZ_Xs):
             else: sum_of_rotation_number.append(0)
         DNA_1_sum_successes.append(sum_of_rotation_number)
 
-    print("\nDNA_1_sum_successes  (a.k.a.  Every possible   useful modification of comp_code_turns. Elements that sum correctly (mod 4) remain, and the rest are replaced by zeros):  \n")
-    print(DNA_1_sum_successes)
-    print("\nNumber of new algs to generate:  ", len(DNA_1_sum_successes), "\n")
+    print("\nDNA_1_sum_successes  (a.k.a.  Every possible   useful modification of comp_code_turns. Elements that sum correctly (mod 4) remain, and the rest are replaced by zeros):  ")
+    print("\n", DNA_1_sum_successes)
+    print("\nSo, the number of new algs to generate (and print to console below) is:  ", len(DNA_1_sum_successes), "\n")
 
 
     # create DNA_2

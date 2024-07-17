@@ -25,7 +25,6 @@ group_number = GROUP_DIVINER[pattern[7]]  # pattern[7] gives the sticker at Corn
 
 
 
-
 # read StickerSolve algs from .txt file, put into List 
 # First loop begins HERE:
 # for SticSolv_alg in SticSolv_algs:

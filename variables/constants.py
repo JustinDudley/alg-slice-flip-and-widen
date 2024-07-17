@@ -181,7 +181,7 @@ AXIS_FAMILY = {
 }
 
 
-YU_MERGE_DICT = {
+MERGE_YU_DICT = {
 	"Y D ": "u ",
 	"D Y ": "u ",
 	"Y' D'": "u'",

@@ -3,7 +3,7 @@ import copy
 
 from methods.comp_Xpansion import comp_Xpansion
 from methods.get_combos import get_combos
-from methods.add_YU_merged_algs import add_YU_merged_algs
+from methods.insert_merge_YU_algs import insert_merge_YU_algs
 from methods.helper_methods import get_single_rotation_code
 from variables.constants import AXIS_FAMILY
 from variables.dataframes import df_Ripple_L
@@ -25,10 +25,10 @@ def generate_algs(listTypeAlg:list[str], trailing_YorZ_Xs_dual):
         for indx in reversed(range(len(listTypeAlg) + 1)):
 
             alg_rotation_codes = copy.deepcopy(list(map(get_single_rotation_code, add_YorZ__shifting_listTypeAlg)))
-            print("Yo, inside generate_algs, rotation_codes is: ", alg_rotation_codes)
+            print("\n\n\n\n\n\n\nposition of the turn the YorZ is currently next to (not sure, right now, which side!): ", indx)
+            print("\nrotation_codes, specific to the turn the YorZ is next to: ", alg_rotation_codes)
             DNA_3_marker_cums = get_combos(alg_rotation_codes, trailing_YorZ_Xs)
-            print(indx, "\n -- ", " ".join(add_YorZ__shifting_listTypeAlg), " -- ", trailing_YorZ_Xs[1])
-            print("rotation_codes: ", alg_rotation_codes, "\n")
+            print("\nalg + WCR before iterating: ", " ".join(add_YorZ__shifting_listTypeAlg), " __ + __ ", trailing_YorZ_Xs[1], "\n")
 
             
             if indx == 0:           # this will be true only on the very last iteration
@@ -53,7 +53,7 @@ def generate_algs(listTypeAlg:list[str], trailing_YorZ_Xs_dual):
             add_YorZ__shifting_listTypeAlg[indx] = df_Ripple_L.at[add_YorZ__shifting_listTypeAlg[indx - 1], "A%s-->%sB"%(trailing_YorZ_Xs[0], trailing_YorZ_Xs[0])]
             add_YorZ__shifting_listTypeAlg[indx - 1] = trailing_YorZ_Xs[0]
     
-    from_single_SS__final_strTypeAlgs = add_YU_merged_algs(from_single_SS__rippled_and_expanded_strTypeAlgs)
+    from_single_SS__final_strTypeAlgs = insert_merge_YU_algs(from_single_SS__rippled_and_expanded_strTypeAlgs)
             
     return from_single_SS__final_strTypeAlgs
         
