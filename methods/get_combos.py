@@ -5,13 +5,12 @@ import math
 from variables.constants import CODE
 
 
-def get_combos(alg_rotation_codes, trailing_YorZ_Xs):
+def get_combos(alg_turn_codes, trailing_YorZ_Xs):
 
-    # trailing_X_rotation_num = df_rotation_codes_ELIMINATE_SOON.at[trailing_YorZ_Xs[1], FWD_ROTATION_CODE]
-    trailing_X_rotation_num = CODE[trailing_YorZ_Xs[1]]
+    trailing_X_rotation__target_num = CODE[trailing_YorZ_Xs[1]]
     positions_of_X_axis_turns = []
-    for i in range (0, len(alg_rotation_codes)):
-        if alg_rotation_codes[i] > 0:
+    for i in range (0, len(alg_turn_codes)):
+        if alg_turn_codes[i] > 0:
             positions_of_X_axis_turns.append(i)
 
     combos = []
@@ -24,8 +23,11 @@ def get_combos(alg_rotation_codes, trailing_YorZ_Xs):
     for combo in combos:
         sum = 0
         for p in combo:
-            sum = sum + alg_rotation_codes[p]
-        if math.fmod(sum,4) == trailing_X_rotation_num:
+            sum = sum + ((4 - alg_turn_codes[p]) % 4) #  !!!  Need COMPLEMENT of each turn code, thus the (4 - codes)%4. The rotation caused by the turn's complement IS the newly induced rotation of the cube, and the sum of those complements must equal the WCR's X-axis component
+        if math.fmod(sum,4) == trailing_X_rotation__target_num:
+            # print("combo is: ", combo)
+            # print("sum is: ", sum)
+            # print("trailing_X_rotation_num is: ", trailing_X_rotation__target_num)
             combos_of_positions_whose_comps_sum_correctly.append(combo)
 
 
@@ -34,9 +36,9 @@ def get_combos(alg_rotation_codes, trailing_YorZ_Xs):
     DNA_1_sum_successes = []
     for good_combo in combos_of_positions_whose_comps_sum_correctly:
         sum_of_rotation_number = []
-        for i in range (0, len(alg_rotation_codes)):
+        for i in range (0, len(alg_turn_codes)):
             if i in good_combo:
-                sum_of_rotation_number.append(alg_rotation_codes[i])
+                sum_of_rotation_number.append(alg_turn_codes[i])
             else: sum_of_rotation_number.append(0)
         DNA_1_sum_successes.append(sum_of_rotation_number)
 

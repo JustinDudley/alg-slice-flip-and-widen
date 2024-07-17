@@ -10,12 +10,9 @@ def compoundify_comp_slice_turns(alg):
      
 
 
-def get_single_rotation_code(turn):
-    # if turn in df_rotation_codes_ELIMINATE_SOON.index:
+def get_single_turn_code(turn):
     if turn in CODE:
-        # return int(df_rotation_codes_ELIMINATE_SOON.at[turn, FWD_ROTATION_CODE])
-        return CODE[turn]
-
+        return CODE[turn]   #  !!!   It is the rotation of the turns themselves, not of their complements, that determine how each subsequent turn in the rippling should be altered.
     else:
         return 0
 
