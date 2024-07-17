@@ -76,7 +76,10 @@ def generate_algs(listTypeAlg:list[str], trailing_YorZ_Xs_dual):
             add_YorZ__shifting_listTypeAlg[indx] = df_Ripple_L.at[add_YorZ__shifting_listTypeAlg[indx - 1], "A%s-->%sB"%(trailing_YorZ_Xs[0], trailing_YorZ_Xs[0])]
             add_YorZ__shifting_listTypeAlg[indx - 1] = trailing_YorZ_Xs[0]
     
+
+    # Why is this next line in the generate_algs() method?  It should be called from main.py as a separate thing. This is just confusing and too much here
     from_single_SS__final_strTypeAlgs = insert_merge_YU_algs(from_single_SS__rippled_and_expanded_strTypeAlgs)
+       
             
     return from_single_SS__final_strTypeAlgs
         

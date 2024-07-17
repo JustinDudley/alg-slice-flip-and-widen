@@ -12,13 +12,6 @@ def insert_merge_YU_algs(from_single_SS__rippled_and_expanded_strTypeAlgs):
                 strTypeAlg = strTypeAlg.strip()
                 from_single_SS__final_strTypeAlgs.append(strTypeAlg)
 
-                
-
-
-        # if "D' R'" in strTypeAlg:
-        #     strTypeAlg = strTypeAlg + "moo baa lalala"
-        # from_single_SS__final_strTypeAlgs.append(strTypeAlg)
-
 
 
     return from_single_SS__final_strTypeAlgs
