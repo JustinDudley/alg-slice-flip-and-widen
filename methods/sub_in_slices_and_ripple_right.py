@@ -27,6 +27,7 @@ def replace_Trailing_WCRs_with_either_ONE_or_TWO_equivalent_YorZ_notations(WCRs)
 
 
 def sub_in_slices_and_ripple_right(listTypeAlg, trailing_WCRs):
+    print("NOW INSIDE sub_in_slices_and_ripple_right")
     slice_opportunity_positions = []
     for i in range(len(SLICE_COMPS)):
         for j in range(len(listTypeAlg)):
@@ -34,7 +35,7 @@ def sub_in_slices_and_ripple_right(listTypeAlg, trailing_WCRs):
                 slice_opportunity_positions.append(j)
 
     slice_opportunity_positions = sorted(set(slice_opportunity_positions), reverse=True)  # Reversed so that pre-pending the WCRs works.
-    print("\nslice opportunity positions: ", slice_opportunity_positions)
+    print("\nslice opportunity positions, one list per SS_alg: ", slice_opportunity_positions)
     # What happens if slice_opportunity_positions is empty?  Do I need to account for this?
 
 

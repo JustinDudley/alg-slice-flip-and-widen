@@ -17,7 +17,7 @@ from methods.find_pattern import find_pattern
 # NOTE:  it IS possible for an SS_alg to produce ZERO results. For instance:  group 2, "U' F' B2 D R L' U F' D' L' F' B R' B' R D2"
 
 
-strTypeAlg = "R L F' R' L' U R2 B2 U R' L' F' U2 R2 F' U2"
+strTypeAlg = "U2 F B2 R2 D2 B' U' D' R D2 F2 R' L2 U' D' B' R L"
 # get the pattern JUST FOR THE FIRST alg in the list
 pattern = find_pattern(strTypeAlg)
 # get the group_number JUST FROM THE FIRST alg in the list
@@ -66,4 +66,6 @@ for final_alg in from_single_SS__final_strTypeAlgs:
 #########
 import datetime
 x = datetime.datetime.now()
-print("ZZ_Results_" + x.strftime("%a") + "_" + x.strftime("%f"))
+# print("ZZ_Results_" + x.strftime("%a") + "_" + x.strftime("%f"))
+
+print("program has completed Yo")
