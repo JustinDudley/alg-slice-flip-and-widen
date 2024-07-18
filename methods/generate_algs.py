@@ -12,7 +12,7 @@ from variables.dataframes import df_Ripple_L
 def generate_algs(listTypeAlg:list[str], trailing_YorZ_Xs_dual):
     print("NOW INSIDE generate_algs()")
 
-    from_single_SS__rippled_and_expanded_strTypeAlgs:list[str] = []
+    ALL_ripple_rounds_from_single_SS__strTypeAlgs:list[str] = []
 
     print("trailing_YorZ_Xs_dual is: ", trailing_YorZ_Xs_dual)
     for trailing_YorZ_Xs in trailing_YorZ_Xs_dual:
@@ -41,12 +41,15 @@ def generate_algs(listTypeAlg:list[str], trailing_YorZ_Xs_dual):
 
             if indx == 0:           # this will be true only on the very last iteration
                 print("indx is now 0 (zero), ")
-                one_round_of__final_strTypeAlgs = comp_Xpansion(add_YorZ__shifting_listTypeAlg, DNA_3_marker_cums)
-                from_single_SS__rippled_and_expanded_strTypeAlgs.extend(one_round_of__final_strTypeAlgs)
+                one_ripple_round_of__final_strTypeAlgs = comp_Xpansion(add_YorZ__shifting_listTypeAlg, DNA_3_marker_cums)
+                
+                # the next line is TEMPORARY. Just for testing:
+                one_ripple_round_of__final_strTypeAlgs = ["Going in reverse order, these are the algs for index:", " " + str(indx)] + one_ripple_round_of__final_strTypeAlgs
+                ALL_ripple_rounds_from_single_SS__strTypeAlgs.extend(one_ripple_round_of__final_strTypeAlgs)
                 
                 # PRINT ONE ROUND OF ALGS
                 print("Current round of algs:")
-                for alg in one_round_of__final_strTypeAlgs:
+                for alg in one_ripple_round_of__final_strTypeAlgs:
                     print(alg)
                     # WHY DOES IT APPEAR THAT SOME ROUNDS AREN'T PRINTING TO CONSOLE???
                 
@@ -55,12 +58,15 @@ def generate_algs(listTypeAlg:list[str], trailing_YorZ_Xs_dual):
             # alg_turns_plus_YorZ_shifting will have its turns replaced one by one from the right. indx - 1 should always be ONE step ahead of this shift, so it should give an accurate turn
             # to avoid generating duplicates.  U Y is equivalent to Y U, so we're going to pass over U Y and only examine Y U 
             elif AXIS_FAMILY[add_YorZ__shifting_listTypeAlg[indx - 1]] != AXIS_FAMILY[trailing_YorZ_Xs[0]]:  
-                one_round_of__final_strTypeAlgs = comp_Xpansion(add_YorZ__shifting_listTypeAlg, DNA_3_marker_cums)
-                from_single_SS__rippled_and_expanded_strTypeAlgs.extend(one_round_of__final_strTypeAlgs)
+                one_ripple_round_of__final_strTypeAlgs = comp_Xpansion(add_YorZ__shifting_listTypeAlg, DNA_3_marker_cums)
+                
+                # the next line is TEMPORARY. Just for testing:
+                one_ripple_round_of__final_strTypeAlgs = ["\nGoing in reverse order, these are the algs for index:", " " + str(indx)] + one_ripple_round_of__final_strTypeAlgs
+                ALL_ripple_rounds_from_single_SS__strTypeAlgs.extend(one_ripple_round_of__final_strTypeAlgs)
                 
                 # PRINT ONE ROUND OF ALGS
                 print("Current round of algs:")
-                for alg in one_round_of__final_strTypeAlgs:
+                for alg in one_ripple_round_of__final_strTypeAlgs:
                     print(alg)
                     # WHY DOES IT APPEAR THAT SOME ROUNDS AREN'T PRINTING TO CONSOLE???
 
@@ -78,7 +84,7 @@ def generate_algs(listTypeAlg:list[str], trailing_YorZ_Xs_dual):
     
 
     # Why is this next line in the generate_algs() method?  It should be called from main.py as a separate thing. This is just confusing and too much here
-    from_single_SS__final_strTypeAlgs = insert_merge_YU_algs(from_single_SS__rippled_and_expanded_strTypeAlgs)
+    from_single_SS__final_strTypeAlgs = insert_merge_YU_algs(ALL_ripple_rounds_from_single_SS__strTypeAlgs)
        
             
     return from_single_SS__final_strTypeAlgs
