@@ -1,4 +1,6 @@
 
+import datetime
+
 from variables.constants import GROUP_DICT, CODE, GROUP_DIVINER
 from methods.helper_methods import compoundify_comp_slice_turns
 from methods.sub_in_slices_and_ripple_right import sub_in_slices_and_ripple_right
@@ -61,11 +63,11 @@ for final_alg in from_single_SS__final_strTypeAlgs:
 
 
 
-#########
-#########
-#########
-import datetime
-x = datetime.datetime.now()
-# print("ZZ_Results_" + x.strftime("%a") + "_" + x.strftime("%f"))
 
-print("program has completed Yo")
+x = datetime.datetime.now()
+filename = '/Users/justindudley/dev/cube/Alg_Slice_And_Widen_daddy/alg-slice-and-widen/OUTPUT_files/output_%s.txt'%(x.strftime("%a") + "_" + x.strftime("%f"))
+with open(filename, 'w') as output_file:
+	output_file.write(f"** ALL ALGS:\n\n")
+	for alg in all_final_strTypeAlgs:
+		output_file.write(f"{alg}\n")
+
