@@ -13,13 +13,18 @@ def generate_algs(listTypeAlg:list[str], trailing_YorZ_Xs_dual):
     print("NOW INSIDE generate_algs()")
 
     ALL_ripple_rounds_from_single_SS__strTypeAlgs:list[str] = []
+    # the next line is TEMPORARY. Just for testing:
+    ALL_ripple_rounds_from_single_SS__strTypeAlgs.append("\nDUAL list:  %s"%(trailing_YorZ_Xs_dual))
 
     print("trailing_YorZ_Xs_dual is: ", trailing_YorZ_Xs_dual)
     for trailing_YorZ_Xs in trailing_YorZ_Xs_dual:
     # for trailing_YorZ_Xs in [trailing_YorZ_Xs_dual[0]]:
 
         print("NOW INSIDE for_trailing_YorZ of potentially TWO trailing_YorZs.  Trailing_YorZ_Xs[0], a.k.a. the YorZ component, is: ", trailing_YorZ_Xs[0])
-
+       
+        # the next line is TEMPORARY. Just for testing:
+        ALL_ripple_rounds_from_single_SS__strTypeAlgs.append("\nactive member of DUAL list:  %s"%(trailing_YorZ_Xs))
+               
 
         add_YorZ__shifting_listTypeAlg = copy.deepcopy(listTypeAlg)
         add_YorZ__shifting_listTypeAlg.append(trailing_YorZ_Xs[0])
@@ -35,13 +40,14 @@ def generate_algs(listTypeAlg:list[str], trailing_YorZ_Xs_dual):
             print("\nalg + WCR before iterating: ", " ".join(add_YorZ__shifting_listTypeAlg), " __ + __ ", trailing_YorZ_Xs[1], "\n")
            
             #temp solution for when console gets too full:
-            # if indx == 13: break
+            # if indx == 11: break
               
             
 
             if indx == 0:           # this will be true only on the very last iteration
                 print("indx is now 0 (zero), ")
                 one_ripple_round_of__final_strTypeAlgs = comp_Xpansion(add_YorZ__shifting_listTypeAlg, DNA_3_marker_cums)
+                one_ripple_round_of__final_strTypeAlgs = insert_merge_YU_algs(one_ripple_round_of__final_strTypeAlgs)
                 
                 # the next line is TEMPORARY. Just for testing:
                 one_ripple_round_of__final_strTypeAlgs = ["Going in reverse order, these are the algs for index:", " " + str(indx)] + one_ripple_round_of__final_strTypeAlgs
@@ -51,14 +57,16 @@ def generate_algs(listTypeAlg:list[str], trailing_YorZ_Xs_dual):
                 print("Current round of algs:")
                 for alg in one_ripple_round_of__final_strTypeAlgs:
                     print(alg)
-                    # WHY DOES IT APPEAR THAT SOME ROUNDS AREN'T PRINTING TO CONSOLE???
                 
                 break
             
+
             # alg_turns_plus_YorZ_shifting will have its turns replaced one by one from the right. indx - 1 should always be ONE step ahead of this shift, so it should give an accurate turn
             # to avoid generating duplicates.  U Y is equivalent to Y U, so we're going to pass over U Y and only examine Y U 
             elif AXIS_FAMILY[add_YorZ__shifting_listTypeAlg[indx - 1]] != AXIS_FAMILY[trailing_YorZ_Xs[0]]:  
                 one_ripple_round_of__final_strTypeAlgs = comp_Xpansion(add_YorZ__shifting_listTypeAlg, DNA_3_marker_cums)
+                one_ripple_round_of__final_strTypeAlgs = insert_merge_YU_algs(one_ripple_round_of__final_strTypeAlgs)
+
                 
                 # the next line is TEMPORARY. Just for testing:
                 one_ripple_round_of__final_strTypeAlgs = ["\nGoing in reverse order, these are the algs for index:", " " + str(indx)] + one_ripple_round_of__final_strTypeAlgs
@@ -68,7 +76,6 @@ def generate_algs(listTypeAlg:list[str], trailing_YorZ_Xs_dual):
                 print("Current round of algs:")
                 for alg in one_ripple_round_of__final_strTypeAlgs:
                     print(alg)
-                    # WHY DOES IT APPEAR THAT SOME ROUNDS AREN'T PRINTING TO CONSOLE???
 
 
                 if trailing_YorZ_Xs[0] == "Y0" or trailing_YorZ_Xs[0] == "Z0":
@@ -82,11 +89,8 @@ def generate_algs(listTypeAlg:list[str], trailing_YorZ_Xs_dual):
             add_YorZ__shifting_listTypeAlg[indx] = df_Ripple_L.at[add_YorZ__shifting_listTypeAlg[indx - 1], "A%s-->%sB"%(trailing_YorZ_Xs[0], trailing_YorZ_Xs[0])]
             add_YorZ__shifting_listTypeAlg[indx - 1] = trailing_YorZ_Xs[0]
     
-
-    # Why is this next line in the generate_algs() method?  It should be called from main.py as a separate thing. This is just confusing and too much here
-    from_single_SS__final_strTypeAlgs = insert_merge_YU_algs(ALL_ripple_rounds_from_single_SS__strTypeAlgs)
        
             
-    return from_single_SS__final_strTypeAlgs
+    return ALL_ripple_rounds_from_single_SS__strTypeAlgs
         
 

@@ -65,7 +65,7 @@ for final_alg in from_single_SS__final_strTypeAlgs:
 
 
 x = datetime.datetime.now()
-filename = '/Users/justindudley/dev/cube/Alg_Slice_And_Widen_daddy/alg-slice-and-widen/OUTPUT_files/output_%s.txt'%(x.strftime("%a") + "_" + x.strftime("%f"))
+filename = '/Users/justindudley/dev/cube/Alg_Slice_And_Widen_daddy/alg-slice-and-widen/OUTPUT_files/output_%s.txt'%(x.strftime("%a") + "_" + x.strftime("%I") + ":" + x.strftime("%M") + ":" + x.strftime("%S") + "_" + x.strftime("%f"))
 with open(filename, 'w') as output_file:
 	output_file.write(f"** ALL ALGS:\n\n")
 	output_file.write(f"alg after slice insertion is:  {" ".join(listTypeAlg)}\n")

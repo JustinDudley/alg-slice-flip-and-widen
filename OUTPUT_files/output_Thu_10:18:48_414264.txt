@@ -2,6 +2,10 @@
 
 alg after slice insertion is:  U2 F B2 R2 D2 B' U' D' R D2 F2 R' L2 U' D' B' R L
 
+DUAL list:  [['Y2', 'X'], ['Z2', "X'"]]
+
+active member of DUAL list:  ['Y2', 'X']
+
 Going in reverse order, these are the algs for index:
  18
 U2 F B2 R2 D2 B' U' D' R D2 F2 l' L2 B' F' D' R L Z2
@@ -276,6 +280,8 @@ Y2 U2 B F2 r2 U2 B' D' U' r B2 U2 r' l2 U' D' F' r R
 d2 B F2 r2 U2 B' D' U' r B2 U2 r' l2 U' D' F' r R
 Y2 U2 B F2 r2 U2 B' D' U' r B2 U2 L' l2 B' F' U' r l
 d2 B F2 r2 U2 B' D' U' r B2 U2 L' l2 B' F' U' r l
+
+active member of DUAL list:  ['Z2', "X'"]
 
 Going in reverse order, these are the algs for index:
  18
