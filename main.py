@@ -54,9 +54,6 @@ listTypeAlg:list[str] = motley_list[0]
 trailing_YorZ_Xs_dual:list[list[str]] = motley_list[1]
 
 
-# I haven't yet chanced upon an alg that yielded a dual WCR, so I should keep testing to make sure that works okay
-
-
 
 from_single_SS__final_strTypeAlgs = generate_algs(listTypeAlg, trailing_YorZ_Xs_dual)
 for final_alg in from_single_SS__final_strTypeAlgs:

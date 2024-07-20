@@ -6,8 +6,10 @@ from variables.constants import SLICE_COMP_COMPOUNDIFIER_DICT, CODE
 def compoundify_comp_slice_turns(alg):
     for key, value in SLICE_COMP_COMPOUNDIFIER_DICT.items():
         alg = alg.replace(key, value).rstrip()
+    
     return alg
      
+
 
 
 def get_single_turn_code(turn):
@@ -15,7 +17,6 @@ def get_single_turn_code(turn):
         return CODE[turn]   #  !!!   It is the rotation of the turns themselves, not of their complements, that determine how each subsequent turn in the rippling should be altered.
     else:
         return 0
-
 
 
 

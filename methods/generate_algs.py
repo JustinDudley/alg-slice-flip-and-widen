@@ -14,13 +14,12 @@ def generate_algs(listTypeAlg:list[str], trailing_YorZ_Xs_dual):
 
     ALL_ripple_rounds_from_single_SS__strTypeAlgs:list[str] = []
     for trailing_YorZ_Xs in trailing_YorZ_Xs_dual:
-
         ALL_ripple_rounds_from_single_SS__strTypeAlgs = TESTING_1(ALL_ripple_rounds_from_single_SS__strTypeAlgs, trailing_YorZ_Xs_dual, trailing_YorZ_Xs)
         add_YorZ__shifting_listTypeAlg = copy.deepcopy(listTypeAlg)
         add_YorZ__shifting_listTypeAlg.append(trailing_YorZ_Xs[0])
 
-        for indx in reversed(range(len(listTypeAlg) + 1)):   #   +1  because alg_turns_plus_YorZ_shifting has ONE MORE TURN then alg_turns: The YorZ component (eg. Y',  Z2...).  But I don't want to iterate over a shifting list.
 
+        for indx in reversed(range(len(listTypeAlg) + 1)):   #   +1  because alg_turns_plus_YorZ_shifting has ONE MORE TURN then alg_turns: The YorZ component (eg. Y',  Z2...).  But I don't want to iterate over a shifting list.
             # alg_turns_plus_YorZ_shifting will have its turns replaced one by one from the right. indx - 1 should always be ONE step ahead of this shift, so it should give an accurate turn
             # to avoid generating duplicates.  U Y is equivalent to Y U, so we're going to pass over U Y and only examine Y U 
             if indx == 0 or AXIS_FAMILY[add_YorZ__shifting_listTypeAlg[indx - 1]] != AXIS_FAMILY[trailing_YorZ_Xs[0]]:
