@@ -5,7 +5,7 @@ import math
 from variables.constants import CODE
 
 
-def get_combos(alg_turn_codes, trailing_YorZ_Xs):
+def itertools_get_combos(alg_turn_codes, trailing_YorZ_Xs):
 
     # comp of a turn_code === turn_code of a complementary turn.  The rotation caused by the turn's complement IS the newly induced rotation of the cube, and the sum of those newly induced rotations must equal, mod 4, the code of the WCR's X-axis component
     alg_comp_turn_codes = list(map(lambda x: (4-x)%4, alg_turn_codes))

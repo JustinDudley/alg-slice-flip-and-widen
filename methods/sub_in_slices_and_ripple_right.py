@@ -45,6 +45,7 @@ def sub_in_slices_and_ripple_right(listTypeAlg, trailing_WCRs):
         for position in slice_opportunity_positions:
             WCR_to_ripple_right = df_turn_attributes.at[listTypeAlg[position], ROTATION_DIRECTION]
             listTypeAlg[position] = df_turn_attributes.at[listTypeAlg[position], COMPLEMENT]  # sub in the complement (a slice)
+            
             # for i, alg_turn in enumerate(listTypeAlg):  ## changed code to below, on 7/13
             for i in range(len(listTypeAlg)):
                 if i > position:

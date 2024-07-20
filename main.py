@@ -16,10 +16,16 @@ from methods.find_pattern import find_pattern
 
 
 
+# TO-DO:  See line 39, sub_in_slices_and_ripple_right:
+# What happens if slice_opportunity_positions is empty?  Do I need to account for this?
+
+
+
+
 # NOTE:  it IS possible for an SS_alg to produce ZERO results. For instance:  group 2, "U' F' B2 D R L' U F' D' L' F' B R' B' R D2"
 
 
-strTypeAlg = "U2 F B2 R2 D2 B' U' D' R D2 F2 R' L2 U' D' B' R L"
+strTypeAlg = "F2 U' B' L' F D' F U' R2 U R' U' R2 D2 R' F L'"
 # get the pattern JUST FOR THE FIRST alg in the list
 pattern = find_pattern(strTypeAlg)
 # get the group_number JUST FROM THE FIRST alg in the list
@@ -65,7 +71,7 @@ for final_alg in from_single_SS__final_strTypeAlgs:
 
 
 x = datetime.datetime.now()
-filename = '/Users/justindudley/dev/cube/Alg_Slice_And_Widen_daddy/alg-slice-and-widen/OUTPUT_files/output_%s.txt'%(x.strftime("%a") + "_" + x.strftime("%I") + ":" + x.strftime("%M") + ":" + x.strftime("%S") + "_" + x.strftime("%f"))
+filename = '/Users/justindudley/dev/cube/Alg_Slice_And_Widen_daddy/alg-slice-and-widen/OUTPUT_files/output_%s.txt'%(x.strftime("%a") + "_" + x.strftime("%I") + ":" + x.strftime("%M") + ":" + x.strftime("%S"))
 with open(filename, 'w') as output_file:
 	output_file.write(f"** ALL ALGS:\n\n")
 	output_file.write(f"alg after slice insertion is:  {" ".join(listTypeAlg)}\n")
