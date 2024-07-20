@@ -1,4 +1,4 @@
-orig,inverse,complement,rotation_direction,axis_family
+orig,inverse,complement,rotation_vector,axis_family
 R,R',l,X,X
 r,r',L,X,X
 T,T',R'L,X,X

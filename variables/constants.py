@@ -3,7 +3,7 @@
 
 
 
-ROTATION_DIRECTION = "rotation_direction"
+ROTATION_VECTOR = "rotation_vector"
 COMPLEMENT = "complement"
 
 

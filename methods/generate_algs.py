@@ -19,9 +19,9 @@ def generate_algs(listTypeAlg:list[str], trailing_YorZ_Xs_dual):
         add_YorZ__shifting_listTypeAlg.append(trailing_YorZ_Xs[0])
 
 
-        for indx in reversed(range(len(listTypeAlg) + 1)):   #   +1  because alg_turns_plus_YorZ_shifting has ONE MORE TURN then alg_turns: The YorZ component (eg. Y',  Z2...).  But I don't want to iterate over a shifting list.
+        for indx in reversed(range(len(listTypeAlg) + 1)):   #   +1 because of the extra YorZ item. Don't want to use add_YorZ__shifting_listTypeAlg for this because it is changing.
             # alg_turns_plus_YorZ_shifting will have its turns replaced one by one from the right. indx - 1 should always be ONE step ahead of this shift, so it should give an accurate turn
-            # to avoid generating duplicates.  U Y is equivalent to Y U, so we're going to pass over U Y and only examine Y U 
+            # to avoid generating duplicates.  U Y is functionally equivalent to Y U, so we're going to pass over U Y and only examine Y U 
             if indx == 0 or AXIS_FAMILY[add_YorZ__shifting_listTypeAlg[indx - 1]] != AXIS_FAMILY[trailing_YorZ_Xs[0]]:
                 alg_turn_codes = copy.deepcopy(list(map(get_single_turn_code, add_YorZ__shifting_listTypeAlg)))
                 DNA_3_marker_cums = itertools_get_combos(alg_turn_codes, trailing_YorZ_Xs)

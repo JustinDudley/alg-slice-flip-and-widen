@@ -25,7 +25,7 @@ from methods.find_pattern import find_pattern
 # NOTE:  it IS possible for an SS_alg to produce ZERO results. For instance:  group 2, "U' F' B2 D R L' U F' D' L' F' B R' B' R D2"
 
 
-strTypeAlg = "F2 U' B' L' F D' F U' R2 U R' U' R2 D2 R' F L'"
+strTypeAlg = "R U' D B' D2 F R L' U' F2 U2 R L' B2"
 # get the pattern JUST FOR THE FIRST alg in the list
 pattern = find_pattern(strTypeAlg)
 # get the group_number JUST FROM THE FIRST alg in the list

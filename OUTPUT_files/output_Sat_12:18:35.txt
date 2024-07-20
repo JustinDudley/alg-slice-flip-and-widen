@@ -1,0 +1,27 @@
+** ALL ALGS:
+
+alg after slice insertion is:  R H R' D2 L S' L' D2 L2 S' L2
+
+DUAL list:  [['Y0', 'X0']]
+
+active member of DUAL list:  ['Y0', 'X0']
+
+Note that the YorZ component is a Y0 or Z0 !!!
+
+Going in reverse order, these are the algs for index:
+ 11
+l S l' D2 L S' L' D2 L2 S' L2 Y0
+l S R' B2 r S' L' D2 L2 S' L2 Y0
+R H l' F2 L H' r' D2 L2 S' L2 Y0
+R H R' D2 r H' r' D2 L2 S' L2 Y0
+R H R' D2 L S' L' D2 r2 S r2 Y0
+l S R' B2 L H r' U2 r2 S' L2 Y0
+l S R' B2 L H r' U2 L2 S r2 Y0
+R H l' F2 r S L' U2 r2 S' L2 Y0
+R H l' F2 r S L' U2 L2 S r2 Y0
+l S l' D2 r H' r' D2 L2 S' L2 Y0
+l S l' D2 L S' L' D2 r2 S r2 Y0
+l S R' B2 r S' L' D2 r2 S r2 Y0
+R H l' F2 L H' r' D2 r2 S r2 Y0
+R H R' D2 r H' r' D2 r2 S r2 Y0
+l S l' D2 r H' r' D2 r2 S r2 Y0

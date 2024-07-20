@@ -1,5 +1,5 @@
 
-from variables.constants import WHAT_BRINGS_Q_HERE, SLICE_COMPS, ROTATION_DIRECTION, COMPLEMENT
+from variables.constants import WHAT_BRINGS_Q_HERE, SLICE_COMPS, ROTATION_VECTOR, COMPLEMENT
 from variables.dataframes import df_Ripple_R, df_stickers_turned, df_turn_attributes
 
 
@@ -43,7 +43,7 @@ def sub_in_slices_and_ripple_right(listTypeAlg, trailing_WCRs):
     # Do I even need this IF statement??
     if slice_opportunity_positions:  # returns True if a Python list is non-empty
         for position in slice_opportunity_positions:
-            WCR_to_ripple_right = df_turn_attributes.at[listTypeAlg[position], ROTATION_DIRECTION]
+            WCR_to_ripple_right = df_turn_attributes.at[listTypeAlg[position], ROTATION_VECTOR]
             listTypeAlg[position] = df_turn_attributes.at[listTypeAlg[position], COMPLEMENT]  # sub in the complement (a slice)
             
             # for i, alg_turn in enumerate(listTypeAlg):  ## changed code to below, on 7/13
