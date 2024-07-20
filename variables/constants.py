@@ -61,7 +61,7 @@ SLICE_COMPS = list(SLICE_COMP_COMPOUNDIFIER_DICT.values())   # this is how you c
 
 
 # each key's value is the cube rotation that moves the sticker Q to the key
-# the keys are in Alg--YorZ--X format (without the Alg)
+# the values are in Alg--YorZ--X format (without the Alg)
 WHAT_BRINGS_Q_HERE = {
     "A": [["Y2", "X"], ["Z2", "X'"]], 
     "B": [["Z", "X'"]], 
@@ -92,7 +92,7 @@ WHAT_BRINGS_Q_HERE = {
 
 
 # This dictionary is next-level janky
-# For groups 1-5, and group 6 edges, the sticker that ends up in location B gets there because the whole shell rotates
+# For groups 1-5 corners and edges, and group 6 edges, the sticker that ends up in location B gets there because the whole shell rotates
 # For group 6 corners, the stickers P,V & K arrive at location B due to swapping.
 # Remember:  StickerSolve algorithms DO NOT COME WITH WCRs.  So this calculation is NOT based on an unchanging shell.
 # It is based on a changing shell and unchanging centers!
@@ -298,7 +298,7 @@ HEADER = {
 }
 
 
-GROUP_DICT_HANDY_FOR_SEEING_STANDARD_NOTATION_BUT_DEPRECATED = {
+GROUP_DICT_HANDY_FOR_SEEING_YorZ_NOTATION_BUT_DEPRECATED = {
     1: [["Y'", "X2"]],
     2: [["Y", "X2"]],
     3: [["Z", "X2"]],

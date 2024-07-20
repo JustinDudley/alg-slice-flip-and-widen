@@ -30,8 +30,8 @@ def itertools_get_combos(alg_turn_codes, trailing_YorZ_Xs):
     combos_of_positions_whose_comps_sum_correctly:list[list[int]] = []
     for combo in combos:
         sum = 0
-        for p in combo:
-            sum = sum + alg_comp_turn_codes[p]   # Summing the COMPLEMENTS of different combinations of R, L turns
+        for position in combo:
+            sum = sum + alg_comp_turn_codes[position]   # Summing the COMPLEMENTS of different combinations of R, L turns
         if math.fmod(sum,4) == trailing_X_rotation__target_num:
             combos_of_positions_whose_comps_sum_correctly.append(combo)
 
