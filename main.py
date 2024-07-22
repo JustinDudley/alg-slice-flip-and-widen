@@ -16,9 +16,6 @@ from methods.find_pattern import find_pattern
 
 
 
-# TO-DO:  See line 39, sub_in_slices_and_ripple_right:
-# What happens if slice_opportunity_positions is empty?  Do I need to account for this?
-
 
 
 

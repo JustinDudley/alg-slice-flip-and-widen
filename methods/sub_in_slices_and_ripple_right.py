@@ -35,8 +35,7 @@ def sub_in_slices_and_ripple_right(listTypeAlg, trailing_WCRs):
                 slice_opportunity_positions.append(j)
 
    
-   
-    # Do I even need this IF statement??
+
     if slice_opportunity_positions:  # returns True if a Python list is non-empty
         
         slice_opportunity_positions = sorted(set(slice_opportunity_positions), reverse=True)  # Reversed so that pre-pending the WCRs works.
