@@ -7,4 +7,8 @@ R2 D2 F B' R L2 F B' D' L2 U R L' B'
   -  So this SS_alg only yields one final alg
 
 
+R U' D B' D2 F R L' U' F2 U2 R L' B2
+   -  After slice sub, this is a Y0. Single round of itertools, yields appox. 10 solutions
+
+
 

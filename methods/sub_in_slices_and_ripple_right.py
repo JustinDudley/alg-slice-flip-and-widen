@@ -34,14 +34,13 @@ def sub_in_slices_and_ripple_right(listTypeAlg, trailing_WCRs):
             if SLICE_COMPS[i] == listTypeAlg[j]:
                 slice_opportunity_positions.append(j)
 
-    slice_opportunity_positions = sorted(set(slice_opportunity_positions), reverse=True)  # Reversed so that pre-pending the WCRs works.
-    print("\nslice opportunity positions, one list per SS_alg: ", slice_opportunity_positions)
-    # What happens if slice_opportunity_positions is empty?  Do I need to account for this?
-
-
-
+   
+   
     # Do I even need this IF statement??
     if slice_opportunity_positions:  # returns True if a Python list is non-empty
+        
+        slice_opportunity_positions = sorted(set(slice_opportunity_positions), reverse=True)  # Reversed so that pre-pending the WCRs works.
+        print("\nslice opportunity positions, one list per SS_alg: ", slice_opportunity_positions)
         for position in slice_opportunity_positions:
             WCR_to_ripple_right = df_turn_attributes.at[listTypeAlg[position], ROTATION_VECTOR]
             listTypeAlg[position] = df_turn_attributes.at[listTypeAlg[position], COMPLEMENT]  # sub in the complement (a slice)
