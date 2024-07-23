@@ -1,0 +1,105 @@
+LIBRARY OF 13 OR SO NOTABLE TEST ALGS
+
+
+
+- check a corners alg that has a slice. YES
+check algs that have 0, 1, 2 and 3 slices. YES
+check the X0 case.  YES
+check 2 algs with U D, F B2 type duos to make sure YorZ ripples through them correctly and doesn't create functionally identical duplicates.  YES
+- check an alg that has zero results. YES
+- need  all 4 dual examples.  ONLY FOUND 2
+- check an X and an X' for proper iteration. Basically just need to run them through VAlidation project. YES
+
+
+
+R2 D2 F B' R L2 F B' D' L2 U R L' B'
+  -  Y0 X0 
+  -  So this SS_alg only yields one final alg
+  -  CHECK FOR COMPLETENESS:  itertools found everything?
+  -  CHECK FOR COMPLETENESS:  Y0 causes itertools to stop after one round
+
+
+
+R U' D B' D2 F R L' U' F2 U2 R L' B2
+   -  After slice sub, this is a Y0. Single round of itertools, yields appox. 10 solutions
+    - CHECK FOR COMPLETENESS:  this alg has 3 slices. Make sure all 3 work
+    - 2nd CHECK FOR COMPLETENESS:  Check itertools is complete
+
+
+
+U' L D' B2 D B' D' B2 U2 B' L F' B2 U' F' R' B
+   -  typical corners alg. DOES include merge_YU
+   -  CHECK FOR COMPLETENESS:  This alg has zero slices. Make sure it looks same after slice method
+   -  second CHECK FOR COMPLETENESS:  Check that merge_YU is complete
+
+
+
+U F B' R2 F B' D' R' B L' U' D F L' B D2
+  -  Y0 X0
+  - Include in Validate, to see if X0 iterates correctly. 
+  - CHECK FOR COMPLETENESS:  See that Y0 causes the alg to do the iteration method just once and then stops
+
+
+
+U D2 F' B R F2 L' U D' B L2 F B R L' D2
+  - Y0 X0
+  - ZERO solutions
+  -  CHECK FOR COMPLETENESS:  This alg supposedly has zero solutions. Is that right?
+  
+
+
+
+L' D F B' U R L2 F L F' R F2 D F' B' L' D'
+- CHECK FOR COMPLETENESS:  This a corner alg with a slice comp. Check the slice worked out okay
+
+
+
+U B' L' F' R U' D B' R F R F2 B' R L' U2
+  - Z' X0
+  - surprisingly small number of iteration
+  - CHECK FOR COMPLETENESS:  This alg has 2 slices. See that they both work
+    - CHECK FOR COMPLETENESS:  Check that Z' ripples through F2 B' without making duplicates
+    - CHECK FOR COMPLETENESS:  Include this in Validate project, make sure X0 iteration works. 
+
+
+
+F' B R' L' D R L B' U2 R2 F' U D L F2 U2 L F2
+ - Y' X
+    - CHECK FOR COMPLETENESS:  Check that Y' ripples through U D without making duplicates
+
+
+
+R' B2 D2 B2 R' D B' D F' B R' B L D2 R' L'
+  - Y0 X2
+  - just 2 iterations
+  - CHECK FOR COMPLETENESS:  Include this in Validate project, make sure X2 iteration works. 
+
+
+
+B' U' L' D F B' U R L2 F L F' R F2 D F' B'
+ - X' in WCR
+ CHECK FOR COMPLETENESS:  Just need to include this in Validate project, to make sure X' iteration works. Don't need to test this alg for completeness
+
+
+
+ U2 R2 L B R B' L B2 D F' B' R' D' F' U R' L D'
+ - X in WCR
+ CHECK FOR COMPLETENESS:  Just need to include this in Validate project, to make sure X iteration works. Don't need to test this alg for completeness
+
+
+
+U2 F' L2 U2 F' R' L' U B2 L2 U R' L' F' R L
+- CHECK FOR COMPLETENESS:  DUAL:  y2 x, z2 x'
+
+
+
+U D R L2 U' D' F U2 L2 B R' L' U D2 B2 R2 D' R2
+- CHECK FOR COMPLETENESS:  DUAL:  y2 x', z2 x
+
+
+
+
+R L U D' F2 L2 F U D' L' B2 R F B' U D2
+  - Y0 X0
+  - many iterations for its one ripple round. Just run it through Validate, no need to check for completeness
+  - include in validate, to check X0 is working for itertools

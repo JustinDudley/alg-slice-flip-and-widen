@@ -22,7 +22,7 @@ from methods.find_pattern import find_pattern
 # NOTE:  it IS possible for an SS_alg to produce ZERO results. For instance:  group 2, "U' F' B2 D R L' U F' D' L' F' B R' B' R D2"
 
 
-strTypeAlg = "R U' D B' D2 F R L' U' F2 U2 R L' B2"
+strTypeAlg = "F' B R' L' D R L B' U2 R2 F' U D L F2 U2 L F2"
 # get the pattern JUST FOR THE FIRST alg in the list
 pattern = find_pattern(strTypeAlg)
 # get the group_number JUST FROM THE FIRST alg in the list
@@ -40,8 +40,8 @@ all_final_strTypeAlgs:list[str] = []
 
 
 
-strTypeAlg = compoundify_comp_slice_turns(strTypeAlg)    # For instance:   U R2 UD' F B L' B2 R UD' B RL' U2 B2
-listTypeAlg = strTypeAlg.split()
+compoundified_strTypeAlg = compoundify_comp_slice_turns(strTypeAlg)    # For instance:   U R2 UD' F B L' B2 R UD' B RL' U2 B2
+listTypeAlg = compoundified_strTypeAlg.split()
 trailing_WCRs = GROUP_DICT[group_number]  # no need for dual CoRo schemes here 
 
 
@@ -68,6 +68,7 @@ x = datetime.datetime.now()
 filename = '/Users/justindudley/dev/cube/Alg_Slice_And_Widen_daddy/alg-slice-and-widen/OUTPUT_files/output_%s.txt'%(x.strftime("%a") + "_" + x.strftime("%I") + ":" + x.strftime("%M") + ":" + x.strftime("%S"))
 with open(filename, 'w') as output_file:
 	output_file.write(f"** ALL ALGS:\n\n")
+	output_file.write(f"original alg is:               {strTypeAlg}\n")
 	output_file.write(f"alg after slice insertion is:  {" ".join(listTypeAlg)}\n")
 	for alg in all_final_strTypeAlgs:
 		output_file.write(f"{alg}\n")
