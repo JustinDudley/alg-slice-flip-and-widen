@@ -1,14 +1,16 @@
 LIBRARY OF 13 OR SO NOTABLE TEST ALGS
 
-
-
-- check a corners alg that has a slice. YES
-check algs that have 0, 1, 2 and 3 slices. YES
-check the X0 case.  YES
-check 2 algs with U D, F B2 type duos to make sure YorZ ripples through them correctly and doesn't create functionally identical duplicates.  YES
-- check an alg that has zero results. YES
-- need  all 4 dual examples.  ONLY FOUND 2
-- check an X and an X' for proper iteration. Basically just need to run them through VAlidation project. YES
+	
+#  check VALIDITY with validate-alg-list project
+	# check for DUPLICATES  --Using google sjeets or excel, check for duplicates in result list (AFTER eliminating the Y0 symbol) for SEVERAL starter algs. (This would indicate ive done something wrong logically.)
+	# check completeness (painstaking)
+      - check a corners alg that has a slice.
+      - check algs that have 0, 1, 2 and 3 slices.
+      - check the X0 case.  
+      - check 2 algs with U D, F B2 type duos to make sure YorZ ripples through them correctly and doesn't create functionally identical duplicates.  YES
+      - check an alg that has zero results. 
+      - need  all 4 dual examples.  ONLY FOUND 2
+      - check an X and an X' for proper iteration. Basically just need to run them through VAlidation project.
 
 
 
