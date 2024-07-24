@@ -1,18 +1,27 @@
-LIBRARY OF 14 OR SO NOTABLE TEST ALGS
+
+LIBRARY OF 15 NOTABLE TEST ALGS
+
+These algs were carefully selected to represent the whole
+The algs belong to DIFFERENT GROUPS, so beware when running them through various projects:  They won't produce the same centers OR the same edges/corners as each other
+Ultimately, these algs may constitue the entirety of algs used in my testing suite. Don't know yet.
+Make a third, ALPHABETIZED result list?
 
 	
-  #  check VALIDITY with validate-alg-list project
-	# check for DUPLICATES  --Using google sjeets or excel, check for duplicates in result list (AFTER eliminating the Y0 symbol) for SEVERAL starter algs. (This would indicate ive done something wrong logically.)
+  # check VALIDITY with validate-alg-list project
+	# check for DUPLICATES  --Using google sheets or Excel, check for duplicates in result list (AFTER eliminating the Y0 symbol) for SEVERAL starter algs. (This would indicate ive done something wrong logically.)
 	# check completeness (painstaking)
       - check a corners alg that has a slice.
       - check algs that have 0, 1, 2 and 3 slices.
-      - check the X0 case.  
-      - check 2 algs with U D, F B2 type duos to make sure YorZ ripples through them correctly and doesn't create functionally identical duplicates.  YES
+      - check the X0 case for proper inclusion of the non-comp base alg
+      - check 2 algs with U D, F B2 type duos to make sure YorZ ripples through them correctly and doesn't create functionally identical duplicates.
       - check an alg that has zero results. 
-      - need  all 4 dual examples.  ONLY FOUND 2
+      - need  all 4 dual examples.  ONLY USING 3. That's okay.
       - check an X and an X' for proper iteration. Basically just need to run them through VAlidation project.
 
 
+
+CHECKS FOR COMPLETENESS
+Each of the 15 algs below has verbiage explaining why it's on this list, and what to (painstakingly) check for when viewing the results
 
 1.
 R2 D2 F B' R L2 F B' D' L2 U R L' B'
@@ -35,7 +44,7 @@ R U' D B' D2 F R L' U' F2 U2 R L' B2
 U' L D' B2 D B' D' B2 U2 B' L F' B2 U' F' R' B
    -  typical corners alg. DOES include merge_YU
    -  CHECK FOR COMPLETENESS:  This alg has zero slices. Make sure it looks same after slice method
-   -  second CHECK FOR COMPLETENESS:  Check that merge_YU is complete
+   -  CHECK FOR COMPLETENESS:  Check that merge_YU is complete
 
 
 
@@ -52,7 +61,10 @@ U D2 F' B R F2 L' U D' B L2 F B R L' D2
   - Y0 X0
   - ZERO solutions
   -  CHECK FOR COMPLETENESS:  This alg supposedly has zero solutions. Is that right?
-  
+  - NO.  Turns out for ALL ALGS with an X0, I need to add the base alg to the list of finals for EACH ripple round.
+  - These base algs were getting missed because the CompXpansion logic ONLY looks for comp solutions, whereas these algs are already perfect WITHOUT comps
+  - Before the era of slice substitution, this problem never came up because there was no X0
+  - Most of the algs this catches will be oddballs:  2 S's and a T; a Y2 and a T... But some of those are still good algs.
 
 
 6.
@@ -64,10 +76,11 @@ L' D F B' U R L2 F L F' R F2 D F' B' L' D'
 7.
 U B' L' F' R U' D B' R F R F2 B' R L' U2
   - Z' X0
-  - surprisingly small number of iteration
+  - surprisingly small number of iteration on some rounds
   - CHECK FOR COMPLETENESS:  This alg has 2 slices. See that they both work
-    - CHECK FOR COMPLETENESS:  Check that Z' ripples through F2 B' without making duplicates
-    - CHECK FOR COMPLETENESS:  Include this in Validate project, make sure X0 iteration works. 
+  - After slice substitution, the Z' will ripple past an S', which is cool
+  - This is a great alg for checking the addition of base algs with an X0
+  - CHECK FOR COMPLETENESS:  Include this in Validate project, make sure X0 iteration works. 
 
 
 
