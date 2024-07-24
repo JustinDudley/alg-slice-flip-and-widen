@@ -7,6 +7,7 @@ from methods.sub_in_slices_and_ripple_right import sub_in_slices_and_ripple_righ
 from methods.generate_algs import generate_algs
 from methods.find_pattern import find_pattern
 from testing.extend_write_to_file import TESTING_3
+from testing.is_test import is_test
 
 # naming convention:
 # 
@@ -18,7 +19,8 @@ from testing.extend_write_to_file import TESTING_3
 
 # Note on TESTING: There are 3 lines of code that call testing methods.
 # These methods simply add a few explanatory notes to the list of algs that will be written to file
-# The methods are called TESTING_1, TESTING_2, TESTING_3.  They should be commented-out where they are invoked, unless you are actually testing
+# The methods are called TESTING_1, TESTING_2, TESTING_3.
+# To add the notes:  Set is_test to TRUE in the file testing/is_test
 
 
 startTime = datetime.datetime.now() # to monitor performance of program
@@ -68,7 +70,7 @@ for strTypeAlg in strTypeAlgs:
 
 
 	output_file = open(output_filename, "a")
-	all_final_strTypeAlgs = TESTING_3(all_final_strTypeAlgs, strTypeAlg, listTypeAlg) # COMMENT-OUT THIS LINE UNLESS YOU ARE TESTING !!!
+	if is_test: all_final_strTypeAlgs = TESTING_3(all_final_strTypeAlgs, strTypeAlg, listTypeAlg)
 	for alg in all_final_strTypeAlgs:  # write all of one base alg's final algs to file. If my testing methods are uncommented, ripple-round-specific info will get baked in to the list of final algs. It will will look like I've written to file several times, but I haven't. The PYTHON LIST ITSELF just includes carriage returns and explanations when testing methods are not commented out
 		output_file.write(f"{alg}\n")
 	output_file.close()
