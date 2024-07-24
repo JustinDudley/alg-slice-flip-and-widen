@@ -12,3 +12,4 @@ B' U' L' D F B' U R L2 F L F' R F2 D F' B'
 U2 F' L2 U2 F' R' L' U B2 L2 U R' L' F' R L
 U D R L2 U' D' F U2 L2 B R' L' U D2 B2 R2 D' R2
 R L U D' F2 L2 F U D' L' B2 R F B' U D2
+R' L F2 D' L2 F2 D' R' L' F U2 L2 F R' L' D' L2

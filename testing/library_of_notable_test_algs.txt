@@ -102,13 +102,13 @@ B' U' L' D F B' U R L2 F L F' R F2 D F' B'
 
 12.
 U2 F' L2 U2 F' R' L' U B2 L2 U R' L' F' R L
-- CHECK FOR COMPLETENESS:  DUAL:  y2 x, z2 x'
+- CHECK FOR COMPLETENESS:  DUAL:  Y2 X, Z2 X'
 
 
 
 13.
 U D R L2 U' D' F U2 L2 B R' L' U D2 B2 R2 D' R2
-- CHECK FOR COMPLETENESS:  DUAL:  y2 x', z2 x
+- CHECK FOR COMPLETENESS:  DUAL:  Y2 X', Z2 X
 
 
 
@@ -117,3 +117,11 @@ R L U D' F2 L2 F U D' L' B2 R F B' U D2
   - Y0 X0
   - many iterations for its one ripple round. Just run it through Validate, no need to check for completeness
   - include in validate, to check X0 is working for itertools
+
+
+
+15.
+R' L F2 D' L2 F2 D' R' L' F U2 L2 F R' L' D' L2
+ - DUAL:   [['Y2', 'X0'], ['Z2', 'X2']]
+ - Finally, an example of the OTHER type of dual !!
+ - CHECK FOR COMPLETENESS:  DUAL:  Y2 X0, Z2 X2

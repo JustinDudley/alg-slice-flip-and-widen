@@ -4962,3 +4962,1065 @@ R r S l2 D2 l H l' D2 L H' l r2 Y0
 R r S l2 D2 l H R' B2 r H' l r2 Y0
 R L H' l2 B2 l S l' B2 r H' l r2 Y0
 l r H' l2 B2 l S l' B2 r H' l r2 Y0
+
+
+
+
+
+
+
+original alg is:               R' L F2 D' L2 F2 D' R' L' F U2 L2 F R' L' D' L2
+
+alg after slice insertion is:  T U2 F' L2 U2 F' R' L' U B2 L2 U R' L' F' L2
+
+
+DUAL list:  [['Y2', 'X0'], ['Z2', 'X2']]
+
+active member of DUAL list:  ['Y2', 'X0']
+
+add_YorZ__shifting_listTypeAlg  is now:
+T U2 F' L2 U2 F' R' L' U B2 L2 U R' L' F' L2 Y2
+The indexes are going in reverse order; here are the algs for the current index, which is:  16
+
+T U2 F' r2 D2 B' R' L' D F2 r2 U R' L' F' L2 Y2
+T U2 F' r2 D2 B' R' L' D F2 L2 D R' L' B' r2 Y2
+T U2 F' L2 U2 F' l' r' U B2 L2 U R' L' F' L2 Y2
+T U2 F' L2 U2 F' l' L' B D2 L2 B R' r' F' L2 Y2
+T U2 F' L2 U2 F' R' r' F U2 L2 F l' L' F' L2 Y2
+T U2 F' L2 U2 F' R' L' U B2 r2 D R' L' B' r2 Y2
+T U2 F' L2 U2 F' R' L' U B2 L2 U l' r' F' L2 Y2
+T U2 F' r2 D2 B' l' L' F U2 L2 F l' L' F' L2 Y2
+T U2 F' r2 D2 B' R' r' B D2 L2 B R' r' F' L2 Y2
+T U2 F' L2 U2 F' l' L' B D2 r2 F l' L' F' L2 Y2
+T U2 F' L2 U2 F' l' L' B D2 L2 B l' L' B' r2 Y2
+T U2 F' L2 U2 F' R' r' F U2 r2 B R' r' F' L2 Y2
+T U2 F' L2 U2 F' R' r' F U2 L2 F R' r' B' r2 Y2
+T U2 F' r2 D2 B' l' r' D F2 r2 U R' L' F' L2 Y2
+T U2 F' r2 D2 B' l' r' D F2 L2 D R' L' B' r2 Y2
+T U2 F' r2 D2 B' l' L' F U2 r2 B R' r' F' L2 Y2
+T U2 F' r2 D2 B' l' L' F U2 L2 F R' r' B' r2 Y2
+T U2 F' r2 D2 B' R' r' B D2 r2 F l' L' F' L2 Y2
+T U2 F' r2 D2 B' R' r' B D2 L2 B l' L' B' r2 Y2
+T U2 F' r2 D2 B' R' L' D F2 r2 U l' r' F' L2 Y2
+T U2 F' r2 D2 B' R' L' D F2 L2 D l' r' B' r2 Y2
+T U2 F' L2 U2 F' l' r' U B2 r2 D R' L' B' r2 Y2
+T U2 F' L2 U2 F' l' r' U B2 L2 U l' r' F' L2 Y2
+T U2 F' L2 U2 F' l' L' B D2 r2 F R' r' B' r2 Y2
+T U2 F' L2 U2 F' R' r' F U2 r2 B l' L' B' r2 Y2
+T U2 F' L2 U2 F' R' L' U B2 r2 D l' r' B' r2 Y2
+T U2 F' r2 D2 B' l' L' F U2 r2 B l' L' B' r2 Y2
+T U2 F' r2 D2 B' R' r' B D2 r2 F R' r' B' r2 Y2
+T U2 F' r2 D2 B' l' r' D F2 r2 U l' r' F' L2 Y2
+T U2 F' r2 D2 B' l' r' D F2 L2 D l' r' B' r2 Y2
+T U2 F' L2 U2 F' l' r' U B2 r2 D l' r' B' r2 Y2
+
+add_YorZ__shifting_listTypeAlg  is now:
+T U2 F' L2 U2 F' R' L' U B2 L2 U R' L' F' Y2 R2
+The indexes are going in reverse order; here are the algs for the current index, which is:  15
+
+T U2 F' r2 D2 B' R' L' D F2 r2 U R' L' F' Y2 R2
+T U2 F' r2 D2 B' R' L' D F2 L2 D R' L' B' Y2 l2
+T U2 F' L2 U2 F' l' r' U B2 L2 U R' L' F' Y2 R2
+T U2 F' L2 U2 F' l' L' B D2 L2 B R' r' F' Y2 R2
+T U2 F' L2 U2 F' R' r' F U2 L2 F l' L' F' Y2 R2
+T U2 F' L2 U2 F' R' L' U B2 r2 D R' L' B' Y2 l2
+T U2 F' L2 U2 F' R' L' U B2 L2 U l' r' F' Y2 R2
+T U2 F' r2 D2 B' l' L' F U2 L2 F l' L' F' Y2 R2
+T U2 F' r2 D2 B' R' r' B D2 L2 B R' r' F' Y2 R2
+T U2 F' L2 U2 F' l' L' B D2 r2 F l' L' F' Y2 R2
+T U2 F' L2 U2 F' l' L' B D2 L2 B l' L' B' Y2 l2
+T U2 F' L2 U2 F' R' r' F U2 r2 B R' r' F' Y2 R2
+T U2 F' L2 U2 F' R' r' F U2 L2 F R' r' B' Y2 l2
+T U2 F' r2 D2 B' l' r' D F2 r2 U R' L' F' Y2 R2
+T U2 F' r2 D2 B' l' r' D F2 L2 D R' L' B' Y2 l2
+T U2 F' r2 D2 B' l' L' F U2 r2 B R' r' F' Y2 R2
+T U2 F' r2 D2 B' l' L' F U2 L2 F R' r' B' Y2 l2
+T U2 F' r2 D2 B' R' r' B D2 r2 F l' L' F' Y2 R2
+T U2 F' r2 D2 B' R' r' B D2 L2 B l' L' B' Y2 l2
+T U2 F' r2 D2 B' R' L' D F2 r2 U l' r' F' Y2 R2
+T U2 F' r2 D2 B' R' L' D F2 L2 D l' r' B' Y2 l2
+T U2 F' L2 U2 F' l' r' U B2 r2 D R' L' B' Y2 l2
+T U2 F' L2 U2 F' l' r' U B2 L2 U l' r' F' Y2 R2
+T U2 F' L2 U2 F' l' L' B D2 r2 F R' r' B' Y2 l2
+T U2 F' L2 U2 F' R' r' F U2 r2 B l' L' B' Y2 l2
+T U2 F' L2 U2 F' R' L' U B2 r2 D l' r' B' Y2 l2
+T U2 F' r2 D2 B' l' L' F U2 r2 B l' L' B' Y2 l2
+T U2 F' r2 D2 B' R' r' B D2 r2 F R' r' B' Y2 l2
+T U2 F' r2 D2 B' l' r' D F2 r2 U l' r' F' Y2 R2
+T U2 F' r2 D2 B' l' r' D F2 L2 D l' r' B' Y2 l2
+T U2 F' L2 U2 F' l' r' U B2 r2 D l' r' B' Y2 l2
+
+add_YorZ__shifting_listTypeAlg  is now:
+T U2 F' L2 U2 F' R' L' U B2 L2 U R' L' Y2 B' R2
+The indexes are going in reverse order; here are the algs for the current index, which is:  14
+
+T U2 F' r2 D2 B' R' L' D F2 r2 U R' L' Y2 B' R2
+T U2 F' r2 D2 B' R' L' D F2 L2 D R' L' Y2 F' l2
+T U2 F' L2 U2 F' l' r' U B2 L2 U R' L' Y2 B' R2
+T U2 F' L2 U2 F' l' L' B D2 L2 B R' r' Y2 B' R2
+T U2 F' L2 U2 F' R' r' F U2 L2 F l' L' Y2 B' R2
+T U2 F' L2 U2 F' R' L' U B2 r2 D R' L' Y2 F' l2
+T U2 F' L2 U2 F' R' L' U B2 L2 U l' r' Y2 B' R2
+T U2 F' r2 D2 B' l' L' F U2 L2 F l' L' Y2 B' R2
+T U2 F' r2 D2 B' R' r' B D2 L2 B R' r' Y2 B' R2
+T U2 F' L2 U2 F' l' L' B D2 r2 F l' L' Y2 B' R2
+T U2 F' L2 U2 F' l' L' B D2 L2 B l' L' Y2 F' l2
+T U2 F' L2 U2 F' R' r' F U2 r2 B R' r' Y2 B' R2
+T U2 F' L2 U2 F' R' r' F U2 L2 F R' r' Y2 F' l2
+T U2 F' r2 D2 B' l' r' D F2 r2 U R' L' Y2 B' R2
+T U2 F' r2 D2 B' l' r' D F2 L2 D R' L' Y2 F' l2
+T U2 F' r2 D2 B' l' L' F U2 r2 B R' r' Y2 B' R2
+T U2 F' r2 D2 B' l' L' F U2 L2 F R' r' Y2 F' l2
+T U2 F' r2 D2 B' R' r' B D2 r2 F l' L' Y2 B' R2
+T U2 F' r2 D2 B' R' r' B D2 L2 B l' L' Y2 F' l2
+T U2 F' r2 D2 B' R' L' D F2 r2 U l' r' Y2 B' R2
+T U2 F' r2 D2 B' R' L' D F2 L2 D l' r' Y2 F' l2
+T U2 F' L2 U2 F' l' r' U B2 r2 D R' L' Y2 F' l2
+T U2 F' L2 U2 F' l' r' U B2 L2 U l' r' Y2 B' R2
+T U2 F' L2 U2 F' l' L' B D2 r2 F R' r' Y2 F' l2
+T U2 F' L2 U2 F' R' r' F U2 r2 B l' L' Y2 F' l2
+T U2 F' L2 U2 F' R' L' U B2 r2 D l' r' Y2 F' l2
+T U2 F' r2 D2 B' l' L' F U2 r2 B l' L' Y2 F' l2
+T U2 F' r2 D2 B' R' r' B D2 r2 F R' r' Y2 F' l2
+T U2 F' r2 D2 B' l' r' D F2 r2 U l' r' Y2 B' R2
+T U2 F' r2 D2 B' l' r' D F2 L2 D l' r' Y2 F' l2
+T U2 F' L2 U2 F' l' r' U B2 r2 D l' r' Y2 F' l2
+
+add_YorZ__shifting_listTypeAlg  is now:
+T U2 F' L2 U2 F' R' L' U B2 L2 U R' Y2 R' B' R2
+The indexes are going in reverse order; here are the algs for the current index, which is:  13
+
+T U2 F' r2 D2 B' R' L' D F2 r2 U R' Y2 R' B' R2
+T U2 F' r2 D2 B' R' L' D F2 L2 D R' Y2 R' F' l2
+T U2 F' L2 U2 F' l' r' U B2 L2 U R' Y2 R' B' R2
+T U2 F' L2 U2 F' R' r' F U2 L2 F l' Y2 R' B' R2
+T U2 F' L2 U2 F' R' r' F U2 L2 F R' Z2 l' B' R2
+T U2 F' L2 U2 F' R' L' U B2 r2 D R' Y2 R' F' l2
+T U2 F' r2 D2 B' l' L' F U2 L2 F l' Y2 R' B' R2
+T U2 F' r2 D2 B' l' L' F U2 L2 F R' Z2 l' B' R2
+T U2 F' r2 D2 B' R' L' D F2 L2 D l' Z2 l' B' R2
+T U2 F' L2 U2 F' l' L' B D2 r2 F l' Y2 R' B' R2
+T U2 F' L2 U2 F' l' L' B D2 r2 F R' Z2 l' B' R2
+T U2 F' L2 U2 F' l' L' B D2 L2 B l' Y2 R' F' l2
+T U2 F' L2 U2 F' l' L' B D2 L2 B R' Z2 l' F' l2
+T U2 F' L2 U2 F' R' L' U B2 r2 D l' Z2 l' B' R2
+T U2 F' L2 U2 F' R' L' U B2 L2 U l' Z2 l' F' l2
+T U2 F' r2 D2 B' l' r' D F2 r2 U R' Y2 R' B' R2
+T U2 F' r2 D2 B' l' r' D F2 L2 D R' Y2 R' F' l2
+T U2 F' r2 D2 B' R' r' B D2 r2 F l' Y2 R' B' R2
+T U2 F' r2 D2 B' R' r' B D2 r2 F R' Z2 l' B' R2
+T U2 F' r2 D2 B' R' r' B D2 L2 B l' Y2 R' F' l2
+T U2 F' r2 D2 B' R' r' B D2 L2 B R' Z2 l' F' l2
+T U2 F' L2 U2 F' l' r' U B2 r2 D R' Y2 R' F' l2
+T U2 F' L2 U2 F' R' r' F U2 r2 B l' Y2 R' F' l2
+T U2 F' L2 U2 F' R' r' F U2 r2 B R' Z2 l' F' l2
+T U2 F' r2 D2 B' l' r' D F2 L2 D l' Z2 l' B' R2
+T U2 F' r2 D2 B' l' L' F U2 r2 B l' Y2 R' F' l2
+T U2 F' r2 D2 B' l' L' F U2 r2 B R' Z2 l' F' l2
+T U2 F' r2 D2 B' R' L' D F2 r2 U l' Z2 l' F' l2
+T U2 F' L2 U2 F' l' r' U B2 r2 D l' Z2 l' B' R2
+T U2 F' L2 U2 F' l' r' U B2 L2 U l' Z2 l' F' l2
+T U2 F' r2 D2 B' l' r' D F2 r2 U l' Z2 l' F' l2
+
+add_YorZ__shifting_listTypeAlg  is now:
+T U2 F' L2 U2 F' R' L' U B2 L2 Y2 U L' R' B' R2
+The indexes are going in reverse order; here are the algs for the current index, which is:  11
+
+T U2 F' r2 D2 B' R' L' D F2 r2 Y2 U L' R' B' R2
+T U2 F' r2 D2 B' R' L' D F2 L2 Y2 D L' R' F' l2
+T U2 F' L2 U2 F' l' r' U B2 L2 Y2 U L' R' B' R2
+T U2 F' L2 U2 F' l' L' B D2 L2 Z2 B r' R' B' R2
+T U2 F' L2 U2 F' R' r' F U2 L2 Z2 F L' l' B' R2
+T U2 F' L2 U2 F' R' L' U B2 r2 Y2 D L' R' F' l2
+T U2 F' L2 U2 F' R' L' U B2 L2 Y2 U r' l' B' R2
+T U2 F' r2 D2 B' l' L' F U2 L2 Z2 F L' l' B' R2
+T U2 F' r2 D2 B' R' r' B D2 L2 Z2 B r' R' B' R2
+T U2 F' L2 U2 F' l' L' B D2 r2 Z2 F L' l' B' R2
+T U2 F' L2 U2 F' l' L' B D2 L2 Z2 B L' l' F' l2
+T U2 F' L2 U2 F' R' r' F U2 r2 Z2 B r' R' B' R2
+T U2 F' L2 U2 F' R' r' F U2 L2 Z2 F r' R' F' l2
+T U2 F' r2 D2 B' l' r' D F2 r2 Y2 U L' R' B' R2
+T U2 F' r2 D2 B' l' r' D F2 L2 Y2 D L' R' F' l2
+T U2 F' r2 D2 B' l' L' F U2 r2 Z2 B r' R' B' R2
+T U2 F' r2 D2 B' l' L' F U2 L2 Z2 F r' R' F' l2
+T U2 F' r2 D2 B' R' r' B D2 r2 Z2 F L' l' B' R2
+T U2 F' r2 D2 B' R' r' B D2 L2 Z2 B L' l' F' l2
+T U2 F' r2 D2 B' R' L' D F2 r2 Y2 U r' l' B' R2
+T U2 F' r2 D2 B' R' L' D F2 L2 Y2 D r' l' F' l2
+T U2 F' L2 U2 F' l' r' U B2 r2 Y2 D L' R' F' l2
+T U2 F' L2 U2 F' l' r' U B2 L2 Y2 U r' l' B' R2
+T U2 F' L2 U2 F' l' L' B D2 r2 Z2 F r' R' F' l2
+T U2 F' L2 U2 F' R' r' F U2 r2 Z2 B L' l' F' l2
+T U2 F' L2 U2 F' R' L' U B2 r2 Y2 D r' l' F' l2
+T U2 F' r2 D2 B' l' L' F U2 r2 Z2 B L' l' F' l2
+T U2 F' r2 D2 B' R' r' B D2 r2 Z2 F r' R' F' l2
+T U2 F' r2 D2 B' l' r' D F2 r2 Y2 U r' l' B' R2
+T U2 F' r2 D2 B' l' r' D F2 L2 Y2 D r' l' F' l2
+T U2 F' L2 U2 F' l' r' U B2 r2 Y2 D r' l' F' l2
+
+add_YorZ__shifting_listTypeAlg  is now:
+T U2 F' L2 U2 F' R' L' U B2 Y2 R2 U L' R' B' R2
+The indexes are going in reverse order; here are the algs for the current index, which is:  10
+
+T U2 F' r2 D2 B' R' L' D F2 Y2 l2 U L' R' B' R2
+T U2 F' r2 D2 B' R' L' D F2 Y2 R2 D L' R' F' l2
+T U2 F' L2 U2 F' l' r' U B2 Y2 R2 U L' R' B' R2
+T U2 F' L2 U2 F' l' L' B D2 Z2 R2 B r' R' B' R2
+T U2 F' L2 U2 F' R' r' F U2 Z2 R2 F L' l' B' R2
+T U2 F' L2 U2 F' R' L' U B2 Y2 l2 D L' R' F' l2
+T U2 F' L2 U2 F' R' L' U B2 Y2 R2 U r' l' B' R2
+T U2 F' r2 D2 B' l' L' F U2 Z2 R2 F L' l' B' R2
+T U2 F' r2 D2 B' R' r' B D2 Z2 R2 B r' R' B' R2
+T U2 F' L2 U2 F' l' L' B D2 Z2 l2 F L' l' B' R2
+T U2 F' L2 U2 F' l' L' B D2 Z2 R2 B L' l' F' l2
+T U2 F' L2 U2 F' R' r' F U2 Z2 l2 B r' R' B' R2
+T U2 F' L2 U2 F' R' r' F U2 Z2 R2 F r' R' F' l2
+T U2 F' r2 D2 B' l' r' D F2 Y2 l2 U L' R' B' R2
+T U2 F' r2 D2 B' l' r' D F2 Y2 R2 D L' R' F' l2
+T U2 F' r2 D2 B' l' L' F U2 Z2 l2 B r' R' B' R2
+T U2 F' r2 D2 B' l' L' F U2 Z2 R2 F r' R' F' l2
+T U2 F' r2 D2 B' R' r' B D2 Z2 l2 F L' l' B' R2
+T U2 F' r2 D2 B' R' r' B D2 Z2 R2 B L' l' F' l2
+T U2 F' r2 D2 B' R' L' D F2 Y2 l2 U r' l' B' R2
+T U2 F' r2 D2 B' R' L' D F2 Y2 R2 D r' l' F' l2
+T U2 F' L2 U2 F' l' r' U B2 Y2 l2 D L' R' F' l2
+T U2 F' L2 U2 F' l' r' U B2 Y2 R2 U r' l' B' R2
+T U2 F' L2 U2 F' l' L' B D2 Z2 l2 F r' R' F' l2
+T U2 F' L2 U2 F' R' r' F U2 Z2 l2 B L' l' F' l2
+T U2 F' L2 U2 F' R' L' U B2 Y2 l2 D r' l' F' l2
+T U2 F' r2 D2 B' l' L' F U2 Z2 l2 B L' l' F' l2
+T U2 F' r2 D2 B' R' r' B D2 Z2 l2 F r' R' F' l2
+T U2 F' r2 D2 B' l' r' D F2 Y2 l2 U r' l' B' R2
+T U2 F' r2 D2 B' l' r' D F2 Y2 R2 D r' l' F' l2
+T U2 F' L2 U2 F' l' r' U B2 Y2 l2 D r' l' F' l2
+
+add_YorZ__shifting_listTypeAlg  is now:
+T U2 F' L2 U2 F' R' L' Y2 U F2 R2 U L' R' B' R2
+The indexes are going in reverse order; here are the algs for the current index, which is:  8
+
+T U2 F' r2 D2 B' R' L' Y2 D B2 l2 U L' R' B' R2
+T U2 F' r2 D2 B' R' L' Y2 D B2 R2 D L' R' F' l2
+T U2 F' L2 U2 F' l' r' Y2 U F2 R2 U L' R' B' R2
+T U2 F' L2 U2 F' l' L' Z2 B U2 R2 B r' R' B' R2
+T U2 F' L2 U2 F' R' r' Z2 F D2 R2 F L' l' B' R2
+T U2 F' L2 U2 F' R' L' Y2 U F2 l2 D L' R' F' l2
+T U2 F' L2 U2 F' R' L' Y2 U F2 R2 U r' l' B' R2
+T U2 F' r2 D2 B' l' L' Z2 F D2 R2 F L' l' B' R2
+T U2 F' r2 D2 B' R' r' Z2 B U2 R2 B r' R' B' R2
+T U2 F' L2 U2 F' l' L' Z2 B U2 l2 F L' l' B' R2
+T U2 F' L2 U2 F' l' L' Z2 B U2 R2 B L' l' F' l2
+T U2 F' L2 U2 F' R' r' Z2 F D2 l2 B r' R' B' R2
+T U2 F' L2 U2 F' R' r' Z2 F D2 R2 F r' R' F' l2
+T U2 F' r2 D2 B' l' r' Y2 D B2 l2 U L' R' B' R2
+T U2 F' r2 D2 B' l' r' Y2 D B2 R2 D L' R' F' l2
+T U2 F' r2 D2 B' l' L' Z2 F D2 l2 B r' R' B' R2
+T U2 F' r2 D2 B' l' L' Z2 F D2 R2 F r' R' F' l2
+T U2 F' r2 D2 B' R' r' Z2 B U2 l2 F L' l' B' R2
+T U2 F' r2 D2 B' R' r' Z2 B U2 R2 B L' l' F' l2
+T U2 F' r2 D2 B' R' L' Y2 D B2 l2 U r' l' B' R2
+T U2 F' r2 D2 B' R' L' Y2 D B2 R2 D r' l' F' l2
+T U2 F' L2 U2 F' l' r' Y2 U F2 l2 D L' R' F' l2
+T U2 F' L2 U2 F' l' r' Y2 U F2 R2 U r' l' B' R2
+T U2 F' L2 U2 F' l' L' Z2 B U2 l2 F r' R' F' l2
+T U2 F' L2 U2 F' R' r' Z2 F D2 l2 B L' l' F' l2
+T U2 F' L2 U2 F' R' L' Y2 U F2 l2 D r' l' F' l2
+T U2 F' r2 D2 B' l' L' Z2 F D2 l2 B L' l' F' l2
+T U2 F' r2 D2 B' R' r' Z2 B U2 l2 F r' R' F' l2
+T U2 F' r2 D2 B' l' r' Y2 D B2 l2 U r' l' B' R2
+T U2 F' r2 D2 B' l' r' Y2 D B2 R2 D r' l' F' l2
+T U2 F' L2 U2 F' l' r' Y2 U F2 l2 D r' l' F' l2
+
+add_YorZ__shifting_listTypeAlg  is now:
+T U2 F' L2 U2 F' R' Y2 R' U F2 R2 U L' R' B' R2
+The indexes are going in reverse order; here are the algs for the current index, which is:  7
+
+T U2 F' r2 D2 B' R' Y2 R' D B2 l2 U L' R' B' R2
+T U2 F' r2 D2 B' R' Y2 R' D B2 R2 D L' R' F' l2
+T U2 F' L2 U2 F' l' Z2 R' B U2 R2 B r' R' B' R2
+T U2 F' L2 U2 F' R' Y2 l' B U2 R2 B r' R' B' R2
+T U2 F' L2 U2 F' R' Y2 R' U F2 l2 D L' R' F' l2
+T U2 F' L2 U2 F' R' Y2 R' U F2 R2 U r' l' B' R2
+T U2 F' r2 D2 B' l' Z2 l' U F2 R2 U L' R' B' R2
+T U2 F' r2 D2 B' l' Z2 R' F D2 R2 F L' l' B' R2
+T U2 F' r2 D2 B' R' Y2 l' F D2 R2 F L' l' B' R2
+T U2 F' L2 U2 F' l' Z2 l' D B2 l2 U L' R' B' R2
+T U2 F' L2 U2 F' l' Z2 l' D B2 R2 D L' R' F' l2
+T U2 F' L2 U2 F' l' Z2 R' B U2 l2 F L' l' B' R2
+T U2 F' L2 U2 F' l' Z2 R' B U2 R2 B L' l' F' l2
+T U2 F' L2 U2 F' R' Y2 l' B U2 l2 F L' l' B' R2
+T U2 F' L2 U2 F' R' Y2 l' B U2 R2 B L' l' F' l2
+T U2 F' r2 D2 B' l' Z2 R' F D2 l2 B r' R' B' R2
+T U2 F' r2 D2 B' l' Z2 R' F D2 R2 F r' R' F' l2
+T U2 F' r2 D2 B' R' Y2 l' F D2 l2 B r' R' B' R2
+T U2 F' r2 D2 B' R' Y2 l' F D2 R2 F r' R' F' l2
+T U2 F' r2 D2 B' R' Y2 R' D B2 l2 U r' l' B' R2
+T U2 F' r2 D2 B' R' Y2 R' D B2 R2 D r' l' F' l2
+T U2 F' L2 U2 F' l' Z2 R' B U2 l2 F r' R' F' l2
+T U2 F' L2 U2 F' R' Y2 l' B U2 l2 F r' R' F' l2
+T U2 F' L2 U2 F' R' Y2 R' U F2 l2 D r' l' F' l2
+T U2 F' r2 D2 B' l' Z2 l' U F2 l2 D L' R' F' l2
+T U2 F' r2 D2 B' l' Z2 l' U F2 R2 U r' l' B' R2
+T U2 F' r2 D2 B' l' Z2 R' F D2 l2 B L' l' F' l2
+T U2 F' r2 D2 B' R' Y2 l' F D2 l2 B L' l' F' l2
+T U2 F' L2 U2 F' l' Z2 l' D B2 l2 U r' l' B' R2
+T U2 F' L2 U2 F' l' Z2 l' D B2 R2 D r' l' F' l2
+T U2 F' r2 D2 B' l' Z2 l' U F2 l2 D r' l' F' l2
+
+add_YorZ__shifting_listTypeAlg  is now:
+T U2 F' L2 U2 F' Y2 L' R' U F2 R2 U L' R' B' R2
+The indexes are going in reverse order; here are the algs for the current index, which is:  6
+
+T U2 F' r2 D2 B' Y2 L' R' D B2 l2 U L' R' B' R2
+T U2 F' r2 D2 B' Y2 L' R' D B2 R2 D L' R' F' l2
+T U2 F' L2 U2 F' Y2 r' l' U F2 R2 U L' R' B' R2
+T U2 F' L2 U2 F' Y2 r' R' F D2 R2 F L' l' B' R2
+T U2 F' L2 U2 F' Y2 L' l' B U2 R2 B r' R' B' R2
+T U2 F' L2 U2 F' Y2 L' R' U F2 l2 D L' R' F' l2
+T U2 F' L2 U2 F' Y2 L' R' U F2 R2 U r' l' B' R2
+T U2 F' r2 D2 B' Y2 r' R' B U2 R2 B r' R' B' R2
+T U2 F' r2 D2 B' Y2 L' l' F D2 R2 F L' l' B' R2
+T U2 F' L2 U2 F' Y2 r' R' F D2 l2 B r' R' B' R2
+T U2 F' L2 U2 F' Y2 r' R' F D2 R2 F r' R' F' l2
+T U2 F' L2 U2 F' Y2 L' l' B U2 l2 F L' l' B' R2
+T U2 F' L2 U2 F' Y2 L' l' B U2 R2 B L' l' F' l2
+T U2 F' r2 D2 B' Y2 r' l' D B2 l2 U L' R' B' R2
+T U2 F' r2 D2 B' Y2 r' l' D B2 R2 D L' R' F' l2
+T U2 F' r2 D2 B' Y2 r' R' B U2 l2 F L' l' B' R2
+T U2 F' r2 D2 B' Y2 r' R' B U2 R2 B L' l' F' l2
+T U2 F' r2 D2 B' Y2 L' l' F D2 l2 B r' R' B' R2
+T U2 F' r2 D2 B' Y2 L' l' F D2 R2 F r' R' F' l2
+T U2 F' r2 D2 B' Y2 L' R' D B2 l2 U r' l' B' R2
+T U2 F' r2 D2 B' Y2 L' R' D B2 R2 D r' l' F' l2
+T U2 F' L2 U2 F' Y2 r' l' U F2 l2 D L' R' F' l2
+T U2 F' L2 U2 F' Y2 r' l' U F2 R2 U r' l' B' R2
+T U2 F' L2 U2 F' Y2 r' R' F D2 l2 B L' l' F' l2
+T U2 F' L2 U2 F' Y2 L' l' B U2 l2 F r' R' F' l2
+T U2 F' L2 U2 F' Y2 L' R' U F2 l2 D r' l' F' l2
+T U2 F' r2 D2 B' Y2 r' R' B U2 l2 F r' R' F' l2
+T U2 F' r2 D2 B' Y2 L' l' F D2 l2 B L' l' F' l2
+T U2 F' r2 D2 B' Y2 r' l' D B2 l2 U r' l' B' R2
+T U2 F' r2 D2 B' Y2 r' l' D B2 R2 D r' l' F' l2
+T U2 F' L2 U2 F' Y2 r' l' U F2 l2 D r' l' F' l2
+
+add_YorZ__shifting_listTypeAlg  is now:
+T U2 F' L2 Y2 U2 B' L' R' U F2 R2 U L' R' B' R2
+The indexes are going in reverse order; here are the algs for the current index, which is:  4
+
+T U2 F' r2 Y2 D2 F' L' R' D B2 l2 U L' R' B' R2
+T U2 F' r2 u2 F' L' R' D B2 l2 U L' R' B' R2
+T U2 F' r2 Y2 D2 F' L' R' D B2 R2 D L' R' F' l2
+T U2 F' r2 u2 F' L' R' D B2 R2 D L' R' F' l2
+T U2 F' L2 Y2 U2 B' r' l' U F2 R2 U L' R' B' R2
+T U2 F' L2 d2 B' r' l' U F2 R2 U L' R' B' R2
+T U2 F' L2 Y2 U2 B' r' R' F D2 R2 F L' l' B' R2
+T U2 F' L2 d2 B' r' R' F D2 R2 F L' l' B' R2
+T U2 F' L2 Y2 U2 B' L' l' B U2 R2 B r' R' B' R2
+T U2 F' L2 d2 B' L' l' B U2 R2 B r' R' B' R2
+T U2 F' L2 Y2 U2 B' L' R' U F2 l2 D L' R' F' l2
+T U2 F' L2 d2 B' L' R' U F2 l2 D L' R' F' l2
+T U2 F' L2 Y2 U2 B' L' R' U F2 R2 U r' l' B' R2
+T U2 F' L2 d2 B' L' R' U F2 R2 U r' l' B' R2
+T U2 F' r2 Y2 D2 F' r' R' B U2 R2 B r' R' B' R2
+T U2 F' r2 u2 F' r' R' B U2 R2 B r' R' B' R2
+T U2 F' r2 Y2 D2 F' L' l' F D2 R2 F L' l' B' R2
+T U2 F' r2 u2 F' L' l' F D2 R2 F L' l' B' R2
+T U2 F' L2 Y2 U2 B' r' R' F D2 l2 B r' R' B' R2
+T U2 F' L2 d2 B' r' R' F D2 l2 B r' R' B' R2
+T U2 F' L2 Y2 U2 B' r' R' F D2 R2 F r' R' F' l2
+T U2 F' L2 d2 B' r' R' F D2 R2 F r' R' F' l2
+T U2 F' L2 Y2 U2 B' L' l' B U2 l2 F L' l' B' R2
+T U2 F' L2 d2 B' L' l' B U2 l2 F L' l' B' R2
+T U2 F' L2 Y2 U2 B' L' l' B U2 R2 B L' l' F' l2
+T U2 F' L2 d2 B' L' l' B U2 R2 B L' l' F' l2
+T U2 F' r2 Y2 D2 F' r' l' D B2 l2 U L' R' B' R2
+T U2 F' r2 u2 F' r' l' D B2 l2 U L' R' B' R2
+T U2 F' r2 Y2 D2 F' r' l' D B2 R2 D L' R' F' l2
+T U2 F' r2 u2 F' r' l' D B2 R2 D L' R' F' l2
+T U2 F' r2 Y2 D2 F' r' R' B U2 l2 F L' l' B' R2
+T U2 F' r2 u2 F' r' R' B U2 l2 F L' l' B' R2
+T U2 F' r2 Y2 D2 F' r' R' B U2 R2 B L' l' F' l2
+T U2 F' r2 u2 F' r' R' B U2 R2 B L' l' F' l2
+T U2 F' r2 Y2 D2 F' L' l' F D2 l2 B r' R' B' R2
+T U2 F' r2 u2 F' L' l' F D2 l2 B r' R' B' R2
+T U2 F' r2 Y2 D2 F' L' l' F D2 R2 F r' R' F' l2
+T U2 F' r2 u2 F' L' l' F D2 R2 F r' R' F' l2
+T U2 F' r2 Y2 D2 F' L' R' D B2 l2 U r' l' B' R2
+T U2 F' r2 u2 F' L' R' D B2 l2 U r' l' B' R2
+T U2 F' r2 Y2 D2 F' L' R' D B2 R2 D r' l' F' l2
+T U2 F' r2 u2 F' L' R' D B2 R2 D r' l' F' l2
+T U2 F' L2 Y2 U2 B' r' l' U F2 l2 D L' R' F' l2
+T U2 F' L2 d2 B' r' l' U F2 l2 D L' R' F' l2
+T U2 F' L2 Y2 U2 B' r' l' U F2 R2 U r' l' B' R2
+T U2 F' L2 d2 B' r' l' U F2 R2 U r' l' B' R2
+T U2 F' L2 Y2 U2 B' r' R' F D2 l2 B L' l' F' l2
+T U2 F' L2 d2 B' r' R' F D2 l2 B L' l' F' l2
+T U2 F' L2 Y2 U2 B' L' l' B U2 l2 F r' R' F' l2
+T U2 F' L2 d2 B' L' l' B U2 l2 F r' R' F' l2
+T U2 F' L2 Y2 U2 B' L' R' U F2 l2 D r' l' F' l2
+T U2 F' L2 d2 B' L' R' U F2 l2 D r' l' F' l2
+T U2 F' r2 Y2 D2 F' r' R' B U2 l2 F r' R' F' l2
+T U2 F' r2 u2 F' r' R' B U2 l2 F r' R' F' l2
+T U2 F' r2 Y2 D2 F' L' l' F D2 l2 B L' l' F' l2
+T U2 F' r2 u2 F' L' l' F D2 l2 B L' l' F' l2
+T U2 F' r2 Y2 D2 F' r' l' D B2 l2 U r' l' B' R2
+T U2 F' r2 u2 F' r' l' D B2 l2 U r' l' B' R2
+T U2 F' r2 Y2 D2 F' r' l' D B2 R2 D r' l' F' l2
+T U2 F' r2 u2 F' r' l' D B2 R2 D r' l' F' l2
+T U2 F' L2 Y2 U2 B' r' l' U F2 l2 D r' l' F' l2
+T U2 F' L2 d2 B' r' l' U F2 l2 D r' l' F' l2
+
+add_YorZ__shifting_listTypeAlg  is now:
+T U2 F' Y2 R2 U2 B' L' R' U F2 R2 U L' R' B' R2
+The indexes are going in reverse order; here are the algs for the current index, which is:  3
+
+T U2 F' Y2 l2 D2 F' L' R' D B2 l2 U L' R' B' R2
+T U2 F' Y2 l2 D2 F' L' R' D B2 R2 D L' R' F' l2
+T U2 F' Y2 R2 U2 B' r' l' U F2 R2 U L' R' B' R2
+T U2 F' Y2 R2 U2 B' r' R' F D2 R2 F L' l' B' R2
+T U2 F' Y2 R2 U2 B' L' l' B U2 R2 B r' R' B' R2
+T U2 F' Y2 R2 U2 B' L' R' U F2 l2 D L' R' F' l2
+T U2 F' Y2 R2 U2 B' L' R' U F2 R2 U r' l' B' R2
+T U2 F' Y2 l2 D2 F' r' R' B U2 R2 B r' R' B' R2
+T U2 F' Y2 l2 D2 F' L' l' F D2 R2 F L' l' B' R2
+T U2 F' Y2 R2 U2 B' r' R' F D2 l2 B r' R' B' R2
+T U2 F' Y2 R2 U2 B' r' R' F D2 R2 F r' R' F' l2
+T U2 F' Y2 R2 U2 B' L' l' B U2 l2 F L' l' B' R2
+T U2 F' Y2 R2 U2 B' L' l' B U2 R2 B L' l' F' l2
+T U2 F' Y2 l2 D2 F' r' l' D B2 l2 U L' R' B' R2
+T U2 F' Y2 l2 D2 F' r' l' D B2 R2 D L' R' F' l2
+T U2 F' Y2 l2 D2 F' r' R' B U2 l2 F L' l' B' R2
+T U2 F' Y2 l2 D2 F' r' R' B U2 R2 B L' l' F' l2
+T U2 F' Y2 l2 D2 F' L' l' F D2 l2 B r' R' B' R2
+T U2 F' Y2 l2 D2 F' L' l' F D2 R2 F r' R' F' l2
+T U2 F' Y2 l2 D2 F' L' R' D B2 l2 U r' l' B' R2
+T U2 F' Y2 l2 D2 F' L' R' D B2 R2 D r' l' F' l2
+T U2 F' Y2 R2 U2 B' r' l' U F2 l2 D L' R' F' l2
+T U2 F' Y2 R2 U2 B' r' l' U F2 R2 U r' l' B' R2
+T U2 F' Y2 R2 U2 B' r' R' F D2 l2 B L' l' F' l2
+T U2 F' Y2 R2 U2 B' L' l' B U2 l2 F r' R' F' l2
+T U2 F' Y2 R2 U2 B' L' R' U F2 l2 D r' l' F' l2
+T U2 F' Y2 l2 D2 F' r' R' B U2 l2 F r' R' F' l2
+T U2 F' Y2 l2 D2 F' L' l' F D2 l2 B L' l' F' l2
+T U2 F' Y2 l2 D2 F' r' l' D B2 l2 U r' l' B' R2
+T U2 F' Y2 l2 D2 F' r' l' D B2 R2 D r' l' F' l2
+T U2 F' Y2 R2 U2 B' r' l' U F2 l2 D r' l' F' l2
+
+add_YorZ__shifting_listTypeAlg  is now:
+T Y2 U2 B' R2 U2 B' L' R' U F2 R2 U L' R' B' R2
+The indexes are going in reverse order; here are the algs for the current index, which is:  1
+
+T Y2 U2 B' l2 D2 F' L' R' D B2 l2 U L' R' B' R2
+T d2 B' l2 D2 F' L' R' D B2 l2 U L' R' B' R2
+T Y2 U2 B' l2 D2 F' L' R' D B2 R2 D L' R' F' l2
+T d2 B' l2 D2 F' L' R' D B2 R2 D L' R' F' l2
+T Y2 U2 B' R2 U2 B' r' l' U F2 R2 U L' R' B' R2
+T d2 B' R2 U2 B' r' l' U F2 R2 U L' R' B' R2
+T Y2 U2 B' R2 U2 B' r' R' F D2 R2 F L' l' B' R2
+T d2 B' R2 U2 B' r' R' F D2 R2 F L' l' B' R2
+T Y2 U2 B' R2 U2 B' L' l' B U2 R2 B r' R' B' R2
+T d2 B' R2 U2 B' L' l' B U2 R2 B r' R' B' R2
+T Y2 U2 B' R2 U2 B' L' R' U F2 l2 D L' R' F' l2
+T d2 B' R2 U2 B' L' R' U F2 l2 D L' R' F' l2
+T Y2 U2 B' R2 U2 B' L' R' U F2 R2 U r' l' B' R2
+T d2 B' R2 U2 B' L' R' U F2 R2 U r' l' B' R2
+T Y2 U2 B' l2 D2 F' r' R' B U2 R2 B r' R' B' R2
+T d2 B' l2 D2 F' r' R' B U2 R2 B r' R' B' R2
+T Y2 U2 B' l2 D2 F' L' l' F D2 R2 F L' l' B' R2
+T d2 B' l2 D2 F' L' l' F D2 R2 F L' l' B' R2
+T Y2 U2 B' R2 U2 B' r' R' F D2 l2 B r' R' B' R2
+T d2 B' R2 U2 B' r' R' F D2 l2 B r' R' B' R2
+T Y2 U2 B' R2 U2 B' r' R' F D2 R2 F r' R' F' l2
+T d2 B' R2 U2 B' r' R' F D2 R2 F r' R' F' l2
+T Y2 U2 B' R2 U2 B' L' l' B U2 l2 F L' l' B' R2
+T d2 B' R2 U2 B' L' l' B U2 l2 F L' l' B' R2
+T Y2 U2 B' R2 U2 B' L' l' B U2 R2 B L' l' F' l2
+T d2 B' R2 U2 B' L' l' B U2 R2 B L' l' F' l2
+T Y2 U2 B' l2 D2 F' r' l' D B2 l2 U L' R' B' R2
+T d2 B' l2 D2 F' r' l' D B2 l2 U L' R' B' R2
+T Y2 U2 B' l2 D2 F' r' l' D B2 R2 D L' R' F' l2
+T d2 B' l2 D2 F' r' l' D B2 R2 D L' R' F' l2
+T Y2 U2 B' l2 D2 F' r' R' B U2 l2 F L' l' B' R2
+T d2 B' l2 D2 F' r' R' B U2 l2 F L' l' B' R2
+T Y2 U2 B' l2 D2 F' r' R' B U2 R2 B L' l' F' l2
+T d2 B' l2 D2 F' r' R' B U2 R2 B L' l' F' l2
+T Y2 U2 B' l2 D2 F' L' l' F D2 l2 B r' R' B' R2
+T d2 B' l2 D2 F' L' l' F D2 l2 B r' R' B' R2
+T Y2 U2 B' l2 D2 F' L' l' F D2 R2 F r' R' F' l2
+T d2 B' l2 D2 F' L' l' F D2 R2 F r' R' F' l2
+T Y2 U2 B' l2 D2 F' L' R' D B2 l2 U r' l' B' R2
+T d2 B' l2 D2 F' L' R' D B2 l2 U r' l' B' R2
+T Y2 U2 B' l2 D2 F' L' R' D B2 R2 D r' l' F' l2
+T d2 B' l2 D2 F' L' R' D B2 R2 D r' l' F' l2
+T Y2 U2 B' R2 U2 B' r' l' U F2 l2 D L' R' F' l2
+T d2 B' R2 U2 B' r' l' U F2 l2 D L' R' F' l2
+T Y2 U2 B' R2 U2 B' r' l' U F2 R2 U r' l' B' R2
+T d2 B' R2 U2 B' r' l' U F2 R2 U r' l' B' R2
+T Y2 U2 B' R2 U2 B' r' R' F D2 l2 B L' l' F' l2
+T d2 B' R2 U2 B' r' R' F D2 l2 B L' l' F' l2
+T Y2 U2 B' R2 U2 B' L' l' B U2 l2 F r' R' F' l2
+T d2 B' R2 U2 B' L' l' B U2 l2 F r' R' F' l2
+T Y2 U2 B' R2 U2 B' L' R' U F2 l2 D r' l' F' l2
+T d2 B' R2 U2 B' L' R' U F2 l2 D r' l' F' l2
+T Y2 U2 B' l2 D2 F' r' R' B U2 l2 F r' R' F' l2
+T d2 B' l2 D2 F' r' R' B U2 l2 F r' R' F' l2
+T Y2 U2 B' l2 D2 F' L' l' F D2 l2 B L' l' F' l2
+T d2 B' l2 D2 F' L' l' F D2 l2 B L' l' F' l2
+T Y2 U2 B' l2 D2 F' r' l' D B2 l2 U r' l' B' R2
+T d2 B' l2 D2 F' r' l' D B2 l2 U r' l' B' R2
+T Y2 U2 B' l2 D2 F' r' l' D B2 R2 D r' l' F' l2
+T d2 B' l2 D2 F' r' l' D B2 R2 D r' l' F' l2
+T Y2 U2 B' R2 U2 B' r' l' U F2 l2 D r' l' F' l2
+T d2 B' R2 U2 B' r' l' U F2 l2 D r' l' F' l2
+
+add_YorZ__shifting_listTypeAlg  is now:
+Y2 T' U2 B' R2 U2 B' L' R' U F2 R2 U L' R' B' R2
+The indexes are going in reverse order; here are the algs for the current index, which is:  0
+
+Y2 T' U2 B' l2 D2 F' L' R' D B2 l2 U L' R' B' R2
+Y2 T' U2 B' l2 D2 F' L' R' D B2 R2 D L' R' F' l2
+Y2 T' U2 B' R2 U2 B' r' l' U F2 R2 U L' R' B' R2
+Y2 T' U2 B' R2 U2 B' r' R' F D2 R2 F L' l' B' R2
+Y2 T' U2 B' R2 U2 B' L' l' B U2 R2 B r' R' B' R2
+Y2 T' U2 B' R2 U2 B' L' R' U F2 l2 D L' R' F' l2
+Y2 T' U2 B' R2 U2 B' L' R' U F2 R2 U r' l' B' R2
+Y2 T' U2 B' l2 D2 F' r' R' B U2 R2 B r' R' B' R2
+Y2 T' U2 B' l2 D2 F' L' l' F D2 R2 F L' l' B' R2
+Y2 T' U2 B' R2 U2 B' r' R' F D2 l2 B r' R' B' R2
+Y2 T' U2 B' R2 U2 B' r' R' F D2 R2 F r' R' F' l2
+Y2 T' U2 B' R2 U2 B' L' l' B U2 l2 F L' l' B' R2
+Y2 T' U2 B' R2 U2 B' L' l' B U2 R2 B L' l' F' l2
+Y2 T' U2 B' l2 D2 F' r' l' D B2 l2 U L' R' B' R2
+Y2 T' U2 B' l2 D2 F' r' l' D B2 R2 D L' R' F' l2
+Y2 T' U2 B' l2 D2 F' r' R' B U2 l2 F L' l' B' R2
+Y2 T' U2 B' l2 D2 F' r' R' B U2 R2 B L' l' F' l2
+Y2 T' U2 B' l2 D2 F' L' l' F D2 l2 B r' R' B' R2
+Y2 T' U2 B' l2 D2 F' L' l' F D2 R2 F r' R' F' l2
+Y2 T' U2 B' l2 D2 F' L' R' D B2 l2 U r' l' B' R2
+Y2 T' U2 B' l2 D2 F' L' R' D B2 R2 D r' l' F' l2
+Y2 T' U2 B' R2 U2 B' r' l' U F2 l2 D L' R' F' l2
+Y2 T' U2 B' R2 U2 B' r' l' U F2 R2 U r' l' B' R2
+Y2 T' U2 B' R2 U2 B' r' R' F D2 l2 B L' l' F' l2
+Y2 T' U2 B' R2 U2 B' L' l' B U2 l2 F r' R' F' l2
+Y2 T' U2 B' R2 U2 B' L' R' U F2 l2 D r' l' F' l2
+Y2 T' U2 B' l2 D2 F' r' R' B U2 l2 F r' R' F' l2
+Y2 T' U2 B' l2 D2 F' L' l' F D2 l2 B L' l' F' l2
+Y2 T' U2 B' l2 D2 F' r' l' D B2 l2 U r' l' B' R2
+Y2 T' U2 B' l2 D2 F' r' l' D B2 R2 D r' l' F' l2
+Y2 T' U2 B' R2 U2 B' r' l' U F2 l2 D r' l' F' l2
+
+DUAL list:  [['Y2', 'X0'], ['Z2', 'X2']]
+
+active member of DUAL list:  ['Z2', 'X2']
+
+add_YorZ__shifting_listTypeAlg  is now:
+T U2 F' L2 U2 F' R' L' U B2 L2 U R' L' F' L2 Z2
+The indexes are going in reverse order; here are the algs for the current index, which is:  16
+
+T U2 F' r2 D2 B' R' L' D F2 L2 D R' L' B' L2 Z2
+T U2 F' L2 U2 F' R' L' U B2 r2 D R' L' B' L2 Z2
+T U2 F' L2 U2 F' R' L' U B2 L2 U R' L' F' r2 Z2
+T U2 F' L2 U2 F' l' L' B D2 L2 B l' L' B' L2 Z2
+T U2 F' L2 U2 F' R' r' F U2 L2 F R' r' B' L2 Z2
+T U2 F' r2 D2 B' l' r' D F2 L2 D R' L' B' L2 Z2
+T U2 F' r2 D2 B' l' L' F U2 L2 F R' r' B' L2 Z2
+T U2 F' r2 D2 B' R' r' B D2 L2 B l' L' B' L2 Z2
+T U2 F' r2 D2 B' R' L' D F2 r2 U R' L' F' r2 Z2
+T U2 F' r2 D2 B' R' L' D F2 L2 D l' r' B' L2 Z2
+T U2 F' L2 U2 F' l' r' U B2 r2 D R' L' B' L2 Z2
+T U2 F' L2 U2 F' l' r' U B2 L2 U R' L' F' r2 Z2
+T U2 F' L2 U2 F' l' L' B D2 r2 F R' r' B' L2 Z2
+T U2 F' L2 U2 F' l' L' B D2 L2 B R' r' F' r2 Z2
+T U2 F' L2 U2 F' R' r' F U2 r2 B l' L' B' L2 Z2
+T U2 F' L2 U2 F' R' r' F U2 L2 F l' L' F' r2 Z2
+T U2 F' L2 U2 F' R' L' U B2 r2 D l' r' B' L2 Z2
+T U2 F' L2 U2 F' R' L' U B2 L2 U l' r' F' r2 Z2
+T U2 F' r2 D2 B' l' L' F U2 r2 B l' L' B' L2 Z2
+T U2 F' r2 D2 B' l' L' F U2 L2 F l' L' F' r2 Z2
+T U2 F' r2 D2 B' R' r' B D2 r2 F R' r' B' L2 Z2
+T U2 F' r2 D2 B' R' r' B D2 L2 B R' r' F' r2 Z2
+T U2 F' L2 U2 F' l' L' B D2 r2 F l' L' F' r2 Z2
+T U2 F' L2 U2 F' R' r' F U2 r2 B R' r' F' r2 Z2
+T U2 F' r2 D2 B' l' r' D F2 r2 U R' L' F' r2 Z2
+T U2 F' r2 D2 B' l' r' D F2 L2 D l' r' B' L2 Z2
+T U2 F' r2 D2 B' l' L' F U2 r2 B R' r' F' r2 Z2
+T U2 F' r2 D2 B' R' r' B D2 r2 F l' L' F' r2 Z2
+T U2 F' r2 D2 B' R' L' D F2 r2 U l' r' F' r2 Z2
+T U2 F' L2 U2 F' l' r' U B2 r2 D l' r' B' L2 Z2
+T U2 F' L2 U2 F' l' r' U B2 L2 U l' r' F' r2 Z2
+T U2 F' r2 D2 B' l' r' D F2 r2 U l' r' F' r2 Z2
+
+add_YorZ__shifting_listTypeAlg  is now:
+T U2 F' L2 U2 F' R' L' U B2 L2 U R' L' Z2 F' R2
+The indexes are going in reverse order; here are the algs for the current index, which is:  14
+
+T U2 F' r2 D2 B' R' L' D F2 L2 D R' L' Z2 B' R2
+T U2 F' L2 U2 F' R' L' U B2 r2 D R' L' Z2 B' R2
+T U2 F' L2 U2 F' R' L' U B2 L2 U R' L' Z2 F' l2
+T U2 F' L2 U2 F' l' L' B D2 L2 B l' L' Z2 B' R2
+T U2 F' L2 U2 F' R' r' F U2 L2 F R' r' Z2 B' R2
+T U2 F' r2 D2 B' l' r' D F2 L2 D R' L' Z2 B' R2
+T U2 F' r2 D2 B' l' L' F U2 L2 F R' r' Z2 B' R2
+T U2 F' r2 D2 B' R' r' B D2 L2 B l' L' Z2 B' R2
+T U2 F' r2 D2 B' R' L' D F2 r2 U R' L' Z2 F' l2
+T U2 F' r2 D2 B' R' L' D F2 L2 D l' r' Z2 B' R2
+T U2 F' L2 U2 F' l' r' U B2 r2 D R' L' Z2 B' R2
+T U2 F' L2 U2 F' l' r' U B2 L2 U R' L' Z2 F' l2
+T U2 F' L2 U2 F' l' L' B D2 r2 F R' r' Z2 B' R2
+T U2 F' L2 U2 F' l' L' B D2 L2 B R' r' Z2 F' l2
+T U2 F' L2 U2 F' R' r' F U2 r2 B l' L' Z2 B' R2
+T U2 F' L2 U2 F' R' r' F U2 L2 F l' L' Z2 F' l2
+T U2 F' L2 U2 F' R' L' U B2 r2 D l' r' Z2 B' R2
+T U2 F' L2 U2 F' R' L' U B2 L2 U l' r' Z2 F' l2
+T U2 F' r2 D2 B' l' L' F U2 r2 B l' L' Z2 B' R2
+T U2 F' r2 D2 B' l' L' F U2 L2 F l' L' Z2 F' l2
+T U2 F' r2 D2 B' R' r' B D2 r2 F R' r' Z2 B' R2
+T U2 F' r2 D2 B' R' r' B D2 L2 B R' r' Z2 F' l2
+T U2 F' L2 U2 F' l' L' B D2 r2 F l' L' Z2 F' l2
+T U2 F' L2 U2 F' R' r' F U2 r2 B R' r' Z2 F' l2
+T U2 F' r2 D2 B' l' r' D F2 r2 U R' L' Z2 F' l2
+T U2 F' r2 D2 B' l' r' D F2 L2 D l' r' Z2 B' R2
+T U2 F' r2 D2 B' l' L' F U2 r2 B R' r' Z2 F' l2
+T U2 F' r2 D2 B' R' r' B D2 r2 F l' L' Z2 F' l2
+T U2 F' r2 D2 B' R' L' D F2 r2 U l' r' Z2 F' l2
+T U2 F' L2 U2 F' l' r' U B2 r2 D l' r' Z2 B' R2
+T U2 F' L2 U2 F' l' r' U B2 L2 U l' r' Z2 F' l2
+T U2 F' r2 D2 B' l' r' D F2 r2 U l' r' Z2 F' l2
+
+add_YorZ__shifting_listTypeAlg  is now:
+T U2 F' L2 U2 F' R' L' U B2 L2 U R' Z2 R' F' R2
+The indexes are going in reverse order; here are the algs for the current index, which is:  13
+
+T U2 F' r2 D2 B' R' L' D F2 L2 D R' Z2 R' B' R2
+T U2 F' L2 U2 F' R' L' U B2 r2 D R' Z2 R' B' R2
+T U2 F' L2 U2 F' R' L' U B2 L2 U R' Z2 R' F' l2
+T U2 F' L2 U2 F' l' L' B D2 L2 B l' Z2 R' B' R2
+T U2 F' L2 U2 F' l' L' B D2 L2 B R' Y2 l' B' R2
+T U2 F' L2 U2 F' R' L' U B2 L2 U l' Y2 l' B' R2
+T U2 F' r2 D2 B' l' r' D F2 L2 D R' Z2 R' B' R2
+T U2 F' r2 D2 B' R' r' B D2 L2 B l' Z2 R' B' R2
+T U2 F' r2 D2 B' R' r' B D2 L2 B R' Y2 l' B' R2
+T U2 F' r2 D2 B' R' L' D F2 r2 U R' Z2 R' F' l2
+T U2 F' L2 U2 F' l' r' U B2 r2 D R' Z2 R' B' R2
+T U2 F' L2 U2 F' l' r' U B2 L2 U R' Z2 R' F' l2
+T U2 F' L2 U2 F' R' r' F U2 r2 B l' Z2 R' B' R2
+T U2 F' L2 U2 F' R' r' F U2 r2 B R' Y2 l' B' R2
+T U2 F' L2 U2 F' R' r' F U2 L2 F l' Z2 R' F' l2
+T U2 F' L2 U2 F' R' r' F U2 L2 F R' Y2 l' F' l2
+T U2 F' r2 D2 B' l' L' F U2 r2 B l' Z2 R' B' R2
+T U2 F' r2 D2 B' l' L' F U2 r2 B R' Y2 l' B' R2
+T U2 F' r2 D2 B' l' L' F U2 L2 F l' Z2 R' F' l2
+T U2 F' r2 D2 B' l' L' F U2 L2 F R' Y2 l' F' l2
+T U2 F' r2 D2 B' R' L' D F2 r2 U l' Y2 l' B' R2
+T U2 F' r2 D2 B' R' L' D F2 L2 D l' Y2 l' F' l2
+T U2 F' L2 U2 F' l' r' U B2 L2 U l' Y2 l' B' R2
+T U2 F' L2 U2 F' l' L' B D2 r2 F l' Z2 R' F' l2
+T U2 F' L2 U2 F' l' L' B D2 r2 F R' Y2 l' F' l2
+T U2 F' L2 U2 F' R' L' U B2 r2 D l' Y2 l' F' l2
+T U2 F' r2 D2 B' l' r' D F2 r2 U R' Z2 R' F' l2
+T U2 F' r2 D2 B' R' r' B D2 r2 F l' Z2 R' F' l2
+T U2 F' r2 D2 B' R' r' B D2 r2 F R' Y2 l' F' l2
+T U2 F' r2 D2 B' l' r' D F2 r2 U l' Y2 l' B' R2
+T U2 F' r2 D2 B' l' r' D F2 L2 D l' Y2 l' F' l2
+T U2 F' L2 U2 F' l' r' U B2 r2 D l' Y2 l' F' l2
+
+add_YorZ__shifting_listTypeAlg  is now:
+T U2 F' L2 U2 F' R' L' U B2 L2 U Z2 L' R' F' R2
+The indexes are going in reverse order; here are the algs for the current index, which is:  12
+
+T U2 F' r2 D2 B' R' L' D F2 L2 D Z2 L' R' B' R2
+T U2 F' L2 U2 F' R' L' U B2 r2 D Z2 L' R' B' R2
+T U2 F' L2 U2 F' R' L' U B2 L2 U Z2 L' R' F' l2
+T U2 F' L2 U2 F' l' L' B D2 L2 B Y2 L' l' B' R2
+T U2 F' L2 U2 F' R' r' F U2 L2 F Y2 r' R' B' R2
+T U2 F' r2 D2 B' l' r' D F2 L2 D Z2 L' R' B' R2
+T U2 F' r2 D2 B' l' L' F U2 L2 F Y2 r' R' B' R2
+T U2 F' r2 D2 B' R' r' B D2 L2 B Y2 L' l' B' R2
+T U2 F' r2 D2 B' R' L' D F2 r2 U Z2 L' R' F' l2
+T U2 F' r2 D2 B' R' L' D F2 L2 D Z2 r' l' B' R2
+T U2 F' L2 U2 F' l' r' U B2 r2 D Z2 L' R' B' R2
+T U2 F' L2 U2 F' l' r' U B2 L2 U Z2 L' R' F' l2
+T U2 F' L2 U2 F' l' L' B D2 r2 F Y2 r' R' B' R2
+T U2 F' L2 U2 F' l' L' B D2 L2 B Y2 r' R' F' l2
+T U2 F' L2 U2 F' R' r' F U2 r2 B Y2 L' l' B' R2
+T U2 F' L2 U2 F' R' r' F U2 L2 F Y2 L' l' F' l2
+T U2 F' L2 U2 F' R' L' U B2 r2 D Z2 r' l' B' R2
+T U2 F' L2 U2 F' R' L' U B2 L2 U Z2 r' l' F' l2
+T U2 F' r2 D2 B' l' L' F U2 r2 B Y2 L' l' B' R2
+T U2 F' r2 D2 B' l' L' F U2 L2 F Y2 L' l' F' l2
+T U2 F' r2 D2 B' R' r' B D2 r2 F Y2 r' R' B' R2
+T U2 F' r2 D2 B' R' r' B D2 L2 B Y2 r' R' F' l2
+T U2 F' L2 U2 F' l' L' B D2 r2 F Y2 L' l' F' l2
+T U2 F' L2 U2 F' R' r' F U2 r2 B Y2 r' R' F' l2
+T U2 F' r2 D2 B' l' r' D F2 r2 U Z2 L' R' F' l2
+T U2 F' r2 D2 B' l' r' D F2 L2 D Z2 r' l' B' R2
+T U2 F' r2 D2 B' l' L' F U2 r2 B Y2 r' R' F' l2
+T U2 F' r2 D2 B' R' r' B D2 r2 F Y2 L' l' F' l2
+T U2 F' r2 D2 B' R' L' D F2 r2 U Z2 r' l' F' l2
+T U2 F' L2 U2 F' l' r' U B2 r2 D Z2 r' l' B' R2
+T U2 F' L2 U2 F' l' r' U B2 L2 U Z2 r' l' F' l2
+T U2 F' r2 D2 B' l' r' D F2 r2 U Z2 r' l' F' l2
+
+add_YorZ__shifting_listTypeAlg  is now:
+T U2 F' L2 U2 F' R' L' U B2 L2 Z2 D L' R' F' R2
+The indexes are going in reverse order; here are the algs for the current index, which is:  11
+
+T U2 F' r2 D2 B' R' L' D F2 L2 Z2 U L' R' B' R2
+T U2 F' L2 U2 F' R' L' U B2 r2 Z2 U L' R' B' R2
+T U2 F' L2 U2 F' R' L' U B2 L2 Z2 D L' R' F' l2
+T U2 F' L2 U2 F' l' L' B D2 L2 Y2 F L' l' B' R2
+T U2 F' L2 U2 F' R' r' F U2 L2 Y2 B r' R' B' R2
+T U2 F' r2 D2 B' l' r' D F2 L2 Z2 U L' R' B' R2
+T U2 F' r2 D2 B' l' L' F U2 L2 Y2 B r' R' B' R2
+T U2 F' r2 D2 B' R' r' B D2 L2 Y2 F L' l' B' R2
+T U2 F' r2 D2 B' R' L' D F2 r2 Z2 D L' R' F' l2
+T U2 F' r2 D2 B' R' L' D F2 L2 Z2 U r' l' B' R2
+T U2 F' L2 U2 F' l' r' U B2 r2 Z2 U L' R' B' R2
+T U2 F' L2 U2 F' l' r' U B2 L2 Z2 D L' R' F' l2
+T U2 F' L2 U2 F' l' L' B D2 r2 Y2 B r' R' B' R2
+T U2 F' L2 U2 F' l' L' B D2 L2 Y2 F r' R' F' l2
+T U2 F' L2 U2 F' R' r' F U2 r2 Y2 F L' l' B' R2
+T U2 F' L2 U2 F' R' r' F U2 L2 Y2 B L' l' F' l2
+T U2 F' L2 U2 F' R' L' U B2 r2 Z2 U r' l' B' R2
+T U2 F' L2 U2 F' R' L' U B2 L2 Z2 D r' l' F' l2
+T U2 F' r2 D2 B' l' L' F U2 r2 Y2 F L' l' B' R2
+T U2 F' r2 D2 B' l' L' F U2 L2 Y2 B L' l' F' l2
+T U2 F' r2 D2 B' R' r' B D2 r2 Y2 B r' R' B' R2
+T U2 F' r2 D2 B' R' r' B D2 L2 Y2 F r' R' F' l2
+T U2 F' L2 U2 F' l' L' B D2 r2 Y2 B L' l' F' l2
+T U2 F' L2 U2 F' R' r' F U2 r2 Y2 F r' R' F' l2
+T U2 F' r2 D2 B' l' r' D F2 r2 Z2 D L' R' F' l2
+T U2 F' r2 D2 B' l' r' D F2 L2 Z2 U r' l' B' R2
+T U2 F' r2 D2 B' l' L' F U2 r2 Y2 F r' R' F' l2
+T U2 F' r2 D2 B' R' r' B D2 r2 Y2 B L' l' F' l2
+T U2 F' r2 D2 B' R' L' D F2 r2 Z2 D r' l' F' l2
+T U2 F' L2 U2 F' l' r' U B2 r2 Z2 U r' l' B' R2
+T U2 F' L2 U2 F' l' r' U B2 L2 Z2 D r' l' F' l2
+T U2 F' r2 D2 B' l' r' D F2 r2 Z2 D r' l' F' l2
+
+add_YorZ__shifting_listTypeAlg  is now:
+T U2 F' L2 U2 F' R' L' U Z2 B2 R2 D L' R' F' R2
+The indexes are going in reverse order; here are the algs for the current index, which is:  9
+
+T U2 F' r2 D2 B' R' L' D Z2 F2 R2 U L' R' B' R2
+T U2 F' r2 D2 B' R' L' D b2 R2 U L' R' B' R2
+T U2 F' L2 U2 F' R' L' U Z2 B2 l2 U L' R' B' R2
+T U2 F' L2 U2 F' R' L' U f2 l2 U L' R' B' R2
+T U2 F' L2 U2 F' R' L' U Z2 B2 R2 D L' R' F' l2
+T U2 F' L2 U2 F' R' L' U f2 R2 D L' R' F' l2
+T U2 F' L2 U2 F' l' L' B Y2 D2 R2 F L' l' B' R2
+T U2 F' L2 U2 F' l' L' B u2 R2 F L' l' B' R2
+T U2 F' L2 U2 F' R' r' F Y2 U2 R2 B r' R' B' R2
+T U2 F' L2 U2 F' R' r' F d2 R2 B r' R' B' R2
+T U2 F' r2 D2 B' l' r' D Z2 F2 R2 U L' R' B' R2
+T U2 F' r2 D2 B' l' r' D b2 R2 U L' R' B' R2
+T U2 F' r2 D2 B' l' L' F Y2 U2 R2 B r' R' B' R2
+T U2 F' r2 D2 B' l' L' F d2 R2 B r' R' B' R2
+T U2 F' r2 D2 B' R' r' B Y2 D2 R2 F L' l' B' R2
+T U2 F' r2 D2 B' R' r' B u2 R2 F L' l' B' R2
+T U2 F' r2 D2 B' R' L' D Z2 F2 l2 D L' R' F' l2
+T U2 F' r2 D2 B' R' L' D b2 l2 D L' R' F' l2
+T U2 F' r2 D2 B' R' L' D Z2 F2 R2 U r' l' B' R2
+T U2 F' r2 D2 B' R' L' D b2 R2 U r' l' B' R2
+T U2 F' L2 U2 F' l' r' U Z2 B2 l2 U L' R' B' R2
+T U2 F' L2 U2 F' l' r' U f2 l2 U L' R' B' R2
+T U2 F' L2 U2 F' l' r' U Z2 B2 R2 D L' R' F' l2
+T U2 F' L2 U2 F' l' r' U f2 R2 D L' R' F' l2
+T U2 F' L2 U2 F' l' L' B Y2 D2 l2 B r' R' B' R2
+T U2 F' L2 U2 F' l' L' B u2 l2 B r' R' B' R2
+T U2 F' L2 U2 F' l' L' B Y2 D2 R2 F r' R' F' l2
+T U2 F' L2 U2 F' l' L' B u2 R2 F r' R' F' l2
+T U2 F' L2 U2 F' R' r' F Y2 U2 l2 F L' l' B' R2
+T U2 F' L2 U2 F' R' r' F d2 l2 F L' l' B' R2
+T U2 F' L2 U2 F' R' r' F Y2 U2 R2 B L' l' F' l2
+T U2 F' L2 U2 F' R' r' F d2 R2 B L' l' F' l2
+T U2 F' L2 U2 F' R' L' U Z2 B2 l2 U r' l' B' R2
+T U2 F' L2 U2 F' R' L' U f2 l2 U r' l' B' R2
+T U2 F' L2 U2 F' R' L' U Z2 B2 R2 D r' l' F' l2
+T U2 F' L2 U2 F' R' L' U f2 R2 D r' l' F' l2
+T U2 F' r2 D2 B' l' L' F Y2 U2 l2 F L' l' B' R2
+T U2 F' r2 D2 B' l' L' F d2 l2 F L' l' B' R2
+T U2 F' r2 D2 B' l' L' F Y2 U2 R2 B L' l' F' l2
+T U2 F' r2 D2 B' l' L' F d2 R2 B L' l' F' l2
+T U2 F' r2 D2 B' R' r' B Y2 D2 l2 B r' R' B' R2
+T U2 F' r2 D2 B' R' r' B u2 l2 B r' R' B' R2
+T U2 F' r2 D2 B' R' r' B Y2 D2 R2 F r' R' F' l2
+T U2 F' r2 D2 B' R' r' B u2 R2 F r' R' F' l2
+T U2 F' L2 U2 F' l' L' B Y2 D2 l2 B L' l' F' l2
+T U2 F' L2 U2 F' l' L' B u2 l2 B L' l' F' l2
+T U2 F' L2 U2 F' R' r' F Y2 U2 l2 F r' R' F' l2
+T U2 F' L2 U2 F' R' r' F d2 l2 F r' R' F' l2
+T U2 F' r2 D2 B' l' r' D Z2 F2 l2 D L' R' F' l2
+T U2 F' r2 D2 B' l' r' D b2 l2 D L' R' F' l2
+T U2 F' r2 D2 B' l' r' D Z2 F2 R2 U r' l' B' R2
+T U2 F' r2 D2 B' l' r' D b2 R2 U r' l' B' R2
+T U2 F' r2 D2 B' l' L' F Y2 U2 l2 F r' R' F' l2
+T U2 F' r2 D2 B' l' L' F d2 l2 F r' R' F' l2
+T U2 F' r2 D2 B' R' r' B Y2 D2 l2 B L' l' F' l2
+T U2 F' r2 D2 B' R' r' B u2 l2 B L' l' F' l2
+T U2 F' r2 D2 B' R' L' D Z2 F2 l2 D r' l' F' l2
+T U2 F' r2 D2 B' R' L' D b2 l2 D r' l' F' l2
+T U2 F' L2 U2 F' l' r' U Z2 B2 l2 U r' l' B' R2
+T U2 F' L2 U2 F' l' r' U f2 l2 U r' l' B' R2
+T U2 F' L2 U2 F' l' r' U Z2 B2 R2 D r' l' F' l2
+T U2 F' L2 U2 F' l' r' U f2 R2 D r' l' F' l2
+T U2 F' r2 D2 B' l' r' D Z2 F2 l2 D r' l' F' l2
+T U2 F' r2 D2 B' l' r' D b2 l2 D r' l' F' l2
+
+add_YorZ__shifting_listTypeAlg  is now:
+T U2 F' L2 U2 F' R' L' Z2 D B2 R2 D L' R' F' R2
+The indexes are going in reverse order; here are the algs for the current index, which is:  8
+
+T U2 F' r2 D2 B' R' L' Z2 U F2 R2 U L' R' B' R2
+T U2 F' L2 U2 F' R' L' Z2 D B2 l2 U L' R' B' R2
+T U2 F' L2 U2 F' R' L' Z2 D B2 R2 D L' R' F' l2
+T U2 F' L2 U2 F' l' L' Y2 F D2 R2 F L' l' B' R2
+T U2 F' L2 U2 F' R' r' Y2 B U2 R2 B r' R' B' R2
+T U2 F' r2 D2 B' l' r' Z2 U F2 R2 U L' R' B' R2
+T U2 F' r2 D2 B' l' L' Y2 B U2 R2 B r' R' B' R2
+T U2 F' r2 D2 B' R' r' Y2 F D2 R2 F L' l' B' R2
+T U2 F' r2 D2 B' R' L' Z2 U F2 l2 D L' R' F' l2
+T U2 F' r2 D2 B' R' L' Z2 U F2 R2 U r' l' B' R2
+T U2 F' L2 U2 F' l' r' Z2 D B2 l2 U L' R' B' R2
+T U2 F' L2 U2 F' l' r' Z2 D B2 R2 D L' R' F' l2
+T U2 F' L2 U2 F' l' L' Y2 F D2 l2 B r' R' B' R2
+T U2 F' L2 U2 F' l' L' Y2 F D2 R2 F r' R' F' l2
+T U2 F' L2 U2 F' R' r' Y2 B U2 l2 F L' l' B' R2
+T U2 F' L2 U2 F' R' r' Y2 B U2 R2 B L' l' F' l2
+T U2 F' L2 U2 F' R' L' Z2 D B2 l2 U r' l' B' R2
+T U2 F' L2 U2 F' R' L' Z2 D B2 R2 D r' l' F' l2
+T U2 F' r2 D2 B' l' L' Y2 B U2 l2 F L' l' B' R2
+T U2 F' r2 D2 B' l' L' Y2 B U2 R2 B L' l' F' l2
+T U2 F' r2 D2 B' R' r' Y2 F D2 l2 B r' R' B' R2
+T U2 F' r2 D2 B' R' r' Y2 F D2 R2 F r' R' F' l2
+T U2 F' L2 U2 F' l' L' Y2 F D2 l2 B L' l' F' l2
+T U2 F' L2 U2 F' R' r' Y2 B U2 l2 F r' R' F' l2
+T U2 F' r2 D2 B' l' r' Z2 U F2 l2 D L' R' F' l2
+T U2 F' r2 D2 B' l' r' Z2 U F2 R2 U r' l' B' R2
+T U2 F' r2 D2 B' l' L' Y2 B U2 l2 F r' R' F' l2
+T U2 F' r2 D2 B' R' r' Y2 F D2 l2 B L' l' F' l2
+T U2 F' r2 D2 B' R' L' Z2 U F2 l2 D r' l' F' l2
+T U2 F' L2 U2 F' l' r' Z2 D B2 l2 U r' l' B' R2
+T U2 F' L2 U2 F' l' r' Z2 D B2 R2 D r' l' F' l2
+T U2 F' r2 D2 B' l' r' Z2 U F2 l2 D r' l' F' l2
+
+add_YorZ__shifting_listTypeAlg  is now:
+T U2 F' L2 U2 F' R' Z2 R' D B2 R2 D L' R' F' R2
+The indexes are going in reverse order; here are the algs for the current index, which is:  7
+
+T U2 F' r2 D2 B' R' Z2 R' U F2 R2 U L' R' B' R2
+T U2 F' L2 U2 F' R' Z2 R' D B2 l2 U L' R' B' R2
+T U2 F' L2 U2 F' R' Z2 R' D B2 R2 D L' R' F' l2
+T U2 F' L2 U2 F' l' Y2 l' U F2 R2 U L' R' B' R2
+T U2 F' L2 U2 F' l' Y2 R' F D2 R2 F L' l' B' R2
+T U2 F' L2 U2 F' R' Z2 l' F D2 R2 F L' l' B' R2
+T U2 F' r2 D2 B' l' Y2 R' B U2 R2 B r' R' B' R2
+T U2 F' r2 D2 B' R' Z2 l' B U2 R2 B r' R' B' R2
+T U2 F' r2 D2 B' R' Z2 R' U F2 l2 D L' R' F' l2
+T U2 F' r2 D2 B' R' Z2 R' U F2 R2 U r' l' B' R2
+T U2 F' L2 U2 F' l' Y2 R' F D2 l2 B r' R' B' R2
+T U2 F' L2 U2 F' l' Y2 R' F D2 R2 F r' R' F' l2
+T U2 F' L2 U2 F' R' Z2 l' F D2 l2 B r' R' B' R2
+T U2 F' L2 U2 F' R' Z2 l' F D2 R2 F r' R' F' l2
+T U2 F' L2 U2 F' R' Z2 R' D B2 l2 U r' l' B' R2
+T U2 F' L2 U2 F' R' Z2 R' D B2 R2 D r' l' F' l2
+T U2 F' r2 D2 B' l' Y2 l' D B2 l2 U L' R' B' R2
+T U2 F' r2 D2 B' l' Y2 l' D B2 R2 D L' R' F' l2
+T U2 F' r2 D2 B' l' Y2 R' B U2 l2 F L' l' B' R2
+T U2 F' r2 D2 B' l' Y2 R' B U2 R2 B L' l' F' l2
+T U2 F' r2 D2 B' R' Z2 l' B U2 l2 F L' l' B' R2
+T U2 F' r2 D2 B' R' Z2 l' B U2 R2 B L' l' F' l2
+T U2 F' L2 U2 F' l' Y2 l' U F2 l2 D L' R' F' l2
+T U2 F' L2 U2 F' l' Y2 l' U F2 R2 U r' l' B' R2
+T U2 F' L2 U2 F' l' Y2 R' F D2 l2 B L' l' F' l2
+T U2 F' L2 U2 F' R' Z2 l' F D2 l2 B L' l' F' l2
+T U2 F' r2 D2 B' l' Y2 R' B U2 l2 F r' R' F' l2
+T U2 F' r2 D2 B' R' Z2 l' B U2 l2 F r' R' F' l2
+T U2 F' r2 D2 B' R' Z2 R' U F2 l2 D r' l' F' l2
+T U2 F' r2 D2 B' l' Y2 l' D B2 l2 U r' l' B' R2
+T U2 F' r2 D2 B' l' Y2 l' D B2 R2 D r' l' F' l2
+T U2 F' L2 U2 F' l' Y2 l' U F2 l2 D r' l' F' l2
+
+add_YorZ__shifting_listTypeAlg  is now:
+T U2 F' L2 U2 Z2 F' L' R' D B2 R2 D L' R' F' R2
+The indexes are going in reverse order; here are the algs for the current index, which is:  5
+
+T U2 F' r2 D2 Z2 B' L' R' U F2 R2 U L' R' B' R2
+T U2 F' L2 U2 Z2 F' L' R' D B2 l2 U L' R' B' R2
+T U2 F' L2 U2 Z2 F' L' R' D B2 R2 D L' R' F' l2
+T U2 F' L2 U2 Z2 F' r' R' B U2 R2 B r' R' B' R2
+T U2 F' L2 U2 Z2 F' L' l' F D2 R2 F L' l' B' R2
+T U2 F' r2 D2 Z2 B' r' l' U F2 R2 U L' R' B' R2
+T U2 F' r2 D2 Z2 B' r' R' F D2 R2 F L' l' B' R2
+T U2 F' r2 D2 Z2 B' L' l' B U2 R2 B r' R' B' R2
+T U2 F' r2 D2 Z2 B' L' R' U F2 l2 D L' R' F' l2
+T U2 F' r2 D2 Z2 B' L' R' U F2 R2 U r' l' B' R2
+T U2 F' L2 U2 Z2 F' r' l' D B2 l2 U L' R' B' R2
+T U2 F' L2 U2 Z2 F' r' l' D B2 R2 D L' R' F' l2
+T U2 F' L2 U2 Z2 F' r' R' B U2 l2 F L' l' B' R2
+T U2 F' L2 U2 Z2 F' r' R' B U2 R2 B L' l' F' l2
+T U2 F' L2 U2 Z2 F' L' l' F D2 l2 B r' R' B' R2
+T U2 F' L2 U2 Z2 F' L' l' F D2 R2 F r' R' F' l2
+T U2 F' L2 U2 Z2 F' L' R' D B2 l2 U r' l' B' R2
+T U2 F' L2 U2 Z2 F' L' R' D B2 R2 D r' l' F' l2
+T U2 F' r2 D2 Z2 B' r' R' F D2 l2 B r' R' B' R2
+T U2 F' r2 D2 Z2 B' r' R' F D2 R2 F r' R' F' l2
+T U2 F' r2 D2 Z2 B' L' l' B U2 l2 F L' l' B' R2
+T U2 F' r2 D2 Z2 B' L' l' B U2 R2 B L' l' F' l2
+T U2 F' L2 U2 Z2 F' r' R' B U2 l2 F r' R' F' l2
+T U2 F' L2 U2 Z2 F' L' l' F D2 l2 B L' l' F' l2
+T U2 F' r2 D2 Z2 B' r' l' U F2 l2 D L' R' F' l2
+T U2 F' r2 D2 Z2 B' r' l' U F2 R2 U r' l' B' R2
+T U2 F' r2 D2 Z2 B' r' R' F D2 l2 B L' l' F' l2
+T U2 F' r2 D2 Z2 B' L' l' B U2 l2 F r' R' F' l2
+T U2 F' r2 D2 Z2 B' L' R' U F2 l2 D r' l' F' l2
+T U2 F' L2 U2 Z2 F' r' l' D B2 l2 U r' l' B' R2
+T U2 F' L2 U2 Z2 F' r' l' D B2 R2 D r' l' F' l2
+T U2 F' r2 D2 Z2 B' r' l' U F2 l2 D r' l' F' l2
+
+add_YorZ__shifting_listTypeAlg  is now:
+T U2 F' L2 Z2 D2 F' L' R' D B2 R2 D L' R' F' R2
+The indexes are going in reverse order; here are the algs for the current index, which is:  4
+
+T U2 F' r2 Z2 U2 B' L' R' U F2 R2 U L' R' B' R2
+T U2 F' L2 Z2 D2 F' L' R' D B2 l2 U L' R' B' R2
+T U2 F' L2 Z2 D2 F' L' R' D B2 R2 D L' R' F' l2
+T U2 F' L2 Z2 D2 F' r' R' B U2 R2 B r' R' B' R2
+T U2 F' L2 Z2 D2 F' L' l' F D2 R2 F L' l' B' R2
+T U2 F' r2 Z2 U2 B' r' l' U F2 R2 U L' R' B' R2
+T U2 F' r2 Z2 U2 B' r' R' F D2 R2 F L' l' B' R2
+T U2 F' r2 Z2 U2 B' L' l' B U2 R2 B r' R' B' R2
+T U2 F' r2 Z2 U2 B' L' R' U F2 l2 D L' R' F' l2
+T U2 F' r2 Z2 U2 B' L' R' U F2 R2 U r' l' B' R2
+T U2 F' L2 Z2 D2 F' r' l' D B2 l2 U L' R' B' R2
+T U2 F' L2 Z2 D2 F' r' l' D B2 R2 D L' R' F' l2
+T U2 F' L2 Z2 D2 F' r' R' B U2 l2 F L' l' B' R2
+T U2 F' L2 Z2 D2 F' r' R' B U2 R2 B L' l' F' l2
+T U2 F' L2 Z2 D2 F' L' l' F D2 l2 B r' R' B' R2
+T U2 F' L2 Z2 D2 F' L' l' F D2 R2 F r' R' F' l2
+T U2 F' L2 Z2 D2 F' L' R' D B2 l2 U r' l' B' R2
+T U2 F' L2 Z2 D2 F' L' R' D B2 R2 D r' l' F' l2
+T U2 F' r2 Z2 U2 B' r' R' F D2 l2 B r' R' B' R2
+T U2 F' r2 Z2 U2 B' r' R' F D2 R2 F r' R' F' l2
+T U2 F' r2 Z2 U2 B' L' l' B U2 l2 F L' l' B' R2
+T U2 F' r2 Z2 U2 B' L' l' B U2 R2 B L' l' F' l2
+T U2 F' L2 Z2 D2 F' r' R' B U2 l2 F r' R' F' l2
+T U2 F' L2 Z2 D2 F' L' l' F D2 l2 B L' l' F' l2
+T U2 F' r2 Z2 U2 B' r' l' U F2 l2 D L' R' F' l2
+T U2 F' r2 Z2 U2 B' r' l' U F2 R2 U r' l' B' R2
+T U2 F' r2 Z2 U2 B' r' R' F D2 l2 B L' l' F' l2
+T U2 F' r2 Z2 U2 B' L' l' B U2 l2 F r' R' F' l2
+T U2 F' r2 Z2 U2 B' L' R' U F2 l2 D r' l' F' l2
+T U2 F' L2 Z2 D2 F' r' l' D B2 l2 U r' l' B' R2
+T U2 F' L2 Z2 D2 F' r' l' D B2 R2 D r' l' F' l2
+T U2 F' r2 Z2 U2 B' r' l' U F2 l2 D r' l' F' l2
+
+add_YorZ__shifting_listTypeAlg  is now:
+T U2 Z2 F' R2 D2 F' L' R' D B2 R2 D L' R' F' R2
+The indexes are going in reverse order; here are the algs for the current index, which is:  2
+
+T U2 Z2 F' l2 U2 B' L' R' U F2 R2 U L' R' B' R2
+T U2 Z2 F' R2 D2 F' L' R' D B2 l2 U L' R' B' R2
+T U2 Z2 F' R2 D2 F' L' R' D B2 R2 D L' R' F' l2
+T U2 Z2 F' R2 D2 F' r' R' B U2 R2 B r' R' B' R2
+T U2 Z2 F' R2 D2 F' L' l' F D2 R2 F L' l' B' R2
+T U2 Z2 F' l2 U2 B' r' l' U F2 R2 U L' R' B' R2
+T U2 Z2 F' l2 U2 B' r' R' F D2 R2 F L' l' B' R2
+T U2 Z2 F' l2 U2 B' L' l' B U2 R2 B r' R' B' R2
+T U2 Z2 F' l2 U2 B' L' R' U F2 l2 D L' R' F' l2
+T U2 Z2 F' l2 U2 B' L' R' U F2 R2 U r' l' B' R2
+T U2 Z2 F' R2 D2 F' r' l' D B2 l2 U L' R' B' R2
+T U2 Z2 F' R2 D2 F' r' l' D B2 R2 D L' R' F' l2
+T U2 Z2 F' R2 D2 F' r' R' B U2 l2 F L' l' B' R2
+T U2 Z2 F' R2 D2 F' r' R' B U2 R2 B L' l' F' l2
+T U2 Z2 F' R2 D2 F' L' l' F D2 l2 B r' R' B' R2
+T U2 Z2 F' R2 D2 F' L' l' F D2 R2 F r' R' F' l2
+T U2 Z2 F' R2 D2 F' L' R' D B2 l2 U r' l' B' R2
+T U2 Z2 F' R2 D2 F' L' R' D B2 R2 D r' l' F' l2
+T U2 Z2 F' l2 U2 B' r' R' F D2 l2 B r' R' B' R2
+T U2 Z2 F' l2 U2 B' r' R' F D2 R2 F r' R' F' l2
+T U2 Z2 F' l2 U2 B' L' l' B U2 l2 F L' l' B' R2
+T U2 Z2 F' l2 U2 B' L' l' B U2 R2 B L' l' F' l2
+T U2 Z2 F' R2 D2 F' r' R' B U2 l2 F r' R' F' l2
+T U2 Z2 F' R2 D2 F' L' l' F D2 l2 B L' l' F' l2
+T U2 Z2 F' l2 U2 B' r' l' U F2 l2 D L' R' F' l2
+T U2 Z2 F' l2 U2 B' r' l' U F2 R2 U r' l' B' R2
+T U2 Z2 F' l2 U2 B' r' R' F D2 l2 B L' l' F' l2
+T U2 Z2 F' l2 U2 B' L' l' B U2 l2 F r' R' F' l2
+T U2 Z2 F' l2 U2 B' L' R' U F2 l2 D r' l' F' l2
+T U2 Z2 F' R2 D2 F' r' l' D B2 l2 U r' l' B' R2
+T U2 Z2 F' R2 D2 F' r' l' D B2 R2 D r' l' F' l2
+T U2 Z2 F' l2 U2 B' r' l' U F2 l2 D r' l' F' l2
+
+add_YorZ__shifting_listTypeAlg  is now:
+T Z2 D2 F' R2 D2 F' L' R' D B2 R2 D L' R' F' R2
+The indexes are going in reverse order; here are the algs for the current index, which is:  1
+
+T Z2 D2 F' l2 U2 B' L' R' U F2 R2 U L' R' B' R2
+T Z2 D2 F' R2 D2 F' L' R' D B2 l2 U L' R' B' R2
+T Z2 D2 F' R2 D2 F' L' R' D B2 R2 D L' R' F' l2
+T Z2 D2 F' R2 D2 F' r' R' B U2 R2 B r' R' B' R2
+T Z2 D2 F' R2 D2 F' L' l' F D2 R2 F L' l' B' R2
+T Z2 D2 F' l2 U2 B' r' l' U F2 R2 U L' R' B' R2
+T Z2 D2 F' l2 U2 B' r' R' F D2 R2 F L' l' B' R2
+T Z2 D2 F' l2 U2 B' L' l' B U2 R2 B r' R' B' R2
+T Z2 D2 F' l2 U2 B' L' R' U F2 l2 D L' R' F' l2
+T Z2 D2 F' l2 U2 B' L' R' U F2 R2 U r' l' B' R2
+T Z2 D2 F' R2 D2 F' r' l' D B2 l2 U L' R' B' R2
+T Z2 D2 F' R2 D2 F' r' l' D B2 R2 D L' R' F' l2
+T Z2 D2 F' R2 D2 F' r' R' B U2 l2 F L' l' B' R2
+T Z2 D2 F' R2 D2 F' r' R' B U2 R2 B L' l' F' l2
+T Z2 D2 F' R2 D2 F' L' l' F D2 l2 B r' R' B' R2
+T Z2 D2 F' R2 D2 F' L' l' F D2 R2 F r' R' F' l2
+T Z2 D2 F' R2 D2 F' L' R' D B2 l2 U r' l' B' R2
+T Z2 D2 F' R2 D2 F' L' R' D B2 R2 D r' l' F' l2
+T Z2 D2 F' l2 U2 B' r' R' F D2 l2 B r' R' B' R2
+T Z2 D2 F' l2 U2 B' r' R' F D2 R2 F r' R' F' l2
+T Z2 D2 F' l2 U2 B' L' l' B U2 l2 F L' l' B' R2
+T Z2 D2 F' l2 U2 B' L' l' B U2 R2 B L' l' F' l2
+T Z2 D2 F' R2 D2 F' r' R' B U2 l2 F r' R' F' l2
+T Z2 D2 F' R2 D2 F' L' l' F D2 l2 B L' l' F' l2
+T Z2 D2 F' l2 U2 B' r' l' U F2 l2 D L' R' F' l2
+T Z2 D2 F' l2 U2 B' r' l' U F2 R2 U r' l' B' R2
+T Z2 D2 F' l2 U2 B' r' R' F D2 l2 B L' l' F' l2
+T Z2 D2 F' l2 U2 B' L' l' B U2 l2 F r' R' F' l2
+T Z2 D2 F' l2 U2 B' L' R' U F2 l2 D r' l' F' l2
+T Z2 D2 F' R2 D2 F' r' l' D B2 l2 U r' l' B' R2
+T Z2 D2 F' R2 D2 F' r' l' D B2 R2 D r' l' F' l2
+T Z2 D2 F' l2 U2 B' r' l' U F2 l2 D r' l' F' l2
+
+add_YorZ__shifting_listTypeAlg  is now:
+Z2 T' D2 F' R2 D2 F' L' R' D B2 R2 D L' R' F' R2
+The indexes are going in reverse order; here are the algs for the current index, which is:  0
+
+Z2 T' D2 F' l2 U2 B' L' R' U F2 R2 U L' R' B' R2
+Z2 T' D2 F' R2 D2 F' L' R' D B2 l2 U L' R' B' R2
+Z2 T' D2 F' R2 D2 F' L' R' D B2 R2 D L' R' F' l2
+Z2 T' D2 F' R2 D2 F' r' R' B U2 R2 B r' R' B' R2
+Z2 T' D2 F' R2 D2 F' L' l' F D2 R2 F L' l' B' R2
+Z2 T' D2 F' l2 U2 B' r' l' U F2 R2 U L' R' B' R2
+Z2 T' D2 F' l2 U2 B' r' R' F D2 R2 F L' l' B' R2
+Z2 T' D2 F' l2 U2 B' L' l' B U2 R2 B r' R' B' R2
+Z2 T' D2 F' l2 U2 B' L' R' U F2 l2 D L' R' F' l2
+Z2 T' D2 F' l2 U2 B' L' R' U F2 R2 U r' l' B' R2
+Z2 T' D2 F' R2 D2 F' r' l' D B2 l2 U L' R' B' R2
+Z2 T' D2 F' R2 D2 F' r' l' D B2 R2 D L' R' F' l2
+Z2 T' D2 F' R2 D2 F' r' R' B U2 l2 F L' l' B' R2
+Z2 T' D2 F' R2 D2 F' r' R' B U2 R2 B L' l' F' l2
+Z2 T' D2 F' R2 D2 F' L' l' F D2 l2 B r' R' B' R2
+Z2 T' D2 F' R2 D2 F' L' l' F D2 R2 F r' R' F' l2
+Z2 T' D2 F' R2 D2 F' L' R' D B2 l2 U r' l' B' R2
+Z2 T' D2 F' R2 D2 F' L' R' D B2 R2 D r' l' F' l2
+Z2 T' D2 F' l2 U2 B' r' R' F D2 l2 B r' R' B' R2
+Z2 T' D2 F' l2 U2 B' r' R' F D2 R2 F r' R' F' l2
+Z2 T' D2 F' l2 U2 B' L' l' B U2 l2 F L' l' B' R2
+Z2 T' D2 F' l2 U2 B' L' l' B U2 R2 B L' l' F' l2
+Z2 T' D2 F' R2 D2 F' r' R' B U2 l2 F r' R' F' l2
+Z2 T' D2 F' R2 D2 F' L' l' F D2 l2 B L' l' F' l2
+Z2 T' D2 F' l2 U2 B' r' l' U F2 l2 D L' R' F' l2
+Z2 T' D2 F' l2 U2 B' r' l' U F2 R2 U r' l' B' R2
+Z2 T' D2 F' l2 U2 B' r' R' F D2 l2 B L' l' F' l2
+Z2 T' D2 F' l2 U2 B' L' l' B U2 l2 F r' R' F' l2
+Z2 T' D2 F' l2 U2 B' L' R' U F2 l2 D r' l' F' l2
+Z2 T' D2 F' R2 D2 F' r' l' D B2 l2 U r' l' B' R2
+Z2 T' D2 F' R2 D2 F' r' l' D B2 R2 D r' l' F' l2
+Z2 T' D2 F' l2 U2 B' r' l' U F2 l2 D r' l' F' l2
