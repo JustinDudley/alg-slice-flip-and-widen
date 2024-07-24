@@ -28,6 +28,7 @@ def generate_algs(listTypeAlg:list[str], trailing_YorZ_Xs_dual):
                 alg_turn_codes = copy.deepcopy(list(map(get_single_turn_code, add_YorZ__shifting_listTypeAlg)))
                 DNA_3_marker_cums = itertools_get_combos(alg_turn_codes, trailing_YorZ_Xs)
                 one_ripple_round_of__final_strTypeAlgs = comp_Xpansion(add_YorZ__shifting_listTypeAlg, DNA_3_marker_cums)
+                if trailing_YorZ_Xs[1] == "X0": one_ripple_round_of__final_strTypeAlgs = [" ".join(add_YorZ__shifting_listTypeAlg)] + one_ripple_round_of__final_strTypeAlgs  # The final touch!!  When an alg ends up with an X0 due to slice substitution, THE ALG ITSELF must be added to the list of finals WITHOUT ANY COMP SUBSTITUTION. My intricate CompXpansion logic with its search for combos looks ONLY for comp opportunites. These algs are overlooked because they are already in a FINAL state WITHOUT COMP SUBSTITUTION!  So they must be appended here.
                 one_ripple_round_of__final_strTypeAlgs = insert_merge_YU_algs(one_ripple_round_of__final_strTypeAlgs)
                 
                 if is_test: one_ripple_round_of__final_strTypeAlgs = TESTING_2(one_ripple_round_of__final_strTypeAlgs, indx, add_YorZ__shifting_listTypeAlg)
