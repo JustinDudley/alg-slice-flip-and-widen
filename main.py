@@ -36,7 +36,7 @@ output_file.close()
 
 
 
-with open("/Users/justindudley/dev/cube/Alg_Slice_And_Widen_daddy/alg-slice-and-widen/INPUT_file/alg_list_input.txt") as file_input:
+with open("/Users/justindudley/dev/cube/Alg_Slice_And_Widen_daddy/alg-slice-and-widen/INPUT_file/alg_list_input_1.txt") as file_input:
     strTypeAlgs = file_input.read().splitlines() 
 
 
