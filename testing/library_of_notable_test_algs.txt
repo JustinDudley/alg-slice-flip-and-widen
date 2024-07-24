@@ -1,7 +1,7 @@
-LIBRARY OF 13 OR SO NOTABLE TEST ALGS
+LIBRARY OF 14 OR SO NOTABLE TEST ALGS
 
 	
-#  check VALIDITY with validate-alg-list project
+  #  check VALIDITY with validate-alg-list project
 	# check for DUPLICATES  --Using google sjeets or excel, check for duplicates in result list (AFTER eliminating the Y0 symbol) for SEVERAL starter algs. (This would indicate ive done something wrong logically.)
 	# check completeness (painstaking)
       - check a corners alg that has a slice.
@@ -14,6 +14,7 @@ LIBRARY OF 13 OR SO NOTABLE TEST ALGS
 
 
 
+1.
 R2 D2 F B' R L2 F B' D' L2 U R L' B'
   -  Y0 X0 
   -  So this SS_alg only yields one final alg
@@ -22,6 +23,7 @@ R2 D2 F B' R L2 F B' D' L2 U R L' B'
 
 
 
+2.
 R U' D B' D2 F R L' U' F2 U2 R L' B2
    -  After slice sub, this is a Y0. Single round of itertools, yields appox. 10 solutions
     - CHECK FOR COMPLETENESS:  this alg has 3 slices. Make sure all 3 work
@@ -29,6 +31,7 @@ R U' D B' D2 F R L' U' F2 U2 R L' B2
 
 
 
+3.
 U' L D' B2 D B' D' B2 U2 B' L F' B2 U' F' R' B
    -  typical corners alg. DOES include merge_YU
    -  CHECK FOR COMPLETENESS:  This alg has zero slices. Make sure it looks same after slice method
@@ -36,6 +39,7 @@ U' L D' B2 D B' D' B2 U2 B' L F' B2 U' F' R' B
 
 
 
+4.
 U F B' R2 F B' D' R' B L' U' D F L' B D2
   -  Y0 X0
   - Include in Validate, to see if X0 iterates correctly. 
@@ -43,6 +47,7 @@ U F B' R2 F B' D' R' B L' U' D F L' B D2
 
 
 
+5.
 U D2 F' B R F2 L' U D' B L2 F B R L' D2
   - Y0 X0
   - ZERO solutions
@@ -50,12 +55,13 @@ U D2 F' B R F2 L' U D' B L2 F B R L' D2
   
 
 
-
+6.
 L' D F B' U R L2 F L F' R F2 D F' B' L' D'
 - CHECK FOR COMPLETENESS:  This a corner alg with a slice comp. Check the slice worked out okay
 
 
 
+7.
 U B' L' F' R U' D B' R F R F2 B' R L' U2
   - Z' X0
   - surprisingly small number of iteration
@@ -65,12 +71,14 @@ U B' L' F' R U' D B' R F R F2 B' R L' U2
 
 
 
+8.
 F' B R' L' D R L B' U2 R2 F' U D L F2 U2 L F2
  - Y' X
     - CHECK FOR COMPLETENESS:  Check that Y' ripples through U D without making duplicates
 
 
 
+9.
 R' B2 D2 B2 R' D B' D F' B R' B L D2 R' L'
   - Y0 X2
   - just 2 iterations
@@ -78,29 +86,33 @@ R' B2 D2 B2 R' D B' D F' B R' B L D2 R' L'
 
 
 
+10.
 B' U' L' D F B' U R L2 F L F' R F2 D F' B'
  - X' in WCR
  CHECK FOR COMPLETENESS:  Just need to include this in Validate project, to make sure X' iteration works. Don't need to test this alg for completeness
 
 
 
+11.
  U2 R2 L B R B' L B2 D F' B' R' D' F' U R' L D'
  - X in WCR
  CHECK FOR COMPLETENESS:  Just need to include this in Validate project, to make sure X iteration works. Don't need to test this alg for completeness
 
 
 
+12.
 U2 F' L2 U2 F' R' L' U B2 L2 U R' L' F' R L
 - CHECK FOR COMPLETENESS:  DUAL:  y2 x, z2 x'
 
 
 
+13.
 U D R L2 U' D' F U2 L2 B R' L' U D2 B2 R2 D' R2
 - CHECK FOR COMPLETENESS:  DUAL:  y2 x', z2 x
 
 
 
-
+14.
 R L U D' F2 L2 F U D' L' B2 R F B' U D2
   - Y0 X0
   - many iterations for its one ripple round. Just run it through Validate, no need to check for completeness

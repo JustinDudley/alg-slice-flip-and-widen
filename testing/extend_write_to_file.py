@@ -10,10 +10,17 @@ def TESTING_1(ALL_ripple_rounds_from_single_SS__strTypeAlgs, trailing_YorZ_Xs_du
 
 
 
-def TESTING_2(one_ripple_round_of__final_strTypeAlgs, indx):
-    one_ripple_round_of__final_strTypeAlgs = ["\nGoing in reverse order, these are the algs for index:", " " + str(indx)] + one_ripple_round_of__final_strTypeAlgs
+
+def TESTING_2(one_ripple_round_of__final_strTypeAlgs, indx, add_YorZ__shifting_listTypeAlg):
+    one_ripple_round_of__final_strTypeAlgs = ["\nadd_YorZ__shifting_listTypeAlg  is now:\n" + " ".join(add_YorZ__shifting_listTypeAlg) + "\nThe indexes are going in reverse order; here are the algs for the current index, which is:  " + str(indx) + "\n"] + one_ripple_round_of__final_strTypeAlgs
 
     return one_ripple_round_of__final_strTypeAlgs
 
 
 
+
+
+def TESTING_3(all_final_strTypeAlgs, strTypeAlg, listTypeAlg):
+     all_final_strTypeAlgs = ["\n\n\n\n\n\n", "original alg is:               %s\n"%(strTypeAlg), "alg after slice insertion is:  %s\n"%(" ".join(listTypeAlg))] + all_final_strTypeAlgs
+     
+     return(all_final_strTypeAlgs)

@@ -14,7 +14,7 @@ def generate_algs(listTypeAlg:list[str], trailing_YorZ_Xs_dual):
 
     ALL_ripple_rounds_from_single_SS__strTypeAlgs:list[str] = []
     for trailing_YorZ_Xs in trailing_YorZ_Xs_dual:
-        ALL_ripple_rounds_from_single_SS__strTypeAlgs = TESTING_1(ALL_ripple_rounds_from_single_SS__strTypeAlgs, trailing_YorZ_Xs_dual, trailing_YorZ_Xs)
+        ALL_ripple_rounds_from_single_SS__strTypeAlgs = TESTING_1(ALL_ripple_rounds_from_single_SS__strTypeAlgs, trailing_YorZ_Xs_dual, trailing_YorZ_Xs)  # COMMENT-OUT THIS LINE UNLESS YOU ARE TESTING !!!
         add_YorZ__shifting_listTypeAlg = copy.deepcopy(listTypeAlg)
         add_YorZ__shifting_listTypeAlg.append(trailing_YorZ_Xs[0])
 
@@ -28,7 +28,7 @@ def generate_algs(listTypeAlg:list[str], trailing_YorZ_Xs_dual):
                 one_ripple_round_of__final_strTypeAlgs = comp_Xpansion(add_YorZ__shifting_listTypeAlg, DNA_3_marker_cums)
                 one_ripple_round_of__final_strTypeAlgs = insert_merge_YU_algs(one_ripple_round_of__final_strTypeAlgs)
                 
-                one_ripple_round_of__final_strTypeAlgs = TESTING_2(one_ripple_round_of__final_strTypeAlgs, indx)
+                one_ripple_round_of__final_strTypeAlgs = TESTING_2(one_ripple_round_of__final_strTypeAlgs, indx, add_YorZ__shifting_listTypeAlg)  # COMMENT-OUT THIS LINE UNLESS YOU ARE TESTING !!!
                 ALL_ripple_rounds_from_single_SS__strTypeAlgs.extend(one_ripple_round_of__final_strTypeAlgs)
             
 
