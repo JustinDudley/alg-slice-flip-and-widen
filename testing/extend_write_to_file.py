@@ -1,4 +1,9 @@
 
+# Note on TESTING: There are 3 lines of code that call testing methods.
+# These methods simply add a few explanatory notes to the list of algs that will be written to file
+# The methods are called TESTING_1, TESTING_2, TESTING_3.
+# To add the notes:  Set is_test to TRUE in the file testing/is_test
+
 
 def TESTING_1(ALL_ripple_rounds_from_single_SS__strTypeAlgs, trailing_YorZ_Xs_dual, trailing_YorZ_Xs):
     ALL_ripple_rounds_from_single_SS__strTypeAlgs.extend(["\nDUAL list:  %s"%(trailing_YorZ_Xs_dual), "\nactive member of DUAL list:  %s"%(trailing_YorZ_Xs)  ])
