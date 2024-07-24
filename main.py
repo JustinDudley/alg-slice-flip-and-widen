@@ -25,11 +25,11 @@ startTime = datetime.datetime.now() # to monitor performance of program
 
 
 
-
+# create OUTPUT file
 dt = datetime.datetime.now()
 output_filename = '/Users/justindudley/dev/cube/Alg_Slice_And_Widen_daddy/alg-slice-and-widen/OUTPUT_files/%s.txt'%(dt.strftime("%a") + "_" + dt.strftime("%I") + ":" + dt.strftime("%M") + ":" + dt.strftime("%S") + "_output")
-output_file_yo = open(output_filename, "x")
-output_file_yo.close()
+output_file = open(output_filename, "x")
+output_file.close()
 
 
 
@@ -37,16 +37,11 @@ output_file_yo.close()
 with open("/Users/justindudley/dev/cube/Alg_Slice_And_Widen_daddy/alg-slice-and-widen/INPUT_file/alg_list_input.txt") as file_input:
     strTypeAlgs = file_input.read().splitlines() 
 
+
 for strTypeAlg in strTypeAlgs:
 
-	# strTypeAlg = "F' B R' L' D R L B' U2 R2 F' U D L F2 U2 L F2"
-	# get the pattern JUST FOR THE FIRST alg in the list
 	pattern = find_pattern(strTypeAlg)
-	# get the group_number JUST FROM THE FIRST alg in the list
 	group_number = GROUP_DIVINER[pattern[7]]  # pattern[7] gives the sticker at Corner_Location_B
-
-
-
 
 	all_final_strTypeAlgs:list[str] = []
 
@@ -55,6 +50,7 @@ for strTypeAlg in strTypeAlgs:
 	compoundified_strTypeAlg = compoundify_comp_slice_turns(strTypeAlg)    # For instance:   U R2 UD' F B L' B2 R UD' B RL' U2 B2
 	listTypeAlg = compoundified_strTypeAlg.split()
 	trailing_WCRs = GROUP_DICT[group_number]  # no need for dual CoRo schemes here 
+
 
 
 	# SLICE/RIPPLE_R
@@ -71,11 +67,11 @@ for strTypeAlg in strTypeAlgs:
 
 
 
-	output_file_yo = open(output_filename, "a")
+	output_file = open(output_filename, "a")
 	all_final_strTypeAlgs = TESTING_3(all_final_strTypeAlgs, strTypeAlg, listTypeAlg) # COMMENT-OUT THIS LINE UNLESS YOU ARE TESTING !!!
 	for alg in all_final_strTypeAlgs:  # write all of one base alg's final algs to file. If my testing methods are uncommented, ripple-round-specific info will get baked in to the list of final algs. It will will look like I've written to file several times, but I haven't. The PYTHON LIST ITSELF just includes carriage returns and explanations when testing methods are not commented out
-		output_file_yo.write(f"{alg}\n")
-	output_file_yo.close()
+		output_file.write(f"{alg}\n")
+	output_file.close()
 
 
 
