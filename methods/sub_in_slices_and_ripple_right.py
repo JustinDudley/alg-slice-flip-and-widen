@@ -27,7 +27,6 @@ def replace_Trailing_WCRs_with_either_ONE_or_TWO_equivalent_YorZ_notations(WCRs)
 
 
 def sub_in_slices_and_ripple_right(listTypeAlg, trailing_WCRs):
-    print("NOW INSIDE sub_in_slices_and_ripple_right")
     slice_opportunity_positions = []
     for i in range(len(SLICE_COMPS)):
         for j in range(len(listTypeAlg)):
@@ -39,7 +38,7 @@ def sub_in_slices_and_ripple_right(listTypeAlg, trailing_WCRs):
     if slice_opportunity_positions:  # returns True if a Python list is non-empty
         
         slice_opportunity_positions = sorted(set(slice_opportunity_positions), reverse=True)  # Reversed so that pre-pending the WCRs works.
-        print("\nslice opportunity positions, one list per SS_alg: ", slice_opportunity_positions)
+        # print("\nslice opportunity positions, one list per SS_alg: ", slice_opportunity_positions)
         for position in slice_opportunity_positions:
             WCR_to_ripple_right = df_turn_attributes.at[listTypeAlg[position], ROTATION_VECTOR]
             listTypeAlg[position] = df_turn_attributes.at[listTypeAlg[position], COMPLEMENT]  # sub in the complement (a slice)

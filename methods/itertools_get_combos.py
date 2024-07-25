@@ -10,8 +10,8 @@ def itertools_get_combos(alg_turn_codes, trailing_YorZ_Xs):
     # comp of a turn_code === turn_code of a complementary turn.  The rotation caused by the turn's complement IS the newly induced rotation of the cube, and the sum of those newly induced rotations must equal, mod 4, the code of the WCR's X-axis component
     alg_comp_turn_codes = list(map(lambda x: (4-x)%4, alg_turn_codes))
     
-    print("\nalg_turn_codes, specific to the turn that YorZ is next to:  ", alg_turn_codes)
-    print("alg_comp_turn_codes, also specific to what YorZ is next to: ", alg_comp_turn_codes)
+    # print("\nalg_turn_codes, specific to the turn that YorZ is next to:  ", alg_turn_codes)
+    # print("alg_comp_turn_codes, also specific to what YorZ is next to: ", alg_comp_turn_codes)
 
 
     positions_of_X_axis_turns = []
@@ -48,9 +48,9 @@ def itertools_get_combos(alg_turn_codes, trailing_YorZ_Xs):
             else: alg_turn_codes___but_where_codes_with_badly_summing_comps_get_voted_off_the_island.append(alg_turn_code)
         DNA_1__sum_successes.append(alg_turn_codes___but_where_codes_with_badly_summing_comps_get_voted_off_the_island)
 
-    print("\nDNA_1_sum_successes  (a.k.a.  Every possible useful modification of alg_turn_codes. Groups of elements that sum correctly with each other (mod 4) remain, and the rest are replaced by zeros):  ")
-    print("\n", DNA_1__sum_successes)
-    print("\nSo, the number of new algs to generate (and print to console below) is:  ", len(DNA_1__sum_successes), "\n")
+    # print("\nDNA_1_sum_successes  (a.k.a.  Every possible useful modification of alg_turn_codes. Groups of elements that sum correctly with each other (mod 4) remain, and the rest are replaced by zeros):  ")
+    # print("\n", DNA_1__sum_successes)
+    # print("\nSo, the number of new algs to generate (and print to console below) is:  ", len(DNA_1__sum_successes), "\n")
 
 
     # create DNA_2
