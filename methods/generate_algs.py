@@ -8,7 +8,7 @@ from methods.insert_merge_YU_algs import insert_merge_YU_algs
 from methods.helper_methods import get_single_turn_code
 from variables.constants import AXIS_FAMILY
 from variables.dataframes import df_Ripple_L
-from testing.extend_write_to_file import TESTING_2, TESTING_3, TESTING_1
+from testing.extend__write_to_file import TESTING_2, TESTING_3, TESTING_1
 
 
 def generate_algs(listTypeAlg:list[str], trailing_YorZ_Xs_dual, strTypeAlg):
