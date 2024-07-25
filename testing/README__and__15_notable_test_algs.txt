@@ -4,9 +4,9 @@ LIBRARY OF 15 NOTABLE TEST ALGS
 
 
 THE WORK OUTLINED BELOW HAS ALREADY BEEN DONE.
-IN FUTURE, THE WAY TO TEST THIS PROGRAM AGAINST A CORRECTLY WORKING VERSION IS:
-  -- SET is_test TO TRUE, COMPARE OUTPUT FILE TO "TEST_SUITE_15__OUTPUT_Wed__comments_included.txt" USING DIFFCHECKER ONLINE
-  -- SET is_test TO FALSE, COMPARE OUPUT FILE TO "TEST_SUITE_15__OUTPUT_Wed.txt" USING DIFFCHECKER ONLINE
+IN FUTURE, THE WAY TO TEST THE CURRENT PROGRAM AGAINST A CORRECTLY WORKING VERSION IS:
+  -- SET is_test TO True, PASTE THE ALGS FROM THE FILE "testing/TEST_SUITE_15__INPUT_Wed.txt" INTO THE FILE "alg_list_input.txt", RUN PROGRAM, COMPARE OUTPUT FILE TO THE FILE "testing/TEST_SUITE_15__OUTPUT_Wed__comments_included.txt" USING DIFFCHECKER ONLINE
+  -- SET is_test TO False, PASTE THE ALGS FROM THE FILE "testing/TEST_SUITE_15__INPUT_Wed.txt" INTO THE FILE "alg_list_input.txt", RUN PROGRAM, COMPARE OUTPUT FILE TO THE FILE "testing/TEST_SUITE_15__OUTPUT_Wed.txt" USING DIFFCHECKER ONLINE
 
 
 
@@ -14,7 +14,7 @@ IN FUTURE, THE WAY TO TEST THIS PROGRAM AGAINST A CORRECTLY WORKING VERSION IS:
 
 These 15 algs were carefully selected to represent the whole.
 The algs belong to DIFFERENT GROUPS, so beware when running them through various projects:  They won't produce the same centers OR the same edges/corners as each other.
-Ultimately, these algs may constitue the entirety of algs used in my testing suite. Don't know yet.
+Currently, these algs and their results constitue the entirety of my testing suite.
 
 
 How to use the 15 algs to test this programming:
