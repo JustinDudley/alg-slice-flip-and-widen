@@ -1551,7 +1551,7 @@ Y' r' F' D' B T' D F B2 l U l' F R2 U l' r'
 
 
 
-original alg is:                U2 R2 L B R B' L B2 D F' B' R' D' F' U R' L D'
+original alg is:               U2 R2 L B R B' L B2 D F' B' R' D' F' U R' L D'
 
 alg after slice insertion is:  U2 R2 L B R B' L B2 D F' B' R' D' F' U T F'
 

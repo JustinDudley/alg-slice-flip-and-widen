@@ -1,13 +1,12 @@
 
 import datetime
 
-from variables.constants import GROUP_DICT, CODE, GROUP_DIVINER
+from variables.constants import GROUP_DICT, GROUP_DIVINER
 from methods.helper_methods import compoundify_comp_slice_turns
 from methods.sub_in_slices_and_ripple_right import sub_in_slices_and_ripple_right
 from methods.generate_algs import generate_algs
 from methods.find_pattern import find_pattern
-from testing.extend_write_to_file import TESTING_3
-from testing.is_test import is_test
+
 
 # naming convention:
 # 
@@ -23,29 +22,20 @@ from testing.is_test import is_test
 # To add the notes:  Set is_test to TRUE in the file testing/is_test
 
 
+
 startTime = datetime.datetime.now() # to monitor performance of program
 
-
-
-# create OUTPUT file
-dt = datetime.datetime.now()
-output_filename = '/Users/justindudley/dev/cube/Alg_Slice_And_Widen_daddy/alg-slice-and-widen/OUTPUT_files/%s.txt'%(dt.strftime("%a") + "_" + dt.strftime("%I") + ":" + dt.strftime("%M") + ":" + dt.strftime("%S") + "_output")
-output_file = open(output_filename, "x")
-output_file.close()
-
-
-
-
-with open("/Users/justindudley/dev/cube/Alg_Slice_And_Widen_daddy/alg-slice-and-widen/INPUT_file/alg_list_input_2.txt") as file_input:
+with open("/Users/justindudley/dev/cube/Alg_Slice_And_Widen_daddy/alg-slice-and-widen/INPUT_file/alg_list_input.txt") as file_input:
     strTypeAlgs = file_input.read().splitlines() 
 
 
+
+
+all_final_strTypeAlgs:list[str] = []
 for strTypeAlg in strTypeAlgs:
 
 	pattern = find_pattern(strTypeAlg)
 	group_number = GROUP_DIVINER[pattern[7]]  # pattern[7] gives the sticker at Corner_Location_B
-
-	all_final_strTypeAlgs:list[str] = []
 
 
 
@@ -62,18 +52,19 @@ for strTypeAlg in strTypeAlgs:
 
 
 
-	from_single_SS__final_strTypeAlgs = generate_algs(listTypeAlg, trailing_YorZ_Xs_dual)
-	for final_alg in from_single_SS__final_strTypeAlgs:
-		all_final_strTypeAlgs.append(final_alg)
+	from_single_SS__final_strTypeAlgs = generate_algs(listTypeAlg, trailing_YorZ_Xs_dual, strTypeAlg)
+	all_final_strTypeAlgs.extend(from_single_SS__final_strTypeAlgs)
 
 
 
 
-	output_file = open(output_filename, "a")
-	if is_test: all_final_strTypeAlgs = TESTING_3(all_final_strTypeAlgs, strTypeAlg, listTypeAlg)
-	for alg in all_final_strTypeAlgs:  # write all of one base alg's final algs to file. If my testing methods are uncommented, ripple-round-specific info will get baked in to the list of final algs. It will will look like I've written to file several times, but I haven't. The PYTHON LIST ITSELF just includes carriage returns and explanations when testing methods are not commented out
+
+
+dt = datetime.datetime.now()
+output_filename = '/Users/justindudley/dev/cube/Alg_Slice_And_Widen_daddy/alg-slice-and-widen/OUTPUT_files/%s.txt'%(dt.strftime("%a") + "_" + dt.strftime("%I") + ":" + dt.strftime("%M") + ":" + dt.strftime("%S") + "_output")
+with open(output_filename, "x") as output_file:
+	for alg in all_final_strTypeAlgs:  # write all of one base alg's final algs to file. If my testing methods are uncommented, ripple-round-specific info will get baked in to the list of final algs. It will look like I've written to file several times, but I haven't. The PYTHON LIST ITSELF just includes carriage returns and explanations when is_test is set to True
 		output_file.write(f"{alg}\n")
-	output_file.close()
 
 
 

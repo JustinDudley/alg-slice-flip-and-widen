@@ -107,7 +107,7 @@ B' U' L' D F B' U R L2 F L F' R F2 D F' B'
 
 
 11.
- U2 R2 L B R B' L B2 D F' B' R' D' F' U R' L D'
+U2 R2 L B R B' L B2 D F' B' R' D' F' U R' L D'
  - X in WCR
  CHECK FOR COMPLETENESS:  Just need to include this in Validate project, to make sure X iteration works. Don't need to test this alg for completeness
 
