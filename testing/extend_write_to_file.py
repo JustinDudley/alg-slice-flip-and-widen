@@ -26,6 +26,6 @@ def TESTING_2(ALL_ripple_rounds_from_single_SS__strTypeAlgs, trailing_YorZ_Xs_du
 
 
 def TESTING_3(one_ripple_round_of__final_strTypeAlgs, indx, add_YorZ__shifting_listTypeAlg):
-    one_ripple_round_of__final_strTypeAlgs = ["\nadd_YorZ__shifting_listTypeAlg  is now:\n" + " ".join(add_YorZ__shifting_listTypeAlg) + "\nThe indexes are going in reverse order; here are the algs for the current index, which is:  " + str(indx) + "\n"] + one_ripple_round_of__final_strTypeAlgs
+    one_ripple_round_of__final_strTypeAlgs = ["\nadd_YorZ__shifting_listTypeAlg  is now:  " + " ".join(add_YorZ__shifting_listTypeAlg) + "\nThe indexes are going in reverse order; here are the algs for the current index, which is:  " + str(indx) + "\nIF the alg's X-component is X0, the first\nalg below will be the base alg for one\nripple round. It has no wide comps\n"] + one_ripple_round_of__final_strTypeAlgs
 
     return one_ripple_round_of__final_strTypeAlgs

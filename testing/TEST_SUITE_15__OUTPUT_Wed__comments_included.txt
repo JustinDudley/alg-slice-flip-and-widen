@@ -16,9 +16,11 @@ active member of DUAL list:  ['Y0', 'X0']
 
 Note that the YorZ component is a Y0 or Z0 !!!
 
-add_YorZ__shifting_listTypeAlg  is now:
-R2 D2 S' U D2 S' U' R2 D T Y0 D'
+add_YorZ__shifting_listTypeAlg  is now:  R2 D2 S' U D2 S' U' R2 D T Y0 D'
 The indexes are going in reverse order; here are the algs for the current index, which is:  10
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 R2 D2 S' U D2 S' U' R2 D T Y0 D'
 l2 U2 S D U2 S D' l2 D T Y0 D'
@@ -40,9 +42,11 @@ active member of DUAL list:  ['Y0', 'X0']
 
 Note that the YorZ component is a Y0 or Z0 !!!
 
-add_YorZ__shifting_listTypeAlg  is now:
-R H R' D2 L S' L' D2 L2 S' L2 Y0
+add_YorZ__shifting_listTypeAlg  is now:  R H R' D2 L S' L' D2 L2 S' L2 Y0
 The indexes are going in reverse order; here are the algs for the current index, which is:  11
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 R H R' D2 L S' L' D2 L2 S' L2 Y0
 l S l' D2 L S' L' D2 L2 S' L2 Y0
@@ -76,17 +80,21 @@ DUAL list:  [["Y'", 'X2']]
 
 active member of DUAL list:  ["Y'", 'X2']
 
-add_YorZ__shifting_listTypeAlg  is now:
-U' L D' B2 D B' D' B2 U2 B' L F' B2 U' F' R' B Y'
+add_YorZ__shifting_listTypeAlg  is now:  U' L D' B2 D B' D' B2 U2 B' L F' B2 U' F' R' B Y'
 The indexes are going in reverse order; here are the algs for the current index, which is:  17
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U' r F' D2 F D' F' D2 B2 D' r B' F2 D' B' R' F Y
 U' r F' D2 F D' F' D2 B2 D' L U' D2 B' U' l' F Y
 U' L D' B2 D B' D' B2 U2 B' r U' D2 B' U' l' F Y
 
-add_YorZ__shifting_listTypeAlg  is now:
-U' L D' B2 D B' D' B2 U2 B' L F' B2 U' F' R' Y' L
+add_YorZ__shifting_listTypeAlg  is now:  U' L D' B2 D B' D' B2 U2 B' L F' B2 U' F' R' Y' L
 The indexes are going in reverse order; here are the algs for the current index, which is:  16
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U' r F' D2 F D' F' D2 B2 D' r B' F2 D' B' R' Y L
 U' r F' D2 F D' F' D2 B2 D' L U' D2 B' U' l' Y L
@@ -95,17 +103,21 @@ U' L D' B2 D B' D' B2 U2 B' r U' D2 B' U' l' Y L
 U' L D' B2 D B' D' B2 U2 B' r U' D2 B' U' R' Z r
 U' L D' B2 D B' D' B2 U2 B' L F' B2 U' F' l' Z r
 
-add_YorZ__shifting_listTypeAlg  is now:
-U' L D' B2 D B' D' B2 U2 B' L F' B2 U' F' Y' B' L
+add_YorZ__shifting_listTypeAlg  is now:  U' L D' B2 D B' D' B2 U2 B' L F' B2 U' F' Y' B' L
 The indexes are going in reverse order; here are the algs for the current index, which is:  15
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U' r F' D2 F D' F' D2 B2 D' r B' F2 D' B' Y F' L
 U' r F' D2 F D' F' D2 B2 D' L U' D2 B' U' Z D' r
 U' L D' B2 D B' D' B2 U2 B' r U' D2 B' U' Z D' r
 
-add_YorZ__shifting_listTypeAlg  is now:
-U' L D' B2 D B' D' B2 U2 B' L F' B2 Y' U' R' B' L
+add_YorZ__shifting_listTypeAlg  is now:  U' L D' B2 D B' D' B2 U2 B' L F' B2 Y' U' R' B' L
 The indexes are going in reverse order; here are the algs for the current index, which is:  13
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U' r F' D2 F D' F' D2 B2 D' r B' F2 Y D' R' F' L
 U' r F' D2 F D' F' D2 B2 D' L U' D2 Z B' l' F' L
@@ -114,9 +126,11 @@ U' L D' B2 D B' D' B2 U2 B' r U' D2 Z B' l' F' L
 U' L D' B2 D B' D' B2 U2 B' r U' D2 Z B' R' D' r
 U' L D' B2 D B' D' B2 U2 B' L F' B2 Y' U' l' D' r
 
-add_YorZ__shifting_listTypeAlg  is now:
-U' L D' B2 D B' D' B2 U2 B' L F' Y' L2 U' R' B' L
+add_YorZ__shifting_listTypeAlg  is now:  U' L D' B2 D B' D' B2 U2 B' L F' Y' L2 U' R' B' L
 The indexes are going in reverse order; here are the algs for the current index, which is:  12
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U' L D' B2 D B' D' B2 U2 B' L F' Y' r2 D' R' F' L
 U' r F' D2 F D' F' D2 B2 D' r B' Y L2 D' R' F' L
@@ -127,9 +141,11 @@ U' L D' B2 D B' D' B2 U2 B' r U' Z L2 B' R' D' r
 U' L D' B2 D B' D' B2 U2 B' L F' Y' L2 U' l' D' r
 U' r F' D2 F D' F' D2 B2 D' r B' Y r2 U' l' D' r
 
-add_YorZ__shifting_listTypeAlg  is now:
-U' L D' B2 D B' D' B2 U2 B' L Y' R' L2 U' R' B' L
+add_YorZ__shifting_listTypeAlg  is now:  U' L D' B2 D B' D' B2 U2 B' L Y' R' L2 U' R' B' L
 The indexes are going in reverse order; here are the algs for the current index, which is:  11
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U' L D' B2 D B' D' B2 U2 B' L Y' R' r2 D' R' F' L
 U' r F' D2 F D' F' D2 B2 D' r Y R' L2 D' R' F' L
@@ -148,9 +164,11 @@ U' r F' D2 F D' F' D2 B2 D' r Y R' r2 U' l' D' r
 U' r F' D2 F D' F' D2 B2 D' L Z l' r2 U' l' D' r
 U' L D' B2 D B' D' B2 U2 B' r Z l' r2 U' l' D' r
 
-add_YorZ__shifting_listTypeAlg  is now:
-U' L D' B2 D B' D' B2 U2 B' Y' F R' L2 U' R' B' L
+add_YorZ__shifting_listTypeAlg  is now:  U' L D' B2 D B' D' B2 U2 B' Y' F R' L2 U' R' B' L
 The indexes are going in reverse order; here are the algs for the current index, which is:  10
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U' L D' B2 D B' D' B2 U2 B' Y' F R' r2 D' R' F' L
 U' r F' D2 F D' F' D2 B2 D' Z U l' L2 D' R' F' L
@@ -161,9 +179,11 @@ U' L D' B2 D B' D' B2 U2 B' Y' F l' L2 B' R' D' r
 U' L D' B2 D B' D' B2 U2 B' Y' F R' L2 U' l' D' r
 U' r F' D2 F D' F' D2 B2 D' Z U l' r2 U' l' D' r
 
-add_YorZ__shifting_listTypeAlg  is now:
-U' L D' B2 D B' D' B2 Y' U2 L' F R' L2 U' R' B' L
+add_YorZ__shifting_listTypeAlg  is now:  U' L D' B2 D B' D' B2 Y' U2 L' F R' L2 U' R' B' L
 The indexes are going in reverse order; here are the algs for the current index, which is:  8
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U' L D' B2 D B' D' B2 Y' U2 L' F R' r2 D' R' F' L
 U' r F' D2 F D' F' D2 Z B2 L' U l' L2 D' R' F' L
@@ -182,9 +202,11 @@ U' r F' D2 F D' F' D2 Z B2 r' F R' L2 U' l' D' r
 U' L D' B2 D B' D' B2 Y' U2 r' D l' L2 U' l' D' r
 U' r F' D2 F D' F' D2 Z B2 L' U l' r2 U' l' D' r
 
-add_YorZ__shifting_listTypeAlg  is now:
-U' L D' B2 D B' Y' D' L2 U2 L' F R' L2 U' R' B' L
+add_YorZ__shifting_listTypeAlg  is now:  U' L D' B2 D B' Y' D' L2 U2 L' F R' L2 U' R' B' L
 The indexes are going in reverse order; here are the algs for the current index, which is:  6
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U' L D' B2 D B' Y' D' r2 D2 L' B R' L2 D' R' F' L
 U' L D' B2 D B' u' r2 D2 L' B R' L2 D' R' F' L
@@ -251,9 +273,11 @@ U' r F' D2 F D' b' r2 F2 r' B R' r2 U' l' D' r
 U' L D' B2 D B' Y' D' r2 D2 r' U l' r2 U' l' D' r
 U' L D' B2 D B' u' r2 D2 r' U l' r2 U' l' D' r
 
-add_YorZ__shifting_listTypeAlg  is now:
-U' L D' B2 Y' D L' D' L2 U2 L' F R' L2 U' R' B' L
+add_YorZ__shifting_listTypeAlg  is now:  U' L D' B2 Y' D L' D' L2 U2 L' F R' L2 U' R' B' L
 The indexes are going in reverse order; here are the algs for the current index, which is:  4
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U' L D' B2 Y' D L' D' r2 D2 L' B R' L2 D' R' F' L
 U' L D' B2 Y' D L' D' L2 U2 L' F R' r2 D' R' F' L
@@ -320,9 +344,11 @@ U' L D' B2 Y' D r' B' r2 B2 L' U l' r2 U' l' D' r
 U' L D' B2 Y' D L' D' r2 D2 r' U l' r2 U' l' D' r
 U' r F' D2 Z F r' D' r2 D2 r' U l' r2 U' l' D' r
 
-add_YorZ__shifting_listTypeAlg  is now:
-U' L Y' D' L2 D L' D' L2 U2 L' F R' L2 U' R' B' L
+add_YorZ__shifting_listTypeAlg  is now:  U' L Y' D' L2 D L' D' L2 U2 L' F R' L2 U' R' B' L
 The indexes are going in reverse order; here are the algs for the current index, which is:  2
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U' L Y' D' r2 U L' U' L2 D2 L' B R' L2 D' R' F' L
 U' L u' r2 U L' U' L2 D2 L' B R' L2 D' R' F' L
@@ -581,9 +607,11 @@ U' r b' r2 B r' U' L2 D2 r' U l' r2 U' l' D' r
 U' r Z F' L2 F r' D' r2 D2 r' U l' r2 U' l' D' r
 U' r b' L2 F r' D' r2 D2 r' U l' r2 U' l' D' r
 
-add_YorZ__shifting_listTypeAlg  is now:
-Y' U' F D' L2 D L' D' L2 U2 L' F R' L2 U' R' B' L
+add_YorZ__shifting_listTypeAlg  is now:  Y' U' F D' L2 D L' D' L2 U2 L' F R' L2 U' R' B' L
 The indexes are going in reverse order; here are the algs for the current index, which is:  0
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 Y' U' F D' r2 U L' U' L2 D2 L' B R' L2 D' R' F' L
 Y' U' F D' L2 D L' D' r2 D2 L' B R' L2 D' R' F' L
@@ -667,9 +695,11 @@ active member of DUAL list:  ['Y0', 'X0']
 
 Note that the YorZ component is a Y0 or Z0 !!!
 
-add_YorZ__shifting_listTypeAlg  is now:
-U S' U2 S' U' L' B R' H' R B' L Y0 U2
+add_YorZ__shifting_listTypeAlg  is now:  U S' U2 S' U' L' B R' H' R B' L Y0 U2
 The indexes are going in reverse order; here are the algs for the current index, which is:  12
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U S' U2 S' U' L' B R' H' R B' L Y0 U2
 U S' U2 S' U' r' U l' H' R B' L Y0 U2
@@ -695,9 +725,11 @@ active member of DUAL list:  ['Y0', 'X0']
 
 Note that the YorZ component is a Y0 or Z0 !!!
 
-add_YorZ__shifting_listTypeAlg  is now:
-U D2 S D F2 U' T' U F2 D U S Y0 U2
+add_YorZ__shifting_listTypeAlg  is now:  U D2 S D F2 U' T' U F2 D U S Y0 U2
 The indexes are going in reverse order; here are the algs for the current index, which is:  12
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U D2 S D F2 U' T' U F2 D U S Y0 U2
 
@@ -716,18 +748,22 @@ DUAL list:  [["Y'", "X'"]]
 
 active member of DUAL list:  ["Y'", "X'"]
 
-add_YorZ__shifting_listTypeAlg  is now:
-L' D S' L U D2 F D F' U F2 R F' B' D' R' Y'
+add_YorZ__shifting_listTypeAlg  is now:  L' D S' L U D2 F D F' U F2 R F' B' D' R' Y'
 The indexes are going in reverse order; here are the algs for the current index, which is:  16
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 r' B H L F B2 D B D' F D2 R D' U' B' R' Z'
 L' D S' L U D2 F D F' U F2 l D' U' B' R' Z'
 r' B H r U D2 F D F' U F2 l D' U' B' R' Z'
 r' B H L F B2 D B D' F D2 l B' F' U' l' Z'
 
-add_YorZ__shifting_listTypeAlg  is now:
-L' D S' L U D2 F D F' U F2 R F' B' Y' D' B'
+add_YorZ__shifting_listTypeAlg  is now:  L' D S' L U D2 F D F' U F2 R F' B' Y' D' B'
 The indexes are going in reverse order; here are the algs for the current index, which is:  14
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 r' B H L F B2 D B D' F D2 R D' U' Z' B' U'
 r' B H L F B2 D B D' F D2 R D' U' f' U'
@@ -736,9 +772,11 @@ L' D S' L U D2 F D F' U F2 l D' U' f' U'
 r' B H r U D2 F D F' U F2 l D' U' Z' B' U'
 r' B H r U D2 F D F' U F2 l D' U' f' U'
 
-add_YorZ__shifting_listTypeAlg  is now:
-L' D S' L U D2 F D F' U F2 R F' Y' L' D' B'
+add_YorZ__shifting_listTypeAlg  is now:  L' D S' L U D2 F D F' U F2 R F' Y' L' D' B'
 The indexes are going in reverse order; here are the algs for the current index, which is:  13
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 r' B H L F B2 D B D' F D2 R D' Z' L' B' U'
 L' D S' L U D2 F D F' U F2 l D' Z' L' B' U'
@@ -747,9 +785,11 @@ r' B H r U D2 F D F' U F2 l D' Z' L' B' U'
 r' B H r U D2 F D F' U F2 R F' Y' r' B' U'
 L' D S' r B F2 U F U' B U2 l F' Y' r' B' U'
 
-add_YorZ__shifting_listTypeAlg  is now:
-L' D S' L U D2 F D F' U F2 R Y' R' L' D' B'
+add_YorZ__shifting_listTypeAlg  is now:  L' D S' L U D2 F D F' U F2 R Y' R' L' D' B'
 The indexes are going in reverse order; here are the algs for the current index, which is:  12
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 r' B H L F B2 D B D' F D2 R Z' R' L' B' U'
 L' D S' L U D2 F D F' U F2 l Z' R' L' B' U'
@@ -762,18 +802,22 @@ L' D S' r B F2 U F U' B U2 l Y' R' r' B' U'
 L' D S' L U D2 F D F' U F2 l Z' l' r' B' U'
 r' B H r U D2 F D F' U F2 l Z' l' r' B' U'
 
-add_YorZ__shifting_listTypeAlg  is now:
-L' D S' L U D2 F D F' U F2 Y' B R' L' D' B'
+add_YorZ__shifting_listTypeAlg  is now:  L' D S' L U D2 F D F' U F2 Y' B R' L' D' B'
 The indexes are going in reverse order; here are the algs for the current index, which is:  11
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 r' B H L F B2 D B D' F D2 Z' U R' L' B' U'
 L' D S' L U D2 F D F' U F2 Y' B R' r' B' U'
 r' B H r U D2 F D F' U F2 Y' B R' r' B' U'
 r' B H L F B2 D B D' F D2 Z' U l' r' B' U'
 
-add_YorZ__shifting_listTypeAlg  is now:
-L' D S' L U D2 F D F' Y' U R2 B R' L' D' B'
+add_YorZ__shifting_listTypeAlg  is now:  L' D S' L U D2 F D F' Y' U R2 B R' L' D' B'
 The indexes are going in reverse order; here are the algs for the current index, which is:  9
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 r' B H L F B2 D B D' Z' F R2 U R' L' B' U'
 r' B H L F B2 D B D' b R2 U R' L' B' U'
@@ -792,9 +836,11 @@ r' B H r U D2 F D F' d l2 F l' L' B' U'
 L' D S' r B F2 U F U' Z B l2 U l' r' B' U'
 L' D S' r B F2 U F U' f l2 U l' r' B' U'
 
-add_YorZ__shifting_listTypeAlg  is now:
-L' D S' L U D2 F Y' D R' U R2 B R' L' D' B'
+add_YorZ__shifting_listTypeAlg  is now:  L' D S' L U D2 F Y' D R' U R2 B R' L' D' B'
 The indexes are going in reverse order; here are the algs for the current index, which is:  7
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 r' B H L F B2 D Z' B R' F R2 U R' L' B' U'
 L' D S' L U D2 F Y' D R' U R2 B R' r' B' U'
@@ -813,9 +859,11 @@ L' D S' r B F2 U Z F R' B l2 U l' r' B' U'
 L' D S' L U D2 F Y' D l' B l2 U l' r' B' U'
 r' B H r U D2 F Y' D l' B l2 U l' r' B' U'
 
-add_YorZ__shifting_listTypeAlg  is now:
-L' D S' L Y' U D2 R D R' U R2 B R' L' D' B'
+add_YorZ__shifting_listTypeAlg  is now:  L' D S' L Y' U D2 R D R' U R2 B R' L' D' B'
 The indexes are going in reverse order; here are the algs for the current index, which is:  4
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 r' B H L Z' F B2 R B R' F R2 U R' L' B' U'
 r' B H L b B2 R B R' F R2 U R' L' B' U'
@@ -882,9 +930,11 @@ r' B H r d D2 R D l' B l2 U l' r' B' U'
 L' D S' r Z B F2 l D l' B l2 U l' r' B' U'
 L' D S' r f F2 l D l' B l2 U l' r' B' U'
 
-add_YorZ__shifting_listTypeAlg  is now:
-L' D S' Y' F U D2 R D R' U R2 B R' L' D' B'
+add_YorZ__shifting_listTypeAlg  is now:  L' D S' Y' F U D2 R D R' U R2 B R' L' D' B'
 The indexes are going in reverse order; here are the algs for the current index, which is:  3
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 r' B H Z' D F B2 R B R' F R2 U R' L' B' U'
 L' D S' Y' F U D2 l B R' F R2 U R' L' B' U'
@@ -903,9 +953,11 @@ L' D S' Y' F U D2 l B l' U l2 F l' L' B' U'
 L' D S' Y' F U D2 R D l' B l2 U l' r' B' U'
 r' B H Z' D F B2 l U l' F R2 U l' r' B' U'
 
-add_YorZ__shifting_listTypeAlg  is now:
-L' Y' D T' F U D2 R D R' U R2 B R' L' D' B'
+add_YorZ__shifting_listTypeAlg  is now:  L' Y' D T' F U D2 R D R' U R2 B R' L' D' B'
 The indexes are going in reverse order; here are the algs for the current index, which is:  1
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 r' Z' B T' D F B2 R B R' F R2 U R' L' B' U'
 L' Y' D T' F U D2 l B R' F R2 U R' L' B' U'
@@ -924,9 +976,11 @@ L' Y' D T' F U D2 l B l' U l2 F l' L' B' U'
 L' Y' D T' F U D2 R D l' B l2 U l' r' B' U'
 r' Z' B T' D F B2 l U l' F R2 U l' r' B' U'
 
-add_YorZ__shifting_listTypeAlg  is now:
-Y' F' D T' F U D2 R D R' U R2 B R' L' D' B'
+add_YorZ__shifting_listTypeAlg  is now:  Y' F' D T' F U D2 R D R' U R2 B R' L' D' B'
 The indexes are going in reverse order; here are the algs for the current index, which is:  0
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 Y' F' D T' F U D2 l B R' F R2 U R' L' B' U'
 Y' F' D T' F U D2 R D R' U R2 B R' r' B' U'
@@ -952,9 +1006,11 @@ DUAL list:  [["Z'", 'X0']]
 
 active member of DUAL list:  ["Z'", 'X0']
 
-add_YorZ__shifting_listTypeAlg  is now:
-U B' L' F' R H R' F L F L2 R' S' L2 Z'
+add_YorZ__shifting_listTypeAlg  is now:  U B' L' F' R H R' F L F L2 R' S' L2 Z'
 The indexes are going in reverse order; here are the algs for the current index, which is:  14
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U B' L' F' R H R' F L F L2 R' S' L2 Z'
 U B' r' D' R S l' F L F L2 R' S' L2 Z'
@@ -989,9 +1045,11 @@ U B' r' D' l H' l' D r F r2 R' S r2 Z'
 U B' r' D' l H' l' D L D r2 l' S r2 Z'
 U B' r' D' l H' R' B r D r2 l' S r2 Z'
 
-add_YorZ__shifting_listTypeAlg  is now:
-U B' L' F' R H R' F L F L2 R' Z' S' D2
+add_YorZ__shifting_listTypeAlg  is now:  U B' L' F' R H R' F L F L2 R' Z' S' D2
 The indexes are going in reverse order; here are the algs for the current index, which is:  12
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U B' L' F' R H R' F L F L2 R' Z' S' D2
 U B' r' D' R S l' F L F L2 R' Z' S' D2
@@ -1010,9 +1068,11 @@ U B' r' D' l H' R' B r D L2 l' Z' S' D2
 U B' r' D' R S l' F r U r2 l' Z' S' D2
 U B' L' F' l S l' F r U r2 l' Z' S' D2
 
-add_YorZ__shifting_listTypeAlg  is now:
-U B' L' F' R H R' F L F L2 Z' U' S' D2
+add_YorZ__shifting_listTypeAlg  is now:  U B' L' F' R H R' F L F L2 Z' U' S' D2
 The indexes are going in reverse order; here are the algs for the current index, which is:  11
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U B' L' F' R H R' F L F L2 Z' U' S' D2
 U B' r' D' R S l' F L F L2 Z' U' S' D2
@@ -1023,9 +1083,11 @@ U B' r' D' l H' R' B L B r2 Z' U' S' D2
 U B' L' F' R H l' U r B r2 Z' U' S' D2
 U B' r' D' l H' l' D r F L2 Z' U' S' D2
 
-add_YorZ__shifting_listTypeAlg  is now:
-U B' L' F' R H R' F L Z' F D2 U' S' D2
+add_YorZ__shifting_listTypeAlg  is now:  U B' L' F' R H R' F L Z' F D2 U' S' D2
 The indexes are going in reverse order; here are the algs for the current index, which is:  9
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U B' L' F' R H R' F L Z' F D2 U' S' D2
 U B' L' F' R H R' F L b D2 U' S' D2
@@ -1040,9 +1102,11 @@ U B' L' F' l S R' D r b D2 U' S' D2
 U B' r' D' l H' l' D r Z' F D2 U' S' D2
 U B' r' D' l H' l' D r b D2 U' S' D2
 
-add_YorZ__shifting_listTypeAlg  is now:
-U B' L' F' R H R' Z' F D F D2 U' S' D2
+add_YorZ__shifting_listTypeAlg  is now:  U B' L' F' R H R' Z' F D F D2 U' S' D2
 The indexes are going in reverse order; here are the algs for the current index, which is:  7
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U B' L' F' R H R' Z' F D F D2 U' S' D2
 U B' L' F' R H R' b D F D2 U' S' D2
@@ -1051,34 +1115,44 @@ U B' r' D' R S l' b D F D2 U' S' D2
 U B' L' F' l S l' Z' F D F D2 U' S' D2
 U B' L' F' l S l' b D F D2 U' S' D2
 
-add_YorZ__shifting_listTypeAlg  is now:
-U B' L' F' R H Z' U' F D F D2 U' S' D2
+add_YorZ__shifting_listTypeAlg  is now:  U B' L' F' R H Z' U' F D F D2 U' S' D2
 The indexes are going in reverse order; here are the algs for the current index, which is:  6
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U B' L' F' R H Z' U' F D F D2 U' S' D2
 
-add_YorZ__shifting_listTypeAlg  is now:
-U B' L' F' R Z' T' U' F D F D2 U' S' D2
+add_YorZ__shifting_listTypeAlg  is now:  U B' L' F' R Z' T' U' F D F D2 U' S' D2
 The indexes are going in reverse order; here are the algs for the current index, which is:  5
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U B' L' F' R Z' T' U' F D F D2 U' S' D2
 
-add_YorZ__shifting_listTypeAlg  is now:
-U B' L' Z' F' U T' U' F D F D2 U' S' D2
+add_YorZ__shifting_listTypeAlg  is now:  U B' L' Z' F' U T' U' F D F D2 U' S' D2
 The indexes are going in reverse order; here are the algs for the current index, which is:  3
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U B' L' Z' F' U T' U' F D F D2 U' S' D2
 
-add_YorZ__shifting_listTypeAlg  is now:
-U Z' B' D' F' U T' U' F D F D2 U' S' D2
+add_YorZ__shifting_listTypeAlg  is now:  U Z' B' D' F' U T' U' F D F D2 U' S' D2
 The indexes are going in reverse order; here are the algs for the current index, which is:  1
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U Z' B' D' F' U T' U' F D F D2 U' S' D2
 U f' D' F' U T' U' F D F D2 U' S' D2
 
-add_YorZ__shifting_listTypeAlg  is now:
-Z' L B' D' F' U T' U' F D F D2 U' S' D2
+add_YorZ__shifting_listTypeAlg  is now:  Z' L B' D' F' U T' U' F D F D2 U' S' D2
 The indexes are going in reverse order; here are the algs for the current index, which is:  0
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 Z' L B' D' F' U T' U' F D F D2 U' S' D2
 
@@ -1097,9 +1171,11 @@ DUAL list:  [["Y'", 'X']]
 
 active member of DUAL list:  ["Y'", 'X']
 
-add_YorZ__shifting_listTypeAlg  is now:
-S D' U' L D U B' R2 D2 F' R L U F2 R2 U F2 Y'
+add_YorZ__shifting_listTypeAlg  is now:  S D' U' L D U B' R2 D2 F' R L U F2 R2 U F2 Y'
 The indexes are going in reverse order; here are the algs for the current index, which is:  17
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 S D' U' r F B D' R2 F2 U' R L B U2 R2 B U2 Z
 S D' U' L D U B' R2 D2 F' R r B U2 R2 B U2 Z
@@ -1110,9 +1186,11 @@ S D' U' r F B D' R2 F2 U' l r B U2 R2 B U2 Z
 S D' U' L D U B' l2 U2 B' R r F D2 l2 B U2 Z
 S D' U' r F B D' l2 B2 D' l r F D2 l2 B U2 Z
 
-add_YorZ__shifting_listTypeAlg  is now:
-S D' U' L D U B' R2 D2 F' R L U F2 R2 Y' U R2
+add_YorZ__shifting_listTypeAlg  is now:  S D' U' L D U B' R2 D2 F' R L U F2 R2 Y' U R2
 The indexes are going in reverse order; here are the algs for the current index, which is:  15
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 S D' U' r F B D' R2 F2 U' R L B U2 R2 Z B R2
 S D' U' r F B D' R2 F2 U' R L B U2 R2 f R2
@@ -1147,9 +1225,11 @@ S D' U' r F B D' l2 B2 D' l r F D2 R2 b l2
 S D' U' r F B D' R2 F2 U' l r B U2 l2 Z' F l2
 S D' U' r F B D' R2 F2 U' l r B U2 l2 b l2
 
-add_YorZ__shifting_listTypeAlg  is now:
-S D' U' L D U B' R2 D2 F' R L U F2 Y' B2 U R2
+add_YorZ__shifting_listTypeAlg  is now:  S D' U' L D U B' R2 D2 F' R L U F2 Y' B2 U R2
 The indexes are going in reverse order; here are the algs for the current index, which is:  14
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 S D' U' r F B D' R2 F2 U' R L B U2 Z D2 B R2
 S D' U' L D U B' R2 D2 F' R r B U2 Z D2 B R2
@@ -1160,9 +1240,11 @@ S D' U' r F B D' R2 F2 U' l r B U2 Z D2 B R2
 S D' U' L D U B' l2 U2 B' R r F D2 Z' U2 F l2
 S D' U' r F B D' l2 B2 D' l r F D2 Z' U2 F l2
 
-add_YorZ__shifting_listTypeAlg  is now:
-S D' U' L D U B' R2 D2 F' R L Y' U R2 B2 U R2
+add_YorZ__shifting_listTypeAlg  is now:  S D' U' L D U B' R2 D2 F' R L Y' U R2 B2 U R2
 The indexes are going in reverse order; here are the algs for the current index, which is:  12
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 S D' U' r F B D' R2 F2 U' R L Z B R2 D2 B R2
 S D' U' r F B D' R2 F2 U' R L f R2 D2 B R2
@@ -1197,9 +1279,11 @@ S D' U' r F B D' l2 B2 D' l r b R2 U2 F l2
 S D' U' r F B D' R2 F2 U' l r Z B l2 U2 F l2
 S D' U' r F B D' R2 F2 U' l r f l2 U2 F l2
 
-add_YorZ__shifting_listTypeAlg  is now:
-S D' U' L D U B' R2 D2 F' R Y' F U R2 B2 U R2
+add_YorZ__shifting_listTypeAlg  is now:  S D' U' L D U B' R2 D2 F' R Y' F U R2 B2 U R2
 The indexes are going in reverse order; here are the algs for the current index, which is:  11
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 S D' U' r F B D' R2 F2 U' R Z U B R2 D2 B R2
 S D' U' L D U B' l2 U2 B' l Z U B R2 D2 B R2
@@ -1210,18 +1294,22 @@ S D' U' r F B D' l2 B2 D' R Z' D F R2 U2 F l2
 S D' U' r F B D' R2 F2 U' R Z U B l2 U2 F l2
 S D' U' L D U B' l2 U2 B' l Z U B l2 U2 F l2
 
-add_YorZ__shifting_listTypeAlg  is now:
-S D' U' L D U B' R2 D2 F' Y' B F U R2 B2 U R2
+add_YorZ__shifting_listTypeAlg  is now:  S D' U' L D U B' R2 D2 F' Y' B F U R2 B2 U R2
 The indexes are going in reverse order; here are the algs for the current index, which is:  10
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 S D' U' r F B D' R2 F2 U' Z D U B R2 D2 B R2
 S D' U' r F B D' l2 B2 D' Z' U D F l2 D2 B R2
 S D' U' r F B D' l2 B2 D' Z' U D F R2 U2 F l2
 S D' U' r F B D' R2 F2 U' Z D U B l2 U2 F l2
 
-add_YorZ__shifting_listTypeAlg  is now:
-S D' U' L D U B' R2 Y' D2 R' B F U R2 B2 U R2
+add_YorZ__shifting_listTypeAlg  is now:  S D' U' L D U B' R2 Y' D2 R' B F U R2 B2 U R2
 The indexes are going in reverse order; here are the algs for the current index, which is:  8
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 S D' U' r F B D' R2 Z F2 R' D U B R2 D2 B R2
 S D' U' L D U B' R2 Y' D2 l' D U B R2 D2 B R2
@@ -1232,18 +1320,22 @@ S D' U' L D U B' l2 Y U2 l' U D F l2 D2 B R2
 S D' U' L D U B' l2 Y U2 l' U D F R2 U2 F l2
 S D' U' L D U B' R2 Y' D2 l' D U B l2 U2 F l2
 
-add_YorZ__shifting_listTypeAlg  is now:
-S D' U' L D U B' Y' B2 D2 R' B F U R2 B2 U R2
+add_YorZ__shifting_listTypeAlg  is now:  S D' U' L D U B' Y' B2 D2 R' B F U R2 B2 U R2
 The indexes are going in reverse order; here are the algs for the current index, which is:  7
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 S D' U' r F B D' Z D2 F2 R' D U B R2 D2 B R2
 S D' U' L D U B' Y' B2 D2 l' D U B R2 D2 B R2
 S D' U' r F B D' Z D2 F2 R' D U B l2 U2 F l2
 S D' U' L D U B' Y' B2 D2 l' D U B l2 U2 F l2
 
-add_YorZ__shifting_listTypeAlg  is now:
-S D' U' L Y' D U L' B2 D2 R' B F U R2 B2 U R2
+add_YorZ__shifting_listTypeAlg  is now:  S D' U' L Y' D U L' B2 D2 R' B F U R2 B2 U R2
 The indexes are going in reverse order; here are the algs for the current index, which is:  4
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 S D' U' r Z F B L' D2 F2 R' D U B R2 D2 B R2
 S D' U' L Y' D U L' B2 D2 l' D U B R2 D2 B R2
@@ -1254,9 +1346,11 @@ S D' U' r Z F B L' D2 F2 R' D U B l2 U2 F l2
 S D' U' L Y' D U L' B2 D2 l' D U B l2 U2 F l2
 S D' U' r Z F B r' B2 D2 l' D U B l2 U2 F l2
 
-add_YorZ__shifting_listTypeAlg  is now:
-S Y' D' U' F D U L' B2 D2 R' B F U R2 B2 U R2
+add_YorZ__shifting_listTypeAlg  is now:  S Y' D' U' F D U L' B2 D2 R' B F U R2 B2 U R2
 The indexes are going in reverse order; here are the algs for the current index, which is:  1
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 S Y' D' U' F D U L' B2 D2 l' D U B R2 D2 B R2
 S u' U' F D U L' B2 D2 l' D U B R2 D2 B R2
@@ -1267,9 +1361,11 @@ S u' U' F D U r' U2 B2 R' U D F R2 U2 F l2
 S Y' D' U' F D U L' B2 D2 l' D U B l2 U2 F l2
 S u' U' F D U L' B2 D2 l' D U B l2 U2 F l2
 
-add_YorZ__shifting_listTypeAlg  is now:
-Y' T D' U' F D U L' B2 D2 R' B F U R2 B2 U R2
+add_YorZ__shifting_listTypeAlg  is now:  Y' T D' U' F D U L' B2 D2 R' B F U R2 B2 U R2
 The indexes are going in reverse order; here are the algs for the current index, which is:  0
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 Y' T D' U' F D U L' B2 D2 l' D U B R2 D2 B R2
 Y' T D' U' F D U r' U2 B2 R' U D F l2 D2 B R2
@@ -1293,9 +1389,11 @@ active member of DUAL list:  ['Y0', 'X2']
 
 Note that the YorZ component is a Y0 or Z0 !!!
 
-add_YorZ__shifting_listTypeAlg  is now:
-R' B2 D2 B2 R' D B' D S D' B U L2 Y0 D' U'
+add_YorZ__shifting_listTypeAlg  is now:  R' B2 D2 B2 R' D B' D S D' B U L2 Y0 D' U'
 The indexes are going in reverse order; here are the algs for the current index, which is:  13
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 R' B2 D2 B2 R' D B' D S D' B U r2 Y0 U' D'
 l' D2 F2 D2 l' U F' U S' U' F D L2 Y0 U' D'
@@ -1315,17 +1413,21 @@ DUAL list:  [["Y'", "X'"]]
 
 active member of DUAL list:  ["Y'", "X'"]
 
-add_YorZ__shifting_listTypeAlg  is now:
-B' U' L' D S' L U D2 F D F' U F2 R F' B' Y'
+add_YorZ__shifting_listTypeAlg  is now:  B' U' L' D S' L U D2 F D F' U F2 R F' B' Y'
 The indexes are going in reverse order; here are the algs for the current index, which is:  16
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 B' U' r' B H L F B2 D B D' F D2 R D' U' Z'
 B' U' L' D S' L U D2 F D F' U F2 l D' U' Z'
 B' U' r' B H r U D2 F D F' U F2 l D' U' Z'
 
-add_YorZ__shifting_listTypeAlg  is now:
-B' U' L' D S' L U D2 F D F' U F2 R F' Y' L'
+add_YorZ__shifting_listTypeAlg  is now:  B' U' L' D S' L U D2 F D F' U F2 R F' Y' L'
 The indexes are going in reverse order; here are the algs for the current index, which is:  15
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 B' U' r' B H L F B2 D B D' F D2 R D' Z' L'
 B' U' L' D S' L U D2 F D F' U F2 l D' Z' L'
@@ -1334,9 +1436,11 @@ B' U' r' B H r U D2 F D F' U F2 l D' Z' L'
 B' U' r' B H r U D2 F D F' U F2 R F' Y' r'
 B' U' L' D S' r B F2 U F U' B U2 l F' Y' r'
 
-add_YorZ__shifting_listTypeAlg  is now:
-B' U' L' D S' L U D2 F D F' U F2 R Y' R' L'
+add_YorZ__shifting_listTypeAlg  is now:  B' U' L' D S' L U D2 F D F' U F2 R Y' R' L'
 The indexes are going in reverse order; here are the algs for the current index, which is:  14
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 B' U' r' B H L F B2 D B D' F D2 R Z' R' L'
 B' U' L' D S' L U D2 F D F' U F2 l Z' R' L'
@@ -1349,18 +1453,22 @@ B' U' L' D S' r B F2 U F U' B U2 l Y' R' r'
 B' U' L' D S' L U D2 F D F' U F2 l Z' l' r'
 B' U' r' B H r U D2 F D F' U F2 l Z' l' r'
 
-add_YorZ__shifting_listTypeAlg  is now:
-B' U' L' D S' L U D2 F D F' U F2 Y' B R' L'
+add_YorZ__shifting_listTypeAlg  is now:  B' U' L' D S' L U D2 F D F' U F2 Y' B R' L'
 The indexes are going in reverse order; here are the algs for the current index, which is:  13
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 B' U' r' B H L F B2 D B D' F D2 Z' U R' L'
 B' U' L' D S' L U D2 F D F' U F2 Y' B R' r'
 B' U' r' B H r U D2 F D F' U F2 Y' B R' r'
 B' U' r' B H L F B2 D B D' F D2 Z' U l' r'
 
-add_YorZ__shifting_listTypeAlg  is now:
-B' U' L' D S' L U D2 F D F' Y' U R2 B R' L'
+add_YorZ__shifting_listTypeAlg  is now:  B' U' L' D S' L U D2 F D F' Y' U R2 B R' L'
 The indexes are going in reverse order; here are the algs for the current index, which is:  11
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 B' U' r' B H L F B2 D B D' Z' F R2 U R' L'
 B' U' r' B H L F B2 D B D' b R2 U R' L'
@@ -1379,9 +1487,11 @@ B' U' r' B H r U D2 F D F' d l2 F l' L'
 B' U' L' D S' r B F2 U F U' Z B l2 U l' r'
 B' U' L' D S' r B F2 U F U' f l2 U l' r'
 
-add_YorZ__shifting_listTypeAlg  is now:
-B' U' L' D S' L U D2 F Y' D R' U R2 B R' L'
+add_YorZ__shifting_listTypeAlg  is now:  B' U' L' D S' L U D2 F Y' D R' U R2 B R' L'
 The indexes are going in reverse order; here are the algs for the current index, which is:  9
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 B' U' r' B H L F B2 D Z' B R' F R2 U R' L'
 B' U' L' D S' L U D2 F Y' D R' U R2 B R' r'
@@ -1400,9 +1510,11 @@ B' U' L' D S' r B F2 U Z F R' B l2 U l' r'
 B' U' L' D S' L U D2 F Y' D l' B l2 U l' r'
 B' U' r' B H r U D2 F Y' D l' B l2 U l' r'
 
-add_YorZ__shifting_listTypeAlg  is now:
-B' U' L' D S' L Y' U D2 R D R' U R2 B R' L'
+add_YorZ__shifting_listTypeAlg  is now:  B' U' L' D S' L Y' U D2 R D R' U R2 B R' L'
 The indexes are going in reverse order; here are the algs for the current index, which is:  6
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 B' U' r' B H L Z' F B2 R B R' F R2 U R' L'
 B' U' r' B H L b B2 R B R' F R2 U R' L'
@@ -1469,9 +1581,11 @@ B' U' r' B H r d D2 R D l' B l2 U l' r'
 B' U' L' D S' r Z B F2 l D l' B l2 U l' r'
 B' U' L' D S' r f F2 l D l' B l2 U l' r'
 
-add_YorZ__shifting_listTypeAlg  is now:
-B' U' L' D S' Y' F U D2 R D R' U R2 B R' L'
+add_YorZ__shifting_listTypeAlg  is now:  B' U' L' D S' Y' F U D2 R D R' U R2 B R' L'
 The indexes are going in reverse order; here are the algs for the current index, which is:  5
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 B' U' r' B H Z' D F B2 R B R' F R2 U R' L'
 B' U' L' D S' Y' F U D2 l B R' F R2 U R' L'
@@ -1490,9 +1604,11 @@ B' U' L' D S' Y' F U D2 l B l' U l2 F l' L'
 B' U' L' D S' Y' F U D2 R D l' B l2 U l' r'
 B' U' r' B H Z' D F B2 l U l' F R2 U l' r'
 
-add_YorZ__shifting_listTypeAlg  is now:
-B' U' L' Y' D T' F U D2 R D R' U R2 B R' L'
+add_YorZ__shifting_listTypeAlg  is now:  B' U' L' Y' D T' F U D2 R D R' U R2 B R' L'
 The indexes are going in reverse order; here are the algs for the current index, which is:  3
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 B' U' r' Z' B T' D F B2 R B R' F R2 U R' L'
 B' U' L' Y' D T' F U D2 l B R' F R2 U R' L'
@@ -1511,9 +1627,11 @@ B' U' L' Y' D T' F U D2 l B l' U l2 F l' L'
 B' U' L' Y' D T' F U D2 R D l' B l2 U l' r'
 B' U' r' Z' B T' D F B2 l U l' F R2 U l' r'
 
-add_YorZ__shifting_listTypeAlg  is now:
-B' Y' U' F' D T' F U D2 R D R' U R2 B R' L'
+add_YorZ__shifting_listTypeAlg  is now:  B' Y' U' F' D T' F U D2 R D R' U R2 B R' L'
 The indexes are going in reverse order; here are the algs for the current index, which is:  1
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 B' Y' U' F' D T' F U D2 l B R' F R2 U R' L'
 B' Y' U' F' D T' F U D2 R D R' U R2 B R' r'
@@ -1524,9 +1642,11 @@ B' Y' U' F' D T' F U D2 l B R' F R2 U l' r'
 B' Y' U' F' D T' F U D2 l B l' U l2 F l' L'
 B' Y' U' F' D T' F U D2 R D l' B l2 U l' r'
 
-add_YorZ__shifting_listTypeAlg  is now:
-Y' L' U' F' D T' F U D2 R D R' U R2 B R' L'
+add_YorZ__shifting_listTypeAlg  is now:  Y' L' U' F' D T' F U D2 R D R' U R2 B R' L'
 The indexes are going in reverse order; here are the algs for the current index, which is:  0
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 Y' r' F' D' B T' D F B2 R B R' F R2 U R' L'
 Y' L' U' F' D T' F U D2 l B R' F R2 U R' L'
@@ -1560,9 +1680,11 @@ DUAL list:  [['Z', 'X']]
 
 active member of DUAL list:  ['Z', 'X']
 
-add_YorZ__shifting_listTypeAlg  is now:
-U2 R2 L B R B' L B2 D F' B' R' D' F' U T Z F'
+add_YorZ__shifting_listTypeAlg  is now:  U2 R2 L B R B' L B2 D F' B' R' D' F' U T Z F'
 The indexes are going in reverse order; here are the algs for the current index, which is:  16
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U2 R2 r D R D' L D2 F U' D' R' F' U' B T Y U'
 U2 R2 r D R D' L D2 F U' D' R' F' U' B T d'
@@ -1581,9 +1703,11 @@ U2 R2 L B l U' r B2 D F' B' l' F' U' B T d'
 U2 l2 r U R U' r B2 D F' B' l' F' U' B T Y U'
 U2 l2 r U R U' r B2 D F' B' l' F' U' B T d'
 
-add_YorZ__shifting_listTypeAlg  is now:
-U2 R2 L B R B' L B2 D F' B' R' D' F' U Z H' F'
+add_YorZ__shifting_listTypeAlg  is now:  U2 R2 L B R B' L B2 D F' B' R' D' F' U Z H' F'
 The indexes are going in reverse order; here are the algs for the current index, which is:  15
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U2 R2 r D R D' L D2 F U' D' R' F' U' B Y S U'
 U2 R2 L B R B' r D2 F U' D' R' F' U' B Y S U'
@@ -1594,9 +1718,11 @@ U2 R2 r D l B' L B2 D F' B' l' F' U' B Y S U'
 U2 R2 L B l U' r B2 D F' B' l' F' U' B Y S U'
 U2 l2 r U R U' r B2 D F' B' l' F' U' B Y S U'
 
-add_YorZ__shifting_listTypeAlg  is now:
-U2 R2 L B R B' L B2 D F' B' R' D' Z F' R H' F'
+add_YorZ__shifting_listTypeAlg  is now:  U2 R2 L B R B' L B2 D F' B' R' D' Z F' R H' F'
 The indexes are going in reverse order; here are the algs for the current index, which is:  13
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U2 R2 r D R D' L D2 F U' D' R' F' Y U' R S U'
 U2 R2 r D R D' L D2 F U' D' R' F' d' R S U'
@@ -1631,9 +1757,11 @@ U2 l2 L F l D' L D2 F U' D' l' U' f' l S U'
 U2 R2 r D l B' r D2 F U' D' l' U' Z' B' l S U'
 U2 R2 r D l B' r D2 F U' D' l' U' f' l S U'
 
-add_YorZ__shifting_listTypeAlg  is now:
-U2 R2 L B R B' L B2 D F' B' R' Z L' F' R H' F'
+add_YorZ__shifting_listTypeAlg  is now:  U2 R2 L B R B' L B2 D F' B' R' Z L' F' R H' F'
 The indexes are going in reverse order; here are the algs for the current index, which is:  12
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U2 R2 r D R D' L D2 F U' D' R' Y L' U' R S U'
 U2 R2 L B R B' r D2 F U' D' R' Y L' U' R S U'
@@ -1668,9 +1796,11 @@ U2 l2 r U l F' r U2 B D' U' R' Y' r' B' l S U'
 U2 l2 r U l F' L F2 U B' F' l' Y' r' B' l S U'
 U2 l2 L F l D' r F2 U B' F' l' Y' r' B' l S U'
 
-add_YorZ__shifting_listTypeAlg  is now:
-U2 R2 L B R B' L B2 D Z F' B' D' L' F' R H' F'
+add_YorZ__shifting_listTypeAlg  is now:  U2 R2 L B R B' L B2 D Z F' B' D' L' F' R H' F'
 The indexes are going in reverse order; here are the algs for the current index, which is:  9
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U2 R2 r D R D' L D2 F Y U' D' F' L' U' R S U'
 U2 R2 r D R D' L D2 F d' D' F' L' U' R S U'
@@ -1705,9 +1835,11 @@ U2 l2 L F R F' r U2 B u' U' B' r' B' l S U'
 U2 l2 r U l F' r U2 B Y' D' U' B' r' B' l S U'
 U2 l2 r U l F' r U2 B u' U' B' r' B' l S U'
 
-add_YorZ__shifting_listTypeAlg  is now:
-U2 R2 L B R B' L Z B2 L F' B' D' L' F' R H' F'
+add_YorZ__shifting_listTypeAlg  is now:  U2 R2 L B R B' L Z B2 L F' B' D' L' F' R H' F'
 The indexes are going in reverse order; here are the algs for the current index, which is:  7
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U2 R2 r D R D' L Y D2 L U' D' F' L' U' R S U'
 U2 R2 L B R B' r Y D2 L U' D' F' L' U' R S U'
@@ -1742,9 +1874,11 @@ U2 l2 r U l F' r Y' U2 L D' U' B' r' B' l S U'
 U2 l2 r U l F' L Z' F2 r D' U' B' r' B' l S U'
 U2 l2 L F l D' r Z' F2 r D' U' B' r' B' l S U'
 
-add_YorZ__shifting_listTypeAlg  is now:
-U2 R2 L B R Z B' U B2 L F' B' D' L' F' R H' F'
+add_YorZ__shifting_listTypeAlg  is now:  U2 R2 L B R Z B' U B2 L F' B' D' L' F' R H' F'
 The indexes are going in reverse order; here are the algs for the current index, which is:  5
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U2 R2 r D R Y D' B D2 L U' D' F' L' U' R S U'
 U2 R2 L B R Z B' U B2 r U' D' F' L' U' R S U'
@@ -1763,9 +1897,11 @@ U2 l2 L F l Y D' B D2 r B' F' U' L' B' l S U'
 U2 l2 L F R Z' F' D F2 r D' U' B' r' B' l S U'
 U2 l2 r U l Z' F' D F2 r D' U' B' r' B' l S U'
 
-add_YorZ__shifting_listTypeAlg  is now:
-U2 R2 L Z B D B' U B2 L F' B' D' L' F' R H' F'
+add_YorZ__shifting_listTypeAlg  is now:  U2 R2 L Z B D B' U B2 L F' B' D' L' F' R H' F'
 The indexes are going in reverse order; here are the algs for the current index, which is:  3
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U2 R2 r Y D F D' B D2 L U' D' F' L' U' R S U'
 U2 R2 r u F D' B D2 L U' D' F' L' U' R S U'
@@ -1784,24 +1920,30 @@ U2 l2 r d B U' F U2 L D' U' B' r' B' l S U'
 U2 l2 L Z' F U F' D F2 r D' U' B' r' B' l S U'
 U2 l2 L b U F' D F2 r D' U' B' r' B' l S U'
 
-add_YorZ__shifting_listTypeAlg  is now:
-U2 R2 Z U B D B' U B2 L F' B' D' L' F' R H' F'
+add_YorZ__shifting_listTypeAlg  is now:  U2 R2 Z U B D B' U B2 L F' B' D' L' F' R H' F'
 The indexes are going in reverse order; here are the algs for the current index, which is:  2
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U2 R2 Z U B D B' U B2 r U' D' F' L' U' R S U'
 U2 l2 Z' D F U F' D F2 L B' F' U' r' U' R S U'
 U2 l2 Z' D F U F' D F2 L B' F' U' L' B' l S U'
 U2 l2 Z' D F U F' D F2 r D' U' B' r' B' l S U'
 
-add_YorZ__shifting_listTypeAlg  is now:
-U2 Z D2 U B D B' U B2 L F' B' D' L' F' R H' F'
+add_YorZ__shifting_listTypeAlg  is now:  U2 Z D2 U B D B' U B2 L F' B' D' L' F' R H' F'
 The indexes are going in reverse order; here are the algs for the current index, which is:  1
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U2 Z D2 U B D B' U B2 r U' D' F' L' U' R S U'
 
-add_YorZ__shifting_listTypeAlg  is now:
-Z R2 D2 U B D B' U B2 L F' B' D' L' F' R H' F'
+add_YorZ__shifting_listTypeAlg  is now:  Z R2 D2 U B D B' U B2 L F' B' D' L' F' R H' F'
 The indexes are going in reverse order; here are the algs for the current index, which is:  0
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 Z R2 D2 U B D B' U B2 r U' D' F' L' U' R S U'
 Z l2 U2 D F U F' D F2 L B' F' U' r' U' R S U'
@@ -1823,9 +1965,11 @@ DUAL list:  [['Y2', 'X'], ['Z2', "X'"]]
 
 active member of DUAL list:  ['Y2', 'X']
 
-add_YorZ__shifting_listTypeAlg  is now:
-U2 F' L2 U2 F' R' L' U B2 L2 U R' L' F' R L Y2
+add_YorZ__shifting_listTypeAlg  is now:  U2 F' L2 U2 F' R' L' U B2 L2 U R' L' F' R L Y2
 The indexes are going in reverse order; here are the algs for the current index, which is:  16
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U2 F' L2 U2 F' l' L' B D2 L2 B R' L' U' R L Z2
 U2 F' L2 U2 F' R' L' U B2 L2 U l' L' U' R L Z2
@@ -1892,9 +2036,11 @@ U2 F' r2 D2 B' l' r' D F2 r2 U l' r' F' R r Z2
 U2 F' r2 D2 B' l' r' D F2 r2 U l' L' U' l r Z2
 U2 F' r2 D2 B' l' L' F U2 r2 B l' r' U' l r Z2
 
-add_YorZ__shifting_listTypeAlg  is now:
-U2 F' L2 U2 F' R' L' U B2 L2 U R' L' F' R Y2 R
+add_YorZ__shifting_listTypeAlg  is now:  U2 F' L2 U2 F' R' L' U B2 L2 U R' L' F' R Y2 R
 The indexes are going in reverse order; here are the algs for the current index, which is:  15
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U2 F' L2 U2 F' l' L' B D2 L2 B R' L' U' R Z2 R
 U2 F' L2 U2 F' R' L' U B2 L2 U l' L' U' R Z2 R
@@ -1961,9 +2107,11 @@ U2 F' L2 U2 F' l' L' B D2 r2 F l' r' D' l Y2 l
 U2 F' r2 D2 B' l' r' D F2 r2 U R' r' D' l Y2 l
 U2 F' r2 D2 B' R' r' B D2 r2 F l' r' D' l Y2 l
 
-add_YorZ__shifting_listTypeAlg  is now:
-U2 F' L2 U2 F' R' L' U B2 L2 U R' L' F' Y2 L R
+add_YorZ__shifting_listTypeAlg  is now:  U2 F' L2 U2 F' R' L' U B2 L2 U R' L' F' Y2 L R
 The indexes are going in reverse order; here are the algs for the current index, which is:  14
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U2 F' L2 U2 F' l' L' B D2 L2 B R' L' U' Z2 L R
 U2 F' L2 U2 F' R' L' U B2 L2 U l' L' U' Z2 L R
@@ -2030,9 +2178,11 @@ U2 F' r2 D2 B' l' r' D F2 r2 U l' r' F' Y2 r R
 U2 F' r2 D2 B' l' r' D F2 r2 U l' L' U' Z2 r l
 U2 F' r2 D2 B' l' L' F U2 r2 B l' r' U' Z2 r l
 
-add_YorZ__shifting_listTypeAlg  is now:
-U2 F' L2 U2 F' R' L' U B2 L2 U R' L' Y2 B' L R
+add_YorZ__shifting_listTypeAlg  is now:  U2 F' L2 U2 F' R' L' U B2 L2 U R' L' Y2 B' L R
 The indexes are going in reverse order; here are the algs for the current index, which is:  13
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U2 F' L2 U2 F' l' L' B D2 L2 B R' L' Z2 D' L R
 U2 F' L2 U2 F' R' L' U B2 L2 U l' L' Z2 D' L R
@@ -2099,9 +2249,11 @@ U2 F' r2 D2 B' l' r' D F2 r2 U l' r' Y2 B' r R
 U2 F' r2 D2 B' l' r' D F2 r2 U l' L' Z2 D' r l
 U2 F' r2 D2 B' l' L' F U2 r2 B l' r' Z2 D' r l
 
-add_YorZ__shifting_listTypeAlg  is now:
-U2 F' L2 U2 F' R' L' U B2 L2 U R' Y2 R' B' L R
+add_YorZ__shifting_listTypeAlg  is now:  U2 F' L2 U2 F' R' L' U B2 L2 U R' Y2 R' B' L R
 The indexes are going in reverse order; here are the algs for the current index, which is:  12
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U2 F' L2 U2 F' l' L' B D2 L2 B R' Z2 R' D' L R
 U2 F' L2 U2 F' R' L' U B2 L2 U l' Z2 R' D' L R
@@ -2168,9 +2320,11 @@ U2 F' r2 D2 B' l' r' D F2 r2 U l' Z2 R' D' r l
 U2 F' r2 D2 B' l' r' D F2 r2 U R' Y2 l' D' r l
 U2 F' r2 D2 B' R' r' B D2 r2 F l' Y2 l' D' r l
 
-add_YorZ__shifting_listTypeAlg  is now:
-U2 F' L2 U2 F' R' L' U B2 L2 Y2 U L' R' B' L R
+add_YorZ__shifting_listTypeAlg  is now:  U2 F' L2 U2 F' R' L' U B2 L2 Y2 U L' R' B' L R
 The indexes are going in reverse order; here are the algs for the current index, which is:  10
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U2 F' L2 U2 F' l' L' B D2 L2 Z2 B L' R' D' L R
 U2 F' L2 U2 F' R' L' U B2 L2 Y2 U L' l' D' L R
@@ -2237,9 +2391,11 @@ U2 F' r2 D2 B' l' r' D F2 r2 Y2 U r' l' B' r R
 U2 F' r2 D2 B' l' r' D F2 r2 Y2 U L' l' D' r l
 U2 F' r2 D2 B' l' L' F U2 r2 Z2 B r' l' D' r l
 
-add_YorZ__shifting_listTypeAlg  is now:
-U2 F' L2 U2 F' R' L' U B2 Y2 R2 U L' R' B' L R
+add_YorZ__shifting_listTypeAlg  is now:  U2 F' L2 U2 F' R' L' U B2 Y2 R2 U L' R' B' L R
 The indexes are going in reverse order; here are the algs for the current index, which is:  9
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U2 F' L2 U2 F' l' L' B D2 Z2 R2 B L' R' D' L R
 U2 F' L2 U2 F' R' L' U B2 Y2 R2 U L' l' D' L R
@@ -2306,9 +2462,11 @@ U2 F' r2 D2 B' l' r' D F2 Y2 l2 U r' l' B' r R
 U2 F' r2 D2 B' l' r' D F2 Y2 l2 U L' l' D' r l
 U2 F' r2 D2 B' l' L' F U2 Z2 l2 B r' l' D' r l
 
-add_YorZ__shifting_listTypeAlg  is now:
-U2 F' L2 U2 F' R' L' Y2 U F2 R2 U L' R' B' L R
+add_YorZ__shifting_listTypeAlg  is now:  U2 F' L2 U2 F' R' L' Y2 U F2 R2 U L' R' B' L R
 The indexes are going in reverse order; here are the algs for the current index, which is:  7
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U2 F' L2 U2 F' l' L' Z2 B U2 R2 B L' R' D' L R
 U2 F' L2 U2 F' R' L' Y2 U F2 R2 U L' l' D' L R
@@ -2375,9 +2533,11 @@ U2 F' r2 D2 B' l' r' Y2 D B2 l2 U r' l' B' r R
 U2 F' r2 D2 B' l' r' Y2 D B2 l2 U L' l' D' r l
 U2 F' r2 D2 B' l' L' Z2 F D2 l2 B r' l' D' r l
 
-add_YorZ__shifting_listTypeAlg  is now:
-U2 F' L2 U2 F' R' Y2 R' U F2 R2 U L' R' B' L R
+add_YorZ__shifting_listTypeAlg  is now:  U2 F' L2 U2 F' R' Y2 R' U F2 R2 U L' R' B' L R
 The indexes are going in reverse order; here are the algs for the current index, which is:  6
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U2 F' L2 U2 F' l' Z2 R' B U2 R2 B L' R' D' L R
 U2 F' L2 U2 F' R' Y2 l' B U2 R2 B L' R' D' L R
@@ -2444,9 +2604,11 @@ U2 F' r2 D2 B' l' Z2 l' U F2 l2 D r' R' D' r l
 U2 F' r2 D2 B' l' Z2 R' F D2 l2 B r' l' D' r l
 U2 F' r2 D2 B' R' Y2 l' F D2 l2 B r' l' D' r l
 
-add_YorZ__shifting_listTypeAlg  is now:
-U2 F' L2 U2 F' Y2 L' R' U F2 R2 U L' R' B' L R
+add_YorZ__shifting_listTypeAlg  is now:  U2 F' L2 U2 F' Y2 L' R' U F2 R2 U L' R' B' L R
 The indexes are going in reverse order; here are the algs for the current index, which is:  5
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U2 F' L2 U2 F' Y2 L' l' B U2 R2 B L' R' D' L R
 U2 F' L2 U2 F' Y2 L' R' U F2 R2 U L' l' D' L R
@@ -2513,9 +2675,11 @@ U2 F' r2 D2 B' Y2 r' l' D B2 l2 U r' l' B' r R
 U2 F' r2 D2 B' Y2 r' l' D B2 l2 U L' l' D' r l
 U2 F' r2 D2 B' Y2 L' l' F D2 l2 B r' l' D' r l
 
-add_YorZ__shifting_listTypeAlg  is now:
-U2 F' L2 Y2 U2 B' L' R' U F2 R2 U L' R' B' L R
+add_YorZ__shifting_listTypeAlg  is now:  U2 F' L2 Y2 U2 B' L' R' U F2 R2 U L' R' B' L R
 The indexes are going in reverse order; here are the algs for the current index, which is:  3
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U2 F' L2 Y2 U2 B' L' l' B U2 R2 B L' R' D' L R
 U2 F' L2 d2 B' L' l' B U2 R2 B L' R' D' L R
@@ -2646,9 +2810,11 @@ U2 F' r2 u2 F' r' l' D B2 l2 U L' l' D' r l
 U2 F' r2 Y2 D2 F' L' l' F D2 l2 B r' l' D' r l
 U2 F' r2 u2 F' L' l' F D2 l2 B r' l' D' r l
 
-add_YorZ__shifting_listTypeAlg  is now:
-U2 F' Y2 R2 U2 B' L' R' U F2 R2 U L' R' B' L R
+add_YorZ__shifting_listTypeAlg  is now:  U2 F' Y2 R2 U2 B' L' R' U F2 R2 U L' R' B' L R
 The indexes are going in reverse order; here are the algs for the current index, which is:  2
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U2 F' Y2 R2 U2 B' L' l' B U2 R2 B L' R' D' L R
 U2 F' Y2 R2 U2 B' L' R' U F2 R2 U L' l' D' L R
@@ -2715,9 +2881,11 @@ U2 F' Y2 l2 D2 F' r' l' D B2 l2 U r' l' B' r R
 U2 F' Y2 l2 D2 F' r' l' D B2 l2 U L' l' D' r l
 U2 F' Y2 l2 D2 F' L' l' F D2 l2 B r' l' D' r l
 
-add_YorZ__shifting_listTypeAlg  is now:
-Y2 U2 B' R2 U2 B' L' R' U F2 R2 U L' R' B' L R
+add_YorZ__shifting_listTypeAlg  is now:  Y2 U2 B' R2 U2 B' L' R' U F2 R2 U L' R' B' L R
 The indexes are going in reverse order; here are the algs for the current index, which is:  0
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 Y2 U2 B' R2 U2 B' L' l' B U2 R2 B L' R' D' L R
 d2 B' R2 U2 B' L' l' B U2 R2 B L' R' D' L R
@@ -2852,9 +3020,11 @@ DUAL list:  [['Y2', 'X'], ['Z2', "X'"]]
 
 active member of DUAL list:  ['Z2', "X'"]
 
-add_YorZ__shifting_listTypeAlg  is now:
-U2 F' L2 U2 F' R' L' U B2 L2 U R' L' F' R L Z2
+add_YorZ__shifting_listTypeAlg  is now:  U2 F' L2 U2 F' R' L' U B2 L2 U R' L' F' R L Z2
 The indexes are going in reverse order; here are the algs for the current index, which is:  16
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U2 F' L2 U2 F' R' r' F U2 L2 F R' L' D' R L Y2
 U2 F' L2 U2 F' R' L' U B2 L2 U R' r' D' R L Y2
@@ -2921,9 +3091,11 @@ U2 F' r2 D2 B' l' r' D F2 r2 U l' r' F' l L Y2
 U2 F' r2 D2 B' l' r' D F2 r2 U R' r' D' l r Y2
 U2 F' r2 D2 B' R' r' B D2 r2 F l' r' D' l r Y2
 
-add_YorZ__shifting_listTypeAlg  is now:
-U2 F' L2 U2 F' R' L' U B2 L2 U R' L' F' R Z2 R
+add_YorZ__shifting_listTypeAlg  is now:  U2 F' L2 U2 F' R' L' U B2 L2 U R' L' F' R Z2 R
 The indexes are going in reverse order; here are the algs for the current index, which is:  15
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U2 F' L2 U2 F' R' r' F U2 L2 F R' L' D' R Y2 R
 U2 F' L2 U2 F' R' L' U B2 L2 U R' r' D' R Y2 R
@@ -2990,9 +3162,11 @@ U2 F' r2 D2 B' l' r' D F2 r2 U l' r' F' R Z2 l
 U2 F' r2 D2 B' l' r' D F2 r2 U l' L' U' l Z2 l
 U2 F' r2 D2 B' l' L' F U2 r2 B l' r' U' l Z2 l
 
-add_YorZ__shifting_listTypeAlg  is now:
-U2 F' L2 U2 F' R' L' U B2 L2 U R' L' Z2 F' L R
+add_YorZ__shifting_listTypeAlg  is now:  U2 F' L2 U2 F' R' L' U B2 L2 U R' L' Z2 F' L R
 The indexes are going in reverse order; here are the algs for the current index, which is:  13
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U2 F' L2 U2 F' R' r' F U2 L2 F R' L' Y2 D' L R
 U2 F' L2 U2 F' R' L' U B2 L2 U R' r' Y2 D' L R
@@ -3059,9 +3233,11 @@ U2 F' r2 D2 B' l' r' D F2 r2 U l' r' Z2 F' L l
 U2 F' r2 D2 B' l' r' D F2 r2 U R' r' Y2 D' r l
 U2 F' r2 D2 B' R' r' B D2 r2 F l' r' Y2 D' r l
 
-add_YorZ__shifting_listTypeAlg  is now:
-U2 F' L2 U2 F' R' L' U B2 L2 U R' Z2 R' F' L R
+add_YorZ__shifting_listTypeAlg  is now:  U2 F' L2 U2 F' R' L' U B2 L2 U R' Z2 R' F' L R
 The indexes are going in reverse order; here are the algs for the current index, which is:  12
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U2 F' L2 U2 F' R' r' F U2 L2 F R' Y2 R' D' L R
 U2 F' L2 U2 F' R' L' U B2 L2 U R' Z2 R' F' L l
@@ -3128,9 +3304,11 @@ U2 F' L2 U2 F' R' r' F U2 r2 B l' Z2 l' D' r l
 U2 F' r2 D2 B' l' r' D F2 r2 U l' Y2 l' B' r R
 U2 F' r2 D2 B' l' L' F U2 r2 B l' Z2 l' D' r l
 
-add_YorZ__shifting_listTypeAlg  is now:
-U2 F' L2 U2 F' R' L' U B2 L2 U Z2 L' R' F' L R
+add_YorZ__shifting_listTypeAlg  is now:  U2 F' L2 U2 F' R' L' U B2 L2 U Z2 L' R' F' L R
 The indexes are going in reverse order; here are the algs for the current index, which is:  11
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U2 F' L2 U2 F' R' r' F U2 L2 F Y2 L' R' D' L R
 U2 F' L2 U2 F' R' L' U B2 L2 U Z2 r' R' D' L R
@@ -3197,9 +3375,11 @@ U2 F' r2 D2 B' l' r' D F2 r2 U Z2 r' l' F' L l
 U2 F' r2 D2 B' l' r' D F2 r2 U Z2 r' R' D' r l
 U2 F' r2 D2 B' R' r' B D2 r2 F Y2 r' l' D' r l
 
-add_YorZ__shifting_listTypeAlg  is now:
-U2 F' L2 U2 F' R' L' U B2 L2 Z2 D L' R' F' L R
+add_YorZ__shifting_listTypeAlg  is now:  U2 F' L2 U2 F' R' L' U B2 L2 Z2 D L' R' F' L R
 The indexes are going in reverse order; here are the algs for the current index, which is:  10
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U2 F' L2 U2 F' R' r' F U2 L2 Y2 B L' R' D' L R
 U2 F' L2 U2 F' R' L' U B2 L2 Z2 D r' R' D' L R
@@ -3266,9 +3446,11 @@ U2 F' r2 D2 B' l' r' D F2 r2 Z2 D r' l' F' L l
 U2 F' r2 D2 B' l' r' D F2 r2 Z2 D r' R' D' r l
 U2 F' r2 D2 B' R' r' B D2 r2 Y2 B r' l' D' r l
 
-add_YorZ__shifting_listTypeAlg  is now:
-U2 F' L2 U2 F' R' L' U Z2 B2 R2 D L' R' F' L R
+add_YorZ__shifting_listTypeAlg  is now:  U2 F' L2 U2 F' R' L' U Z2 B2 R2 D L' R' F' L R
 The indexes are going in reverse order; here are the algs for the current index, which is:  8
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U2 F' L2 U2 F' R' r' F Y2 U2 R2 B L' R' D' L R
 U2 F' L2 U2 F' R' r' F d2 R2 B L' R' D' L R
@@ -3399,9 +3581,11 @@ U2 F' r2 D2 B' l' r' D b2 l2 D r' R' D' r l
 U2 F' r2 D2 B' R' r' B Y2 D2 l2 B r' l' D' r l
 U2 F' r2 D2 B' R' r' B u2 l2 B r' l' D' r l
 
-add_YorZ__shifting_listTypeAlg  is now:
-U2 F' L2 U2 F' R' L' Z2 D B2 R2 D L' R' F' L R
+add_YorZ__shifting_listTypeAlg  is now:  U2 F' L2 U2 F' R' L' Z2 D B2 R2 D L' R' F' L R
 The indexes are going in reverse order; here are the algs for the current index, which is:  7
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U2 F' L2 U2 F' R' r' Y2 B U2 R2 B L' R' D' L R
 U2 F' L2 U2 F' R' L' Z2 D B2 R2 D r' R' D' L R
@@ -3468,9 +3652,11 @@ U2 F' r2 D2 B' l' r' Z2 U F2 l2 D r' l' F' L l
 U2 F' r2 D2 B' l' r' Z2 U F2 l2 D r' R' D' r l
 U2 F' r2 D2 B' R' r' Y2 F D2 l2 B r' l' D' r l
 
-add_YorZ__shifting_listTypeAlg  is now:
-U2 F' L2 U2 F' R' Z2 R' D B2 R2 D L' R' F' L R
+add_YorZ__shifting_listTypeAlg  is now:  U2 F' L2 U2 F' R' Z2 R' D B2 R2 D L' R' F' L R
 The indexes are going in reverse order; here are the algs for the current index, which is:  6
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U2 F' L2 U2 F' R' Z2 R' D B2 R2 D r' R' D' L R
 U2 F' L2 U2 F' R' Z2 R' D B2 R2 D L' R' F' L l
@@ -3537,9 +3723,11 @@ U2 F' L2 U2 F' R' Z2 l' F D2 l2 B r' l' D' r l
 U2 F' r2 D2 B' l' Y2 l' D B2 l2 U r' l' B' r R
 U2 F' r2 D2 B' l' Y2 l' D B2 l2 U L' l' D' r l
 
-add_YorZ__shifting_listTypeAlg  is now:
-U2 F' L2 U2 Z2 F' L' R' D B2 R2 D L' R' F' L R
+add_YorZ__shifting_listTypeAlg  is now:  U2 F' L2 U2 Z2 F' L' R' D B2 R2 D L' R' F' L R
 The indexes are going in reverse order; here are the algs for the current index, which is:  4
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U2 F' L2 U2 Z2 F' r' R' B U2 R2 B L' R' D' L R
 U2 F' L2 U2 Z2 F' L' R' D B2 R2 D r' R' D' L R
@@ -3606,9 +3794,11 @@ U2 F' r2 D2 Z2 B' r' l' U F2 l2 D r' l' F' L l
 U2 F' r2 D2 Z2 B' r' l' U F2 l2 D r' R' D' r l
 U2 F' r2 D2 Z2 B' r' R' F D2 l2 B r' l' D' r l
 
-add_YorZ__shifting_listTypeAlg  is now:
-U2 F' L2 Z2 D2 F' L' R' D B2 R2 D L' R' F' L R
+add_YorZ__shifting_listTypeAlg  is now:  U2 F' L2 Z2 D2 F' L' R' D B2 R2 D L' R' F' L R
 The indexes are going in reverse order; here are the algs for the current index, which is:  3
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U2 F' L2 Z2 D2 F' r' R' B U2 R2 B L' R' D' L R
 U2 F' L2 Z2 D2 F' L' R' D B2 R2 D r' R' D' L R
@@ -3675,9 +3865,11 @@ U2 F' r2 Z2 U2 B' r' l' U F2 l2 D r' l' F' L l
 U2 F' r2 Z2 U2 B' r' l' U F2 l2 D r' R' D' r l
 U2 F' r2 Z2 U2 B' r' R' F D2 l2 B r' l' D' r l
 
-add_YorZ__shifting_listTypeAlg  is now:
-U2 Z2 F' R2 D2 F' L' R' D B2 R2 D L' R' F' L R
+add_YorZ__shifting_listTypeAlg  is now:  U2 Z2 F' R2 D2 F' L' R' D B2 R2 D L' R' F' L R
 The indexes are going in reverse order; here are the algs for the current index, which is:  1
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U2 Z2 F' R2 D2 F' r' R' B U2 R2 B L' R' D' L R
 U2 Z2 F' R2 D2 F' L' R' D B2 R2 D r' R' D' L R
@@ -3744,9 +3936,11 @@ U2 Z2 F' l2 U2 B' r' l' U F2 l2 D r' l' F' L l
 U2 Z2 F' l2 U2 B' r' l' U F2 l2 D r' R' D' r l
 U2 Z2 F' l2 U2 B' r' R' F D2 l2 B r' l' D' r l
 
-add_YorZ__shifting_listTypeAlg  is now:
-Z2 D2 F' R2 D2 F' L' R' D B2 R2 D L' R' F' L R
+add_YorZ__shifting_listTypeAlg  is now:  Z2 D2 F' R2 D2 F' L' R' D B2 R2 D L' R' F' L R
 The indexes are going in reverse order; here are the algs for the current index, which is:  0
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 Z2 D2 F' R2 D2 F' r' R' B U2 R2 B L' R' D' L R
 Z2 D2 F' R2 D2 F' L' R' D B2 R2 D r' R' D' L R
@@ -3828,9 +4022,11 @@ DUAL list:  [['Y2', "X'"], ['Z2', 'X']]
 
 active member of DUAL list:  ['Y2', "X'"]
 
-add_YorZ__shifting_listTypeAlg  is now:
-U D R L2 U' D' F U2 L2 B R' L' U D2 B2 R2 D' R2 Y2
+add_YorZ__shifting_listTypeAlg  is now:  U D R L2 U' D' F U2 L2 B R' L' U D2 B2 R2 D' R2 Y2
 The indexes are going in reverse order; here are the algs for the current index, which is:  18
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U D l L2 F' B' D F2 L2 U R' L' F B2 U2 R2 B' R2 Z2
 U D R L2 U' D' F U2 L2 B R' r' F B2 U2 R2 B' R2 Z2
@@ -3865,9 +4061,11 @@ U D l L2 F' B' D F2 L2 U l' r' F B2 U2 l2 F' l2 Z2
 U D R r2 D' U' B D2 r2 B R' r' F B2 U2 l2 F' l2 Z2
 U D l r2 B' F' U B2 r2 U l' r' F B2 U2 l2 F' l2 Z2
 
-add_YorZ__shifting_listTypeAlg  is now:
-U D R L2 U' D' F U2 L2 B R' L' U D2 B2 R2 Y2 D' L2
+add_YorZ__shifting_listTypeAlg  is now:  U D R L2 U' D' F U2 L2 B R' L' U D2 B2 R2 Y2 D' L2
 The indexes are going in reverse order; here are the algs for the current index, which is:  16
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U D l L2 F' B' D F2 L2 U R' L' F B2 U2 R2 Z2 B' L2
 U D R L2 U' D' F U2 L2 B R' r' F B2 U2 R2 Z2 B' L2
@@ -3902,9 +4100,11 @@ U D l L2 F' B' D F2 L2 U l' r' F B2 U2 l2 Z2 F' r2
 U D R r2 D' U' B D2 r2 B R' r' F B2 U2 l2 Z2 F' r2
 U D l r2 B' F' U B2 r2 U l' r' F B2 U2 l2 Z2 F' r2
 
-add_YorZ__shifting_listTypeAlg  is now:
-U D R L2 U' D' F U2 L2 B R' L' U D2 B2 Y2 L2 D' L2
+add_YorZ__shifting_listTypeAlg  is now:  U D R L2 U' D' F U2 L2 B R' L' U D2 B2 Y2 L2 D' L2
 The indexes are going in reverse order; here are the algs for the current index, which is:  15
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U D l L2 F' B' D F2 L2 U R' L' F B2 U2 Z2 L2 B' L2
 U D R L2 U' D' F U2 L2 B R' r' F B2 U2 Z2 L2 B' L2
@@ -3939,9 +4139,11 @@ U D l L2 F' B' D F2 L2 U l' r' F B2 U2 Z2 r2 F' r2
 U D R r2 D' U' B D2 r2 B R' r' F B2 U2 Z2 r2 F' r2
 U D l r2 B' F' U B2 r2 U l' r' F B2 U2 Z2 r2 F' r2
 
-add_YorZ__shifting_listTypeAlg  is now:
-U D R L2 U' D' F U2 L2 B R' L' Y2 U D2 F2 L2 D' L2
+add_YorZ__shifting_listTypeAlg  is now:  U D R L2 U' D' F U2 L2 B R' L' Y2 U D2 F2 L2 D' L2
 The indexes are going in reverse order; here are the algs for the current index, which is:  12
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U D l L2 F' B' D F2 L2 U R' L' Z2 F B2 D2 L2 B' L2
 U D R L2 U' D' F U2 L2 B R' r' Z2 F B2 D2 L2 B' L2
@@ -3976,9 +4178,11 @@ U D l L2 F' B' D F2 L2 U l' r' Z2 F B2 D2 r2 F' r2
 U D R r2 D' U' B D2 r2 B R' r' Z2 F B2 D2 r2 F' r2
 U D l r2 B' F' U B2 r2 U l' r' Z2 F B2 D2 r2 F' r2
 
-add_YorZ__shifting_listTypeAlg  is now:
-U D R L2 U' D' F U2 L2 B R' Y2 R' U D2 F2 L2 D' L2
+add_YorZ__shifting_listTypeAlg  is now:  U D R L2 U' D' F U2 L2 B R' Y2 R' U D2 F2 L2 D' L2
 The indexes are going in reverse order; here are the algs for the current index, which is:  11
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U D l L2 F' B' D F2 L2 U R' Z2 R' F B2 D2 L2 B' L2
 U D R r2 D' U' B D2 L2 F l' Z2 R' F B2 D2 L2 B' L2
@@ -4013,9 +4217,11 @@ U D l r2 B' F' U B2 r2 U l' Y2 l' B F2 U2 L2 F' r2
 U D l r2 B' F' U B2 L2 D l' Y2 l' F B2 D2 r2 F' r2
 U D l L2 F' B' D F2 r2 D l' Y2 l' F B2 D2 r2 F' r2
 
-add_YorZ__shifting_listTypeAlg  is now:
-U D R L2 U' D' F U2 L2 B Y2 L' R' U D2 F2 L2 D' L2
+add_YorZ__shifting_listTypeAlg  is now:  U D R L2 U' D' F U2 L2 B Y2 L' R' U D2 F2 L2 D' L2
 The indexes are going in reverse order; here are the algs for the current index, which is:  10
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U D l L2 F' B' D F2 L2 U Z2 L' R' F B2 D2 L2 B' L2
 U D R L2 U' D' F U2 L2 B Y2 r' R' F B2 D2 L2 B' L2
@@ -4050,9 +4256,11 @@ U D l L2 F' B' D F2 L2 U Z2 r' l' F B2 D2 r2 F' r2
 U D R r2 D' U' B D2 r2 B Y2 r' R' F B2 D2 r2 F' r2
 U D l r2 B' F' U B2 r2 U Z2 r' l' F B2 D2 r2 F' r2
 
-add_YorZ__shifting_listTypeAlg  is now:
-U D R L2 U' D' F U2 L2 Y2 F L' R' U D2 F2 L2 D' L2
+add_YorZ__shifting_listTypeAlg  is now:  U D R L2 U' D' F U2 L2 Y2 F L' R' U D2 F2 L2 D' L2
 The indexes are going in reverse order; here are the algs for the current index, which is:  9
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U D l L2 F' B' D F2 L2 Z2 D L' R' F B2 D2 L2 B' L2
 U D R L2 U' D' F U2 L2 Y2 F r' R' F B2 D2 L2 B' L2
@@ -4087,9 +4295,11 @@ U D l L2 F' B' D F2 L2 Z2 D r' l' F B2 D2 r2 F' r2
 U D R r2 D' U' B D2 r2 Y2 F r' R' F B2 D2 r2 F' r2
 U D l r2 B' F' U B2 r2 Z2 D r' l' F B2 D2 r2 F' r2
 
-add_YorZ__shifting_listTypeAlg  is now:
-U D R L2 U' D' F Y2 U2 R2 F L' R' U D2 F2 L2 D' L2
+add_YorZ__shifting_listTypeAlg  is now:  U D R L2 U' D' F Y2 U2 R2 F L' R' U D2 F2 L2 D' L2
 The indexes are going in reverse order; here are the algs for the current index, which is:  7
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U D l L2 F' B' D Z2 F2 R2 D L' R' F B2 D2 L2 B' L2
 U D l L2 F' B' D b2 R2 D L' R' F B2 D2 L2 B' L2
@@ -4156,9 +4366,11 @@ U D R r2 D' U' B u2 l2 F r' R' F B2 D2 r2 F' r2
 U D l r2 B' F' U Z2 B2 l2 D r' l' F B2 D2 r2 F' r2
 U D l r2 B' F' U f2 l2 D r' l' F B2 D2 r2 F' r2
 
-add_YorZ__shifting_listTypeAlg  is now:
-U D R L2 Y2 U' D' B U2 R2 F L' R' U D2 F2 L2 D' L2
+add_YorZ__shifting_listTypeAlg  is now:  U D R L2 Y2 U' D' B U2 R2 F L' R' U D2 F2 L2 D' L2
 The indexes are going in reverse order; here are the algs for the current index, which is:  4
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U D l L2 Z2 F' B' U F2 R2 D L' R' F B2 D2 L2 B' L2
 U D R L2 Y2 U' D' B U2 R2 F r' R' F B2 D2 L2 B' L2
@@ -4193,9 +4405,11 @@ U D l L2 Z2 F' B' U F2 R2 D r' l' F B2 D2 r2 F' r2
 U D R r2 Y2 D' U' F D2 l2 F r' R' F B2 D2 r2 F' r2
 U D l r2 Z2 B' F' D B2 l2 D r' l' F B2 D2 r2 F' r2
 
-add_YorZ__shifting_listTypeAlg  is now:
-U D R Y2 R2 U' D' B U2 R2 F L' R' U D2 F2 L2 D' L2
+add_YorZ__shifting_listTypeAlg  is now:  U D R Y2 R2 U' D' B U2 R2 F L' R' U D2 F2 L2 D' L2
 The indexes are going in reverse order; here are the algs for the current index, which is:  3
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U D l Z2 R2 F' B' U F2 R2 D L' R' F B2 D2 L2 B' L2
 U D R Y2 R2 U' D' B U2 R2 F r' R' F B2 D2 L2 B' L2
@@ -4230,9 +4444,11 @@ U D l Z2 R2 F' B' U F2 R2 D r' l' F B2 D2 r2 F' r2
 U D R Y2 l2 D' U' F D2 l2 F r' R' F B2 D2 r2 F' r2
 U D l Z2 l2 B' F' D B2 l2 D r' l' F B2 D2 r2 F' r2
 
-add_YorZ__shifting_listTypeAlg  is now:
-Y2 U D L R2 U' D' B U2 R2 F L' R' U D2 F2 L2 D' L2
+add_YorZ__shifting_listTypeAlg  is now:  Y2 U D L R2 U' D' B U2 R2 F L' R' U D2 F2 L2 D' L2
 The indexes are going in reverse order; here are the algs for the current index, which is:  0
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 Y2 U D L R2 U' D' B U2 R2 F r' R' F B2 D2 L2 B' L2
 Y2 U D r l2 F' B' U F2 R2 D L' R' F B2 D2 L2 B' L2
@@ -4271,9 +4487,11 @@ DUAL list:  [['Y2', "X'"], ['Z2', 'X']]
 
 active member of DUAL list:  ['Z2', 'X']
 
-add_YorZ__shifting_listTypeAlg  is now:
-U D R L2 U' D' F U2 L2 B R' L' U D2 B2 R2 D' R2 Z2
+add_YorZ__shifting_listTypeAlg  is now:  U D R L2 U' D' F U2 L2 B R' L' U D2 B2 R2 D' R2 Z2
 The indexes are going in reverse order; here are the algs for the current index, which is:  18
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U D R L2 U' D' F U2 L2 B l' L' B F2 D2 R2 F' R2 Y2
 U D l r2 B' F' U B2 L2 D R' L' B F2 D2 R2 F' R2 Y2
@@ -4308,9 +4526,11 @@ U D l r2 B' F' U B2 r2 U l' r' F B2 U2 R2 B' l2 Y2
 U D l r2 B' F' U B2 L2 D l' r' B F2 D2 l2 B' l2 Y2
 U D l L2 F' B' D F2 r2 D l' r' B F2 D2 l2 B' l2 Y2
 
-add_YorZ__shifting_listTypeAlg  is now:
-U D R L2 U' D' F U2 L2 B R' L' U D2 B2 R2 D' Z2 L2
+add_YorZ__shifting_listTypeAlg  is now:  U D R L2 U' D' F U2 L2 B R' L' U D2 B2 R2 D' Z2 L2
 The indexes are going in reverse order; here are the algs for the current index, which is:  17
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U D R L2 U' D' F U2 L2 B l' L' B F2 D2 R2 F' Y2 L2
 U D l r2 B' F' U B2 L2 D R' L' B F2 D2 R2 F' Y2 L2
@@ -4345,9 +4565,11 @@ U D l r2 B' F' U B2 r2 U l' r' F B2 U2 R2 B' Y2 r2
 U D l r2 B' F' U B2 L2 D l' r' B F2 D2 l2 B' Y2 r2
 U D l L2 F' B' D F2 r2 D l' r' B F2 D2 l2 B' Y2 r2
 
-add_YorZ__shifting_listTypeAlg  is now:
-U D R L2 U' D' F U2 L2 B R' L' U D2 B2 R2 Z2 U' L2
+add_YorZ__shifting_listTypeAlg  is now:  U D R L2 U' D' F U2 L2 B R' L' U D2 B2 R2 Z2 U' L2
 The indexes are going in reverse order; here are the algs for the current index, which is:  16
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U D R L2 U' D' F U2 L2 B l' L' B F2 D2 R2 Y2 B' L2
 U D l r2 B' F' U B2 L2 D R' L' B F2 D2 R2 Y2 B' L2
@@ -4382,9 +4604,11 @@ U D l r2 B' F' U B2 r2 U l' r' F B2 U2 R2 Y2 F' r2
 U D l r2 B' F' U B2 L2 D l' r' B F2 D2 l2 Y2 F' r2
 U D l L2 F' B' D F2 r2 D l' r' B F2 D2 l2 Y2 F' r2
 
-add_YorZ__shifting_listTypeAlg  is now:
-U D R L2 U' D' F U2 L2 B R' L' U D2 Z2 B2 L2 U' L2
+add_YorZ__shifting_listTypeAlg  is now:  U D R L2 U' D' F U2 L2 B R' L' U D2 Z2 B2 L2 U' L2
 The indexes are going in reverse order; here are the algs for the current index, which is:  14
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U D R L2 U' D' F U2 L2 B l' L' B F2 Y2 D2 L2 B' L2
 U D R L2 U' D' F U2 L2 B l' L' B F2 u2 L2 B' L2
@@ -4451,9 +4675,11 @@ U D l r2 B' F' U B2 L2 D l' r' B F2 u2 r2 F' r2
 U D l L2 F' B' D F2 r2 D l' r' B F2 Y2 D2 r2 F' r2
 U D l L2 F' B' D F2 r2 D l' r' B F2 u2 r2 F' r2
 
-add_YorZ__shifting_listTypeAlg  is now:
-U D R L2 U' D' F U2 L2 B R' L' U Z2 U2 B2 L2 U' L2
+add_YorZ__shifting_listTypeAlg  is now:  U D R L2 U' D' F U2 L2 B R' L' U Z2 U2 B2 L2 U' L2
 The indexes are going in reverse order; here are the algs for the current index, which is:  13
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U D R L2 U' D' F U2 L2 B l' L' B Y2 B2 D2 L2 B' L2
 U D l r2 B' F' U B2 L2 D R' L' B Y2 B2 D2 L2 B' L2
@@ -4488,9 +4714,11 @@ U D l r2 B' F' U B2 r2 U l' r' F Y2 F2 U2 L2 F' r2
 U D l r2 B' F' U B2 L2 D l' r' B Y2 B2 D2 r2 F' r2
 U D l L2 F' B' D F2 r2 D l' r' B Y2 B2 D2 r2 F' r2
 
-add_YorZ__shifting_listTypeAlg  is now:
-U D R L2 U' D' F U2 L2 B R' L' Z2 D U2 B2 L2 U' L2
+add_YorZ__shifting_listTypeAlg  is now:  U D R L2 U' D' F U2 L2 B R' L' Z2 D U2 B2 L2 U' L2
 The indexes are going in reverse order; here are the algs for the current index, which is:  12
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U D R L2 U' D' F U2 L2 B l' L' Y2 F B2 D2 L2 B' L2
 U D l r2 B' F' U B2 L2 D R' L' Y2 F B2 D2 L2 B' L2
@@ -4525,9 +4753,11 @@ U D l r2 B' F' U B2 r2 U l' r' Y2 B F2 U2 L2 F' r2
 U D l r2 B' F' U B2 L2 D l' r' Y2 F B2 D2 r2 F' r2
 U D l L2 F' B' D F2 r2 D l' r' Y2 F B2 D2 r2 F' r2
 
-add_YorZ__shifting_listTypeAlg  is now:
-U D R L2 U' D' F U2 L2 B R' Z2 R' D U2 B2 L2 U' L2
+add_YorZ__shifting_listTypeAlg  is now:  U D R L2 U' D' F U2 L2 B R' Z2 R' D U2 B2 L2 U' L2
 The indexes are going in reverse order; here are the algs for the current index, which is:  11
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U D R L2 U' D' F U2 L2 B l' Y2 R' F B2 D2 L2 B' L2
 U D R L2 U' D' F U2 L2 B R' Z2 l' F B2 D2 L2 B' L2
@@ -4562,9 +4792,11 @@ U D R r2 D' U' B D2 r2 B l' Y2 R' F B2 D2 r2 F' r2
 U D R r2 D' U' B D2 r2 B R' Z2 l' F B2 D2 r2 F' r2
 U D l r2 B' F' U B2 r2 U l' Z2 l' F B2 D2 r2 F' r2
 
-add_YorZ__shifting_listTypeAlg  is now:
-U D R L2 U' D' F U2 L2 Z2 B L' R' D U2 B2 L2 U' L2
+add_YorZ__shifting_listTypeAlg  is now:  U D R L2 U' D' F U2 L2 Z2 B L' R' D U2 B2 L2 U' L2
 The indexes are going in reverse order; here are the algs for the current index, which is:  9
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U D R L2 U' D' F U2 L2 Z2 B L' l' F B2 D2 L2 B' L2
 U D l r2 B' F' U B2 L2 Y2 D L' R' F B2 D2 L2 B' L2
@@ -4599,9 +4831,11 @@ U D l r2 B' F' U B2 r2 Y2 U r' l' B F2 U2 L2 F' r2
 U D l r2 B' F' U B2 L2 Y2 D r' l' F B2 D2 r2 F' r2
 U D l L2 F' B' D F2 r2 Y2 D r' l' F B2 D2 r2 F' r2
 
-add_YorZ__shifting_listTypeAlg  is now:
-U D R L2 U' D' F U2 Z2 R2 B L' R' D U2 B2 L2 U' L2
+add_YorZ__shifting_listTypeAlg  is now:  U D R L2 U' D' F U2 Z2 R2 B L' R' D U2 B2 L2 U' L2
 The indexes are going in reverse order; here are the algs for the current index, which is:  8
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U D R L2 U' D' F U2 Z2 R2 B L' l' F B2 D2 L2 B' L2
 U D l r2 B' F' U B2 Y2 R2 D L' R' F B2 D2 L2 B' L2
@@ -4636,9 +4870,11 @@ U D l r2 B' F' U B2 Y2 l2 U r' l' B F2 U2 L2 F' r2
 U D l r2 B' F' U B2 Y2 R2 D r' l' F B2 D2 r2 F' r2
 U D l L2 F' B' D F2 Y2 l2 D r' l' F B2 D2 r2 F' r2
 
-add_YorZ__shifting_listTypeAlg  is now:
-U D R L2 U' D' Z2 F D2 R2 B L' R' D U2 B2 L2 U' L2
+add_YorZ__shifting_listTypeAlg  is now:  U D R L2 U' D' Z2 F D2 R2 B L' R' D U2 B2 L2 U' L2
 The indexes are going in reverse order; here are the algs for the current index, which is:  6
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U D R L2 U' D' Z2 F D2 R2 B L' l' F B2 D2 L2 B' L2
 U D l r2 B' F' Y2 U F2 R2 D L' R' F B2 D2 L2 B' L2
@@ -4673,9 +4909,11 @@ U D l r2 B' F' Y2 U F2 l2 U r' l' B F2 U2 L2 F' r2
 U D l r2 B' F' Y2 U F2 R2 D r' l' F B2 D2 r2 F' r2
 U D l L2 F' B' Y2 D B2 l2 D r' l' F B2 D2 r2 F' r2
 
-add_YorZ__shifting_listTypeAlg  is now:
-U D R L2 U' Z2 U' F D2 R2 B L' R' D U2 B2 L2 U' L2
+add_YorZ__shifting_listTypeAlg  is now:  U D R L2 U' Z2 U' F D2 R2 B L' R' D U2 B2 L2 U' L2
 The indexes are going in reverse order; here are the algs for the current index, which is:  5
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U D R L2 U' Z2 U' F D2 R2 B L' l' F B2 D2 L2 B' L2
 U D l r2 B' Y2 B' U F2 R2 D L' R' F B2 D2 L2 B' L2
@@ -4710,9 +4948,11 @@ U D l r2 B' Y2 B' U F2 l2 U r' l' B F2 U2 L2 F' r2
 U D l r2 B' Y2 B' U F2 R2 D r' l' F B2 D2 r2 F' r2
 U D l L2 F' Y2 F' D B2 l2 D r' l' F B2 D2 r2 F' r2
 
-add_YorZ__shifting_listTypeAlg  is now:
-U D R L2 Z2 D' U' F D2 R2 B L' R' D U2 B2 L2 U' L2
+add_YorZ__shifting_listTypeAlg  is now:  U D R L2 Z2 D' U' F D2 R2 B L' R' D U2 B2 L2 U' L2
 The indexes are going in reverse order; here are the algs for the current index, which is:  4
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U D R L2 Z2 D' U' F D2 R2 B L' l' F B2 D2 L2 B' L2
 U D l r2 Y2 F' B' U F2 R2 D L' R' F B2 D2 L2 B' L2
@@ -4747,9 +4987,11 @@ U D l r2 Y2 F' B' U F2 l2 U r' l' B F2 U2 L2 F' r2
 U D l r2 Y2 F' B' U F2 R2 D r' l' F B2 D2 r2 F' r2
 U D l L2 Y2 B' F' D B2 l2 D r' l' F B2 D2 r2 F' r2
 
-add_YorZ__shifting_listTypeAlg  is now:
-U D R Z2 R2 D' U' F D2 R2 B L' R' D U2 B2 L2 U' L2
+add_YorZ__shifting_listTypeAlg  is now:  U D R Z2 R2 D' U' F D2 R2 B L' R' D U2 B2 L2 U' L2
 The indexes are going in reverse order; here are the algs for the current index, which is:  3
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U D R Z2 R2 D' U' F D2 R2 B L' l' F B2 D2 L2 B' L2
 U D l Y2 l2 F' B' U F2 R2 D L' R' F B2 D2 L2 B' L2
@@ -4784,9 +5026,11 @@ U D l Y2 l2 F' B' U F2 l2 U r' l' B F2 U2 L2 F' r2
 U D l Y2 l2 F' B' U F2 R2 D r' l' F B2 D2 r2 F' r2
 U D l Y2 R2 B' F' D B2 l2 D r' l' F B2 D2 r2 F' r2
 
-add_YorZ__shifting_listTypeAlg  is now:
-U D Z2 L R2 D' U' F D2 R2 B L' R' D U2 B2 L2 U' L2
+add_YorZ__shifting_listTypeAlg  is now:  U D Z2 L R2 D' U' F D2 R2 B L' R' D U2 B2 L2 U' L2
 The indexes are going in reverse order; here are the algs for the current index, which is:  2
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U D Z2 r R2 F' B' U F2 R2 D L' R' F B2 D2 L2 B' L2
 U D Z2 L R2 D' U' F D2 R2 B L' l' F B2 D2 L2 B' L2
@@ -4821,9 +5065,11 @@ U D Z2 r R2 F' B' U F2 R2 D r' l' F B2 D2 r2 F' r2
 U D Z2 L l2 U' D' B U2 l2 B L' l' F B2 D2 r2 F' r2
 U D Z2 r l2 B' F' D B2 l2 D r' l' F B2 D2 r2 F' r2
 
-add_YorZ__shifting_listTypeAlg  is now:
-U Z2 U L R2 D' U' F D2 R2 B L' R' D U2 B2 L2 U' L2
+add_YorZ__shifting_listTypeAlg  is now:  U Z2 U L R2 D' U' F D2 R2 B L' R' D U2 B2 L2 U' L2
 The indexes are going in reverse order; here are the algs for the current index, which is:  1
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 U Z2 U r R2 F' B' U F2 R2 D L' R' F B2 D2 L2 B' L2
 U Z2 U L R2 D' U' F D2 R2 B L' l' F B2 D2 L2 B' L2
@@ -4858,9 +5104,11 @@ U Z2 U r R2 F' B' U F2 R2 D r' l' F B2 D2 r2 F' r2
 U Z2 U L l2 U' D' B U2 l2 B L' l' F B2 D2 r2 F' r2
 U Z2 U r l2 B' F' D B2 l2 D r' l' F B2 D2 r2 F' r2
 
-add_YorZ__shifting_listTypeAlg  is now:
-Z2 D U L R2 D' U' F D2 R2 B L' R' D U2 B2 L2 U' L2
+add_YorZ__shifting_listTypeAlg  is now:  Z2 D U L R2 D' U' F D2 R2 B L' R' D U2 B2 L2 U' L2
 The indexes are going in reverse order; here are the algs for the current index, which is:  0
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 Z2 D U r R2 F' B' U F2 R2 D L' R' F B2 D2 L2 B' L2
 Z2 D U L R2 D' U' F D2 R2 B L' l' F B2 D2 L2 B' L2
@@ -4912,9 +5160,11 @@ active member of DUAL list:  ['Y0', 'X0']
 
 Note that the YorZ component is a Y0 or Z0 !!!
 
-add_YorZ__shifting_listTypeAlg  is now:
-R L H' R2 F2 R H' R' F2 L S R L2 Y0
+add_YorZ__shifting_listTypeAlg  is now:  R L H' R2 F2 R H' R' F2 L S R L2 Y0
 The indexes are going in reverse order; here are the algs for the current index, which is:  13
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 R L H' R2 F2 R H' R' F2 L S R L2 Y0
 l r H' R2 F2 R H' R' F2 L S R L2 Y0
@@ -4996,9 +5246,11 @@ DUAL list:  [['Y2', 'X0'], ['Z2', 'X2']]
 
 active member of DUAL list:  ['Y2', 'X0']
 
-add_YorZ__shifting_listTypeAlg  is now:
-T U2 F' L2 U2 F' R' L' U B2 L2 U R' L' F' L2 Y2
+add_YorZ__shifting_listTypeAlg  is now:  T U2 F' L2 U2 F' R' L' U B2 L2 U R' L' F' L2 Y2
 The indexes are going in reverse order; here are the algs for the current index, which is:  16
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 T U2 F' L2 U2 F' R' L' U B2 L2 U R' L' F' L2 Y2
 T U2 F' r2 D2 B' R' L' D F2 r2 U R' L' F' L2 Y2
@@ -5033,9 +5285,11 @@ T U2 F' r2 D2 B' l' r' D F2 r2 U l' r' F' L2 Y2
 T U2 F' r2 D2 B' l' r' D F2 L2 D l' r' B' r2 Y2
 T U2 F' L2 U2 F' l' r' U B2 r2 D l' r' B' r2 Y2
 
-add_YorZ__shifting_listTypeAlg  is now:
-T U2 F' L2 U2 F' R' L' U B2 L2 U R' L' F' Y2 R2
+add_YorZ__shifting_listTypeAlg  is now:  T U2 F' L2 U2 F' R' L' U B2 L2 U R' L' F' Y2 R2
 The indexes are going in reverse order; here are the algs for the current index, which is:  15
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 T U2 F' L2 U2 F' R' L' U B2 L2 U R' L' F' Y2 R2
 T U2 F' r2 D2 B' R' L' D F2 r2 U R' L' F' Y2 R2
@@ -5070,9 +5324,11 @@ T U2 F' r2 D2 B' l' r' D F2 r2 U l' r' F' Y2 R2
 T U2 F' r2 D2 B' l' r' D F2 L2 D l' r' B' Y2 l2
 T U2 F' L2 U2 F' l' r' U B2 r2 D l' r' B' Y2 l2
 
-add_YorZ__shifting_listTypeAlg  is now:
-T U2 F' L2 U2 F' R' L' U B2 L2 U R' L' Y2 B' R2
+add_YorZ__shifting_listTypeAlg  is now:  T U2 F' L2 U2 F' R' L' U B2 L2 U R' L' Y2 B' R2
 The indexes are going in reverse order; here are the algs for the current index, which is:  14
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 T U2 F' L2 U2 F' R' L' U B2 L2 U R' L' Y2 B' R2
 T U2 F' r2 D2 B' R' L' D F2 r2 U R' L' Y2 B' R2
@@ -5107,9 +5363,11 @@ T U2 F' r2 D2 B' l' r' D F2 r2 U l' r' Y2 B' R2
 T U2 F' r2 D2 B' l' r' D F2 L2 D l' r' Y2 F' l2
 T U2 F' L2 U2 F' l' r' U B2 r2 D l' r' Y2 F' l2
 
-add_YorZ__shifting_listTypeAlg  is now:
-T U2 F' L2 U2 F' R' L' U B2 L2 U R' Y2 R' B' R2
+add_YorZ__shifting_listTypeAlg  is now:  T U2 F' L2 U2 F' R' L' U B2 L2 U R' Y2 R' B' R2
 The indexes are going in reverse order; here are the algs for the current index, which is:  13
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 T U2 F' L2 U2 F' R' L' U B2 L2 U R' Y2 R' B' R2
 T U2 F' r2 D2 B' R' L' D F2 r2 U R' Y2 R' B' R2
@@ -5144,9 +5402,11 @@ T U2 F' L2 U2 F' l' r' U B2 r2 D l' Z2 l' B' R2
 T U2 F' L2 U2 F' l' r' U B2 L2 U l' Z2 l' F' l2
 T U2 F' r2 D2 B' l' r' D F2 r2 U l' Z2 l' F' l2
 
-add_YorZ__shifting_listTypeAlg  is now:
-T U2 F' L2 U2 F' R' L' U B2 L2 Y2 U L' R' B' R2
+add_YorZ__shifting_listTypeAlg  is now:  T U2 F' L2 U2 F' R' L' U B2 L2 Y2 U L' R' B' R2
 The indexes are going in reverse order; here are the algs for the current index, which is:  11
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 T U2 F' L2 U2 F' R' L' U B2 L2 Y2 U L' R' B' R2
 T U2 F' r2 D2 B' R' L' D F2 r2 Y2 U L' R' B' R2
@@ -5181,9 +5441,11 @@ T U2 F' r2 D2 B' l' r' D F2 r2 Y2 U r' l' B' R2
 T U2 F' r2 D2 B' l' r' D F2 L2 Y2 D r' l' F' l2
 T U2 F' L2 U2 F' l' r' U B2 r2 Y2 D r' l' F' l2
 
-add_YorZ__shifting_listTypeAlg  is now:
-T U2 F' L2 U2 F' R' L' U B2 Y2 R2 U L' R' B' R2
+add_YorZ__shifting_listTypeAlg  is now:  T U2 F' L2 U2 F' R' L' U B2 Y2 R2 U L' R' B' R2
 The indexes are going in reverse order; here are the algs for the current index, which is:  10
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 T U2 F' L2 U2 F' R' L' U B2 Y2 R2 U L' R' B' R2
 T U2 F' r2 D2 B' R' L' D F2 Y2 l2 U L' R' B' R2
@@ -5218,9 +5480,11 @@ T U2 F' r2 D2 B' l' r' D F2 Y2 l2 U r' l' B' R2
 T U2 F' r2 D2 B' l' r' D F2 Y2 R2 D r' l' F' l2
 T U2 F' L2 U2 F' l' r' U B2 Y2 l2 D r' l' F' l2
 
-add_YorZ__shifting_listTypeAlg  is now:
-T U2 F' L2 U2 F' R' L' Y2 U F2 R2 U L' R' B' R2
+add_YorZ__shifting_listTypeAlg  is now:  T U2 F' L2 U2 F' R' L' Y2 U F2 R2 U L' R' B' R2
 The indexes are going in reverse order; here are the algs for the current index, which is:  8
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 T U2 F' L2 U2 F' R' L' Y2 U F2 R2 U L' R' B' R2
 T U2 F' r2 D2 B' R' L' Y2 D B2 l2 U L' R' B' R2
@@ -5255,9 +5519,11 @@ T U2 F' r2 D2 B' l' r' Y2 D B2 l2 U r' l' B' R2
 T U2 F' r2 D2 B' l' r' Y2 D B2 R2 D r' l' F' l2
 T U2 F' L2 U2 F' l' r' Y2 U F2 l2 D r' l' F' l2
 
-add_YorZ__shifting_listTypeAlg  is now:
-T U2 F' L2 U2 F' R' Y2 R' U F2 R2 U L' R' B' R2
+add_YorZ__shifting_listTypeAlg  is now:  T U2 F' L2 U2 F' R' Y2 R' U F2 R2 U L' R' B' R2
 The indexes are going in reverse order; here are the algs for the current index, which is:  7
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 T U2 F' L2 U2 F' R' Y2 R' U F2 R2 U L' R' B' R2
 T U2 F' r2 D2 B' R' Y2 R' D B2 l2 U L' R' B' R2
@@ -5292,9 +5558,11 @@ T U2 F' L2 U2 F' l' Z2 l' D B2 l2 U r' l' B' R2
 T U2 F' L2 U2 F' l' Z2 l' D B2 R2 D r' l' F' l2
 T U2 F' r2 D2 B' l' Z2 l' U F2 l2 D r' l' F' l2
 
-add_YorZ__shifting_listTypeAlg  is now:
-T U2 F' L2 U2 F' Y2 L' R' U F2 R2 U L' R' B' R2
+add_YorZ__shifting_listTypeAlg  is now:  T U2 F' L2 U2 F' Y2 L' R' U F2 R2 U L' R' B' R2
 The indexes are going in reverse order; here are the algs for the current index, which is:  6
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 T U2 F' L2 U2 F' Y2 L' R' U F2 R2 U L' R' B' R2
 T U2 F' r2 D2 B' Y2 L' R' D B2 l2 U L' R' B' R2
@@ -5329,9 +5597,11 @@ T U2 F' r2 D2 B' Y2 r' l' D B2 l2 U r' l' B' R2
 T U2 F' r2 D2 B' Y2 r' l' D B2 R2 D r' l' F' l2
 T U2 F' L2 U2 F' Y2 r' l' U F2 l2 D r' l' F' l2
 
-add_YorZ__shifting_listTypeAlg  is now:
-T U2 F' L2 Y2 U2 B' L' R' U F2 R2 U L' R' B' R2
+add_YorZ__shifting_listTypeAlg  is now:  T U2 F' L2 Y2 U2 B' L' R' U F2 R2 U L' R' B' R2
 The indexes are going in reverse order; here are the algs for the current index, which is:  4
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 T U2 F' L2 Y2 U2 B' L' R' U F2 R2 U L' R' B' R2
 T U2 F' L2 d2 B' L' R' U F2 R2 U L' R' B' R2
@@ -5398,9 +5668,11 @@ T U2 F' r2 u2 F' r' l' D B2 R2 D r' l' F' l2
 T U2 F' L2 Y2 U2 B' r' l' U F2 l2 D r' l' F' l2
 T U2 F' L2 d2 B' r' l' U F2 l2 D r' l' F' l2
 
-add_YorZ__shifting_listTypeAlg  is now:
-T U2 F' Y2 R2 U2 B' L' R' U F2 R2 U L' R' B' R2
+add_YorZ__shifting_listTypeAlg  is now:  T U2 F' Y2 R2 U2 B' L' R' U F2 R2 U L' R' B' R2
 The indexes are going in reverse order; here are the algs for the current index, which is:  3
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 T U2 F' Y2 R2 U2 B' L' R' U F2 R2 U L' R' B' R2
 T U2 F' Y2 l2 D2 F' L' R' D B2 l2 U L' R' B' R2
@@ -5435,9 +5707,11 @@ T U2 F' Y2 l2 D2 F' r' l' D B2 l2 U r' l' B' R2
 T U2 F' Y2 l2 D2 F' r' l' D B2 R2 D r' l' F' l2
 T U2 F' Y2 R2 U2 B' r' l' U F2 l2 D r' l' F' l2
 
-add_YorZ__shifting_listTypeAlg  is now:
-T Y2 U2 B' R2 U2 B' L' R' U F2 R2 U L' R' B' R2
+add_YorZ__shifting_listTypeAlg  is now:  T Y2 U2 B' R2 U2 B' L' R' U F2 R2 U L' R' B' R2
 The indexes are going in reverse order; here are the algs for the current index, which is:  1
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 T Y2 U2 B' R2 U2 B' L' R' U F2 R2 U L' R' B' R2
 T d2 B' R2 U2 B' L' R' U F2 R2 U L' R' B' R2
@@ -5504,9 +5778,11 @@ T d2 B' l2 D2 F' r' l' D B2 R2 D r' l' F' l2
 T Y2 U2 B' R2 U2 B' r' l' U F2 l2 D r' l' F' l2
 T d2 B' R2 U2 B' r' l' U F2 l2 D r' l' F' l2
 
-add_YorZ__shifting_listTypeAlg  is now:
-Y2 T' U2 B' R2 U2 B' L' R' U F2 R2 U L' R' B' R2
+add_YorZ__shifting_listTypeAlg  is now:  Y2 T' U2 B' R2 U2 B' L' R' U F2 R2 U L' R' B' R2
 The indexes are going in reverse order; here are the algs for the current index, which is:  0
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 Y2 T' U2 B' R2 U2 B' L' R' U F2 R2 U L' R' B' R2
 Y2 T' U2 B' l2 D2 F' L' R' D B2 l2 U L' R' B' R2
@@ -5545,9 +5821,11 @@ DUAL list:  [['Y2', 'X0'], ['Z2', 'X2']]
 
 active member of DUAL list:  ['Z2', 'X2']
 
-add_YorZ__shifting_listTypeAlg  is now:
-T U2 F' L2 U2 F' R' L' U B2 L2 U R' L' F' L2 Z2
+add_YorZ__shifting_listTypeAlg  is now:  T U2 F' L2 U2 F' R' L' U B2 L2 U R' L' F' L2 Z2
 The indexes are going in reverse order; here are the algs for the current index, which is:  16
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 T U2 F' r2 D2 B' R' L' D F2 L2 D R' L' B' L2 Z2
 T U2 F' L2 U2 F' R' L' U B2 r2 D R' L' B' L2 Z2
@@ -5582,9 +5860,11 @@ T U2 F' L2 U2 F' l' r' U B2 r2 D l' r' B' L2 Z2
 T U2 F' L2 U2 F' l' r' U B2 L2 U l' r' F' r2 Z2
 T U2 F' r2 D2 B' l' r' D F2 r2 U l' r' F' r2 Z2
 
-add_YorZ__shifting_listTypeAlg  is now:
-T U2 F' L2 U2 F' R' L' U B2 L2 U R' L' Z2 F' R2
+add_YorZ__shifting_listTypeAlg  is now:  T U2 F' L2 U2 F' R' L' U B2 L2 U R' L' Z2 F' R2
 The indexes are going in reverse order; here are the algs for the current index, which is:  14
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 T U2 F' r2 D2 B' R' L' D F2 L2 D R' L' Z2 B' R2
 T U2 F' L2 U2 F' R' L' U B2 r2 D R' L' Z2 B' R2
@@ -5619,9 +5899,11 @@ T U2 F' L2 U2 F' l' r' U B2 r2 D l' r' Z2 B' R2
 T U2 F' L2 U2 F' l' r' U B2 L2 U l' r' Z2 F' l2
 T U2 F' r2 D2 B' l' r' D F2 r2 U l' r' Z2 F' l2
 
-add_YorZ__shifting_listTypeAlg  is now:
-T U2 F' L2 U2 F' R' L' U B2 L2 U R' Z2 R' F' R2
+add_YorZ__shifting_listTypeAlg  is now:  T U2 F' L2 U2 F' R' L' U B2 L2 U R' Z2 R' F' R2
 The indexes are going in reverse order; here are the algs for the current index, which is:  13
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 T U2 F' r2 D2 B' R' L' D F2 L2 D R' Z2 R' B' R2
 T U2 F' L2 U2 F' R' L' U B2 r2 D R' Z2 R' B' R2
@@ -5656,9 +5938,11 @@ T U2 F' r2 D2 B' l' r' D F2 r2 U l' Y2 l' B' R2
 T U2 F' r2 D2 B' l' r' D F2 L2 D l' Y2 l' F' l2
 T U2 F' L2 U2 F' l' r' U B2 r2 D l' Y2 l' F' l2
 
-add_YorZ__shifting_listTypeAlg  is now:
-T U2 F' L2 U2 F' R' L' U B2 L2 U Z2 L' R' F' R2
+add_YorZ__shifting_listTypeAlg  is now:  T U2 F' L2 U2 F' R' L' U B2 L2 U Z2 L' R' F' R2
 The indexes are going in reverse order; here are the algs for the current index, which is:  12
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 T U2 F' r2 D2 B' R' L' D F2 L2 D Z2 L' R' B' R2
 T U2 F' L2 U2 F' R' L' U B2 r2 D Z2 L' R' B' R2
@@ -5693,9 +5977,11 @@ T U2 F' L2 U2 F' l' r' U B2 r2 D Z2 r' l' B' R2
 T U2 F' L2 U2 F' l' r' U B2 L2 U Z2 r' l' F' l2
 T U2 F' r2 D2 B' l' r' D F2 r2 U Z2 r' l' F' l2
 
-add_YorZ__shifting_listTypeAlg  is now:
-T U2 F' L2 U2 F' R' L' U B2 L2 Z2 D L' R' F' R2
+add_YorZ__shifting_listTypeAlg  is now:  T U2 F' L2 U2 F' R' L' U B2 L2 Z2 D L' R' F' R2
 The indexes are going in reverse order; here are the algs for the current index, which is:  11
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 T U2 F' r2 D2 B' R' L' D F2 L2 Z2 U L' R' B' R2
 T U2 F' L2 U2 F' R' L' U B2 r2 Z2 U L' R' B' R2
@@ -5730,9 +6016,11 @@ T U2 F' L2 U2 F' l' r' U B2 r2 Z2 U r' l' B' R2
 T U2 F' L2 U2 F' l' r' U B2 L2 Z2 D r' l' F' l2
 T U2 F' r2 D2 B' l' r' D F2 r2 Z2 D r' l' F' l2
 
-add_YorZ__shifting_listTypeAlg  is now:
-T U2 F' L2 U2 F' R' L' U Z2 B2 R2 D L' R' F' R2
+add_YorZ__shifting_listTypeAlg  is now:  T U2 F' L2 U2 F' R' L' U Z2 B2 R2 D L' R' F' R2
 The indexes are going in reverse order; here are the algs for the current index, which is:  9
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 T U2 F' r2 D2 B' R' L' D Z2 F2 R2 U L' R' B' R2
 T U2 F' r2 D2 B' R' L' D b2 R2 U L' R' B' R2
@@ -5799,9 +6087,11 @@ T U2 F' L2 U2 F' l' r' U f2 R2 D r' l' F' l2
 T U2 F' r2 D2 B' l' r' D Z2 F2 l2 D r' l' F' l2
 T U2 F' r2 D2 B' l' r' D b2 l2 D r' l' F' l2
 
-add_YorZ__shifting_listTypeAlg  is now:
-T U2 F' L2 U2 F' R' L' Z2 D B2 R2 D L' R' F' R2
+add_YorZ__shifting_listTypeAlg  is now:  T U2 F' L2 U2 F' R' L' Z2 D B2 R2 D L' R' F' R2
 The indexes are going in reverse order; here are the algs for the current index, which is:  8
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 T U2 F' r2 D2 B' R' L' Z2 U F2 R2 U L' R' B' R2
 T U2 F' L2 U2 F' R' L' Z2 D B2 l2 U L' R' B' R2
@@ -5836,9 +6126,11 @@ T U2 F' L2 U2 F' l' r' Z2 D B2 l2 U r' l' B' R2
 T U2 F' L2 U2 F' l' r' Z2 D B2 R2 D r' l' F' l2
 T U2 F' r2 D2 B' l' r' Z2 U F2 l2 D r' l' F' l2
 
-add_YorZ__shifting_listTypeAlg  is now:
-T U2 F' L2 U2 F' R' Z2 R' D B2 R2 D L' R' F' R2
+add_YorZ__shifting_listTypeAlg  is now:  T U2 F' L2 U2 F' R' Z2 R' D B2 R2 D L' R' F' R2
 The indexes are going in reverse order; here are the algs for the current index, which is:  7
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 T U2 F' r2 D2 B' R' Z2 R' U F2 R2 U L' R' B' R2
 T U2 F' L2 U2 F' R' Z2 R' D B2 l2 U L' R' B' R2
@@ -5873,9 +6165,11 @@ T U2 F' r2 D2 B' l' Y2 l' D B2 l2 U r' l' B' R2
 T U2 F' r2 D2 B' l' Y2 l' D B2 R2 D r' l' F' l2
 T U2 F' L2 U2 F' l' Y2 l' U F2 l2 D r' l' F' l2
 
-add_YorZ__shifting_listTypeAlg  is now:
-T U2 F' L2 U2 Z2 F' L' R' D B2 R2 D L' R' F' R2
+add_YorZ__shifting_listTypeAlg  is now:  T U2 F' L2 U2 Z2 F' L' R' D B2 R2 D L' R' F' R2
 The indexes are going in reverse order; here are the algs for the current index, which is:  5
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 T U2 F' r2 D2 Z2 B' L' R' U F2 R2 U L' R' B' R2
 T U2 F' L2 U2 Z2 F' L' R' D B2 l2 U L' R' B' R2
@@ -5910,9 +6204,11 @@ T U2 F' L2 U2 Z2 F' r' l' D B2 l2 U r' l' B' R2
 T U2 F' L2 U2 Z2 F' r' l' D B2 R2 D r' l' F' l2
 T U2 F' r2 D2 Z2 B' r' l' U F2 l2 D r' l' F' l2
 
-add_YorZ__shifting_listTypeAlg  is now:
-T U2 F' L2 Z2 D2 F' L' R' D B2 R2 D L' R' F' R2
+add_YorZ__shifting_listTypeAlg  is now:  T U2 F' L2 Z2 D2 F' L' R' D B2 R2 D L' R' F' R2
 The indexes are going in reverse order; here are the algs for the current index, which is:  4
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 T U2 F' r2 Z2 U2 B' L' R' U F2 R2 U L' R' B' R2
 T U2 F' L2 Z2 D2 F' L' R' D B2 l2 U L' R' B' R2
@@ -5947,9 +6243,11 @@ T U2 F' L2 Z2 D2 F' r' l' D B2 l2 U r' l' B' R2
 T U2 F' L2 Z2 D2 F' r' l' D B2 R2 D r' l' F' l2
 T U2 F' r2 Z2 U2 B' r' l' U F2 l2 D r' l' F' l2
 
-add_YorZ__shifting_listTypeAlg  is now:
-T U2 Z2 F' R2 D2 F' L' R' D B2 R2 D L' R' F' R2
+add_YorZ__shifting_listTypeAlg  is now:  T U2 Z2 F' R2 D2 F' L' R' D B2 R2 D L' R' F' R2
 The indexes are going in reverse order; here are the algs for the current index, which is:  2
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 T U2 Z2 F' l2 U2 B' L' R' U F2 R2 U L' R' B' R2
 T U2 Z2 F' R2 D2 F' L' R' D B2 l2 U L' R' B' R2
@@ -5984,9 +6282,11 @@ T U2 Z2 F' R2 D2 F' r' l' D B2 l2 U r' l' B' R2
 T U2 Z2 F' R2 D2 F' r' l' D B2 R2 D r' l' F' l2
 T U2 Z2 F' l2 U2 B' r' l' U F2 l2 D r' l' F' l2
 
-add_YorZ__shifting_listTypeAlg  is now:
-T Z2 D2 F' R2 D2 F' L' R' D B2 R2 D L' R' F' R2
+add_YorZ__shifting_listTypeAlg  is now:  T Z2 D2 F' R2 D2 F' L' R' D B2 R2 D L' R' F' R2
 The indexes are going in reverse order; here are the algs for the current index, which is:  1
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 T Z2 D2 F' l2 U2 B' L' R' U F2 R2 U L' R' B' R2
 T Z2 D2 F' R2 D2 F' L' R' D B2 l2 U L' R' B' R2
@@ -6021,9 +6321,11 @@ T Z2 D2 F' R2 D2 F' r' l' D B2 l2 U r' l' B' R2
 T Z2 D2 F' R2 D2 F' r' l' D B2 R2 D r' l' F' l2
 T Z2 D2 F' l2 U2 B' r' l' U F2 l2 D r' l' F' l2
 
-add_YorZ__shifting_listTypeAlg  is now:
-Z2 T' D2 F' R2 D2 F' L' R' D B2 R2 D L' R' F' R2
+add_YorZ__shifting_listTypeAlg  is now:  Z2 T' D2 F' R2 D2 F' L' R' D B2 R2 D L' R' F' R2
 The indexes are going in reverse order; here are the algs for the current index, which is:  0
+IF the alg's X-component is X0, the first
+alg below will be the base alg for one
+ripple round. It has no wide comps
 
 Z2 T' D2 F' l2 U2 B' L' R' U F2 R2 U L' R' B' R2
 Z2 T' D2 F' R2 D2 F' L' R' D B2 l2 U L' R' B' R2
