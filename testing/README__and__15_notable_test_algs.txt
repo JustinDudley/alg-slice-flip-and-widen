@@ -1,27 +1,40 @@
 
 LIBRARY OF 15 NOTABLE TEST ALGS
 
-These algs were carefully selected to represent the whole
-The algs belong to DIFFERENT GROUPS, so beware when running them through various projects:  They won't produce the same centers OR the same edges/corners as each other
-Ultimately, these algs may constitue the entirety of algs used in my testing suite. Don't know yet.
-Make a third, ALPHABETIZED result list?
 
-	
-  # check VALIDITY with validate-alg-list project
-	# check for DUPLICATES  --Using google sheets or Excel, check for duplicates in result list (AFTER eliminating the Y0 symbol) for SEVERAL starter algs. (This would indicate ive done something wrong logically.)
-	# check completeness (painstaking)
+
+THE WORK OUTLINED BELOW HAS ALREADY BEEN DONE.
+IN FUTURE, THE WAY TO TEST THIS PROGRAM AGAINST A CORRECTLY WORKING VERSION IS:
+  -- SET is_test TO TRUE, COMPARE OUTPUT FILE TO "TEST_SUITE_15__OUTPUT_Wed__comments_included.txt" USING DIFFCHECKER ONLINE
+  -- SET is_test TO FALSE, COMPARE OUPUT FILE TO "TEST_SUITE_15__OUTPUT_Wed.txt" USING DIFFCHECKER ONLINE
+
+
+
+
+
+These 15 algs were carefully selected to represent the whole.
+The algs belong to DIFFERENT GROUPS, so beware when running them through various projects:  They won't produce the same centers OR the same edges/corners as each other.
+Ultimately, these algs may constitue the entirety of algs used in my testing suite. Don't know yet.
+
+
+How to use the 15 algs to test this programming:
+Run the program, open the resultant output file
+
+  # check VALIDITY with validate-alg-list project   --Does each alg induce the correct pattern on the cube?  [Algs belong to different groups, so must run them separately through validate-alg-list]
+	# check for DUPLICATES   --Using google sheets or Excel, check for duplicates in result list (AFTER eliminating the Y0 symbol). Duplicates would indicate ive done something wrong logically.
+	# check COMPLETENESS (painstaking)  --see the 15 algs below
       - check a corners alg that has a slice.
       - check algs that have 0, 1, 2 and 3 slices.
       - check the X0 case for proper inclusion of the non-comp base alg
       - check 2 algs with U D, F B2 type duos to make sure YorZ ripples through them correctly and doesn't create functionally identical duplicates.
       - check an alg that has zero results. 
-      - need  all 4 dual examples.  ONLY USING 3. That's okay.
-      - check an X and an X' for proper iteration. Basically just need to run them through VAlidation project.
+      - check all 4 dual examples.  [ ONLY CHECKING 3. That's okay. ]
+      - check an X and an X' for proper iteration. Basically just need to run them through Validation project.
 
 
 
 CHECKS FOR COMPLETENESS
-Each of the 15 algs below has verbiage explaining why it's on this list, and what to (painstakingly) check for when viewing the results
+Each of the 15 algs below has verbiage explaining why it's on this list, and what to (painstakingly) check for when viewing the results.
 
 1.
 R2 D2 F B' R L2 F B' D' L2 U R L' B'
