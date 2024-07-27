@@ -5,6 +5,7 @@ from testing.is_test import is_test
 from methods.comp_Xpansion import comp_Xpansion
 from methods.itertools_get_combos import itertools_get_combos
 from methods.insert_merge_YU_algs import insert_merge_YU_algs
+from methods.remove_Y0_and_Z0 import remove_Y0_and_Z0
 from methods.helper_methods import get_single_turn_code
 from variables.constants import AXIS_FAMILY
 from variables.dataframes import df_Ripple_L
@@ -37,6 +38,7 @@ def generate_algs(stic_turns, trailing_YorZ_Xs_dual, stic_alg):
                 
                 if is_test: one_ripple_round_of__final_algs = TESTING_3(one_ripple_round_of__final_algs, indx, YorZ_added__shifting_turns)
                 if not is_test and trailing_YorZ_Xs[1] == "X0": one_ripple_round_of__final_algs.remove(" ")
+                one_ripple_round_of__final_algs = remove_Y0_and_Z0(one_ripple_round_of__final_algs)
                 ALL_ripple_rounds__final_algs.extend(one_ripple_round_of__final_algs)
                 
 
