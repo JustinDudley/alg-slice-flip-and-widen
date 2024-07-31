@@ -5,6 +5,7 @@ from testing.is_test import is_test
 from methods.comp_Xpansion import comp_Xpansion
 from methods.itertools_get_combos import itertools_get_combos
 from methods.insert_merge_YU_algs import insert_merge_YU_algs
+from methods.insert_reinstated_trailing_YorZ__patch import insert_reinstated_trailing_YorZ__patch
 from methods.remove_Y0_and_Z0 import remove_Y0_and_Z0
 from methods.helper_methods import get_single_turn_code
 from variables.constants import AXIS_FAMILY
@@ -35,6 +36,7 @@ def generate_algs(stic_turns, trailing_YorZ_Xs_dual, stic_alg):
                 one_ripple_round_of__final_algs = comp_Xpansion(YorZ_added__shifting_turns, DNA_3_marker_cums)
                 if trailing_YorZ_Xs[1] == "X0": one_ripple_round_of__final_algs = [" ".join(YorZ_added__shifting_turns)] + [" "] + one_ripple_round_of__final_algs  # The final touch!!  When an alg ends up with an X0 due to slice substitution, THE ALG ITSELF must be added to the list of finals WITHOUT ANY COMP SUBSTITUTION. My intricate CompXpansion logic with its search for combos looks ONLY for comp opportunites. These algs are overlooked because they are already in a FINAL state WITHOUT COMP SUBSTITUTION!  So they must be appended here.
                 one_ripple_round_of__final_algs = insert_merge_YU_algs(one_ripple_round_of__final_algs)
+                one_ripple_round_of__final_algs = insert_reinstated_trailing_YorZ__patch(one_ripple_round_of__final_algs)
                 
                 if is_test: one_ripple_round_of__final_algs = TESTING_3(one_ripple_round_of__final_algs, indx, YorZ_added__shifting_turns)
                 if not is_test and trailing_YorZ_Xs[1] == "X0": one_ripple_round_of__final_algs.remove(" ")

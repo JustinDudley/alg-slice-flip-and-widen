@@ -121,6 +121,8 @@ B' U' L' D F B' U R L2 F L F' R F2 D F' B'
 
 11.
 U2 R2 L B R B' L B2 D F' B' R' D' F' U R' L D'
+ - Make sure the method "insert_reinstated_trailing_YorZ__patch" works for Y
+ Also:
  - X in WCR
  CHECK FOR COMPLETENESS:  Just need to include this in Validate project, to make sure X iteration works. Don't need to test this alg for completeness
 
@@ -151,3 +153,15 @@ R' L F2 D' L2 F2 D' R' L' F U2 L2 F R' L' D' L2
  - DUAL:   [['Y2', 'X0'], ['Z2', 'X2']]
  - Finally, an example of the OTHER type of dual !!
  - CHECK FOR COMPLETENESS:  DUAL:  Y2 X0, Z2 X2
+
+
+
+16.
+L2 F U2 L2 F U D L' B2 U2 L' U D F U' D'
+ - Contains a U' D' at end, so the Y component should ripple TWICE before itertools does its work
+
+
+
+ 17.
+ R2 D' F B R U' D' F B' D2 F L2 D2 F R L U' L2
+  - Make sure the method "insert_reinstated_trailing_YorZ__patch" works for Z

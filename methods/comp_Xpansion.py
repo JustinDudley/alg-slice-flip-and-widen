@@ -15,8 +15,8 @@ def comp_Xpansion(YorZ_added__shifting_turns, DNA_3_marker_cums):
             else:
                 final_turns[index] = df_Ripple_R.at[final_turns[index], "%sA-->B%s"%(rotation, rotation)]
         
-        final_strTypeAlg = " ".join(final_turns)
-        final_algs.append(final_strTypeAlg)
+        final_alg = " ".join(final_turns)
+        final_algs.append(final_alg)
 
 
     return(final_algs)
