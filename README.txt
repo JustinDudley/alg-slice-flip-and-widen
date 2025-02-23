@@ -3,11 +3,15 @@
 THERE EXIST AT LEAST 2 BRANCHES OF THIS PROJECT IN git
 
 
+**** NOTE:  THE TWO FILES WITH 1 MILLION AND 5 MILLION ALGS HAVE BEEN MOVED TO Alg_Slice_And_Widen_daddy (actually, to a folder within that folder).
+**** ALSO:  I had to destroy two commits to get rid of the record of those huge files and allow git to push to GitHub. Hopefully
+nothing important was lost. Pretty sure I'm okay.
+
 
 Copy a list of algs from StickerSolve into the file "alg_list_input.txt"
   - The program is built to handle StickerSolve algs with the following qualities:
       - they have face turns only
-      - They do not rotate the core (since I didn't know StickerSolve could do that!)
+      - They do not rotate the core (since I didn't know StickerSolve could do that -- and also, it doesn't do it reliably)
       - They swap either two edge pieces or two corner pieces, and they belong to 1 of the 6 DO6 groups as far as their treatment of centers
 Run the program
 Look at the output file for a list of newly generated algs
@@ -26,9 +30,11 @@ It then puts the alg into Alg--YorZ--X format.
        - U2 F' L2 U2 F' R' L' (y2) U F2 R2 U L' R' B' L R (x),  put into Alg--YorZ--X notation, is:
        - U2 F' L2 U2 F' R' L' U B2 L2 U R' L' F' R L (y2) (x)
        - (this is a poor example)
-       - I figured out that, amazingly enough, ANY alg in the world can put into this format (and induces an identical pattern on the cube)
+       - I figured out that, amazingly enough, ANY alg in the world can put into this format. The newly formatted alg
+       - is essentially the "same alg" but viewed from "different angles" as the turns proceed. The the resultant pattern induced
+       - on the cub is identical.
 
-It then ripples the Y or Z component from the right of the alg to the left, one turn at a time 
+It then ripples the Y or Z component, if it exists, from the right of the alg to the left, one turn at a time 
 For each ripple-round, it analyzes all possible ways to convert R and L turns into their complement r and l (and r', l2, etc.) turns
   - It uses the itertools package to do this. IF THE PROGRAM HAS A HEART, THIS IS IT
 Also for each ripple-round, it looks at each alg and inserts an additional alg with a lowercase udfb if appropriate
