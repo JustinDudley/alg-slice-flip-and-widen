@@ -24,7 +24,7 @@ from methods.find_pattern import find_pattern
 
 startTime = datetime.datetime.now() # to monitor performance of program
 
-with open("/Users/justindudley/dev/cube/Alg_Slice_And_Widen_daddy/alg-slice-and-widen/INPUT_file/alg_list_input.txt") as file_input:
+with open("/Users/justindudley/dev/cube/Alg_Slice_And_Widen_daddy/alg-slice-and-widen/INPUT_file/alg_list_StickerSolve_input.txt") as file_input:
     stic_algs = file_input.read().splitlines() 
 
 
