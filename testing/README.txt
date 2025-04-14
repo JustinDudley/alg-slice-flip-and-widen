@@ -2,6 +2,16 @@
 README   /   LIBRARY OF 17 NOTABLE TEST ALGS
 
 
+*************
+This branch is the code I used to get all 42 results lists that are in the Final Repo. But,
+I figured out that some algs don't have their inverses. And it looks like a StickerSolve alg 
+that contains "...R L..." or "...U D2..." or "...F' B..." (to give a few examples) has an interesting property:
+When you reverse the two letters (which doesn't change the resulting scramble) it actually yields
+new possibilities when put through alg-slice-and-widen.
+So:  Now I am going to make a few adjustments to alg-slice-and-widen so that it does the necessary
+reversal additions as it creates the 60,000 final algs
+*************
+
 
 THE WORK OUTLINED BELOW HAS ALREADY BEEN DONE.
 IN FUTURE, THE WAY TO TEST THE CURRENT PROGRAM AGAINST A CORRECTLY WORKING VERSION IS:
