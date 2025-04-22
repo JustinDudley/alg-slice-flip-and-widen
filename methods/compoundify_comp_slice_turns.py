@@ -1,5 +1,5 @@
 
-from variables.constants import SLICE_COMP_COMPOUNDIFIER_DICT, CODE
+from variables.constants import SLICE_COMP_COMPOUNDIFIER_DICT
 
 
 # R L' -->  RL',  D U' --> U'D, etc.   This block condenses slice comps into a single turn, with no space in the middle
@@ -9,16 +9,6 @@ def compoundify_comp_slice_turns(alg):
     
     return alg
      
-
-
-
-def get_single_turn_code(turn):
-    if turn in CODE:
-        return CODE[turn]   #  !!!   It is the rotation of the turns themselves, not of their complements, that determine how each subsequent turn in the rippling should be altered.
-    else:
-        return 0
-
-
 
 
 

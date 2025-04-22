@@ -298,6 +298,84 @@ HEADER = {
 }
 
 
+# not yet used:
+ITERATIVE_DELTA_SWAP_DICT = {
+    "R L ":"L** R ",
+    "L R ":"R L ",
+    "L** R ":"L R ",
+
+    "R L2":"L2** R",
+    "L2 R ":"R L2 ",
+    "L2** R":"L2 R",
+
+    "R' L'":"L'** R'",
+    "L' R'":"R' L'",
+    "L'** R'":"L' R'",
+
+    "R' L2":"L2** R'",
+    "L2 R'":"R' L2",
+    "L2** R'":"L2 R'",
+
+    "R2 L ":"L** R2 ",
+    "L R2":"R2 L",
+    "L** R2 ":"L R2 ",
+
+    "R2 L'":"L'** R2",
+    "L' R2":"R2 L'",
+    "L'** R2":"L' R2",
+
+
+    "U D ":"D** U ",
+    "D U ":"U D ",
+    "D** U ":"D U ",
+
+    "U D2":"D2** U",
+    "D2 U ":"U D2 ",
+    "D2** U":"D2 U",
+
+    "U' D'":"D'** U'",
+    "D' U'":"U' D'",
+    "D'** U'":"D' U'",
+
+    "U' D2":"D2** U'",
+    "D2 U'":"U' D2",
+    "D2** U'":"D2 U'",
+
+    "U2 D ":"D** U2 ",
+    "D U2":"U2 D",
+    "D** U2 ":"D U2 ",
+
+    "U2 D'":"D'** U2",
+    "D' U2":"U2 D'",
+    "D'** U2":"D' U2",
+
+
+    "F B ":"B** F ",
+    "B F ":"F B ",
+    "B** F ":"B F ",
+
+    "F B2":"B2** F",
+    "B2 F ":"F B2 ",
+    "B2** F":"B2 F",
+
+    "F' B'":"B'** F'",
+    "B' F'":"F' B'",
+    "B'** F'":"B' F'",
+
+    "F' B2":"B2** F'",
+    "B2 F'":"F' B2",
+    "B2** F'":"B2 F'",
+
+    "F2 B ":"B** F2 ",
+    "B F2":"F2 B",
+    "B** F2 ":"B F2 ",
+
+    "F2 B'":"B'** F2",
+    "B' F2":"F2 B'",
+    "B'** F2":"B' F2",
+}
+
+
 GROUP_DICT_HANDY_FOR_SEEING_YorZ_NOTATION_BUT_DEPRECATED = {
     1: [["Y'", "X2"]],
     2: [["Y", "X2"]],
