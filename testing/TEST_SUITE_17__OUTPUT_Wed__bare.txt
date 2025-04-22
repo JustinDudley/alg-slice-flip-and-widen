@@ -5225,3 +5225,4 @@ Y' B2 D' R L B U' D' T' B2 R D2 B2 l F B D' B2
 Y' B2 D' l r B U' D' T' B2 l B2 U2 R F B D' B2
 Y' B2 D' l r B U' D' T' B2 R D2 B2 l F B D' B2
 Y' B2 D' R r D B' F' T' D2 l D2 B2 l F B D' B2
+U S' D' F2 U T' U' F2 U2 T' D U

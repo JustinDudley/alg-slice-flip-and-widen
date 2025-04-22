@@ -165,3 +165,10 @@ L2 F U2 L2 F U D L' B2 U2 L' U D F U' D'
  17.
  R2 D' F B R U' D' F B' D2 F L2 D2 F R L U' L2
   - Make sure the method "insert_reinstated_trailing_YorZ__patch" works for Z
+
+
+
+  18.
+  U F B' L' F2 R U' D B' R2 B2 U' D R L
+   - Ends with R L.  Check that trailing R L doesn't mess up reversify. There is no whitespace after the R L. I need the 
+   code to proceed correctly
