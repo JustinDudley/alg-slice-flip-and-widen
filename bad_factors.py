@@ -1,3 +1,5 @@
+# Never used
+
 NO__B_PERIOD = ["B", "B2", "B'", "b", "b2", "b'"]
 
 NO__H_H2_H_PRIME = ["H", "H2", "H'"]
