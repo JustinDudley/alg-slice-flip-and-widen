@@ -1,5 +1,5 @@
 
-from variables.constants import WHAT_BRINGS_Q_HERE, SLICE_COMPS, ROTATION_VECTOR, COMPLEMENT
+from variables.constants import WHAT_BRINGS_Q_HERE, SLICE_COMPS, ROTATION_VECTOR, COMPLEMENT, X_INVERSE
 from variables.dataframes import df_Ripple_R, df_stickers_turned, df_turn_attributes
 
 
@@ -21,8 +21,21 @@ def replace_Trailing_WCRs_with_either_ONE_or_TWO_equivalent_YorZ_notations(WCRs)
 
 
 
+# NEW METHOD FOR THIS BRANCH
+# in the case where leading_X is  X',  we essentially add   X' X  to the beginning of the alg (which changes nothing), then ripple the second component, the X, right. It ripples through the alg, changing each turn one by one. The X ends up at the end of the alg, which is the same as ending up at the beginning of the trailing_WCRs (where it is therefore pre-pended)
+def X_ripples_right(stic_turns, trailing_WCRs, leading_X):     # trailing_WCRs is, by this time, often just a long list of 4 or 5 WCRs
 
-def sub_in_slices_and_ripple_right(stic_turns, trailing_WCRs):
+    for i in range(len(stic_turns)):   # alter every turn in the alg (doesn't affect trailing_WCRs)
+        stic_turns[i] = ripple_right(stic_turns[i], X_INVERSE[leading_X])
+    trailing_WCRs.insert(0, X_INVERSE[leading_X])   # pre-pend the inverse of leading_X to trailing_WCRs
+
+
+    return[stic_turns, trailing_WCRs]
+
+
+
+
+def sub_in_slices_and_ripple_right(stic_turns, trailing_WCRs, leading_X):
     slice_opportunity_positions = []
     for i in range(len(SLICE_COMPS)):
         for j in range(len(stic_turns)):
@@ -44,7 +57,13 @@ def sub_in_slices_and_ripple_right(stic_turns, trailing_WCRs):
             trailing_WCRs = [WCR_to_ripple_right] + trailing_WCRs
 
 
+
+
+    # NEW FUNCTIONALITY FOR THIS BRANCH: ADDS AN X, X', OR X2  WCR AT BEGINNING OF ALG  
+    # # note the destructuring notation
+    stic_turns, trailing_WCRs = X_ripples_right(stic_turns, trailing_WCRs, leading_X)
+    
+
     trailing_WCRs_dual:list[list[str]] = replace_Trailing_WCRs_with_either_ONE_or_TWO_equivalent_YorZ_notations(trailing_WCRs)
 
-
-    return[stic_turns, trailing_WCRs_dual]
+    return [stic_turns, trailing_WCRs_dual]

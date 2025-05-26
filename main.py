@@ -1,6 +1,8 @@
 
 import datetime
+import copy
 
+from methods.discard_most_algs import discard_most_algs
 from methods.find_reversible_index_if_any__build_master_dict import find_reversible_index_if_any__build_master_dict
 from methods.reversify_selected_algs__build_stic_alg_dict import reversify_selected_algs__build_stic_alg_dict
 from variables.constants import GROUP_DICT, GROUP_DIVINER
@@ -54,24 +56,37 @@ for stic_alg_dict in stic_alg_dicts:
 
 	# COMPOUNDIFY   U D' --> UD'
 	stic_alg_compoundified = compoundify_comp_slice_turns(stic_alg_dict["alg"])    # For instance:   U R2 UD' F B L' B2 R UD' B RL' U2 B2
-	stic_turns = stic_alg_compoundified.split()
-	trailing_WCRs = GROUP_DICT[group_number]  # no need for dual CoRo schemes here 
+	stic_turns = copy.deepcopy(stic_alg_compoundified.split())
+	# no need for dual CoRo schemes in line below
+	trailing_WCRs = copy.deepcopy(GROUP_DICT[group_number])  # See repeat of this line below.  After 8 hours of fighting with scope, and never understanding why changes within "sub_in_slices_and_ripple_right" change the value of trailing_WCRs here in main AND the value of GROUP_DICT[group_number]  **NO, THAT'S NOT A TYPO!** this is the only workaround I can come up with to make trailing_WCRs behave as I believe it should. I am utterly baffled. 
+
+	
+	for leading_X in ["X", "X'", "X2"]:
+
+		# SLICE/RIPPLE_R
+		# sub_in_slices_and_ripple_right contains the MEAT of the NEW FUNCTIONALITY of this leading_X branch
+		# note the destructuring syntax below
+		stic_turns = copy.deepcopy(stic_alg_compoundified.split())    # I am in scope hell. I feel like this is my first day of learning Python... and I'm not getting it
+		stic_turns, trailing_YorZ_Xs_dual = sub_in_slices_and_ripple_right(stic_turns, trailing_WCRs, leading_X)
+		trailing_WCRs = copy.deepcopy(GROUP_DICT[group_number])  # See repeat of this line above.  After 8 hours of fighting with scope, and never understanding why changes within "sub_in_slices_and_ripple_right" change the value of trailing_WCRs here in main AND the value of GROUP_DICT[group_number]  **NO, THAT'S NOT A TYPO!** this is the only workaround I can come up with to make trailing_WCRs behave as I believe it should. I am utterly baffled. 
+		
+
+		# SET INDEX IN THE CASE OF A REVERSIBLE TRI-TURN, and BUILD A MASTER DICTIONARY that includes (1) TURNS (alg in list form), (2) the ORIGINAL ALG BEFORE SLICES SUBBED IN, (3) a boolean called IS_REVERSIFIED, and (4) the index of the first TURN of the two tri-turns in the list called "turns" (If an alg is not reversified the index is set to -1)
+		stic_master_dict = find_reversible_index_if_any__build_master_dict(stic_turns, stic_alg_dict)
 
 
-	# SLICE/RIPPLE_R
-	motley_list = sub_in_slices_and_ripple_right(stic_turns, trailing_WCRs)
-	stic_turns = motley_list[0]
-	trailing_YorZ_Xs_dual:list[list[str]] = motley_list[1]
+		# GENERATE ALGS
+		single_stic_origin__final_algs = generate_algs(stic_master_dict, trailing_YorZ_Xs_dual)
 
 
-	# SET INDEX IN THE CASE OF A REVERSIBLE TRI-TURN, and BUILD A MASTER DICTIONARY that includes (1) TURNS (alg in list form), (2) the ORIGINAL ALG BEFORE SLICES SUBBED IN, (3) a boolean called IS_REVERSIFIED, and (4) the index of the first TURN of the two tri-turns in the list called "turns" (If an alg is not reversified the index is set to -1)
-	stic_master_dict = find_reversible_index_if_any__build_master_dict(stic_turns, stic_alg_dict)
+		# ADD LEADING_X TO EACH ALG;  ADD GROUP OF ALGS TO TOTAL GROUP OF ALGS
+		for i in range(len(single_stic_origin__final_algs)):
+			single_stic_origin__final_algs[i] = leading_X + " " + single_stic_origin__final_algs[i]
+		all__final_algs.extend(single_stic_origin__final_algs)
 
 
-	# GENERATE ALGS
-	single_stic_origin__final_algs = generate_algs(stic_master_dict, trailing_YorZ_Xs_dual)
-	all__final_algs.extend(single_stic_origin__final_algs)
 
+all__final_algs = discard_most_algs(all__final_algs)
 
 
 

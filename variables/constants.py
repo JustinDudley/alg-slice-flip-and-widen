@@ -7,6 +7,13 @@ ROTATION_VECTOR = "rotation_vector"
 COMPLEMENT = "complement"
 
 
+# for this branch, with its leading X's.  
+# Here is the inverse of each type of leading X WCR:
+X_INVERSE = {
+    "X": "X'",
+    "X2": "X2",
+    "X'": "X"
+}
 
 CODE = {
     0: "X0",
