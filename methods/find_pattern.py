@@ -1,4 +1,4 @@
-from variables.constants import REPLACEMENTS_DICT, HEADER
+from variables.constants import REPLACEMENTS_DICT, HEADER, SOLVED_PATTERN_LETTERS
 from variables.dataframes import df_stickers_turned
 
 def find_pattern(stic_alg):
@@ -21,14 +21,13 @@ def find_pattern(stic_alg):
 
 
 
-	solved_pattern_letters = ["wht", "grn", "red", "blu", "ora", "yel", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x"]
 	inverse_pattern_tuple_list = []
-	for i in range(len(solved_pattern_letters)):
-		inverse_pattern_tuple_list.append((pattern[i], solved_pattern_letters[i]))  # create list of tuples
+	for i in range(len(SOLVED_PATTERN_LETTERS)):
+		inverse_pattern_tuple_list.append((pattern[i], SOLVED_PATTERN_LETTERS[i]))  # create list of tuples
 	inverse_pattern_dict = dict((x,y) for x,y in inverse_pattern_tuple_list)
 	
 	pattern_letters = []
-	for letter in solved_pattern_letters:
+	for letter in SOLVED_PATTERN_LETTERS:
 		pattern_letters.append(inverse_pattern_dict[letter])
 
 
