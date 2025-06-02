@@ -52,7 +52,7 @@ for stic_alg_dict in stic_alg_dicts:
 
 	# FIND GROUP NUMBER
 	pattern = find_pattern(stic_alg_dict["alg"])
-	group_number, isCornerAlg = find_group_and_kingdom(pattern)   # note destructuring syntax
+	group_number, isCornerAlg = find_group_and_kingdom(pattern)   # note destructuring syntax 
 
 
 	# COMPOUNDIFY   U D' --> UD'
