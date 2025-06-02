@@ -2,10 +2,11 @@
 import datetime
 import copy
 
+from methods.find_group_and_kingdom import find_group_and_kingdom
 from methods.discard_most_algs import discard_most_algs
 from methods.find_reversible_index_if_any__build_master_dict import find_reversible_index_if_any__build_master_dict
 from methods.reversify_selected_algs__build_stic_alg_dict import reversify_selected_algs__build_stic_alg_dict
-from variables.constants import GROUP_DICT, GROUP_DIVINER
+from variables.constants import GROUP_DICT
 from methods.compoundify_comp_slice_turns import compoundify_comp_slice_turns
 from methods.sub_in_slices_and_ripple_right import sub_in_slices_and_ripple_right
 from methods.generate_algs import generate_algs
@@ -51,7 +52,7 @@ for stic_alg_dict in stic_alg_dicts:
 
 	# FIND GROUP NUMBER
 	pattern = find_pattern(stic_alg_dict["alg"])
-	group_number = GROUP_DIVINER[pattern[7]]  # pattern[7] gives the sticker at Corner_Location_B
+	group_number, isCornerAlg = find_group_and_kingdom(pattern)   # note destructuring syntax
 
 
 	# COMPOUNDIFY   U D' --> UD'

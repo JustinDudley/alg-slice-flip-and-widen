@@ -15,6 +15,19 @@ X_INVERSE = {
     "X'": "X"
 }
 
+
+SOLVED_PATTERN_LETTERS = ["wht", "grn", "red", "blu", "ora", "yel", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x"]
+
+
+STICKERS_SITTING_IN_CORNER_POSITIONS_ABCDUVWX__GROUP_1 = ["X", "U", "V", "W", "B", "C", "D", "A"]
+STICKERS_SITTING_IN_CORNER_POSITIONS_ABCDUVWX__GROUP_2 = ["V", "W", "X", "U", "D", "A", "B", "C"]
+STICKERS_SITTING_IN_CORNER_POSITIONS_ABCDUVWX__GROUP_3 = ["P", "M", "N", "O", "H", "E", "F", "G"]
+STICKERS_SITTING_IN_CORNER_POSITIONS_ABCDUVWX__GROUP_4 = ["F", "G", "H", "E", "N", "O", "P", "M"]
+STICKERS_SITTING_IN_CORNER_POSITIONS_ABCDUVWX__GROUP_5 = ["K", "L", "I", "J", "Q", "R", "S", "T"]
+STICKERS_SITTING_IN_CORNER_POSITIONS_ABCDUVWX__GROUP_6 = ["Q", "R", "S", "T", "K", "L", "I", "J"]
+
+
+
 CODE = {
     0: "X0",
     1: "X",
@@ -96,24 +109,6 @@ WHAT_BRINGS_Q_HERE = {
     "X": [["Z'", "X"]]
 }
 
-
-
-# This dictionary is next-level janky
-# For groups 1-5 corners and edges, and group 6 edges, the sticker that ends up in location B gets there because the whole shell rotates
-# For group 6 corners, the stickers P,V & K arrive at location B due to swapping.
-# Remember:  StickerSolve algorithms DO NOT COME WITH WCRs.  So this calculation is NOT based on an unchanging shell.
-# It is based on a changing shell and unchanging centers!
-GROUP_DIVINER = {
-    "U": 1,
-    "W": 2,
-    "M": 3,
-    "G": 4,
-    "L": 5,
-    "R": 6,
-    "P": 6,
-    "V": 6,
-    "K": 6
-}
 
 
 GROUP_DICT = {
