@@ -2,6 +2,15 @@
 
 THERE EXIST AT LEAST 2 BRANCHES OF THIS PROJECT IN git
 
+BRANCH:  skis__not__tees refers to an alg that has a slice complement such as U D'.  I call such a turn-pair "skis". In this
+branch, all StickerSolve algs EXCEPT those having exactly ONE skis instance are discarded. And then the skis are intentionally
+NOT compoundified. So there are no T's ("no tees"), and and no S's, and no H's (no M's, S's, or E's in standard slice notation).
+As Y or Z ripples left, i ONLY capture the moment where the Y or Z is in the middle of the skis. This turns the formerly
+parallel skis into "snowplow" skis:  U D' Z becomes U Z L'   as Z ripples left and into the pair. The two skis, formerly
+paralleL, are now at right angles, with a WCR between them.     Then I run itertools to generate all the r and l possibilities. 
+That's it. It's a small group of algs that are generated. But I believe it will generate a few very short edge algs with 
+no slice turns. 
+
 
 **** NOTE:  THE TWO FILES WITH 1 MILLION AND 5 MILLION ALGS HAVE BEEN MOVED TO Alg_Slice_And_Widen_daddy (actually, to a folder within that folder).
 **** ALSO:  I had to destroy two commits to get rid of the record of those huge files and allow git to push to GitHub. Hopefully

@@ -7,11 +7,11 @@
 
 
 def TESTING_1(ALL_ripple_rounds__final_algs, stic_master_dict):
-     ALL_ripple_rounds__final_algs.extend(["\n\n\n\n\n\n", "original SS alg, or SS alg reversified, is:       %s\n"%(stic_master_dict["alg"]), "alg after slice insertion is:  %s\n"%(" ".join(stic_master_dict["turns"]))])
+     ALL_ripple_rounds__final_algs.extend(["\n\n\n\n\n\n", "original SS alg is:       %s\n"%(stic_master_dict["alg"]), "alg after slice insertion (NO SLICE INSERTION IN THIS BRANCH) is:  %s\n"%(" ".join(stic_master_dict["turns"]))])
 
-
-     if stic_master_dict["is_reversified"]:
-        ALL_ripple_rounds__final_algs.extend(["\n", "NOTE THAT THIS 'ORIGINAL ALG' IS A ***REVERSIFIED*** ALG !!!!! \nIT SHOULD BE THE SAME AS THE ORIGINAL ALG DIRECTLY ABOVE IT, BUT WITH 2 TURNS SWAPPED. \nSometimes there are no result algs here. That's okay. The code runs through the motions but the reversified alg faces \ntoo many exclusions to generate any results \n"])
+    # NOT APPLICABLE IN THIS BRANCH
+    #  if stic_master_dict["is_reversified"]:
+    #     ALL_ripple_rounds__final_algs.extend(["\n", "NOTE THAT THIS 'ORIGINAL ALG' IS A ***REVERSIFIED*** ALG !!!!! \nIT SHOULD BE THE SAME AS THE ORIGINAL ALG DIRECTLY ABOVE IT, BUT WITH 2 TURNS SWAPPED. \nSometimes there are no result algs here. That's okay. The code runs through the motions but the reversified alg faces \ntoo many exclusions to generate any results \n"])
      
      return(ALL_ripple_rounds__final_algs)
 

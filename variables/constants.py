@@ -294,7 +294,7 @@ HEADER = {
 }
 
 
-# not yet used:
+# not used in this branch:
 ITERATIVE_DELTA_SWAP_DICT = {
     "R L ":"L** R ",
     "L R ":"R L ",
@@ -370,6 +370,31 @@ ITERATIVE_DELTA_SWAP_DICT = {
     "B' F2":"F2 B'",
     "B'** F2":"B' F2",
 }
+
+
+# note the use of trailing whitespace
+SKI_PAIRS = [
+    "R L'",
+    "R2 L2",
+    "R' L ",
+    "L R'",
+    "L2 R2",
+    "L' R ",
+
+    "U D'",
+    "U2 D2",
+    "U' D ",
+    "D U'",
+    "D2 U2",
+    "D' U ",
+
+    "F B'",
+    "F2 B2",
+    "F' B ",
+    "B F'",
+    "B2 F2",
+    "B' F ",
+]
 
 
 GROUP_DICT_HANDY_FOR_SEEING_YorZ_NOTATION_BUT_DEPRECATED = {

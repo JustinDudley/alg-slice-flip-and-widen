@@ -2,8 +2,8 @@
 import datetime
 
 from methods.find_group_and_kingdom import find_group_and_kingdom
-from methods.find_reversible_index_if_any__build_master_dict import find_reversible_index_if_any__build_master_dict
-from methods.reversify_selected_algs__build_stic_alg_dict import reversify_selected_algs__build_stic_alg_dict
+from methods.find_ski_pair_index__build_master_dict import find_ski_pair_index__build_master_dict
+from methods.select_ski_pair_algs_only__build_stic_alg_dict import select_ski_pair_algs_only__build_stic_alg_dict
 from variables.constants import GROUP_DICT
 from methods.compoundify_comp_slice_turns import compoundify_comp_slice_turns
 from methods.sub_in_slices_and_ripple_right import sub_in_slices_and_ripple_right
@@ -39,10 +39,8 @@ with open("/Users/justindudley/dev/cube/Alg_Slice_And_Widen_daddy/alg-slice-and-
     stic_algs = file_input.read().splitlines() 
 
 # Create a list of dictionaries.
-stic_alg_dicts = reversify_selected_algs__build_stic_alg_dict(stic_algs)
-
-
-
+# In THIS branch, all algs except those with a single ski_pair are discarded in the following method 
+stic_alg_dicts = select_ski_pair_algs_only__build_stic_alg_dict(stic_algs)
 
 
 all__final_algs = []
@@ -54,19 +52,19 @@ for stic_alg_dict in stic_alg_dicts:
 
 
 	# COMPOUNDIFY   U D' --> UD'
-	stic_alg_compoundified = compoundify_comp_slice_turns(stic_alg_dict["alg"])    # For instance:   U R2 UD' F B L' B2 R UD' B RL' U2 B2
-	stic_turns = stic_alg_compoundified.split()
+	# stic_alg_compoundified = compoundify_comp_slice_turns(stic_alg_dict["alg"])  # Algs AREN'T compoundified in this branch. That is this branch's whole thing, that algs aren't compoundified.  (( # For instance:   U R2 UD' F B L' B2 R UD' B RL' U2 B2    ))
+	stic_turns = stic_alg_dict["alg"].split()
 	trailing_WCRs = GROUP_DICT[group_number]  # no need for dual CoRo schemes here 
 
 
 	# SLICE/RIPPLE_R
-	motley_list = sub_in_slices_and_ripple_right(stic_turns, trailing_WCRs)
+	motley_list = sub_in_slices_and_ripple_right(stic_turns, trailing_WCRs) # in THIS branch, there will be no slices to sub in. The method will find no coumpoundified turns and will pass over every alg. But the method still has important trailing_YorZ_Xs_dual functionality so it is kept here.
 	stic_turns = motley_list[0]
 	trailing_YorZ_Xs_dual:list[list[str]] = motley_list[1]
 
 
 	# SET INDEX IN THE CASE OF A REVERSIBLE TRI-TURN, and BUILD A MASTER DICTIONARY that includes (1) TURNS (alg in list form), (2) the ORIGINAL ALG BEFORE SLICES SUBBED IN, (3) a boolean called IS_REVERSIFIED, and (4) the index of the first TURN of the two tri-turns in the list called "turns" (If an alg is not reversified the index is set to -1)
-	stic_master_dict = find_reversible_index_if_any__build_master_dict(stic_turns, stic_alg_dict)
+	stic_master_dict = find_ski_pair_index__build_master_dict(stic_turns, stic_alg_dict)
 
 
 	# GENERATE ALGS
