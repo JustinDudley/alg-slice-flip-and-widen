@@ -18,6 +18,32 @@ STICKERS_SITTING_IN_CORNER_POSITIONS_ABCDUVWX__GROUP_6 = ["Q", "R", "S", "T", "K
 
 
 
+INTERNAL_X_INVERSE_DICT = {
+	"X": "X'",
+	"X2": "X2",
+	"X'": "X"
+}
+
+
+# this constnat is SPECIFIC TO THE INTERNAL_X BRANCH
+# an X within an alg DOES NOT indicate that we are looking for complementary turns
+# this never presented a problem in other branches, but it does here because the algs are full of internal X
+# so, the method "get_single_turn_code" can't use the "CODE" constant. It must use THIS constant instead
+GET_CODE_FROM_TURN = {
+    "R": 1,
+    "r": 1,
+    "l'": 1,
+    "L'": 1,
+    "R2": 2,
+    "r2": 2,
+    "l2": 2,
+    "L2": 2,
+    "R'": 3,
+    "r'": 3,
+    "l": 3,
+    "L": 3
+}
+
 
 CODE = {
     0: "X0",
@@ -103,6 +129,16 @@ WHAT_BRINGS_Q_HERE = {
     "X": [["Z'", "X"]]
 }
 
+
+# SPECIFIC TO THIS BRANCH
+# CLOSELY RELATED TO WHAT_BRINGS_Q_HERE
+# ONLY CONCERNED WITH X, X2, X', X0
+WHAT_BRINGS_U_HERE = {
+    "I": "X", 
+    "A": "X2", 
+    "S": "X'",
+    "U": "X0"
+}
 
 
 GROUP_DICT = {

@@ -46,6 +46,7 @@ stic_alg_dicts = reversify_selected_algs__build_stic_alg_dict(stic_algs)
 
 
 all__final_algs = []
+all_final_internal_X_algs = []  # SPECIFIC TO THIS BRANCH
 for stic_alg_dict in stic_alg_dicts:
 
 	# FIND GROUP NUMBER
@@ -69,21 +70,32 @@ for stic_alg_dict in stic_alg_dicts:
 	stic_master_dict = find_reversible_index_if_any__build_master_dict(stic_turns, stic_alg_dict)
 
 
-	# GENERATE ALGS
-	single_stic_origin__final_algs = generate_algs(stic_master_dict, trailing_YorZ_Xs_dual)
+	# GENERATE ALGS (note destructuring notation)
+	single_stic_origin__final_algs, single_stic_origin__final_internal_X_algs = generate_algs(stic_master_dict, trailing_YorZ_Xs_dual)
 	all__final_algs.extend(single_stic_origin__final_algs)
+	all_final_internal_X_algs.extend(single_stic_origin__final_internal_X_algs)
 
 
 
 
 
-# WRITE TO FILE
+# WRITE TO FILE:
+
+# in THIS branch, the usual long list of final algs is irrelevant, Instead, we capture the list of udfb algs which
+# we've rippled an X through, and print THAT list to file (below)
+# dt = datetime.datetime.now()
+# output_filename = '/Users/justindudley/dev/cube/Alg_Slice_And_Widen_daddy/alg-slice-and-widen/OUTPUT_files/%s.txt'%(dt.strftime("%a") + "_" + dt.strftime("%I") + ":" + dt.strftime("%M") + ":" + dt.strftime("%S") + "_output")
+# with open(output_filename, "x") as output_file:
+# 	for alg in all__final_algs:  # write all of one base alg's final algs to file. If my testing methods are uncommented, ripple-round-specific info will get baked in to the list of final algs. It will look like I've written to file several times, but I haven't. The PYTHON LIST ITSELF just includes carriage returns and explanations when is_test is set to True
+# 		output_file.write(f"{alg}\n")
+
+
 dt = datetime.datetime.now()
 output_filename = '/Users/justindudley/dev/cube/Alg_Slice_And_Widen_daddy/alg-slice-and-widen/OUTPUT_files/%s.txt'%(dt.strftime("%a") + "_" + dt.strftime("%I") + ":" + dt.strftime("%M") + ":" + dt.strftime("%S") + "_output")
 with open(output_filename, "x") as output_file:
-	for alg in all__final_algs:  # write all of one base alg's final algs to file. If my testing methods are uncommented, ripple-round-specific info will get baked in to the list of final algs. It will look like I've written to file several times, but I haven't. The PYTHON LIST ITSELF just includes carriage returns and explanations when is_test is set to True
+	for alg in all_final_internal_X_algs:
 		output_file.write(f"{alg}\n")
 
 
 
-print("\ntime elapsed: ", datetime.datetime.now() - startTime, "\n")
+print("\n\ntime elapsed: ", datetime.datetime.now() - startTime, "\n")

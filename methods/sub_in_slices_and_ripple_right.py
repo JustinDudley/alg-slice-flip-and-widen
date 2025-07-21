@@ -8,10 +8,12 @@ def ripple_right(turn, WCR):
 	return df_Ripple_R.at[turn, column]
 
 
+# this function has also been copy-pasted to another file. My bad. Don't repeat yourself.
 def move_sticker_once(sticker, WCR):
 	return df_stickers_turned.at[sticker, WCR]
 
 
+# There exists an equivalent method in another file, for internal X creation
 def replace_Trailing_WCRs_with_either_ONE_or_TWO_equivalent_YorZ_notations(WCRs):
 	sticker = "Q"
 	for WCR in WCRs:

@@ -1,6 +1,7 @@
 
 import copy
 
+from methods.generate_algs_secondary__internal_X_algs import generate_algs_secondary__internal_X_algs
 from testing.is_test import is_test
 from methods.comp_Xpansion import comp_Xpansion
 from methods.itertools_get_combos import itertools_get_combos
@@ -17,6 +18,9 @@ def generate_algs(stic_master_dict, trailing_YorZ_Xs_dual):
 
     stic_turns = stic_master_dict["turns"]
     ALL_ripple_rounds__final_algs = []
+    single_ripple_round_of__internal_X_algs = [] # SPECIFIC TO THIS BRANCH
+    several_ripple_rounds_of_internal_X__due_to_several_merge_YUs_per_stic_turns__algs = []  # SPECIFIC TO THIS BRANCH
+
     if is_test: ALL_ripple_rounds__final_algs = TESTING_1(ALL_ripple_rounds__final_algs, stic_master_dict)
 
 
@@ -33,17 +37,33 @@ def generate_algs(stic_master_dict, trailing_YorZ_Xs_dual):
 
                 if indx == 0 or AXIS_FAMILY[YorZ_added__shifting_turns[indx - 1]] != AXIS_FAMILY[trailing_YorZ_Xs[0]]:    # to avoid generating duplicates.  For instance, U Y (same axis family) is functionally equivalent to Y U, so we're going to pass over U Y, let Y ripple one more to the left, and then examine Y U.
 
-                    turn_codes = copy.deepcopy(list(map(get_single_turn_code, YorZ_added__shifting_turns)))
-                    DNA_3_marker_cums = itertools_get_combos(turn_codes, trailing_YorZ_Xs)
-                    one_ripple_round_of__final_algs = comp_Xpansion(YorZ_added__shifting_turns, DNA_3_marker_cums)
-                    if trailing_YorZ_Xs[1] == "X0": one_ripple_round_of__final_algs = [" ".join(YorZ_added__shifting_turns)] + [" "] + one_ripple_round_of__final_algs  # The final touch!!  When an alg ends up with an X0 due to slice substitution, THE ALG ITSELF must be added to the list of finals WITHOUT ANY COMP SUBSTITUTION. My intricate CompXpansion logic with its search for combos looks ONLY for comp opportunites. These algs are overlooked because they are already in a FINAL state WITHOUT COMP SUBSTITUTION!  So they must be appended here.
-                    one_ripple_round_of__final_algs = insert_merge_YU_algs(one_ripple_round_of__final_algs)
-                    one_ripple_round_of__final_algs = insert_reinstated_trailing_YorZ__patch(one_ripple_round_of__final_algs)
+
+                    # SPECIFIC TO THIS BRANCH
+                    # merge_YU algs (ONLY) are subjected to internal X rippling
+                    # Note that a Y can interact with MORE THAN ONE turn to create udfb algs
+                    # So the following method could be called SEVERAL time on different ripples of the Y, for a single source alg
+                    single_ripple_round_of__internal_X_algs = generate_algs_secondary__internal_X_algs(YorZ_added__shifting_turns, trailing_YorZ_Xs[1])
+                    several_ripple_rounds_of_internal_X__due_to_several_merge_YUs_per_stic_turns__algs.extend(single_ripple_round_of__internal_X_algs)
+                    # SPECIFIC TO THIS BRANCH
+
+
+
+                    # in THIS branch, EVERY BIT OF ITERTOOLS FUNCTIONALITY IN THIS METHOD IS COMMENTED OUT BELOW!
+                    # THIS METHOD SERVES TO RIPPLE Y OR Z THROUGH THE ALGS, AND FIND merge_YU algs
+                    # Then the generate_algs_secondary method is called, and itertools is used THERE as
+                    # we ripple X through the algs
+
+                    # turn_codes = copy.deepcopy(list(map(get_single_turn_code, YorZ_added__shifting_turns)))
+                    # DNA_3_marker_cums = itertools_get_combos(turn_codes, trailing_YorZ_Xs)
+                    # one_ripple_round_of__final_algs = comp_Xpansion(YorZ_added__shifting_turns, DNA_3_marker_cums)
+                    # if trailing_YorZ_Xs[1] == "X0": one_ripple_round_of__final_algs = [" ".join(YorZ_added__shifting_turns)] + [" "] + one_ripple_round_of__final_algs  # The final touch!!  When an alg ends up with an X0 due to slice substitution, THE ALG ITSELF must be added to the list of finals WITHOUT ANY COMP SUBSTITUTION. My intricate CompXpansion logic with its search for combos looks ONLY for comp opportunites. These algs are overlooked because they are already in a FINAL state WITHOUT COMP SUBSTITUTION!  So they must be appended here.
+                    # one_ripple_round_of__final_algs = insert_merge_YU_algs(one_ripple_round_of__final_algs)
+                    # one_ripple_round_of__final_algs = insert_reinstated_trailing_YorZ__patch(one_ripple_round_of__final_algs)
                     
-                    if is_test: one_ripple_round_of__final_algs = TESTING_3(one_ripple_round_of__final_algs, indx, YorZ_added__shifting_turns)
-                    if not is_test and trailing_YorZ_Xs[1] == "X0": one_ripple_round_of__final_algs.remove(" ")
-                    one_ripple_round_of__final_algs = remove_Y0_and_Z0(one_ripple_round_of__final_algs)
-                    ALL_ripple_rounds__final_algs.extend(one_ripple_round_of__final_algs)
+                    # if is_test: one_ripple_round_of__final_algs = TESTING_3(one_ripple_round_of__final_algs, indx, YorZ_added__shifting_turns)
+                    # if not is_test and trailing_YorZ_Xs[1] == "X0": one_ripple_round_of__final_algs.remove(" ")
+                    # one_ripple_round_of__final_algs = remove_Y0_and_Z0(one_ripple_round_of__final_algs)
+                    # ALL_ripple_rounds__final_algs.extend(one_ripple_round_of__final_algs)
                     
 
                     if trailing_YorZ_Xs[0] == "Y0" or trailing_YorZ_Xs[0] == "Z0":
@@ -57,6 +77,6 @@ def generate_algs(stic_master_dict, trailing_YorZ_Xs_dual):
             YorZ_added__shifting_turns[indx - 1] = trailing_YorZ_Xs[0]
     
        
-       
-    return ALL_ripple_rounds__final_algs
+    # ALL_ripple_rounds__final_algs is an empty list, but I'm returning it for old time's sake
+    return [ALL_ripple_rounds__final_algs, several_ripple_rounds_of_internal_X__due_to_several_merge_YUs_per_stic_turns__algs]
         
