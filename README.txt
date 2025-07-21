@@ -1,6 +1,7 @@
 
 
-THERE EXIST AT LEAST 2 BRANCHES OF THIS PROJECT IN git
+THERE EXIST AT LEAST 2 BRANCHES OF THIS PROJECT IN git 
+(update:  Currently 5. One is a backup)
 
 
 **** NOTE:  THE TWO FILES WITH 1 MILLION AND 5 MILLION ALGS HAVE BEEN MOVED TO Alg_Slice_And_Widen_daddy (actually, to a folder within that folder).
