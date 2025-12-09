@@ -37,7 +37,7 @@ from methods.find_pattern import find_pattern
 
 startTime = datetime.datetime.now() # to monitor performance of program
 
-with open("/Users/justindudley/dev/cube/Alg_Slice_And_Widen_daddy/alg-slice-and-widen/INPUT_file/alg_list_StickerSolve_input.txt") as file_input:
+with open("INPUT_file/alg_list_StickerSolve_input.txt") as file_input:
     stic_algs = file_input.read().splitlines() 
 
 # Create a list of dictionaries.
@@ -94,7 +94,7 @@ all__final_algs = discard_most_algs(all__final_algs)
 
 # WRITE TO FILE
 dt = datetime.datetime.now()
-output_filename = '/Users/justindudley/dev/cube/Alg_Slice_And_Widen_daddy/alg-slice-and-widen/OUTPUT_files/%s.txt'%(dt.strftime("%a") + "_" + dt.strftime("%I") + ":" + dt.strftime("%M") + ":" + dt.strftime("%S") + "_output")
+output_filename = 'OUTPUT_files/%s.txt'%(dt.strftime("%a") + "_" + dt.strftime("%I") + "h-" + dt.strftime("%M") + "m-" + dt.strftime("%S") + "s_output")
 with open(output_filename, "x") as output_file:
 	for alg in all__final_algs:  # write all of one base alg's final algs to file. If my testing methods are uncommented, ripple-round-specific info will get baked in to the list of final algs. It will look like I've written to file several times, but I haven't. The PYTHON LIST ITSELF just includes carriage returns and explanations when is_test is set to True
 		output_file.write(f"{alg}\n")
