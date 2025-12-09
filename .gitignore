@@ -1,1 +1,10 @@
+
 *.xlsx
+
+.DS_Store
+
+__pycache__/
+*.py[codz]
+*$py.class
+
+THOUSANDS_of_StickerSolve_input_algs__from_Repo_1/
