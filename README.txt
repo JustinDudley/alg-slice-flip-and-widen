@@ -1,5 +1,7 @@
 
 
+On 12/13/2025, the "main" branch is identical to the "a__original_functionality__alg_YorZ_X" branch
+
 THERE EXIST AT LEAST 2 BRANCHES OF THIS PROJECT IN git
 
 
