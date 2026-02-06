@@ -12,7 +12,7 @@ from methods.find_pattern import find_pattern
 
 
 # naming conventions:
-# turn   ==  a string. one turn in an algorithm
+# turn   ==  a string. one turn in an algorithm  
 # turns  ==  a list. An alg whose turns are members of a list
 # alg    ==  an alg that is a string
 # als    ==  a list of algs that are strings    
