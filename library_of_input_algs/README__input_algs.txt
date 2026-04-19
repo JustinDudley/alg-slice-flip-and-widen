@@ -15,13 +15,6 @@ It has the same 72 files, but containing ~400,000 StickerSolve algs all told.
 These are the input algs I used in this python project.
 
 
-The complete set of 400,000 algs can be found at:
-
+To see or download the complete set of 400,000 algs, go to my Alg Landing Page at: 
 xoxoxoxoxoxoxoxoxo
-
-You should be able to download the whole folder of 72 complete alg lists there, if you would like to use them.
-Just fyi, their parent folder name is different from the name in the .gitignore folder.
-
-
-
-
+And look for 93 million algs >> Repo_0
