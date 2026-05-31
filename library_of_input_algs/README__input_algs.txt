@@ -16,5 +16,5 @@ These are the input algs I used in this python project.
 
 
 To see or download the complete set of 400,000 algs, go to my Alg Landing Page at: 
-xoxoxoxoxoxoxoxoxo
+https://rebrand.ly/1371af
 And look for 93 million algs >> Repo_0
