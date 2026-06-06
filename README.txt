@@ -1,6 +1,6 @@
 README
 
-This app generates algs for my no-parity-pochmann Rubik's Cube system. See my YouTube video, https://youtu.be/jykhI4pyze4. It takes as input a list of face-turn-only algs, and gives as output a much longer list of algs with wide turns and slices.
+This app generates algs for my no-parity-pochmann Rubik's Cube system. See my YouTube video, https://youtu.be/Kx_NlSuZaRA. It takes as input a list of face-turn-only algs, and gives as output a much longer list of algs with wide turns and slices.
 
 To run the program: Select a file from library_of_input_algs. Copy-paste the algs into INPUT_file/alg_list_StickerSolve_input.txt.  Run the program from main, and then open the newly generated output file.
 
